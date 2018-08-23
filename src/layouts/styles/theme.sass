@@ -1,0 +1,745 @@
+body 
+  background: #fff
+  font-family: 'Source Sans Pro', sans-serif
+
+
+.navbar-fixed-top 
+  position: fixed
+  top: 0
+  left: 0
+  right: 0
+  z-index: 999
+  max-height: 60px
+  box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.15)
+
+
+.navbar-fixed-top .white-logo 
+  display: none
+
+
+.navbar-fixed-top .brand-logo 
+  display: inline-block
+
+
+.navbar-fixed-top.before-scroll 
+  background: linear-gradient(0deg, transparent, rgba(0, 0, 0, 0.8))
+  box-shadow: none
+  min-height: 160px
+  background-color: transparent !important
+  position: absolute
+
+
+.navbar-fixed-top.before-scroll .brand-logo 
+  display: none
+
+
+.navbar-fixed-top.before-scroll .white-logo 
+  display: inline-block
+
+
+.navbar-fixed-top.before-scroll .nav-link 
+  color: #fff
+  font-weight: 400
+  font-size: 1.2rem
+
+
+.navbar-fixed-top.before-scroll .nav-link.btn 
+  display: none
+
+
+.navbar-fixed-top .nav-item.active,
+.navbar-fixed-top .nav-item:hover 
+  border-bottom: 1px solid #00B2A7
+
+
+.navbar-fixed-top.before-scroll .nav-item .nav-link:hover 
+  color: #fff
+
+
+.navbar-fixed-top.before-scroll .nav-item.active .nav-link 
+  color: #fff
+
+
+.navbar-nav.navbar-flex 
+  flex: 1
+  justify-content: space-around
+  margin: 0 50px
+
+
+.navbar-fixed-top.before-scroll .navbar-nav.navbar-flex 
+  margin: 0 100px
+
+
+.navbar-brand img 
+  max-height: 55px
+  margin-top: -7px
+
+
+#navigation.mobile.show 
+  position: fixed
+  top: 0
+  left: 0
+  right: 0
+  bottom: 0
+  width: 100%
+  height: 100%
+  background: #00B2A7
+  
+  color: #333
+  display: flex
+  justify-content: center
+  flex-direction: column
+  padding: 20vh 20px
+
+
+#navigation.mobile.show .nav-link 
+  color: #fff
+  font-size: 1.6rem
+  font-weight: 400
+
+
+#navigation.mobile.show .nav-link.btn 
+  display: block
+
+
+#mobile-navigation-toggle.show 
+  position: fixed
+  top: 1rem
+  right: 1rem
+  z-index: 999
+
+
+.navbar-fixed-top #mobile-navigation-toggle i 
+  color: #00B2A7
+
+
+#navigation.mobile.show #mobile-navigation-toggle.show i 
+  color: #fff
+
+
+#navigation.mobile.show .navbar-nav.navbar-flex 
+  flex: 1
+  margin: 10px
+  display: flex
+  justify-content: space-around
+  align-items: center
+  height: 50%
+
+
+.navbar-custom-toggler i 
+  color: #fff
+  font-size: 2.2rem
+
+
+strong 
+  font-weight: bold
+  color: #1C8174
+
+
+.btn 
+  border-radius: 4px
+  font-size: 1.1rem
+
+
+.btn-primary 
+  border-color: #00B2A7
+  background-color: #00B2A7
+  font-weight: 600
+  padding: 13px 30px
+  text-transform: uppercase
+  transition: all .3s
+
+
+.btn-primary.nav-link 
+  color: #fff
+  padding: 5px 10px
+  color: #fff
+  font-size: 1rem
+
+
+.btn-primary:hover 
+  border-color: #1C8174
+  background-color: #1C8174
+
+
+.btn-outline-primary 
+  border-color: #00B2A7
+  color: #00B2A7
+
+
+.btn-outline-light 
+  text-transform: uppercase
+  color: #fff !important
+  transition: all .3s
+
+
+.btn-outline-light:hover 
+  border-color: #1C8174
+  background-color: #1C8174
+
+
+.btn-outline-primary:hover 
+  border-color: #1C8174
+  background-color: #1C8174
+  color: #fff
+  
+
+
+.btn-link 
+  color: #00B2A7
+  transition: all .3s
+
+
+.btn-link:hover 
+  color: #1C8174
+  text-decoration: none
+
+
+.btn-large 
+  max-width: 300px
+
+
+.hero 
+  text-align: center
+
+
+.hero h1 
+  color: #FFFFFF
+  font-size: 3.6rem
+  line-height: 73px
+  text-align: center
+  margin-bottom: 1.9rem
+
+
+.hero h3 
+  color: #fff
+  font-size: 1.5rem
+  font-weight: normal
+  text-align: center
+  margin-bottom: 4.3rem
+
+
+.hero-container 
+  background-color: #fff
+  background-position: center
+  background-size: cover
+  min-height: 1000px
+  /* Per prototipare è comodo fare i vh, che significa view height, in pratica è la percentuale in base all'altezza dello schermo */
+  /* uso min-height perché nel caso il contenuti sia piu grosso dell'altezza relativa non sbordi ma si adatti */
+  width: 100%
+  display: flex
+  justify-content: center
+  align-items: center
+  position: relative
+
+
+/* .hero-container .outer-row 
+  flex: 1
+ */
+
+.hero-container:after 
+  display: block
+  content: ""
+  /* z-index: -1 */
+  position: absolute
+  width: 100%
+  height: 200px
+  -webkit-transform: skewY(5deg)
+  transform: skewY(5deg)
+  background: #fff
+  bottom: -88px
+
+
+.home-section 
+  min-height: 90vh
+  /* qua usiamo i rem, cerca cosa significano su google, sono in pratica i px relativi, comodi per alcune cose */
+  margin-top: 10rem
+  margin-bottom: 10rem
+  padding-bottom: 4rem
+  padding-top: 4rem
+
+
+.home-section.first-section 
+  margin-top: 0
+  padding-top: 0
+  margin-bottom: 2rem
+
+
+.home-section .section-title-wrapper h2 
+  font-size: 2.2rem
+  margin-bottom: 42px
+  font-size: normal
+  color: #434A54
+
+
+.home-section.smaller-section 
+  margin-top: 0
+  margin-bottom: 0
+  min-height: inherit
+
+
+.cari-amici-section 
+  margin-top: 0px
+  padding-top: 3rem
+  padding-bottom: 4rem
+  margin-bottom: 0px
+
+
+.cari-amici-section h2 
+  margin-bottom: 3rem
+
+
+/* modificare direttamente le card prima di sapere se ovunque saranno uguali secondo me è meglio aggiungerci una classe custom .home-card e poi metterla prima dei vari tag */
+
+.home-card 
+  margin-top: 2rem
+  border: 1px solid #D8D8D8
+  border-radius: 0
+
+
+.home-card .card-img-top 
+  min-height: 300px
+  background-color: #f2f2f2
+  background-position: center
+  background-size: cover
+  border-radius: 0
+
+
+.home-card .card-title 
+  color: #18AA9A
+  font-size: 1.2rem
+  /* prova a usare i rem, sono comodi, specie in mobile */
+  line-height: 26px
+
+
+.home-card .card-action 
+  margin: 1rem
+  padding-top: 1rem
+  margin-top: 0
+  border-top: 1px solid #E0ECE1
+
+
+.home-card.card p 
+  color: #333333
+  font-size: 1rem
+  margin-bottom: 2.5rem
+  font-weight: 300
+
+
+.home-card .card-body 
+  position: relative
+  padding-top: 3rem
+
+
+.home-card .plus-button-card 
+  position: absolute
+  top: 0
+  right: 1rem
+  margin-top: 0
+  transform: translateY(-50%)
+  display: flex
+  justify-content: center
+  align-items: center
+  border-radius: 50%
+  background-color: #00B2A7
+  color: #fff
+  padding: .5rem
+  transition: all .3s
+
+
+.blog-section .plus-button-card 
+  padding: .5rem
+  transition: all .3s
+
+
+.card-date 
+  font-size: .9rem
+  color: #333333
+  font-weight: 300
+  line-height: 18px
+  text-align: center
+
+
+.home-card .plus-button-card:hover 
+  text-decoration: none
+  background-color: #1C8174
+
+
+.card-gallery 
+  border: 2px solid #fff
+
+
+.cta-blog 
+  margin-top: 4rem
+
+
+.cta-blog .btn 
+  min-width: 15rem
+
+
+.lead-text 
+  color: #333333
+  font-size: 1.5rem
+  font-weight: 300
+  line-height: 2rem
+
+
+.lead-text ul li 
+  margin-bottom: 2rem
+
+
+footer 
+  padding-top: 50px
+  padding-bottom: 50px
+  background-color: #434A54
+  margin: 0 auto
+
+
+.footer-logo 
+  max-width: 208px
+  margin-bottom: 24px
+
+
+footer .footer-item 
+  color: #fff
+  min-width: 200px
+
+
+.footer-item a 
+  color: rgba(255, 255, 255, .8)
+  text-decoration: none
+  font-size: 20px
+  font-weight: 300
+  line-height: 25px
+
+
+footer .footer-contacts 
+  margin-top: .5rem
+  line-height: 2.2rem
+
+
+footer .footer-social-icons img 
+  max-width: 28px
+  margin: 15px
+
+
+.footer-copyright 
+  font-weight: 300
+
+
+.footer-copyright p 
+  margin-bottom: .2rem
+  font-size: .9rem
+
+
+.contact-form .form-control 
+  margin-bottom: 26px
+
+
+.contact-form textarea.form-control 
+  min-height: 126px
+
+
+.contact-form input.form-control 
+  height: 46px
+  border: 1px solid #DEDEDE
+
+
+.contact-form .dashed-container 
+  border: 2px dashed #00B2A7
+  padding: 2.4rem
+  color: #00B2A7
+
+
+.contact-form .dashed-container p 
+  font-size: 18px
+
+
+.contact-form .dashed-container i 
+  margin-right: 10px
+
+
+.contact-form .dashed-container .title 
+  font-size: 22px
+
+
+.contact-form .contact-form-wrapper 
+  margin-top: 30px
+  margin-bottom: 50px
+
+
+.home-form 
+  justify-content: space-around
+  padding: 3rem 2rem
+
+
+.home-form select,
+.home-form input 
+  border: none
+  border-bottom: 1px solid rgba(0, 0, 0, 0.12)
+  border-radius: 0
+  -webkit-appearance: none
+  background-color: transparent
+
+
+.home-form select:focus,
+.home-form input:focus 
+  box-shadow: none
+  border-color: inherit
+  background-color: transparent
+
+
+.home-form .select-form 
+  position: relative
+  z-index: 1
+
+
+.home-form .select-form:after 
+  content: 'keyboard_arrow_down'
+  position: absolute
+  z-index: 2
+  top: 50%
+  right: 20px
+  transform: translateY(-50%)
+  font-family: 'Material Icons'
+  font-weight: normal
+  font-style: normal
+  font-size: 24px
+  letter-spacing: normal
+  text-transform: none
+  display: inline-block
+  white-space: nowrap
+  word-wrap: normal
+  direction: ltr
+  -webkit-font-feature-settings: 'liga'
+  -webkit-font-smoothing: antialiased
+  pointer-events: none
+
+
+.instagram-container 
+  font-size: 26px
+
+
+.instagram-container img 
+  height: 32px
+  width: 32px
+  margin-top: 3rem
+  margin-bottom: 3rem
+  margin-right: 5px
+
+
+.instagram-img-container 
+  width: 100%
+  position: relative
+
+
+.instagram-img 
+  width: 100%
+  object-fit: cover
+
+
+.instagram-overlay 
+  opacity: 0
+  pointer-events: none
+  position: absolute
+  top: 0
+  left: 0
+  right: 0
+  bottom: 0
+  background-color: rgba(0, 0, 0, 0.6)
+  display: flex
+  flex-direction: row
+  justify-content: center
+  align-items: center
+  color: #fff
+  transition: all .3s
+
+
+.instagram-link:hover .instagram-overlay 
+  opacity: 1
+  pointer-events: inherit
+
+
+.instagram-overlay span 
+  margin: 15px
+
+
+.instagram-overlay svg 
+  height: 25px
+  width: 25px
+
+
+.instagram-overlay svg.comment 
+  height: 21px
+  width: 21px
+
+
+.instagram-overlay svg,
+.instagram-overlay svg path 
+  fill: #fff !important
+  stroke: #fff !important
+
+
+.personalized-events-section 
+  margin-bottom: 0px
+  margin-top: 70px
+
+
+.personalized-events-section.first-section 
+  margin-top: 0
+
+
+.events-card 
+  padding: 2.5rem
+  background-color: #DCDBDB
+  min-height: 500px
+  display: flex
+  justify-content: center
+  flex-direction: column
+  border: 1px solid #fff
+
+
+.events-card.light 
+  background-color: #EBEBEB
+
+
+.events-card h3 
+  color: #00B2A7
+  text-align: center
+  margin-bottom: 30px
+
+
+.events-card p 
+  font-size: 16px
+  font-weight: 300
+
+
+.jsCalendar tbody td.jsCalendar-selected,
+.jsCalendar tbody td,
+.jsCalendar thead .jsCalendar-week-days th 
+  width: 70px
+  border-radius: 5px
+
+
+.jsCalendar tbody td.jsCalendar-selected 
+  background-color: #18AA9A
+  color: #fff
+  border: none
+
+
+.jsCalendar tbody td.jsCalendar-current 
+  border-radius: 5px
+  color: #333
+  background-color: transparent
+
+
+/* UTILS, qui raccogliamo tutte le classi generali, come "white-bg" "brand-bg" ecc cosi si capisce che si possono riutilizzare */
+
+.brand-bg 
+  background-color: #00B2A7
+
+
+.white-bg 
+  background: #fff
+
+
+.grey-bg 
+  background-color: #F4F4F4
+
+
+.white-text 
+  color: #fff !important
+
+
+.dk-brand-text 
+  color: #128174 !important
+
+
+.brand-text 
+  color: #18AA9A !important
+
+
+.grey-text 
+  color: #555555
+
+
+p.text-spacing,
+.text-spacing-container p 
+  line-height: 2.5rem
+  font-size: 1.3rem
+  font-weight: 300
+  color: #333333
+
+
+.text-spacing-container strong 
+  font-size: 1.3rem
+
+
+.padding-2 
+  padding-left: 2rem
+
+
+.left-right 
+  margin-left: 10rem
+  margin-right: 10rem
+
+
+.no-margin 
+  margin: 0 !important
+
+
+.no-padding 
+  padding: 0 !important
+
+
+.no-v-padding 
+  padding-top: 0 !important
+  padding-bottom: 0 !important
+
+
+.no-top-padding 
+  padding-top: 0 !important
+
+
+.padding-1 
+  padding: 0.01rem
+
+
+.hidden 
+  display: none
+
+
+.navbar-custom-toggler 
+  display: none
+
+
+
+@media screen and (max-width: 480px) 
+  .hero-container 
+    padding-top: 200px
+    padding-bottom: 200px
+  
+  .home-form 
+    padding: 3rem 0
+  
+  footer 
+    text-align: center
+  
+  footer .footer-item 
+    margin: 1.2rem 0
+  
+  footer .footer-item a 
+    display: block
+  
+  .instagram-img-container 
+    margin-bottom: 1rem
+  
+  .navbar-custom-toggler 
+    display: block
+  
+
+
+body.no-scroll 
+  overflow: hidden
+  margin: 0
+  padding: 0
