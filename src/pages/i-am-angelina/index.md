@@ -1,5 +1,5 @@
 ---
-templateKey: 'about-page'
+templateKey: 'i-am-angelina-page'
 path: /about
 title: About our values
 ---
