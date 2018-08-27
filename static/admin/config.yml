@@ -22,6 +22,71 @@ collections:
   - name: "pages"
     label: "Pages"
     files:
+      - file: src/pages/index.md
+        label: Homepage
+        name: home
+        fields:
+          - label: Template Key
+            name: templateKey
+            widget: hidden
+            default: home-page
+
+          - label: Hero Section
+            name: hero
+            widget: object
+            fields:
+              - label: Hero Title
+                name: title
+                type: string
+
+              - label: Payoff
+                name: payoff
+                type: text
+
+              - label: Call to action Text  
+                name: ctaText
+                type: string
+
+              - label: Call to action Action (url)
+                name: ctaUrl
+                type: string
+
+              - label: Hero Background Image
+                name: image
+                type: image
+
+          - label: Tour Section Title
+            name: tourSectionTitle
+            type: string
+
+          - label: Blog News title
+            name: blogNewsTitle
+            type: string
+
+          - label: Contact section title
+            name: contactSectionTitle
+            type: string
+
+          - label: Info Section
+            name: infoSection
+            type: object
+            fields: 
+              - label: title
+                name: title
+                type: string
+
+              - label: Content
+                name: body
+                type: markdown
+              
+              - label: Call to action text
+                name: ctaText
+                type: string
+
+              - label: Call to action Action
+                name: ctaUrl
+                type: string
+
       - file: "src/pages/i-am-angelina/index.md"
         label: "I am Angelina Page"
         name: "i-am-angelina"

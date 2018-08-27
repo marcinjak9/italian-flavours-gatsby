@@ -5,7 +5,7 @@ import Img from 'gatsby-image'
 import homepageMap from '../img/mappa@2x.png'
 
 
-export default class IndexPage extends React.Component {
+class HomePageTemplate extends React.Component {
   render() {
     const { data } = this.props
     return (
@@ -406,7 +406,21 @@ export default class IndexPage extends React.Component {
   }
 }
 
-export const IndexPageQuery = graphql`
+const HomePage = (props) => {
+  return (
+    <HomePageTemplate
+      {...props}
+    // contentComponent={HTMLContent}
+    // title={post.frontmatter.title}
+    // content={post.html}
+    />
+  )
+}
+
+export default HomePage
+
+
+export const HomePageQuery = graphql`
   query MapImage {
     map: file(relativePath: { eq: "mappa@2x.png" }) {
       childImageSharp {

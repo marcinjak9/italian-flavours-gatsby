@@ -1,0 +1,4 @@
+---
+templateKey: 'home-page'
+path: /
+---
