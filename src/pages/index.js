@@ -1,15 +1,17 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 import Link from 'gatsby-link'
-import ProgressiveImage from '../components/ProgressiveImage'
+import Img from 'gatsby-image'
 import homepageMap from '../img/mappa@2x.png'
 
 
 export default class IndexPage extends React.Component {
   render() {
+    const { data } = this.props
     return (
       <div>
-        <div className="container-fluid hero-container" style={{ backgroundImage: "url('https://placehold.it/1920x1080')" }}>
+        <div className="container-fluid hero-container">
+          <Img sizes={data.herobg.childImageSharp.sizes} outerWrapperClassName="hero-bg-img" />
           <div className="row outer-row">
             <div className="col">
               <div className="container">
@@ -37,7 +39,7 @@ export default class IndexPage extends React.Component {
 
             <div className="col-md-4">
               <div className="card home-card">
-                <div className="card-img-top" style={{ backgroundImage: "url('https://placehold.it/400x200')" }} alt="Card image cap"></div>
+                <Img sizes={data.tourImages.edges[0].node.childImageSharp.sizes} outerWrapperClassName="hero-bg-img" style={{ height: 250 }} />
                 <div className="card-body">
                   <Link to="/tour" className="plus-button-card">
                     <i className="material-icons">add</i>
@@ -59,7 +61,7 @@ export default class IndexPage extends React.Component {
 
             <div className="col-md-4">
               <div className="card home-card">
-                <div className="card-img-top" style={{ backgroundImage: "url('https://placehold.it/400x200')" }} alt="Card image cap"></div>
+                <Img sizes={data.tourImages.edges[1].node.childImageSharp.sizes} outerWrapperClassName="hero-bg-img" style={{ height: 250 }} />
                 <div className="card-body">
                   <Link to="/tour" className="plus-button-card">
                     <i className="material-icons">add</i>
@@ -81,7 +83,7 @@ export default class IndexPage extends React.Component {
 
             <div className="col-md-4">
               <div className="card home-card">
-                <div className="card-img-top" style={{ backgroundImage: "url('https://placehold.it/400x200')" }} alt="Card image cap"></div>
+                <Img sizes={data.tourImages.edges[2].node.childImageSharp.sizes} outerWrapperClassName="hero-bg-img" style={{ height: 250 }} />
                 <div className="card-body">
                   <Link to="/tour" className="plus-button-card">
                     <i className="material-icons">add</i>
@@ -103,7 +105,7 @@ export default class IndexPage extends React.Component {
 
             <div className="col-md-4">
               <div className="card home-card">
-                <div className="card-img-top" style={{ backgroundImage: "url('https://placehold.it/400x200')" }} alt="Card image cap"></div>
+                <Img sizes={data.tourImages.edges[3].node.childImageSharp.sizes} outerWrapperClassName="hero-bg-img" style={{ height: 250 }} />
                 <div className="card-body">
                   <Link to="/tour" className="plus-button-card">
                     <i className="material-icons">add</i>
@@ -125,7 +127,7 @@ export default class IndexPage extends React.Component {
 
             <div className="col-md-4">
               <div className="card home-card">
-                <div className="card-img-top" style={{ backgroundImage: "url('https://placehold.it/400x200')" }} alt="Card image cap"></div>
+                <Img sizes={data.tourImages.edges[0].node.childImageSharp.sizes} outerWrapperClassName="hero-bg-img" style={{ height: 250 }} />
                 <div className="card-body">
                   <Link to="/tour" className="plus-button-card">
                     <i className="material-icons">add</i>
@@ -147,7 +149,7 @@ export default class IndexPage extends React.Component {
 
             <div className="col-md-4">
               <div className="card home-card">
-                <div className="card-img-top" style={{ backgroundImage: "url('https://placehold.it/400x200')" }} alt="Card image cap"></div>
+                <Img sizes={data.tourImages.edges[1].node.childImageSharp.sizes} outerWrapperClassName="hero-bg-img" style={{ height: 250 }} />
                 <div className="card-body">
                   <Link to="/tour" className="plus-button-card">
                     <i className="material-icons">add</i>
@@ -179,7 +181,7 @@ export default class IndexPage extends React.Component {
 
             <div className="col-md-6">
               <div className="card home-card">
-                <div className="card-img-top" style={{ backgroundImage: "url('https://placehold.it/400x200')" }} alt="Card image cap"></div>
+                <Img sizes={data.blogImages.edges[0].node.childImageSharp.sizes} outerWrapperClassName="hero-bg-img" style={{ height: 250 }} />
                 <div className="card-body">
                   <Link to="/" className="plus-button-card">
                     <i className="material-icons">nature_people</i>
@@ -202,7 +204,7 @@ export default class IndexPage extends React.Component {
 
             <div className="col-md-6">
               <div className="card home-card">
-                <div className="card-img-top" style={{ backgroundImage: "url('https://placehold.it/400x200')" }} alt="Card image cap"></div>
+                <Img sizes={data.blogImages.edges[1].node.childImageSharp.sizes} outerWrapperClassName="hero-bg-img" style={{ height: 250 }} />
                 <div className="card-body">
                   <Link to="/" className="plus-button-card">
                     <i className="material-icons">nature_people</i>
@@ -225,7 +227,7 @@ export default class IndexPage extends React.Component {
 
             <div className="col-md-6">
               <div className="card home-card">
-                <div className="card-img-top" style={{ backgroundImage: "url('https://placehold.it/400x200')" }} alt="Card image cap"></div>
+                <Img sizes={data.blogImages.edges[2].node.childImageSharp.sizes} outerWrapperClassName="hero-bg-img" style={{ height: 250 }} />
                 <div className="card-body">
                   <Link to="/" className="plus-button-card">
                     <i className="material-icons">nature_people</i>
@@ -248,7 +250,7 @@ export default class IndexPage extends React.Component {
 
             <div className="col-md-6">
               <div className="card home-card">
-                <div className="card-img-top" style={{ backgroundImage: "url('https://placehold.it/400x200')" }} alt="Card image cap"></div>
+                <Img sizes={data.blogImages.edges[3].node.childImageSharp.sizes} outerWrapperClassName="hero-bg-img" style={{ height: 250 }} />
                 <div className="card-body">
                   <Link to="/" className="plus-button-card">
                     <i className="material-icons">nature_people</i>
@@ -318,7 +320,7 @@ export default class IndexPage extends React.Component {
                     </div>
                   </form>
                   <div className="col-md-6">
-                    <ProgressiveImage src={homepageMap} className="img-fluid" alt="" />
+                    <Img sizes={data.map.childImageSharp.sizes} className="img-fluid" alt="" />
                   </div>
                 </div>
               </div>
@@ -403,3 +405,44 @@ export default class IndexPage extends React.Component {
     )
   }
 }
+
+export const IndexPageQuery = graphql`
+  query MapImage {
+    map: file(relativePath: { eq: "mappa@2x.png" }) {
+      childImageSharp {
+        sizes(maxWidth: 500) {
+          ...GatsbyImageSharpSizes
+        } 
+      }
+    }
+    herobg: file(relativePath: { eq: "travel.jpg" }) {
+      childImageSharp {
+        sizes(maxWidth: 1920) {
+          ...GatsbyImageSharpSizes
+        } 
+      }
+    }
+    tourImages: allFile(filter: { absolutePath: { regex: "/img/tour/" } }) {
+      edges {
+        node {
+          childImageSharp {
+            sizes(maxWidth: 400) {
+              ...GatsbyImageSharpSizes
+            } 
+          }
+        }
+      }
+    }
+    blogImages: allFile(filter: { absolutePath: { regex: "/img/tour/" } }) {
+      edges {
+        node {
+          childImageSharp {
+            sizes(maxWidth: 800) {
+              ...GatsbyImageSharpSizes
+            } 
+          }
+        }
+      }
+    }
+  }
+`
