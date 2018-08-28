@@ -1,6 +1,7 @@
 ---
 templateKey: tour-page
 title: Grand Culinary Tour in Tuscany
+path: ciao
 hero:
   ctaLink: /
   ctaText: ASK ME MORE
