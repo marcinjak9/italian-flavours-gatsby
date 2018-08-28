@@ -137,6 +137,7 @@ collections:
               widget: string
             - label: body
               name: body
+              
               widget: text 
             - label: Side Image
               name: image
@@ -202,7 +203,7 @@ collections:
                 - label: Instagram username
                   name: instagramUsername
                   widget: string
-                  
+
                 - label: Instagram Photos
                   name: instagramPhotos
                   type: list
