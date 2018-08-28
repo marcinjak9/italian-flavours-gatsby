@@ -6,18 +6,18 @@ import Link from 'gatsby-link'
 import Content, { HTMLContent } from '../components/Content'
 
 export const BlogPostTemplate = ({
-  content,
-  contentComponent,
-  description,
-  tags,
-  title,
-  helmet,
+  // content,
+  // contentComponent,
+  // description,
+  // tags,
+  // title,
+  // helmet,
 }) => {
-  const PostContent = contentComponent || Content
+  // const PostContent = contentComponent || Content
 
   return (
     <section className="section">
-      {helmet || ''}
+      {/* {helmet || ''}
       <div className="container content">
         <div className="columns">
           <div className="column is-10 is-offset-1">
@@ -40,53 +40,53 @@ export const BlogPostTemplate = ({
             ) : null}
           </div>
         </div>
-      </div>
+      </div> */}
     </section>
   )
 }
 
-BlogPostTemplate.propTypes = {
-  content: PropTypes.string.isRequired,
-  contentComponent: PropTypes.func,
-  description: PropTypes.string,
-  title: PropTypes.string,
-  helmet: PropTypes.instanceOf(Helmet),
-}
+// BlogPostTemplate.propTypes = {
+//   content: PropTypes.string.isRequired,
+//   contentComponent: PropTypes.func,
+//   description: PropTypes.string,
+//   title: PropTypes.string,
+//   helmet: PropTypes.instanceOf(Helmet),
+// }
 
-const BlogPost = ({ data }) => {
-  const { markdownRemark: post } = data
+const BlogPost = () => {
+  // const { markdownRemark: post } = data
 
   return (
     <BlogPostTemplate
-      content={post.html}
-      contentComponent={HTMLContent}
-      description={post.frontmatter.description}
-      helmet={<Helmet title={`${post.frontmatter.title} | Blog`} />}
-      tags={post.frontmatter.tags}
-      title={post.frontmatter.title}
+    // content={post.html}
+    // contentComponent={HTMLContent}
+    // description={post.frontmatter.description}
+    // helmet={<Helmet title={`${post.frontmatter.title} | Blog`} />}
+    // tags={post.frontmatter.tags}
+    // title={post.frontmatter.title}
     />
   )
 }
 
-BlogPost.propTypes = {
-  data: PropTypes.shape({
-    markdownRemark: PropTypes.object,
-  }),
-}
+// BlogPost.propTypes = {
+//   data: PropTypes.shape({
+//     markdownRemark: PropTypes.object,
+//   }),
+// }
 
 export default BlogPost
 
-export const pageQuery = graphql`
-  query BlogPostByID($id: String!) {
-    markdownRemark(id: { eq: $id }) {
-      id
-      html
-      frontmatter {
-        date(formatString: "MMMM DD, YYYY")
-        title
-        description
-        tags
-      }
-    }
-  }
-`
+// export const pageQuery = graphql`
+//   query BlogPostByID($id: String!) {
+//     markdownRemark(id: { eq: $id }) {
+//       id
+//       html
+//       frontmatter {
+//         date(formatString: "MMMM DD, YYYY")
+//         title
+//         description
+//         tags
+//       }
+//     }
+//   }
+// `
