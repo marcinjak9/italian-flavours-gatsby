@@ -24,17 +24,17 @@ tourDescription:
     know and taste the most precious and traditional delicacies from Italy.
   image: /img/mappa-2x.9c95c556.png
   title: Come with me. We dive into flavours and beauty.
+galleryBottom:
+  - image: /img/products-grid3.jpg
+  - image: /img/products-grid3.jpg
+galleryUpper:
+  - image: /img/chemex.jpg
+  - image: /img/jumbotron.jpg
+  - image: /img/products-grid2.jpg
+  - image: /img/products-grid3.jpg
+  - image: /img/products-grid2.jpg
+  - image: /img/chemex.jpg
 gallery:
-  galleryBottom:
-    - image: /img/products-grid3.jpg
-    - image: /img/products-grid3.jpg
-  galleryUpper:
-    - image: /img/chemex.jpg
-    - image: /img/jumbotron.jpg
-    - image: /img/products-grid2.jpg
-    - image: /img/products-grid3.jpg
-    - image: /img/products-grid2.jpg
-    - image: /img/chemex.jpg
   textBody: >-
     Comincia a prendere famigliarità con i sapori, profumi, colori, e attività
     che ci accompagneranno in questo tour. E, perchè no, anche la musicalità
