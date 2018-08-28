@@ -1,6 +1,6 @@
 backend:
   name: git-gateway
-  branch: master
+  branch: feature/tour-data-model
 
 media_folder: static/img
 public_folder: /img
@@ -137,7 +137,7 @@ collections:
               widget: string
             - label: body
               name: body
-              
+
               widget: text 
             - label: Side Image
               name: image
