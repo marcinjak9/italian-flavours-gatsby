@@ -113,13 +113,13 @@ collections:
               fields: 
                 - label: Start Date
                   name: startDate
-                  widget: "date"
+                  widget: datetime
                   default: ""
                   format: "MMM Do YY"
                   
                 - label: End Date
                   name: endDate
-                  widget: "date"
+                  widget: datetime
                   default: ""
                   format: "MMM Do YY"
 
