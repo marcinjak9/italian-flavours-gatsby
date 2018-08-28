@@ -68,60 +68,56 @@ collections:
         name: gallery
         widget: object
         fields: 
-          - label: Upper Gallery
-            name: galleryUpper
-            widget: list
-            fields: 
-              - label: Image
-                name: image
-                widget: image
           - label: Mid Text Title
             name: textTitle
             widget: string
           - label: Text body
             name: textBody
             widget: text
-          - label: Bottom Gallery
-            name: galleryBottom
-            widget: list
-            fields: 
-              - label: Image
-                name: image
-                widget: image
+      - label: Upper Gallery
+        name: galleryUpper
+        widget: list
+        fields: 
+          - label: Image
+            name: image
+            widget: image
+      - label: Bottom Gallery
+        name: galleryBottom
+        widget: list
+        fields: 
+          - label: Image
+            name: image
+            widget: image
       - label: Blog Section Title
         name: blogSectionTitle
 
-      - label: Calendar Section
-        name: calendar
-        widget: object
+      - label: CalendarTitle
+        name: calendarTitle
+        widget: string
+
+      - label: Calendar Body
+        name: calendarBody
+        widget: text
+
+      - label: Calendar Notes
+        name: calendarNotes
+        widget: text
+
+      - label: Aviability dates
+        name: aviabilityDates
+        widget: list
         fields: 
-          - label: title
-            name: title
-            widget: string
-
-          - label: body
-            name: body
-            widget: text
-
-          - label: notes
-            name: notes
-            widget: text
-
-          - label: Aviability dates
-            name: dates
-            widget: list
-            fields: 
-              - label: Start Date
-                name: startDate
-                widget: date
-                default: ""
-                format: "MMM Do YY"
-                
-              - label: End Date
-                name: endDate
-                widget: date
-                default: ""
-                format: "MMM Do YY"
+          - label: Start Date
+            name: startDate
+            widget: date
+            default: ""
+            format: "MMM Do YY"
+            
+          - label: End Date
+            name: endDate
+            widget: date
+            default: ""
+            format: "MMM Do YY"
 
       - label: Instagram username
         name: instagramUsername

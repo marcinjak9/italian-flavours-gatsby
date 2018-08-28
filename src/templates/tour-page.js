@@ -312,7 +312,8 @@ const TourPage = ({
   data: {
     markdownRemark: {
       frontmatter: {
-        blogSectionTitle, calendar, gallery, hero, instagramPhotos, instagramUsername, title, tourDescription, id,
+        blogSectionTitle, gallery, hero, instagramPhotos, instagramUsername, title, tourDescription,
+        galleryUpper, galleryBottom, calendarTitle, calendarBody, calendarNotes, aviabilityDates,
       },
     },
   },
@@ -331,17 +332,17 @@ const TourPage = ({
       image: tourDescription.image,
     }}
     gallery={{
-      galleryUpper: gallery.galleryUpper,
+      galleryUpper,
       galleryTitle: gallery.textTitle,
       galleryDescription: gallery.textBody,
-      galleryBottom: gallery.galleryBottom,
+      galleryBottom,
     }}
     blogSectionTitle={blogSectionTitle}
     calendar={{
-      body: calendar.body,
-      title: calendar.title,
-      notes: calendar.notes,
-      dates: calendar.dates,
+      body: calendarBody,
+      title: calendarTitle,
+      notes: calendarNotes,
+      dates: aviabilityDates,
     }}
     instagram={{
       images: instagramPhotos,
@@ -377,27 +378,25 @@ export const tourPageQuery = graphql`
           image
         }
         
+        galleryUpper {
+          image
+        }
+        galleryBottom {
+          image
+        }
         gallery {
-          galleryUpper {
-            image
-          }
           textTitle
           textBody
-          galleryBottom {
-            image
-          }
         }
         
         blogSectionTitle
         
-        calendar {
-          title
-          body
-          dates {
-            endDate
-            startDate
-          }
-          notes
+        calendarTitle
+        calendarBody
+        calendarNotes
+        aviabilityDates {
+          startDate
+          endDate
         }
         
         instagramUsername
