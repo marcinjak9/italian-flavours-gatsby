@@ -129,7 +129,7 @@ collections:
 
             - label: Instagram Photos
               name: instagramPhotos
-              type: list
+              widget: list
               field: 
                 - label: Photo id
                   name: id
