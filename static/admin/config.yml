@@ -71,7 +71,7 @@ collections:
             - label: Upper Gallery
               name: galleryUpper
               widget: list
-              field: 
+              fields: 
                 - label: Image
                   name: image
                   widget: image
@@ -84,7 +84,7 @@ collections:
             - label: Bottom Gallery
               name: galleryBottom
               widget: list
-              field: 
+              fields: 
                 - label: Image
                   name: image
                   widget: image
