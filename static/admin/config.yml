@@ -94,7 +94,7 @@ collections:
         - label: Calendar Section
           name: calendar
           widget: object
-          files: 
+          fields: 
             - label: title
               name: title
               widget: string
@@ -107,21 +107,21 @@ collections:
               name: notes
               widget: text
 
-            # - label: Aviability dates
-            #   name: dates
-            #   widget: list
-            #   fields: 
-            - label: Start Date
-              name: startDate
-              widget: datetime
-              default: ""
-              format: "MMM Do YY"
-              
-            - label: End Date
-              name: endDate
-              widget: datetime
-              default: ""
-              format: "MMM Do YY"
+            - label: Aviability dates
+              name: dates
+              widget: list
+              fields: 
+                - label: Start Date
+                  name: startDate
+                  widget: date
+                  default: ""
+                  format: "MMM Do YY"
+                  
+                - label: End Date
+                  name: endDate
+                  widget: date
+                  default: ""
+                  format: "MMM Do YY"
 
             - label: Instagram username
               name: instagramUsername
