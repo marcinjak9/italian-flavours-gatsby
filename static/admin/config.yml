@@ -113,13 +113,15 @@ collections:
               fields: 
                 - label: Start Date
                   name: startDate
-                  widget: date
-                  format: "DD-MM-YYYY"
+                  widget: "date"
+                  default: ""
+                  format: "MMM Do YY"
                   
                 - label: End Date
                   name: endDate
-                  widget: date
-                  format: "DD-MM-YYYY"
+                  widget: "date"
+                  default: ""
+                  format: "MMM Do YY"
 
             - label: Instagram username
               name: instagramUsername
