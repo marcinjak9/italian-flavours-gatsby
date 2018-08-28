@@ -41,16 +41,15 @@ gallery:
     dell'italiano.
   textTitle: Keywords and Highlights
 blogSectionTitle: Cari Amici on this tour with me
-calendar:
-  body: >-
-    Pick your more suitable period among the two blocks of 10 days on which I
-    usually run this tour.
-  dates:
-    - endDate: Aug 16th 18
-      startDate: Aug 15th 18
-  notes: |
-    Same additional notes can be placed here.
-  title: Available dates for your amazing tour
+calendarBody: >-
+  Pick your more suitable period among the two blocks of 10 days on which I
+  usually run this tour.
+aviabilityDates:
+  - endDate: Aug 16th 18
+    startDate: Aug 15th 18
+calendarNotes: |
+  Same additional notes can be placed here.
+calendarTitle: Available dates for your amazing tour
 instagramUsername: italian_flavour
 instagramPhotos:
   - id: BnBX5s9lMc8
