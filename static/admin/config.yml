@@ -37,55 +37,59 @@ collections:
             fields:
               - label: Hero Title
                 name: title
-                type: string
+                widget: string
 
               - label: Payoff
                 name: payoff
-                type: text
+                widget: text
 
               - label: Call to action Text  
                 name: ctaText
-                type: string
+                widget: string
 
               - label: Call to action Action (url)
                 name: ctaUrl
-                type: string
+                widget: string
 
               - label: Hero Background Image
                 name: image
-                type: image
+                widget: image
 
           - label: Tour Section Title
             name: tourSectionTitle
-            type: string
+            widget: string
 
           - label: Blog News title
             name: blogNewsTitle
-            type: string
+            widget: string
 
           - label: Contact section title
             name: contactSectionTitle
-            type: string
+            widget: string
 
           - label: Info Section
             name: infoSection
-            type: object
+            widget: object
             fields: 
               - label: title
                 name: title
-                type: string
+                widget: string
 
-              - label: Content
-                name: body
-                type: markdown
+              # - label: Content
+              #   name: body
+              #   widget: markdown
               
               - label: Call to action text
                 name: ctaText
-                type: string
+                widget: string
 
               - label: Call to action Action
                 name: ctaUrl
-                type: string
+                widget: string
+          ## Markdown filed must be inside root element
+          - label: Content
+            name: body
+            widget: markdown
 
       - file: "src/pages/i-am-angelina/index.md"
         label: "I am Angelina Page"
