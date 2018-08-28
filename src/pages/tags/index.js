@@ -4,10 +4,10 @@ import Helmet from 'react-helmet'
 import Link from 'gatsby-link'
 
 const TagsPage = ({
-  data: { allMarkdownRemark: { group }, site: { siteMetadata: { title } } },
+  // data: { allMarkdownRemark: { group }, site: { siteMetadata: { title } } },
 }) => (
-  <section className="section">
-    <Helmet title={`Tags | ${title}`} />
+    <section className="section">
+      {/* <Helmet title={`Tags | ${title}`} />
     <div className="container content">
       <div className="columns">
         <div
@@ -26,24 +26,24 @@ const TagsPage = ({
           </ul>
         </div>
       </div>
-    </div>
-  </section>
-)
+    </div> */}
+    </section>
+  )
 
 export default TagsPage
 
-export const tagPageQuery = graphql`
-  query TagsQuery {
-    site {
-      siteMetadata {
-        title
-      }
-    }
-    allMarkdownRemark(limit: 1000) {
-      group(field: frontmatter___tags) {
-        fieldValue
-        totalCount
-      }
-    }
-  }
-`
+// export const tagPageQuery = graphql`
+//   query TagsQuery {
+//     site {
+//       siteMetadata {
+//         title
+//       }
+//     }
+//     allMarkdownRemark(limit: 1000) {
+//       group(field: frontmatter___tags) {
+//         fieldValue
+//         totalCount
+//       }
+//     }
+//   }
+// `
