@@ -3,11 +3,10 @@ import PropTypes from 'prop-types'
 import Link from 'gatsby-link'
 import like from '../img/like.svg'
 import comment from '../img/comment.svg'
-import mappa from '../img/mappa@2x.png'
 import instagramIcon from '../img/instagram-icon-black.png'
 
 export const TourPageTemplate = ({
-  id, hero, descriptionSection, gallery, blogSectionTitle, calendar, instagram,
+  hero, descriptionSection, gallery, blogSectionTitle, calendar, instagram,
 }) => (
   <div>
     <div className="container-fluid hero-container" style={{ backgroundImage: `url('${hero.image}')` }}>
@@ -269,7 +268,6 @@ export const TourPageTemplate = ({
 
 
 TourPageTemplate.propTypes = {
-  id: PropTypes.string,
   hero: PropTypes.shape({
     title: PropTypes.string,
     subtitle: PropTypes.string,
@@ -320,7 +318,6 @@ const TourPage = ({
   },
 }) => (
   <TourPageTemplate
-    id={id}
     hero={{
       title,
       subtitle: hero.subtitle,
