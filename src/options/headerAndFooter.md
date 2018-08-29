@@ -1,4 +1,5 @@
 ---
+dataType: headerAndFooterOptions
 menuItems:
   - path: '  /tours'
     title: Tailored Tours

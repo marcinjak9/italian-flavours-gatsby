@@ -22,3 +22,11 @@ TemplateWrapper.propTypes = {
 }
 
 export default TemplateWrapper
+
+export const templateWrapperQuery = graphql`
+  query metadataQuery {
+    allMarkdownRemark {
+      totalCount
+    }
+  }
+`
