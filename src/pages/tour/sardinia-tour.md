@@ -1,7 +1,8 @@
 ---
 templateKey: tour-page
 title: Grand Culinary Tour in Tuscany
-path: ciao
+highlights: Highlights wine tastings - relaxing environment - horse riding - private chaffeur - boutique hotels and high-level agriturismi
+tourRegion: Tuscany
 hero:
   ctaLink: /
   ctaText: ASK ME MORE
@@ -25,6 +26,7 @@ tourDescription:
     know and taste the most precious and traditional delicacies from Italy.
   image: /img/mappa-2x.9c95c556.png
   title: Come with me. We dive into flavours and beauty.
+tourShortDescription: A memorable gourmet journey among the most antique and precious culinary and cultural traditions of Italy. Aura spreads light smoothly around a cozy space. Its smooth contoured edges create soft shadows that entice a relaxing environment. Smoothly around a cozy space.
 galleryBottom:
   - image: /img/products-grid3.jpg
   - image: /img/products-grid3.jpg

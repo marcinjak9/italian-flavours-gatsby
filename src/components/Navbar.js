@@ -4,6 +4,15 @@ import Link from 'gatsby-link'
 import landscapeLogo from '../img/landscape@2x.png'
 import logoWhite from '../img/logo-white.png'
 
+const MenuItem = ({ text, path, active }) => (
+  <li className={`nav-item ${active && "active"}`}>
+    <Link className="nav-link" to={path}>
+      {text}
+      {/* <span className="sr-only">(current)</span> */}
+    </Link>
+  </li>
+)
+
 class Navbar extends Component {
   state = {
     pinned: false
@@ -27,6 +36,7 @@ class Navbar extends Component {
   }
   render() {
     const { pinned } = this.state
+    const { menuItems, menuCta, pathname } = this.props
     return (
       <nav className={`navbar navbar-expand-lg navbar-light bg-light navbar-fixed-top ${!pinned && "before-scroll"}`}>
         <div className="container">
@@ -40,7 +50,8 @@ class Navbar extends Component {
 
           <div className="collapse navbar-collapse" id="navigation">
             <ul className="navbar-nav navbar-flex">
-              <li className="nav-item active">
+              {menuItems.map(menuItem => <MenuItem text={menuItem.title} path={menuItem.path} active={menuItem.path===pathname} />)}
+              {/* <li className="nav-item active">
                 <Link className="nav-link" to="/tour">Tailored Tours
                 <span className="sr-only">(current)</span>
                 </Link>
@@ -56,7 +67,7 @@ class Navbar extends Component {
               </li>
               <li className="nav-item">
                 <Link className="nav-link" to="/i-am-angelina">I am Angelina</Link>
-              </li>
+              </li> */}
             </ul>
             <ul className="navbar-nav">
               <li className="nav-item">

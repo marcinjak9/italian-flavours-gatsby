@@ -1,7 +1,7 @@
 ---
 dataType: headerAndFooterOptions
 menuItems:
-  - path: '  /tours'
+  - path: '/tours'
     title: Tailored Tours
   - path: /personalized-events
     title: Personalised events

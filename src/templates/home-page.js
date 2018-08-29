@@ -49,7 +49,8 @@ export const HomePageTemplate = (props) => {
               key={item.node.id}
               title={item.node.frontmatter.title}
               image={item.node.frontmatter.hero.image}
-              description={item.node.frontmatter.tourDescription.body}
+              description={item.node.frontmatter.tourShortDescription}
+              highlights={item.node.frontmatter.highlights}
               url={item.node.fields.slug}
             />
           ))}
@@ -214,9 +215,8 @@ export const HomePageQuery = graphql`
             hero {
               image
             }
-            tourDescription {
-              body
-            }
+            tourShortDescription
+            highlights
           }
         }
       }

@@ -85,6 +85,14 @@ collections:
       - label: Tour Title
         name: title
         widget: string
+      
+      - label: Tour Highlights
+        name: highlights
+        widget: text
+        
+      - label: Tour Region
+        name: tourRegion
+        widget: text
 
       - label: Hero Section
         name: hero
@@ -116,6 +124,10 @@ collections:
         - label: Side Image
           name: image
           widget: image
+
+      - label: Tour Short Description
+        name: tourShortDescription
+        widget: text
 
       - label: Gallery
         name: gallery
