@@ -1,6 +1,6 @@
 backend:
   name: git-gateway
-  branch: feature/personalized-tours
+  branch: feature/about-page
 
 media_folder: static/img
 public_folder: /img
@@ -208,7 +208,45 @@ collections:
         label: "I am Angelina Page"
         name: "i-am-angelina"
         fields:
-          - {label: "Template Key", name: "templateKey", widget: "hidden", default: "i-am-angelina-page"}
+          - label: "Template Key"
+            name: "templateKey"
+            widget: "hidden"
+            default: "i-am-angelina-page"
+          - label: title
+            name: title
+            widget: string
+          - label: Hero
+            name: hero
+            widget: object
+            fields:
+            - label: subtitle
+              name: subtitle
+              widget: text
+            - label: Background Image
+              name: bgImage
+              widget: image
+            - label: Call to action Text
+              name: ctaText
+              widget: string
+            - label: Call to action Link
+              name: ctaLink
+              widget: string
+          - label: Description title
+            name: descriptionTitle
+            widget: string
+          - label: Description Body
+            name: body
+            widget: markdown
+          - label: Contact Section Title
+            name: contactSectionTitle
+            widget: string
+          - label: Instagram Photos
+            name: instagramPhotos
+            widget: list
+            fields: 
+              - label: Photo id
+                name: id
+                widget: string
 
       - file: "src/pages/personalized-events/index.md"
         label: "Personalized Events Page"
