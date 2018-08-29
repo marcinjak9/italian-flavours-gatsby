@@ -5,6 +5,7 @@ import like from '../img/like.svg'
 import comment from '../img/comment.svg'
 import mappa from '../img/mappa@2x.png'
 import instagram from '../img/instagram-icon-black.png'
+import BlogCard from '../components/BlogCard';
 
 export const PersonalizedEventsTemplate = () => {
   return (
@@ -169,47 +170,15 @@ export const PersonalizedEventsTemplate = () => {
             <h2 className="text-center white-text">Cari Amici from some personalised events</h2>
           </div>
 
-          <div className="col-md-6">
-            <div className="card home-card">
-              <div className="card-img-top" style={{ backgroundImage: "url('https://placehold.it/400x200')" }} alt="Card image cap"></div>
-              <div className="card-body">
-                <h5 className="card-title font-italic">John and Katina - Brisbane (Australia)</h5>
-                <p className="card-text">Angelina was wonderful and did a terrific job. We both thoroughly enjoyed the trip as did Janet and Adrian -
-                  mostly due to Angelina. She was a delight. I can’t tell you how excited we are to be coming back to Italy and
-                  to be seeing you again. It was always our dream that we would come back one day and have you share your beautiful
-                  country with us.
-            </p>
-                <div className="card-date text-center">
-                  June 2018
-            </div>
-              </div>
-              <div className="card-action text-center">
-                <a href="#" className="btn btn-link">Discover more</a>
+          <div className="col">
+            <div className="container">
+              <div className="row">
+                {[1,1].map((post, i) => (
+                  <BlogCard key={i} />
+                ))}
               </div>
             </div>
           </div>
-
-          <div className="col-md-6">
-            <div className="card home-card">
-              <div className="card-img-top" style={{ backgroundImage: "url('https://placehold.it/400x200')" }} alt="Card image cap"></div>
-              <div className="card-body">
-
-                <h5 className="card-title font-italic">John and Katina - Brisbane (Australia)</h5>
-                <p className="card-text">Angelina was wonderful and did a terrific job. We both thoroughly enjoyed the trip as did Janet and Adrian -
-                  mostly due to Angelina. She was a delight. I can’t tell you how excited we are to be coming back to Italy and
-                  to be seeing you again. It was always our dream that we would come back one day and have you share your beautiful
-                  country with us.
-            </p>
-                <div className="card-date text-center">
-                  June 2018
-            </div>
-              </div>
-              <div className="card-action text-center">
-                <a href="#" className="btn btn-link">Discover more</a>
-              </div>
-            </div>
-          </div>
-
         </div>
       </div>
 

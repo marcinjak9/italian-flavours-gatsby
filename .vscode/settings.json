@@ -3,5 +3,4 @@
     "*.js": "javascriptreact"
   },
   "eslint.enable": true,
-  "eslint.autoFixOnSave": true,
 }
