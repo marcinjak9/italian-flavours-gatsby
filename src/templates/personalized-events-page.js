@@ -10,7 +10,7 @@ import InstagramPhoto from '../components/InstagramPhoto';
 
 export const PersonalizedEventsTemplate = ({
   hero, descriptionSection, gallerySection, blogSectionTitle, contactSectionTitle,
-  content, contentComponent, instagramPhotos
+  content, contentComponent, instagramPhotos,
 }) => {
   const PostContent = contentComponent || Content
   return (
@@ -180,14 +180,44 @@ export const PersonalizedEventsTemplate = ({
         </div>
         <div className="row">
 
-          {instagramPhotos.map((photo,i) => (
-            <InstagramPhoto id={photo.id} key={i} />
-          ))}
+          {instagramPhotos.map(photo => <InstagramPhoto id={photo.id} key={photo.id} />)}
 
         </div>
       </div>
     </div>
   )
+}
+
+PersonalizedEventsTemplate.propTypes = {
+  hero: PropTypes.shape({
+    image: PropTypes.string,
+    title: PropTypes.string,
+    subtitle: PropTypes.string,
+    ctaLink: PropTypes.string,
+    ctaText: PropTypes.string,
+  }),
+  descriptionSection: PropTypes.shape({
+    title: PropTypes.string,
+  }),
+  gallerySection: PropTypes.shape({
+    images: PropTypes.arrayOf(PropTypes.shape({
+      image: PropTypes.string,
+    })),
+    title: PropTypes.string,
+    body: PropTypes.string,
+    cards: PropTypes.arrayOf(PropTypes.shape({
+      title: PropTypes.string,
+      body: PropTypes.string,
+    })),
+  }),
+  blogSectionTitle: PropTypes.string,
+  contactSectionTitle: PropTypes.string,
+  content: PropTypes.string,
+  contentComponent: PropTypes.func,
+  instagramPhotos: PropTypes.arrayOf(PropTypes.shape({
+    id: PropTypes.string,
+  })),
+
 }
 
 const PersonalizedEvents = ({
