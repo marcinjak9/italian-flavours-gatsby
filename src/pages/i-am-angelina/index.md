@@ -1,19 +1,35 @@
 ---
-templateKey: 'i-am-angelina-page'
-path: /about
-title: About our values
+templateKey: i-am-angelina-page
+title: I am Angelina
+hero:
+  ctaLink: /
+  ctaText: Talk to me
+  subtitle: >-
+    I am a Sardinian professional gourmet travel consultant, founder of Italian
+    Flavours, a boutique gourmet tour operator specialised in creating unique
+    cultural-culinary holidays in Italy.
+descriptionTitle: You're in good hands
+contactSectionTitle: Let's get in touch! I'd love to hear from you.
+instagramPhotos:
+  - id: BnBX5s9lMc8
+  - id: Bm-2VXDln8d
+  - id: Bm8TPUJFjbl
+  - id: Bm5o30klO-N
 ---
-### Shade-grown coffee
-Coffee is a small tree or shrub that grows in the forest understory in its wild form, and traditionally was grown commercially under other trees that provided shade. The forest-like structure of shade coffee farms provides habitat for a great number of migratory and resident species.
+I graduated in Italian Literature and I attained a Master degree in Gourmet and Quality Food at the renowned University of Florence, where I had the chance to deepen my knowledge about the history of Italian gourmet culture products.
 
-### Single origin
-Single-origin coffee is coffee grown within a single known geographic origin. Sometimes, this is a single farm or a specific collection of beans from a single country. The name of the coffee is then usually the place it was grown to whatever degree available.
 
-### Sustainable farming
-Sustainable agriculture is farming in sustainable ways based on an understanding of ecosystem services, the study of relationships between organisms and their environment. What grows where and how it is grown are a matter of choice and careful consideration for nature and communities.
 
-### Direct sourcing
-Direct trade is a form of sourcing practiced by some coffee roasters. Advocates of direct trade practices promote direct communication and price negotiation between buyer and farmer, along with systems that encourage and incentivize quality.
+I collaborated with the Tourist Board of Oristano, where I live and I worked as a senior quality consultant for 10 years. After many years working in the field, I decided to put these experiences to use and I founded my first own company, Sardinia Flavour, which aim was to make people all over the world know and taste the most precious and traditional delicacies from Italy.
 
-### Reinvest profits
-We want to truly empower the communities that bring amazing coffee to you. That’s why we reinvest 20% of our profits into farms, local businesses and schools everywhere our coffee is grown. You can see the communities grow and learn more about coffee farming on our blog.
+
+
+The inspirational experience with Sardinia Flavour allowed me to get in touch with the most antique food traditions and the best Italian food artisans, as well as the best Italian wineries and gourmet restaurants, a network of little precious jewels, the ones you are going to visit during the unique tours I create every year.
+
+
+
+My mission is to give my little contribution to preserve small artisan producers and all those gourmet and cultural Italian peculiarities offering travel experiences off the beaten track, far from touristic places and restaurants, however promoting the knowledge of Italian authenticities, letting people directly experience, smell and taste the real perfumes, flavours and colours of Italian regional culture and the most gorgeous hidden secrets of Italian artistic heritage.
+
+
+
+My clients are mainly from UK, North-Est Europe and above all Australia. My passion in sharing the beauty and uniqueness of the authentic Italian Gourmet Culture has given me the chance to build strong and meaningful relationships with them. Most of my clients have been traveling with me for years, enjoying the relaxing atmosphere of lovely boutique hotels and agriturismi, funny cooking classes, which some of them I lead personally, mouth-watering wine and food tastings and knowing the most authentic soul of Italy and, at the end, becoming more than simple clients for me, but “cari amici” (dear friends)
