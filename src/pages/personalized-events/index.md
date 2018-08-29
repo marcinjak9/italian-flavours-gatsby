@@ -9,7 +9,6 @@ hero:
     An unforgettable gourmet journey among the most antique and precious
     culinary and cultural traditions of Italy
 descriptionTitle: Share your passion for Italy with people you love directly at your place
-personalizedEventsGallery: ss
 midDescriptionTitle: I bring italian food culture at your home
 midDescriptionBody: >-
   These are only some of the high class culinary experiences I can organise

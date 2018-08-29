@@ -129,7 +129,7 @@ collections:
         fields: 
           - label: Photo id
             name: id
-            type: string
+            widget: string
 
 
   - name: "pages"
@@ -245,7 +245,7 @@ collections:
             widget: markdown
           - label: Gallery
             name: personalizedEventsGallery
-            type: list
+            widget: list
             fields: 
               - label: Image
                 name: image
@@ -262,10 +262,10 @@ collections:
             fields: 
               - label: title
                 name: title
-                type: string
+                widget: string
               - label: Body
                 name: body
-                type: text
+                widget: text
           - label: Blog Section Title
             name: blogSectionTitle
             widget: string
