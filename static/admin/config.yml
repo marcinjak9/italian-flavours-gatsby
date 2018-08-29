@@ -1,11 +1,69 @@
 backend:
   name: git-gateway
-  branch: feature/about-page
+  branch: feature/general-config-model
 
 media_folder: static/img
 public_folder: /img
 
 collections:
+  - file: src/options/headerAndFooter.md
+    label: Global Site configuration
+    name: configuration
+    fields: 
+      - label: Menu Items
+        name: menuItems
+        widget: list
+        fields:
+          - label: Title
+            name: title
+            widget: string
+          - label: Path
+            name: path
+            widget: string
+      - label: Menu CTA text
+        name: menuCtaText
+        widget: string
+      - label: Menu CTA link
+        name: menuCtaLink
+        widget: string
+      - label: Footer Menu
+        name: footerMenu
+        widget: list
+        fields:
+          - label: title
+            name: title
+            widget: string
+          - label: url
+            name: url
+            widget: string
+      - label: FooterContacts
+        name: footerContacts
+        widget: object
+        fields:
+          - label: Telephone Number
+            name: phoneNumber
+            widget: string
+          - label: Email address
+            name: emailAddress
+            widget: string
+      - label: Credits text
+        name: creditsText
+        widget: text
+      - label: Copyright text
+        name: copyrightText
+        widget: text
+      - label: Social Informations
+        name: socialInfo
+        widget: object
+        fields:
+          - label: Facebook Url
+            name: facebookUrl
+            widget: string
+          - label: Instagram username
+            name: instagramUsername
+            widget: string
+
+
   - folder: "src/pages/tour"
     label: "Tour"
     name: "tour"
