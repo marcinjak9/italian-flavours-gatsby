@@ -45,7 +45,13 @@ export const HomePageTemplate = (props) => {
           </div>
 
           {tours && tours.edges && tours.edges.map(item => (
-            <TourCard key={item.node.id} title={item.node.frontmatter.title} image={item.node.frontmatter.hero.image} description={item.node.frontmatter.tourDescription.body} />
+            <TourCard
+              key={item.node.id}
+              title={item.node.frontmatter.title}
+              image={item.node.frontmatter.hero.image}
+              description={item.node.frontmatter.tourDescription.body}
+              url={item.node.fields.slug}
+            />
           ))}
 
         </div>
@@ -200,6 +206,9 @@ export const HomePageQuery = graphql`
       edges {
         node {
           id
+          fields {
+            slug
+          }
           frontmatter {
             title
             hero {

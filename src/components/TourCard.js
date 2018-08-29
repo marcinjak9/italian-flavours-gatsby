@@ -2,12 +2,12 @@ import React from 'react'
 import PropTypes from 'prop-types'
 import Link from 'gatsby-link'
 
-const TourCard = ({ title, image, description }) => (
+const TourCard = ({ title, image, description, url }) => (
   <div className="col-md-4">
     <div className="card home-card">
       <img src={image} className="hero-bg-img" style={{ height: 250 }} alt="" />
       <div className="card-body">
-        <Link to="/tour" className="plus-button-card">
+        <Link to={url} className="plus-button-card">
           <i className="material-icons">add</i>
         </Link>
         <h5 className="card-title">{title}</h5>
@@ -31,6 +31,7 @@ TourCard.propTypes = {
   title: PropTypes.string,
   image: PropTypes.string,
   description: PropTypes.string,
+  url: PropTypes.string,
 }
 
 export default TourCard
