@@ -5,8 +5,6 @@ import { TourPageTemplate } from '../../templates/tour-page'
 const TourPagePreview = ({
   entry, getAsset, widgetFor, widgetsFor,
 }) => {
-  console.log(widgetsFor('galleryUpper').getIn(['data', 'image']))
-  console.log(widgetsFor('galleryBottom').getIn(['data', 'image']))
   const imagesUpper = []
   widgetsFor('galleryUpper').map(item => imagesUpper.push({ image: getAsset(item.getIn(['data', 'image'])) }))
   const imagesBottom = []

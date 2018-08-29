@@ -272,4 +272,11 @@ collections:
           - label: Contact Section Title
             name: contactSectionTitle
             widget: string
+          - label: Instagram Photos
+            name: instagramPhotos
+            widget: list
+            fields: 
+              - label: Photo id
+                name: id
+                widget: string
             
