@@ -1,6 +1,6 @@
 backend:
   name: git-gateway
-  branch: feature/tour-data-model
+  branch: feature/personalized-tours
 
 media_folder: static/img
 public_folder: /img
@@ -129,7 +129,7 @@ collections:
         fields: 
           - label: Photo id
             name: id
-            type: string
+            widget: string
 
 
   - name: "pages"
@@ -210,12 +210,73 @@ collections:
         fields:
           - {label: "Template Key", name: "templateKey", widget: "hidden", default: "i-am-angelina-page"}
 
-     
-           
-          
-          
       - file: "src/pages/personalized-events/index.md"
         label: "Personalized Events Page"
         name: "personalized-events"
         fields:
-          - {label: "Template Key", name: "templateKey", widget: "hidden", default: "personalized-events-page"}
+          - label: "Template Key"
+            name: "templateKey"
+            widget: "hidden"
+            default: "personalized-events-page"
+          - label: Title
+            name: title
+            widget: string
+          - label: Hero
+            name: hero
+            widget: object
+            fields:
+            - label: subtitle
+              name: subtitle
+              widget: text
+            - label: Background Image
+              name: bgImage
+              widget: image
+            - label: Call to action Text
+              name: ctaText
+              widget: string
+            - label: Call to action Link
+              name: ctaLink
+              widget: string
+          - label: Description title
+            name: descriptionTitle
+            widget: string
+          - label: Description Body
+            name: body
+            widget: markdown
+          - label: Gallery
+            name: personalizedEventsGallery
+            widget: list
+            fields: 
+              - label: Image
+                name: image
+                widget: image
+          - label: Mid Description title
+            name: midDescriptionTitle
+            widget: string
+          - label: Mid Description body
+            name: midDescriptionBody
+            widget: text
+          - label: Description Cards
+            name: descriptionCards
+            widget: list
+            fields: 
+              - label: title
+                name: title
+                widget: string
+              - label: Body
+                name: body
+                widget: text
+          - label: Blog Section Title
+            name: blogSectionTitle
+            widget: string
+          - label: Contact Section Title
+            name: contactSectionTitle
+            widget: string
+          - label: Instagram Photos
+            name: instagramPhotos
+            widget: list
+            fields: 
+              - label: Photo id
+                name: id
+                widget: string
+            

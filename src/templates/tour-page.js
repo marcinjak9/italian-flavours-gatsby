@@ -4,6 +4,7 @@ import Link from 'gatsby-link'
 import like from '../img/like.svg'
 import comment from '../img/comment.svg'
 import instagramIcon from '../img/instagram-icon-black.png'
+import InstagramPhoto from '../components/InstagramPhoto'
 
 export const TourPageTemplate = ({
   hero, descriptionSection, gallery, blogSectionTitle, calendar, instagram,
@@ -239,25 +240,7 @@ export const TourPageTemplate = ({
       <div className="row">
 
         {instagram.images.map(photo => (
-          <div key={photo.image} className="col-md-3">
-            <div className="thumbnail instagram-img-container">
-              <a href="https://placehold.it/235x235" className="instagram-link">
-                <img src="https://placehold.it/235x235" className="instagram-img" alt="Lights" />
-                <div className="instagram-overlay">
-                  <span>
-                    <img src={like} className="svg like" alt="" />
-                    {' '}
-                    78
-                  </span>
-                  <span>
-                    <img src={comment} className="svg comment" alt="" />
-                    {' '}
-                    12
-                  </span>
-                </div>
-              </a>
-            </div>
-          </div>
+          <InstagramPhoto id={photo.image} key={photo.image} />
         ))}
 
       </div>
