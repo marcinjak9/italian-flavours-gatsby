@@ -1,6 +1,7 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 import Link from 'gatsby-link'
+import Icon from 'material-icons-react'
 
 const TourCard = ({ title, image, description, url, highlights }) => (
   <div className="col-md-4">
@@ -8,7 +9,7 @@ const TourCard = ({ title, image, description, url, highlights }) => (
       <img src={image} className="hero-bg-img" style={{ height: 250 }} alt="" />
       <div className="card-body">
         <Link to={url} className="plus-button-card">
-          <i className="material-icons">add</i>
+          <Icon icon="add" color="white" />
         </Link>
         <h5 className="card-title">{title}</h5>
         <p className="card-text">

@@ -1,5 +1,6 @@
 import React, { Component } from 'react'
 import Link from 'gatsby-link'
+import Icon from 'material-icons-react'
 
 import landscapeLogo from '../img/landscape@2x.png'
 import logoWhite from '../img/logo-white.png'
@@ -45,7 +46,7 @@ class Navbar extends Component {
             <img src={logoWhite} alt="" className="white-logo" />
           </Link>
           <button className="navbar-custom-toggler" id="mobile-navigation-toggle" type="button">
-            <i className="material-icons">menu</i>
+            <Icon icon="menu" />
           </button>
 
           <div className="collapse navbar-collapse" id="navigation">

@@ -1,10 +1,13 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 import Link from 'gatsby-link'
-import Img from 'gatsby-image'
+// import Img from 'gatsby-image'
+import { SvgLoader, SvgProxy } from 'react-svgmt'
+import map from '../img/Regions-new.svg'
 import Content, { HTMLContent } from '../components/Content'
 import TourCard from '../components/TourCard'
 import BlogCard from '../components/BlogCard'
+import MapFormContainer from '../components/MapFormContainer'
 
 
 export const HomePageTemplate = (props) => {
@@ -81,58 +84,7 @@ export const HomePageTemplate = (props) => {
         </div>
       </div>
 
-
-      <div className="container-fluid cari-amici-section grey-bg">
-        <div className="row">
-          <div className="col">
-            <div className="container">
-              <div className="row">
-                <div className="col-md-12 section-title-wrapper">
-                  <h2 className="text-center dk-brand-text">
-                    Let
-                    {"'"}
-                    s start from here your tailor-made holidays
-                  </h2>
-                </div>
-                <form className="col-md-6 d-flex flex-column home-form">
-                  <div className="select-group">
-                    <div className="form-group select-form" style={{ marginBottom: 80 }}>
-                      <select className="form-control" id="region-select">
-                        <option style={{ marginTop: 50 }} value="" disabled selected>Select the region you don’t want missy</option>
-                        <option>1</option>
-                        <option>2</option>
-                        <option>3</option>
-                        <option>4</option>
-                        <option>5</option>
-                      </select>
-                    </div>
-                    <div className="form-group select-form">
-                      <select className="form-control" id="activity-select">
-                        <option value="" disabled selected>Select one “must to do” holiday’s activity</option>
-                        <option>1</option>
-                        <option>2</option>
-                        <option>3</option>
-                        <option>4</option>
-                        <option>5</option>
-                      </select>
-                    </div>
-                  </div>
-                  <div className="form-group">
-                    <input type="email" className="form-control" id="email" placeholder="Your email address" />
-                    <strong className="brand-text">I will let you know within 24-hrs</strong>
-                    <div className="text-right">
-                      <button type="submit" className="btn btn-primary">Let Me know</button>
-                    </div>
-                  </div>
-                </form>
-                <div className="col-md-6">
-                  {/* {map && <Img sizes={map.childImageSharp.sizes} className="img-fluid" alt="" />} */}
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
+      <MapFormContainer />
 
       <div className="container home-section smaller-section white-bg">
         <div className="row">
