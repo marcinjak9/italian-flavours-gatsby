@@ -1,8 +1,10 @@
 ---
 templateKey: tour-page
 title: Grand Culinary Tour in Tuscany
-highlights: Highlights wine tastings - relaxing environment - horse riding - private chaffeur - boutique hotels and high-level agriturismi
-tourRegion: Tuscany
+highlights: >-
+  Highlights wine tastings - relaxing environment - horse riding - private
+  chaffeur - boutique hotels and high-level agriturismi
+region: Toscana
 hero:
   ctaLink: /
   ctaText: ASK ME MORE
@@ -26,10 +28,17 @@ tourDescription:
     know and taste the most precious and traditional delicacies from Italy.
   image: /img/mappa-2x.9c95c556.png
   title: Come with me. We dive into flavours and beauty.
-tourShortDescription: A memorable gourmet journey among the most antique and precious culinary and cultural traditions of Italy. Aura spreads light smoothly around a cozy space. Its smooth contoured edges create soft shadows that entice a relaxing environment. Smoothly around a cozy space.
-galleryBottom:
-  - image: /img/products-grid3.jpg
-  - image: /img/products-grid3.jpg
+tourShortDescription: >-
+  A memorable gourmet journey among the most antique and precious culinary and
+  cultural traditions of Italy. Aura spreads light smoothly around a cozy space.
+  Its smooth contoured edges create soft shadows that entice a relaxing
+  environment. Smoothly around a cozy space.
+gallery:
+  textBody: >-
+    Comincia a prendere famigliarità con i sapori, profumi, colori, e attività
+    che ci accompagneranno in questo tour. E, perchè no, anche la musicalità
+    dell'italiano.
+  textTitle: Keywords and Highlights
 galleryUpper:
   - image: /img/chemex.jpg
   - image: /img/jumbotron.jpg
@@ -37,22 +46,19 @@ galleryUpper:
   - image: /img/products-grid3.jpg
   - image: /img/products-grid2.jpg
   - image: /img/chemex.jpg
-gallery:
-  textBody: >-
-    Comincia a prendere famigliarità con i sapori, profumi, colori, e attività
-    che ci accompagneranno in questo tour. E, perchè no, anche la musicalità
-    dell'italiano.
-  textTitle: Keywords and Highlights
+galleryBottom:
+  - image: /img/products-grid3.jpg
+  - image: /img/products-grid3.jpg
 blogSectionTitle: Cari Amici on this tour with me
+calendarTitle: Available dates for your amazing tour
 calendarBody: >-
   Pick your more suitable period among the two blocks of 10 days on which I
   usually run this tour.
+calendarNotes: |
+  Same additional notes can be placed here.
 aviabilityDates:
   - endDate: Aug 16th 18
     startDate: Aug 15th 18
-calendarNotes: |
-  Same additional notes can be placed here.
-calendarTitle: Available dates for your amazing tour
 instagramUsername: italian_flavour
 instagramPhotos:
   - id: BnBX5s9lMc8
