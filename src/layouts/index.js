@@ -7,6 +7,7 @@ import Footer from '../components/Footer'
 import './all.sass'
 
 const TemplateWrapper = ({
+  location,
   children,
   data: {
     markdownRemark: {
@@ -38,6 +39,33 @@ const TemplateWrapper = ({
 
 TemplateWrapper.propTypes = {
   children: PropTypes.func,
+  location: PropTypes.object,
+  data: PropTypes.shape({
+    markdownRemark: PropTypes.shape({
+      frontmatter: PropTypes.shape({
+        menuItems: PropTypes.arrayOf(PropTypes.shape({
+          title: PropTypes.string,
+          path: PropTypes.string,
+        })),
+        menuCtaText: PropTypes.string,
+        menuCtaLink: PropTypes.string,
+        footerMenu: PropTypes.arrayOf(PropTypes.shape({
+          title: PropTypes.string,
+          url: PropTypes.string,
+        })),
+        footerContacts: PropTypes.shape({
+          emailAddress: PropTypes.string,
+          phoneNumber: PropTypes.string,
+        }),
+        creditsText: PropTypes.string,
+        copyrightText: PropTypes.string,
+        socialInfo: PropTypes.shape({
+          facebookUrl: PropTypes.string,
+          instagramUsername: PropTypes.string,
+        }),
+      }),
+    }),
+  }),
 }
 
 export default TemplateWrapper

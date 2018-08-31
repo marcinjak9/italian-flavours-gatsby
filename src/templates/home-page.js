@@ -84,7 +84,7 @@ export const HomePageTemplate = (props) => {
         </div>
       </div>
 
-      <MapFormContainer />
+      <MapFormContainer regions={tours.edges.map(tour => tour.node.frontmatter.region)} />
 
       <div className="container home-section smaller-section white-bg">
         <div className="row">
@@ -167,6 +167,7 @@ export const HomePageQuery = graphql`
             hero {
               image
             }
+            region
             tourShortDescription
             highlights
           }

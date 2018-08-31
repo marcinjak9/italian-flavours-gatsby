@@ -746,3 +746,12 @@ body.no-scroll
   overflow: hidden
   margin: 0
   padding: 0
+
+
+.map-container svg path
+  transition: .3s all
+  cursor: pointer
+
+.map-container svg>g:hover
+  #bg path, path[data-name="bg"]
+    fill: #d6d5d5
