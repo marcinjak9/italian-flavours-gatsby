@@ -97,7 +97,7 @@ class MapFormContainer extends Component {
                     {title}
                   </h2>
                 </div>
-                <form className="col-md-6 d-flex flex-column home-form" onSubmit={this.handleSubmit} data-netlify="true" data-netlify-honeypot="bot-field">
+                <form className="col-md-6 d-flex flex-column home-form" onSubmit={this.handleSubmit} name="contact-home" data-netlify="true" data-netlify-honeypot="bot-field">
                   <div className="select-group">
                     <div className="form-group select-form" style={{ marginBottom: 80 }}>
                       <select className="form-control" id="region-select" onChange={(e) => this.selectRegionHandler(e.target.value)}>
