@@ -6,17 +6,33 @@ const TourPagePreview = ({
   entry, getAsset, widgetFor, widgetsFor,
 }) => {
   const imagesUpper = []
-  widgetsFor('galleryUpper').map(item => imagesUpper.push({ image: getAsset(item.getIn(['data', 'image'])) }))
+  widgetsFor('galleryUpper').map((item) => {
+    if (item) {
+      imagesUpper.push({ image: getAsset(item.getIn(['data', 'image'])) })
+    }
+  })
   const imagesBottom = []
-  widgetsFor('galleryBottom').map(item => imagesBottom.push({ image: getAsset(item.getIn(['data', 'image'])) }))
+  widgetsFor('galleryBottom').map((item) => {
+    if (item) {
+      imagesBottom.push({ image: getAsset(item.getIn(['data', 'image'])) })
+    }
+  })
   const instagramPhotos = []
-  widgetsFor('instagramPhotos').map(item => instagramPhotos.push({ image: getAsset(item.getIn(['data', 'image'])) }))
+  widgetsFor('instagramPhotos').map((item) => {
+    if (item) {
+      instagramPhotos.push({ image: getAsset(item.getIn(['data', 'image'])) })
+    }
+  })
 
   const dates = []
-  widgetsFor('aviabilityDates').map(item => dates.push({
-    startDate: item.getIn(['data', 'startDate']),
-    endDate: item.getIn(['data', 'endDate']),
-  }))
+  widgetsFor('aviabilityDates').map((item) => {
+    if (item) {
+      dates.push({
+        startDate: item.getIn(['data', 'startDate']),
+        endDate: item.getIn(['data', 'endDate']),
+      })
+    }
+  })
 
 
   return (
