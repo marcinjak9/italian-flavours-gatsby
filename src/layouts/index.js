@@ -15,27 +15,32 @@ const TemplateWrapper = ({
         menuItems, menuCtaText, menuCtaLink, footerMenu, footerContacts, creditsText, copyrightText, socialInfo
       },
     },
+    regions: { edges },
   },
-}) => (
-  <div>
-    <Helmet>
-      <title>Home | Gatsby + Netlify CMS</title>
-    </Helmet>
-    <Navbar
-      menuItems={menuItems}
-      menuCta={{ text: menuCtaText, link: menuCtaLink }}
-      pathname={location.pathname}
-    />
-    <div>{children()}</div>
-    <Footer
-      footerMenuItems={footerMenu}
-      footerContacts={footerContacts}
-      creditsText={creditsText}
-      copyrightText={copyrightText}
-      socialInfo={socialInfo}
-    />
-  </div>
-)
+}) => {
+  const regions = edges.map(singleRegion => ({ id: singleRegion.node.id, slug: singleRegion.node.fields.slug, name: singleRegion.node.frontmatter.region }))
+  return (
+    <div>
+      <Helmet>
+        <title>Home | Gatsby + Netlify CMS</title>
+      </Helmet>
+      <Navbar
+        menuItems={menuItems}
+        menuCta={{ text: menuCtaText, link: menuCtaLink }}
+        pathname={location.pathname}
+        regions={regions}
+      />
+      <div>{children()}</div>
+      <Footer
+        footerMenuItems={footerMenu}
+        footerContacts={footerContacts}
+        creditsText={creditsText}
+        copyrightText={copyrightText}
+        socialInfo={socialInfo}
+      />
+    </div>
+  )
+}
 
 TemplateWrapper.propTypes = {
   children: PropTypes.func,
@@ -65,6 +70,19 @@ TemplateWrapper.propTypes = {
         }),
       }),
     }),
+    regions: PropTypes.shape({
+      edges: PropTypes.arrayOf(PropTypes.shape({
+        node: PropTypes.shape({
+          id: PropTypes.string,
+          fields: PropTypes.shape({
+            slug: PropTypes.string,
+          }),
+          frontmatter: PropTypes.shape({
+            region: PropTypes.string,
+          }),
+        }),
+      })),
+    }),
   }),
 }
 
@@ -77,6 +95,7 @@ export const templateWrapperQuery = graphql`
         menuItems {
           path
           title
+          regionDropdown
         }
         menuCtaText
         menuCtaLink
@@ -93,6 +112,20 @@ export const templateWrapperQuery = graphql`
         socialInfo {
           facebookUrl
           instagramUsername
+        }
+      }
+    }
+
+    regions: allMarkdownRemark(filter: { frontmatter: { templateKey: { eq: "tour-page"}}}) {
+      edges {
+        node {
+          id
+           fields {
+             slug
+           }
+           frontmatter {
+             region
+           }
         }
       }
     }

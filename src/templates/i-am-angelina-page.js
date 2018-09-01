@@ -63,7 +63,7 @@ export const AboutPageTemplate = ({
         </div>
         <div className="row">
           {instagramPhotos.map(item => (
-            <InstagramPhoto id={item.id} />
+            <InstagramPhoto key={item.id} id={item.id} />
           ))}
         </div>
       </div>

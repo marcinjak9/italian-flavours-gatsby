@@ -42,7 +42,8 @@ p
       display: none
 
     .nav-item 
-      .nav-link:hover, &.active .nav-link
+      position: relative
+      .nav-link:hover, .nav-link:focus, &.active .nav-link
         color: #fff
       
       &.active, &:hover
@@ -51,7 +52,8 @@ p
     .navbar-nav
       &.navbar-flex 
         margin: 0 100px
-
+.nav-item 
+  position: relative
 .navbar-nav
   &.navbar-flex 
     flex: 1
@@ -63,6 +65,33 @@ p
   max-height: 55px
   margin-top: -7px
 
+.custom-dropdown
+  background-color: #ffffff
+  position: absolute
+  opacity: 0
+  margin-top: 5px
+  display: block
+  visibility: hidden
+  width: 100%
+  overflow: hidden
+  height: 0
+
+  &.show
+    visibility: visible
+    opacity: 1
+    height: inherit
+    opacity: 1
+    transition: height 0ms 0ms, opacity 300ms 0ms
+
+  .dropdown-item
+    font-size: 1.2rem
+    font-weight: normal
+    color: #434A54
+    line-height: 25px
+    padding: 5px 23px
+
+    &:hover
+      background-color: #f2f2f2
 
 #navigation.mobile.show 
   position: fixed

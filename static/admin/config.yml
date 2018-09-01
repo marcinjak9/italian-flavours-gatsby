@@ -1,6 +1,6 @@
 backend:
   name: git-gateway
-  branch: feature/general-config-model
+  branch: develop
 
 media_folder: static/img
 public_folder: /img
@@ -28,6 +28,10 @@ collections:
               - label: Path
                 name: path
                 widget: string
+              - label: Region Dropdown
+                name: regionDropdown
+                widget: boolean
+                default: false
           - label: Menu CTA text
             name: menuCtaText
             widget: string
