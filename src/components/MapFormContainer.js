@@ -101,15 +101,15 @@ class MapFormContainer extends Component {
                 <form className="col-md-6 d-flex flex-column home-form" onSubmit={this.handleSubmit} name="contact-home" data-netlify="true" data-netlify-honeypot="bot-field">
                   <div className="select-group">
                     <div className="form-group select-form" style={{ marginBottom: 80 }}>
-                      <select name="region" className="form-control" id="region-select" onChange={e => this.selectRegionHandler(e.target.value)}>
-                        <option style={{ marginTop: 50 }} value="" defaultChecked>Select the region you don’t want missy</option>
-                        {regions.map(region => <option key={region} selected={region === selectedRegion}>{region}</option>)}
+                      <select name="region" className="form-control" id="region-select" value={selectedRegion} onChange={e => this.selectRegionHandler(e.target.value)}>
+                        <option value="" disabled>Select the region you don’t want missy</option>
+                        {regions.map(region => <option key={region}>{region}</option>)}
                       </select>
                       {error.region && <p className="error-message">{error.region}</p>}
                     </div>
                     <div className="form-group select-form">
-                      <select name="activity" className="form-control" id="activity-select" ref={this.activitySelect}>
-                        <option value="" disabled selected>Select one “must to do” holiday’s activity</option>
+                      <select name="activity" className="form-control" defaultValue="" id="activity-select" ref={this.activitySelect}>
+                        <option value="" disabled>Select one “must to do” holiday’s activity</option>
                         {options.map(option => <option key={option.title}>{option.title}</option>)}
                       </select>
                       {error.activity && <p className="error-message">{error.activity}</p>}

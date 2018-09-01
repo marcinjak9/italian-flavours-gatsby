@@ -134,12 +134,12 @@ HomePageTemplate.propTypes = {
     }),
   }),
   content: PropTypes.string,
-  contentComponent: PropTypes.element,
+  contentComponent: PropTypes.func,
   contactSection: PropTypes.shape({
     title: PropTypes.string,
-    list: PropTypes.arrayOf({
+    list: PropTypes.arrayOf(PropTypes.shape({
       title: PropTypes.string,
-    }),
+    })),
   }),
 }
 

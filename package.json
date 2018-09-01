@@ -28,6 +28,7 @@
     "react-helmet": "^5.2.0",
     "react-markdown": "^3.4.1",
     "react-svgmt": "^1.1.6",
+    "shortid": "^2.2.13",
     "uuid": "^3.2.1"
   },
   "keywords": [

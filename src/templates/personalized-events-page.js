@@ -221,7 +221,7 @@ PersonalizedEvents.propTypes = {
         body: PropTypes.string,
       })),
       content: PropTypes.string,
-      contentComponent: PropTypes.element,
+      contentComponent: PropTypes.func,
       instagramPhotos: PropTypes.shape({
         id: PropTypes.string,
       }),

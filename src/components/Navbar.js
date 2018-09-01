@@ -63,14 +63,14 @@ class Navbar extends Component {
 }
 
 Navbar.propTypes = {
-  menuItems: PropTypes.shape({
+  menuItems: PropTypes.arrayOf(PropTypes.shape({
     title: PropTypes.string,
     path: PropTypes.string,
     regionDropdown: PropTypes.bool,
     regions: PropTypes.arrayOf({
       title: PropTypes.string,
     }),
-  }),
+  })),
   menuCta: PropTypes.shape({
     link: PropTypes.string,
     text: PropTypes.string,
