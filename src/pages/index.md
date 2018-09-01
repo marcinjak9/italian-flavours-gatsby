@@ -3,7 +3,7 @@ templateKey: home-page
 hero:
   ctaText: You tasty holiday in italy
   ctaUrl: /
-  image: /img/products-full-width.jpg
+  image: /img/stefan-kunze-90439-unsplash.jpg
   payoff: >
     I am specialised in tailor-made gourmet holidays. I love creating travel
     solutions that perfectly suit my guest needs, who have always appreciated my
