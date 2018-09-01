@@ -99,19 +99,19 @@ class ContactForm extends React.Component {
                 <div className="row">
                   <div className="col-md-7">
                     <div className="form-group">
-                      <input type="text" className="form-control" id="nome" placeholder="Name" ref={this.name} name="Name" />
+                      <input type="text" className="form-control" id="nome" placeholder="Name" ref={this.name} name="name" />
                       {error.name && <p className="error-message">{error.name}</p>}
                     </div>
                     <div className="form-group">
-                      <input type="email" className="form-control" id="email" placeholder="Email" ref={this.email} name="Email" />
+                      <input type="email" className="form-control" id="email" placeholder="Email" ref={this.email} name="email" />
                       {error.email && <p className="error-message">{error.email}</p>}
                     </div>
                     <div className="form-group">
-                      <input type="text" className="form-control" id="phone" placeholder="Phone" ref={this.phone} name="Phone" />
+                      <input type="text" className="form-control" id="phone" placeholder="Phone" ref={this.phone} name="phone" />
                       {error.phone && <p className="error-message">{error.phone}</p>}
                     </div>
                     <div className="form-group">
-                      <textarea className="form-control" id="exampleTextarea" rows="3" placeholder="Message" ref={this.message} name="Message" />
+                      <textarea className="form-control" id="exampleTextarea" rows="3" placeholder="Message" ref={this.message} name="message" />
                       {error.message && <p className="error-message">{error.message}</p>}
                     </div>
                   </div>
