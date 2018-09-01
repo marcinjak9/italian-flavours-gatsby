@@ -5,7 +5,7 @@ import comment from '../img/comment.svg'
 
 class InstagramPhoto extends React.Component {
   state = {
-    error: false
+    error: false,
   }
 
   render() {

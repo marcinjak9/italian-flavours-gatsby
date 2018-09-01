@@ -35,7 +35,7 @@
     }],
     "jsx-a11y/label-has-for": 0,
     "import/prefer-default-export": 0,
-    "no-return-assign": 1,
+    "no-return-assign": 0,
     "react/no-did-mount-set-state": 1,
     "no-underscore-dangle": 0,
     "react/prefer-stateless-function": 0,

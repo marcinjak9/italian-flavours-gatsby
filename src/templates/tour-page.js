@@ -1,6 +1,7 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 import Link from 'gatsby-link'
+import shortid from 'shortid'
 import instagramIcon from '../img/instagram-icon-black.png'
 import InstagramPhoto from '../components/InstagramPhoto'
 import ContactForm from '../components/ContactForm'
@@ -48,7 +49,7 @@ export const TourPageTemplate = ({
       <div className="row">
 
         {gallery.galleryUpper && gallery.galleryUpper.map(photo => (
-          <div className="col-md-4 padding-1" key={photo.image}>
+          <div className="col-md-4 padding-1" key={shortid.generate()}>
             <div className="card card-gallery">
               <img className="card-img-top" src={photo.image} alt="" />
             </div>
@@ -73,7 +74,7 @@ export const TourPageTemplate = ({
       <div className="row">
 
         {gallery.galleryBottom && gallery.galleryBottom.map(photo => (
-          <div className="col-md-4 padding-1" key={photo.image}>
+          <div className="col-md-4 padding-1" key={shortid.generate()}>
             <div className="card card-gallery">
               <img className="card-img-top" src={photo.image} alt="" />
             </div>
@@ -171,7 +172,7 @@ export const TourPageTemplate = ({
       <div className="row">
 
         {instagram.images.map(photo => (
-          <InstagramPhoto id={photo.image} key={photo.image} />
+          <InstagramPhoto id={photo.id} key={photo.id} />
         ))}
 
       </div>

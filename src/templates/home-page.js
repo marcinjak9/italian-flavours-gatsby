@@ -70,7 +70,7 @@ export const HomePageTemplate = (props) => {
             <div className="container">
               <div className="row">
                 {[1, 1, 1, 1].map((item, i) => (
-                  <BlogCard key={i} />
+                  <BlogCard key={i} /> // eslint-disable-line
                 ))}
               </div>
             </div>
@@ -108,14 +108,39 @@ export const HomePageTemplate = (props) => {
 }
 
 HomePageTemplate.propTypes = {
-  hero: PropTypes.object,
+  hero: PropTypes.shape({
+    bgImage: PropTypes.string,
+    title: PropTypes.string,
+    payoff: PropTypes.string,
+    buttonText: PropTypes.string,
+    buttonLink: PropTypes.string,
+  }),
   tourTitle: PropTypes.string,
-  infoSection: PropTypes.object,
-  html: PropTypes.any,
-  content: PropTypes.any,
-  contentComponent: PropTypes.any,
-  tours: PropTypes.object,
-  contactSection: PropTypes.object,
+  infoSection: PropTypes.shape({
+    title: PropTypes.string,
+    buttonUrl: PropTypes.string,
+    buttonText: PropTypes.string,
+  }),
+  tours: PropTypes.shape({
+    id: PropTypes.string,
+    fields: PropTypes.shape({
+      slug: PropTypes.string,
+    }),
+    frontmatter: PropTypes.shape({
+      title: PropTypes.string,
+      hero: PropTypes.shape({
+        image: PropTypes.string,
+      }),
+    }),
+  }),
+  content: PropTypes.string,
+  contentComponent: PropTypes.func,
+  contactSection: PropTypes.shape({
+    title: PropTypes.string,
+    list: PropTypes.arrayOf(PropTypes.shape({
+      title: PropTypes.string,
+    })),
+  }),
 }
 
 const HomePage = ({
@@ -146,6 +171,7 @@ const HomePage = ({
     }}
   />
 )
+
 
 HomePage.propTypes = {
   data: PropTypes.shape({
