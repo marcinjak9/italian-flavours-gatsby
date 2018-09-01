@@ -39,10 +39,10 @@ const Footer = () => (
           <div className="col-md-8 offset-md-2 text-center">
             <div className="row">
               <div className="col-md-12 footer-social-icons">
-                <a href="https://instagram.com" target="_blank">
+                <a href="https://instagram.com" target="_blank" rel="noopener noreferrer">
                   <img src={instagramLogo} alt="" />
                 </a>
-                <a href="https://facebook.com" target="_blank">
+                <a href="https://facebook.com" target="_blank" rel="noopener noreferrer">
                   <img src={facebookLogo} alt="" />
                 </a>
               </div>

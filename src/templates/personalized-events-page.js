@@ -1,9 +1,6 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 import Content, { HTMLContent } from '../components/Content'
-import like from '../img/like.svg'
-import comment from '../img/comment.svg'
-import mappa from '../img/mappa@2x.png'
 import instagram from '../img/instagram-icon-black.png'
 import BlogCard from '../components/BlogCard';
 import ContactForm from '../components/ContactForm';
@@ -58,7 +55,6 @@ export const PersonalizedEventsTemplate = ({
               </div>
             </div>
           ))}
-        
         </div>
       </div>
 
@@ -80,7 +76,7 @@ export const PersonalizedEventsTemplate = ({
         <div className="row">
 
           {gallerySection.cards.map((card, i) => (
-            <div className="col-md-4 no-padding" key={i}>
+            <div className="col-md-4 no-padding" key={i}> {/* eslint-disable-line */}
               <div className={`events-card ${i % 2 === 1 && 'light'}`}>
                 <h3>{card.title}</h3>
                 <p>{card.body}</p>
@@ -102,8 +98,8 @@ export const PersonalizedEventsTemplate = ({
           <div className="col">
             <div className="container">
               <div className="row">
-                {[1,1].map((post, i) => (
-                  <BlogCard key={i} />
+                {[1, 1].map((post, i) => (
+                  <BlogCard key={i} /> /* eslint-disable-line */
                 ))}
               </div>
             </div>
@@ -203,7 +199,34 @@ const PersonalizedEvents = ({
 export default PersonalizedEvents
 
 PersonalizedEvents.propTypes = {
-  data: PropTypes.object,
+  data: PropTypes.shape({
+    hero: PropTypes.shape({
+      bgImage: PropTypes.string,
+      title: PropTypes.string,
+      payoff: PropTypes.string,
+      buttonText: PropTypes.string,
+      buttonLink: PropTypes.string,
+    }),
+    descriptionSection: PropTypes.shape({
+      title: PropTypes.string,
+    }),
+    gallerySection: PropTypes.shape({
+      images: PropTypes.arrayOf(PropTypes.shape({
+        image: PropTypes.string,
+      })),
+      title: PropTypes.string,
+      body: PropTypes.string,
+      cards: PropTypes.arrayOf(PropTypes.shape({
+        title: PropTypes.string,
+        body: PropTypes.string,
+      })),
+      content: PropTypes.string,
+      contentComponent: PropTypes.element,
+      instagramPhotos: PropTypes.shape({
+        id: PropTypes.string,
+      }),
+    }),
+  }),
 }
 
 export const personalizedEventsQuery = graphql`

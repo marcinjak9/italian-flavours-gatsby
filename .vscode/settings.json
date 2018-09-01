@@ -3,4 +3,6 @@
     "*.js": "javascriptreact"
   },
   "eslint.enable": true,
+  "editor.formatOnSave": false,
+  "eslint.autoFixOnSave": true,
 }

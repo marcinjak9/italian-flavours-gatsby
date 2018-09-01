@@ -34,6 +34,7 @@ TourCard.propTypes = {
   image: PropTypes.string,
   description: PropTypes.string,
   url: PropTypes.string,
+  highlights: PropTypes.string,
 }
 
 export default TourCard

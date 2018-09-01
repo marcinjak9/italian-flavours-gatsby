@@ -12,7 +12,7 @@ const TemplateWrapper = ({
   data: {
     markdownRemark: {
       frontmatter: {
-        menuItems, menuCtaText, menuCtaLink, footerMenu, footerContacts, creditsText, copyrightText, socialInfo
+        menuItems, menuCtaText, menuCtaLink, footerMenu, footerContacts, creditsText, copyrightText, socialInfo,
       },
     },
     regions: { edges },
@@ -44,7 +44,7 @@ const TemplateWrapper = ({
 
 TemplateWrapper.propTypes = {
   children: PropTypes.func,
-  location: PropTypes.object,
+  location: PropTypes.object, // eslint-disable-line
   data: PropTypes.shape({
     markdownRemark: PropTypes.shape({
       frontmatter: PropTypes.shape({

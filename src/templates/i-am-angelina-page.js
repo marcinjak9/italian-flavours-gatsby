@@ -31,8 +31,6 @@ export const AboutPageTemplate = ({
           </div>
         </div>
       </div>
-
-
       <div className="container home-section first-section white-bg">
         <div className="row">
           <div className="col-md-12 section-title-wrapper">

@@ -3,7 +3,7 @@ import PropTypes from 'prop-types'
 import { TourPageTemplate } from '../../templates/tour-page'
 
 const TourPagePreview = ({
-  entry, getAsset, widgetFor, widgetsFor,
+  entry, getAsset, widgetsFor,
 }) => {
   const imagesUpper = []
   widgetsFor('galleryUpper').map((item) => {
@@ -76,7 +76,6 @@ TourPagePreview.propTypes = {
     getIn: PropTypes.func,
   }),
   getAsset: PropTypes.func,
-  widgetFor: PropTypes.func,
   widgetsFor: PropTypes.func,
 }
 

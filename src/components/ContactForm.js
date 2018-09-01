@@ -1,5 +1,6 @@
 import React from 'react'
 import Icon from 'material-icons-react'
+import PropTypes from 'prop-types'
 import styles from '../layouts/styles/styles'
 
 class ContactForm extends React.Component {
@@ -16,7 +17,7 @@ class ContactForm extends React.Component {
         phone: null,
         message: null,
       },
-      success: false
+      success: false,
     }
   }
 
@@ -25,63 +26,62 @@ class ContactForm extends React.Component {
 
     let allValid = true
     if (!this.name.current.value) {
-      this.setState(prevState => ({ ...prevState, error: { ...prevState.error, name: "You must insert your name!" } }))
+      this.setState(prevState => ({ ...prevState, error: { ...prevState.error, name: 'You must insert your name!' } }))
       allValid = false
     } else {
       this.setState(prevState => ({ ...prevState, error: { ...prevState.error, name: null } }))
     }
     if (!this.phone.current.value) {
-      this.setState(prevState => ({ ...prevState, error: { ...prevState.error, phone: "You must insert your phone!" } }))
+      this.setState(prevState => ({ ...prevState, error: { ...prevState.error, phone: 'You must insert your phone!' } }))
       allValid = false
     } else {
       this.setState(prevState => ({ ...prevState, error: { ...prevState.error, phone: null } }))
     }
     if (!this.message.current.value) {
-      this.setState(prevState => ({ ...prevState, error: { ...prevState.error, message: "You must write a message!" } }))
+      this.setState(prevState => ({ ...prevState, error: { ...prevState.error, message: 'You must write a message!' } }))
       allValid = false
     } else {
       this.setState(prevState => ({ ...prevState, error: { ...prevState.error, message: null } }))
     }
-    const regex = new RegExp(/^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/);
+    const regex = new RegExp(/^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/); // eslint-disable-line
     if (!this.email.current.value || !regex.test(this.email.current.value)) {
-      this.setState(prevState => ({ ...prevState, error: { ...prevState.error, email: "You must enter a valid email!" } }))
+      this.setState(prevState => ({ ...prevState, error: { ...prevState.error, email: 'You must enter a valid email!' } }))
       allValid = false
     } else {
       this.setState(prevState => ({ ...prevState, error: { ...prevState.error, email: null } }))
     }
 
     if (allValid) {
-      return this.submitForm({ name: this.name.current.value, email: this.email.current.value, phone: this.phone.current.value, message: this.message.current.value })
+      return this.submitForm({
+        name: this.name.current.value, email: this.email.current.value, phone: this.phone.current.value, message: this.message.current.value,
+      })
     }
-
-    console.log(this.name.current.value, this.email.current.value, this.phone.current.value, this.message.current.value)
+    return null
   }
 
-  encode = (data) => {
-    return Object.keys(data)
-      .map(key => encodeURIComponent(key) + "=" + encodeURIComponent(data[key]))
-      .join("&");
-  }
+  encode = data => Object.keys(data)
+    .map(key => `${encodeURIComponent(key)}=${encodeURIComponent(data[key])}`)
+    .join('&')
 
   submitForm = (data) => {
     console.log(data)
-    fetch("/", {
-      method: "POST",
-      headers: { "Content-Type": "application/x-www-form-urlencoded" },
-      body: this.encode({ "form-name": "contact-form", ...data})
+    fetch('/', {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
+      body: this.encode({ 'form-name': 'contact-form', ...data }),
     })
-      .then(() => alert("Success!"))
+      .then(() => alert('Success!'))
       .catch(error => alert(error));
 
-    this.setState({ success: true })
+    this.setState({ success: true })
     this.resetForm()
   }
 
   resetForm = () => {
-    this.name.current.value = ""
-    this.email.current.value = ""
-    this.phone.current.value = ""
-    this.message.current.value = ""
+    this.name.current.value = ''
+    this.email.current.value = ''
+    this.phone.current.value = ''
+    this.message.current.value = ''
   }
 
   render() {
@@ -146,7 +146,13 @@ class ContactForm extends React.Component {
               </div>
               <div className="col-md-12 text-center">
                 <button type="submit" className="btn btn-primary">Send Message</button>
-                {success && <p className="success-message">Thank you for the message, I'll let you know!</p>}
+                {success && (
+                  <p className="success-message">
+                    Thank you for the message, I
+                    {"'"}
+                    ll let you know!
+                  </p>
+                )}
               </div>
             </form>
           </div>
@@ -154,6 +160,10 @@ class ContactForm extends React.Component {
       </div>
     )
   }
+}
+
+ContactForm.propTypes = {
+  title: PropTypes.string,
 }
 
 export default ContactForm
