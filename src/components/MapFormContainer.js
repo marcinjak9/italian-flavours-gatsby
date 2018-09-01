@@ -85,7 +85,6 @@ class MapFormContainer extends Component {
   render() {
     const { selectedRegion, onClient, error, success } = this.state 
     const { regions, title, options } = this.props
-    // const regions = ["Abruzzo","Apulia","Basilicata","Calabria","Campania","Emilia-Romagna","Friuli-Venezia-Giulia","Latium","Liguria","Lombardy","Marche","Molise","Piedmont","Sardinia","Sicily","Tuscany","Trentino","Umbria","Aosta_Valley","Veneto" ]
     return (
       <div className="container-fluid cari-amici-section grey-bg">
         <div className="row">
@@ -100,14 +99,14 @@ class MapFormContainer extends Component {
                 <form className="col-md-6 d-flex flex-column home-form" onSubmit={this.handleSubmit} name="contact-home" data-netlify="true" data-netlify-honeypot="bot-field">
                   <div className="select-group">
                     <div className="form-group select-form" style={{ marginBottom: 80 }}>
-                      <select className="form-control" id="region-select" onChange={(e) => this.selectRegionHandler(e.target.value)}>
+                      <select name="region" className="form-control" id="region-select" onChange={(e) => this.selectRegionHandler(e.target.value)}>
                         <option style={{ marginTop: 50 }} value="" defaultChecked>Select the region you don’t want missy</option>
                         {regions.map(region => <option key={region} selected={region === selectedRegion}>{region}</option>)}
                       </select>
                       {error.region && <p className="error-message">{error.region}</p>}
                     </div>
                     <div className="form-group select-form">
-                      <select className="form-control" id="activity-select" ref={this.activitySelect}>
+                      <select name="activity" className="form-control" id="activity-select" ref={this.activitySelect}>
                         <option value="" disabled selected>Select one “must to do” holiday’s activity</option>
                        {options.map(option => <option key={option.title}>{option.title}</option>)}
                       </select>
@@ -115,7 +114,7 @@ class MapFormContainer extends Component {
                     </div>
                   </div>
                   <div className="form-group">
-                    <input type="email" className="form-control" id="email" placeholder="Your email address" ref={this.emailForm} />
+                    <input name="email" type="email" className="form-control" id="email" placeholder="Your email address" ref={this.emailForm} />
                     {error.email && <p className="error-message">{error.email}</p>}
                     <strong className="brand-text">I will let you know within 24-hrs</strong>
                     <div className="text-right">
