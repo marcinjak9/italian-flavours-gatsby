@@ -1,24 +1,99 @@
 backend:
   name: git-gateway
-  branch: feature/about-page
+  branch: feature/general-config-model
 
 media_folder: static/img
 public_folder: /img
 
 collections:
-  - folder: "src/pages/tour"
-    label: "Tour"
-    name: "tour"
+  - name: "options"
+    label: "Site Options"
+    files:
+      - file: src/options/headerAndFooter.md
+        label: Header and Footer options
+        name: configuration
+        preview: false
+        fields: 
+          - label: Data type
+            name: dataType
+            widget: hidden
+            default: headerAndFooterOptions
+          - label: Menu Items
+            name: menuItems
+            widget: list
+            fields:
+              - label: Title
+                name: title
+                widget: string
+              - label: Path
+                name: path
+                widget: string
+          - label: Menu CTA text
+            name: menuCtaText
+            widget: string
+          - label: Menu CTA link
+            name: menuCtaLink
+            widget: string
+          - label: Footer Menu
+            name: footerMenu
+            widget: list
+            fields:
+              - label: title
+                name: title
+                widget: string
+              - label: url
+                name: url
+                widget: string
+          - label: FooterContacts
+            name: footerContacts
+            widget: object
+            fields:
+              - label: Telephone Number
+                name: phoneNumber
+                widget: string
+              - label: Email address
+                name: emailAddress
+                widget: string
+          - label: Credits text
+            name: creditsText
+            widget: text
+          - label: Copyright text
+            name: copyrightText
+            widget: text
+          - label: Social Informations
+            name: socialInfo
+            widget: object
+            fields:
+              - label: Facebook Url
+                name: facebookUrl
+                widget: string
+              - label: Instagram username
+                name: instagramUsername
+                widget: string
+
+
+  - folder: src/pages/tour
+    label: Tour
+    name: tour
     create: true
     fields:
-      - label: "Template Key"
-        name: "templateKey"
-        widget: "hidden"
-        default: "tour-page"
+      - label: Template Key
+        name: templateKey
+        widget: hidden
+        default: tour-page
 
       - label: Tour Title
         name: title
         widget: string
+      
+      - label: Tour Highlights
+        name: highlights
+        widget: text
+        
+      - label: Tour Region
+        name: region
+        widget: select
+        options: [Abruzzo,Apulia,Basilicata,Calabria,Campania,Emilia-Romagna,Friuli-Venezia-Giulia,Latium,Liguria,Lombardy,Marche,Molise,Piedmont,Sardinia,Sicily,Tuscany,Trentino,Umbria,Aosta_Valley,Veneto]
 
       - label: Hero Section
         name: hero
@@ -50,6 +125,10 @@ collections:
         - label: Side Image
           name: image
           widget: image
+
+      - label: Tour Short Description
+        name: tourShortDescription
+        widget: text
 
       - label: Gallery
         name: gallery
@@ -167,6 +246,14 @@ collections:
             name: contactSectionTitle
             widget: string
 
+          - label: Contact form options
+            name: contactFormOptions
+            widget: list
+            fields: 
+              - label: title
+                name: title
+                widget: string
+
           - label: Info Section
             name: infoSection
             widget: object
@@ -187,7 +274,7 @@ collections:
                 name: ctaUrl
                 widget: string
           ## Markdown filed must be inside root element
-          - label: Content
+          - label: Info Section Content
             name: body
             widget: markdown
 

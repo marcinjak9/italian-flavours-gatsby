@@ -3,6 +3,7 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 import Link from 'gatsby-link'
+import Icon from 'material-icons-react'
 
 const BlogCard = ({ title, image, description }) => (
   <div className="col-md-6">
@@ -10,7 +11,7 @@ const BlogCard = ({ title, image, description }) => (
       <img src="https://placehold.it/800x400" style={{ height: 250 }} alt="" />
       <div className="card-body">
         <Link to="/" className="plus-button-card">
-          <i className="material-icons">nature_people</i>
+          <Icon icon="nature_people" color="white" />
         </Link>
         <h5 className="card-title font-italic">John and Katina - Brisbane (Australia)</h5>
         <p className="card-text">
