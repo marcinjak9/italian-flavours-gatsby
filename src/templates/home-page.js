@@ -14,6 +14,7 @@ export const HomePageTemplate = (props) => {
   const {
     hero, tourTitle, infoSection,
     content, contentComponent, tours,
+    contactSection,
   } = props
   const PostContent = contentComponent || Content
   return (
@@ -84,7 +85,7 @@ export const HomePageTemplate = (props) => {
         </div>
       </div>
 
-      <MapFormContainer regions={tours.edges.map(tour => tour.node.frontmatter.region)} />
+      {tours && <MapFormContainer regions={tours.edges.map(tour => tour.node.frontmatter.region)} title={contactSection.title} options={contactSection.list} />}
 
       <div className="container home-section smaller-section white-bg">
         <div className="row">
@@ -116,6 +117,7 @@ HomePageTemplate.propTypes = {
   content: PropTypes.any,
   contentComponent: PropTypes.any,
   tours: PropTypes.object,
+  contactSection: PropTypes.object,
 }
 
 const HomePage = ({
@@ -140,6 +142,10 @@ const HomePage = ({
     tours={tours}
     content={pageData.html}
     contentComponent={HTMLContent}
+    contactSection={{
+      title: pageData.frontmatter.contactSectionTitle,
+      list: pageData.frontmatter.contactFormOptions,
+    }}
   />
 )
 
@@ -189,6 +195,9 @@ export const HomePageQuery = graphql`
         tourSectionTitle
         blogNewsTitle
         contactSectionTitle
+        contactFormOptions {
+          title
+        }
         infoSection {
           ctaText
           ctaUrl

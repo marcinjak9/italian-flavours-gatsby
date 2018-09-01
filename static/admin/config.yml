@@ -249,7 +249,7 @@ collections:
           - label: Contact form options
             name: contactFormOptions
             widget: list
-            fileds: 
+            fields: 
               - label: title
                 name: title
                 widget: string

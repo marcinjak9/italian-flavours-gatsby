@@ -3,7 +3,9 @@ import PropTypes from 'prop-types'
 import Link from 'gatsby-link'
 import Icon from 'material-icons-react'
 
-const TourCard = ({ title, image, description, url, highlights }) => (
+const TourCard = ({
+  title, image, description, url, highlights,
+}) => (
   <div className="col-md-4">
     <div className="card home-card">
       <img src={image} className="hero-bg-img" style={{ height: 250 }} alt="" />
