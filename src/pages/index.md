@@ -12,6 +12,10 @@ hero:
 tourSectionTitle: Savour your next holiday
 blogNewsTitle: 'More than clients, but Cari Amici'
 contactSectionTitle: Let's start from here your tailor-made holidays
+contactFormOptions:
+  - title: Lorem Ipsum
+  - title: Loremmm Ipsum
+  - title: Lorem
 infoSection:
   ctaText: tell me about your desires
   ctaUrl: /tour

@@ -2,6 +2,8 @@ body
   background: #fff
   font-family: 'Source Sans Pro', sans-serif
 
+p 
+  white-space: pre-line
 
 .navbar-fixed-top 
   position: fixed
@@ -12,68 +14,84 @@ body
   max-height: 60px
   box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.15)
 
+  .white-logo 
+    display: none
 
-.navbar-fixed-top .white-logo 
-  display: none
+  .brand-logo 
+    display: inline-block
 
+  &.before-scroll 
+    background: linear-gradient(0deg, transparent, rgba(0, 0, 0, 0.8))
+    box-shadow: none
+    min-height: 160px
+    background-color: transparent !important
+    position: absolute
 
-.navbar-fixed-top .brand-logo 
-  display: inline-block
+    .brand-logo 
+      display: none
 
+    .white-logo 
+      display: inline-block
 
-.navbar-fixed-top.before-scroll 
-  background: linear-gradient(0deg, transparent, rgba(0, 0, 0, 0.8))
-  box-shadow: none
-  min-height: 160px
-  background-color: transparent !important
-  position: absolute
+    .nav-link 
+      color: #fff
+      font-weight: 400
+      font-size: 1.2rem
 
+    .nav-link.btn 
+      display: none
 
-.navbar-fixed-top.before-scroll .brand-logo 
-  display: none
+    .nav-item 
+      position: relative
+      .nav-link:hover, .nav-link:focus, &.active .nav-link
+        color: #fff
+      
+      &.active, &:hover
+        border-bottom: 1px solid $primary
 
-
-.navbar-fixed-top.before-scroll .white-logo 
-  display: inline-block
-
-
-.navbar-fixed-top.before-scroll .nav-link 
-  color: #fff
-  font-weight: 400
-  font-size: 1.2rem
-
-
-.navbar-fixed-top.before-scroll .nav-link.btn 
-  display: none
-
-
-.navbar-fixed-top .nav-item.active,
-.navbar-fixed-top .nav-item:hover 
-  border-bottom: 1px solid #00B2A7
-
-
-.navbar-fixed-top.before-scroll .nav-item .nav-link:hover 
-  color: #fff
-
-
-.navbar-fixed-top.before-scroll .nav-item.active .nav-link 
-  color: #fff
-
-
-.navbar-nav.navbar-flex 
-  flex: 1
-  justify-content: space-around
-  margin: 0 50px
-
-
-.navbar-fixed-top.before-scroll .navbar-nav.navbar-flex 
-  margin: 0 100px
+    .navbar-nav
+      &.navbar-flex 
+        margin: 0 100px
+.nav-item 
+  position: relative
+.navbar-nav
+  &.navbar-flex 
+    flex: 1
+    justify-content: space-around
+    margin: 0 50px
 
 
 .navbar-brand img 
   max-height: 55px
   margin-top: -7px
 
+.custom-dropdown
+  background-color: #ffffff
+  position: absolute
+  opacity: 0
+  margin-top: 5px
+  display: block
+  visibility: hidden
+  width: 100%
+  overflow: hidden
+  height: 0
+
+  &.show
+    visibility: visible
+    opacity: 1
+    height: inherit
+    opacity: 1
+    transition: height 0ms 0ms, opacity 300ms 0ms
+
+  .dropdown-item
+    font-size: 1.2rem
+    font-weight: normal
+    color: #434A54
+    line-height: 25px
+    padding: 5px 23px
+
+    &:hover
+      background-color: #f2f2f2
 
 #navigation.mobile.show 
   position: fixed
@@ -83,9 +101,9 @@ body
   bottom: 0
   width: 100%
   height: 100%
-  background: #00B2A7
+  background: $primary
   
-  color: #333
+  color: $text-dark
   display: flex
   justify-content: center
   flex-direction: column
@@ -110,7 +128,7 @@ body
 
 
 .navbar-fixed-top #mobile-navigation-toggle i 
-  color: #00B2A7
+  color: $primary
 
 
 #navigation.mobile.show #mobile-navigation-toggle.show i 
@@ -142,8 +160,8 @@ strong
 
 
 .btn-primary 
-  border-color: #00B2A7
-  background-color: #00B2A7
+  border-color: $primary
+  background-color: $primary
   font-weight: 600
   padding: 13px 30px
   text-transform: uppercase
@@ -163,8 +181,8 @@ strong
 
 
 .btn-outline-primary 
-  border-color: #00B2A7
-  color: #00B2A7
+  border-color: $primary
+  color: $primary
 
 
 .btn-outline-light 
@@ -186,7 +204,7 @@ strong
 
 
 .btn-link 
-  color: #00B2A7
+  color: $primary
   transition: all .3s
 
 
@@ -331,7 +349,7 @@ strong
 
 
 .home-card.card p 
-  color: #333333
+  color: $text-dark
   font-size: 1rem
   margin-bottom: 2.5rem
   font-weight: 300
@@ -352,7 +370,7 @@ strong
   justify-content: center
   align-items: center
   border-radius: 50%
-  background-color: #00B2A7
+  background-color: $primary
   color: #fff
   padding: .5rem
   transition: all .3s
@@ -365,7 +383,7 @@ strong
 
 .card-date 
   font-size: .9rem
-  color: #333333
+  color: $text-dark
   font-weight: 300
   line-height: 18px
   text-align: center
@@ -389,7 +407,7 @@ strong
 
 
 .lead-text 
-  color: #333333
+  color: $text-dark
   font-size: 1.5rem
   font-weight: 300
   line-height: 2rem
@@ -457,9 +475,9 @@ footer .footer-social-icons img
 
 
 .contact-form .dashed-container 
-  border: 2px dashed #00B2A7
+  border: 2px dashed $primary
   padding: 2.4rem
-  color: #00B2A7
+  color: $primary
 
 
 .contact-form .dashed-container p 
@@ -478,53 +496,67 @@ footer .footer-social-icons img
   margin-top: 30px
   margin-bottom: 50px
 
+  .error-message 
+    color: red
+    font-weight: bold
+  
+  .success-message
+    color: $primary
+    font-weight: bold
+    margin-top: 20px
+
+.success-message
+  color: $primary
+  font-weight: bold
+  margin-top: 20px
 
 .home-form 
   justify-content: space-around
   padding: 3rem 2rem
 
+  .error-message 
+    color: red
+    font-weight: bold
+  
+  
+  
+  select, input 
+    border: none
+    border-bottom: 1px solid rgba(0, 0, 0, 0.12)
+    border-radius: 0
+    -webkit-appearance: none
+    background-color: transparent
 
-.home-form select,
-.home-form input 
-  border: none
-  border-bottom: 1px solid rgba(0, 0, 0, 0.12)
-  border-radius: 0
-  -webkit-appearance: none
-  background-color: transparent
+  select:focus, input:focus 
+    box-shadow: none
+    border-color: inherit
+    background-color: transparent
+
+  .select-form 
+    position: relative
+    z-index: 1
 
 
-.home-form select:focus,
-.home-form input:focus 
-  box-shadow: none
-  border-color: inherit
-  background-color: transparent
-
-
-.home-form .select-form 
-  position: relative
-  z-index: 1
-
-
-.home-form .select-form:after 
-  content: 'keyboard_arrow_down'
-  position: absolute
-  z-index: 2
-  top: 50%
-  right: 20px
-  transform: translateY(-50%)
-  font-family: 'Material Icons'
-  font-weight: normal
-  font-style: normal
-  font-size: 24px
-  letter-spacing: normal
-  text-transform: none
-  display: inline-block
-  white-space: nowrap
-  word-wrap: normal
-  direction: ltr
-  -webkit-font-feature-settings: 'liga'
-  -webkit-font-smoothing: antialiased
-  pointer-events: none
+  .select-form:after 
+    content: 'keyboard_arrow_down'
+    position: absolute
+    z-index: 2
+    top: 50%
+    right: 20px
+    transform: translateY(-50%)
+    font-family: 'Material Icons'
+    font-weight: normal
+    font-style: normal
+    font-size: 24px
+    letter-spacing: normal
+    text-transform: none
+    display: inline-block
+    white-space: nowrap
+    word-wrap: normal
+    direction: ltr
+    -webkit-font-feature-settings: 'liga'
+    -webkit-font-smoothing: antialiased
+    pointer-events: none
 
 
 .instagram-container 
@@ -615,7 +647,7 @@ footer .footer-social-icons img
 
 
 .events-card h3 
-  color: #00B2A7
+  color: $primary
   text-align: center
   margin-bottom: 30px
 
@@ -633,21 +665,21 @@ footer .footer-social-icons img
 
 
 .jsCalendar tbody td.jsCalendar-selected 
-  background-color: #18AA9A
+  background-color: $primary
   color: #fff
   border: none
 
 
 .jsCalendar tbody td.jsCalendar-current 
   border-radius: 5px
-  color: #333
+  color: $text-dark
   background-color: transparent
 
 
 /* UTILS, qui raccogliamo tutte le classi generali, come "white-bg" "brand-bg" ecc cosi si capisce che si possono riutilizzare */
 
 .brand-bg 
-  background-color: #00B2A7
+  background-color: $primary
 
 
 .white-bg 
@@ -655,7 +687,7 @@ footer .footer-social-icons img
 
 
 .grey-bg 
-  background-color: #F4F4F4
+  background-color: $grey-bg
 
 
 .white-text 
@@ -663,11 +695,11 @@ footer .footer-social-icons img
 
 
 .dk-brand-text 
-  color: #128174 !important
+  color: $primary-text-dark !important
 
 
 .brand-text 
-  color: #18AA9A !important
+  color: $primary !important
 
 
 .grey-text 
@@ -679,7 +711,7 @@ p.text-spacing,
   line-height: 2.5rem
   font-size: 1.3rem
   font-weight: 300
-  color: #333333
+  color: $text-dark
 
 
 .text-spacing-container strong 
@@ -757,3 +789,12 @@ body.no-scroll
   overflow: hidden
   margin: 0
   padding: 0
+
+
+.map-container svg path
+  transition: .3s all
+  cursor: pointer
+
+.map-container svg>g:hover
+  #bg path, path[data-name="bg"]
+    fill: #d6d5d5
