@@ -1,7 +1,7 @@
 ---
 templateKey: home-page
 hero:
-  ctaText: You tasty holiday in italy
+  ctaText: You tasty holiday in Fracs
   ctaUrl: /
   image: /img/jumbotron.jpg
   payoff: >
