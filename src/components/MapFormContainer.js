@@ -88,7 +88,7 @@ class MapFormContainer extends Component {
     } = this.state
     const { regions, title, options } = this.props
     return (
-      <div className="container-fluid cari-amici-section grey-bg">
+      <div className="container-fluid cari-amici-section home-contact-section grey-bg">
         <div className="row">
           <div className="col">
             <div className="container">

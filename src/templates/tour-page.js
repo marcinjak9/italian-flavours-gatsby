@@ -31,8 +31,8 @@ export const TourPageTemplate = ({
       </div>
     </div>
 
-    <div className="container-fluid personalized-events-section first-section white-bg">
-      <div className="row padding-2">
+    <div className="container personalized-events-section first-section white-bg">
+      <div className="row">
         <div className="col-md-8 section-title-wrapper">
           <h2 className="grey-text">{descriptionSection.title}</h2>
           <p className="text-spacing">
@@ -62,8 +62,8 @@ export const TourPageTemplate = ({
     <div className="container-fluid personalized-events-section">
       <div className="row">
         <div className="col-md-8 offset-md-2">
-          <h2 className="text-center dk-brand-text padding-2">{gallery.galleryTitle}</h2>
-          <p className="text-center grey-text left-right">
+          <h2 className="text-center dk-brand-text">{gallery.galleryTitle}</h2>
+          <p className="text-center grey-text">
             {gallery.galleryDescription}
           </p>
         </div>
@@ -133,7 +133,7 @@ export const TourPageTemplate = ({
     </div>
 
     <div className="container-fluid cari-amici-section white-bg">
-      <h1 className="text-center grey-text padding-2">{calendar.title}</h1>
+      <h1 className="text-center grey-text">{calendar.title}</h1>
       <div className="row">
         <div className="col-md-4 offset-md-4">
           <h6 className="text-center grey-text">

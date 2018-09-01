@@ -34,25 +34,25 @@ class MenuItem extends Component {
 
   render() {
     const {
-      text, path, active, regionDropdown, regions,
+      text, path, active, regionDropdown, regions, mobile, onClick,
     } = this.props
     const { open } = this.state
     if (regionDropdown) {
       return (
-        <li className={`nav-item ${active && 'active'}`}>
-          <button type="button" className={`btn btn-link nav-link ${regionDropdown && 'd-flex'}`} to={path} onClick={() => this.setState(prevState => ({ open: !prevState.open }))} ref={node => this.button = node}>
+        <li className={`nav-item ${active && 'active'} ${mobile && 'mobile'}`}>
+          <button type="button" className={`btn btn-link nav-link ${regionDropdown && 'd-flex'} ${open && 'text-white'}`} to={path} onClick={() => this.setState(prevState => ({ open: !prevState.open }))} ref={node => this.button = node}>
             {text}
-            {regionDropdown && <Icon icon="expand_more" color="#00B2A7" size={30} />}
+            {regionDropdown && <Icon icon="expand_more" color="#00B2A7" size={30} style={{ paddingTop: mobile ? 10 : 0 }} />}
           </button>
           <div className={`dropdown-menu custom-dropdown ${open ? 'show' : ''}`} ref={node => this.dropdown = node}>
-            {regions.map(region => <Link key={region.id} to={region.slug} className="dropdown-item" onClick={() => this.setState({ open: false })}>{region.name}</Link>)}
+            {regions.map(region => <Link key={region.id} to={region.slug} className="dropdown-item" onClick={() => { onClick(); this.setState({ open: false }) }}>{region.name}</Link>)}
           </div>
         </li>
       )
     }
     return (
-      <li className={`nav-item ${active && 'active'}`}>
-        <Link className="nav-link" to={path}>
+      <li className={`nav-item ${active && 'active'} ${mobile && 'mobile'}`}>
+        <Link className="nav-link" to={path} onClick={onClick ? () => onClick() : () => null}>
           {text}
         </Link>
       </li>

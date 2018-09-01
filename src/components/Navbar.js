@@ -5,6 +5,7 @@ import Icon from 'material-icons-react'
 
 import landscapeLogo from '../img/landscape@2x.png'
 import logoWhite from '../img/logo-white.png'
+import logoMobile from '../img/portrait@2x.png'
 import MenuItem from './MenuItem'
 
 class Navbar extends Component {
@@ -33,7 +34,7 @@ class Navbar extends Component {
   render() {
     const { pinned } = this.state
     const {
-      menuItems, menuCta, pathname, regions,
+      menuItems, menuCta, pathname, regions, openMobileMenu,
     } = this.props
     return (
       <nav className={`navbar navbar-expand-lg navbar-light bg-light navbar-fixed-top ${!pinned && 'before-scroll'}`}>
@@ -41,8 +42,9 @@ class Navbar extends Component {
           <Link className="navbar-brand" to="/">
             <img src={landscapeLogo} alt="" className="brand-logo" />
             <img src={logoWhite} alt="" className="white-logo" />
+            <img src={logoMobile} alt="" className="mobile-logo" />
           </Link>
-          <button className="navbar-custom-toggler" id="mobile-navigation-toggle" type="button">
+          <button className="navbar-custom-toggler" id="mobile-navigation-toggle" type="button" onClick={openMobileMenu}>
             <Icon icon="menu" />
           </button>
 
@@ -81,6 +83,7 @@ Navbar.propTypes = {
     name: PropTypes.string,
     slug: PropTypes.string,
   })),
+  openMobileMenu: PropTypes.func,
 }
 
 

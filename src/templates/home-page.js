@@ -22,7 +22,7 @@ export const HomePageTemplate = (props) => {
         <div className="row outer-row">
           <div className="col">
             <div className="container">
-              <div className="row no-margin d-flex flex-column justify-content-center">
+              <div className="row d-flex flex-column justify-content-center">
                 <div className="col-md-7 hero">
                   <h1 className="white-text">
                     {hero.title}
@@ -85,7 +85,7 @@ export const HomePageTemplate = (props) => {
 
       {tours && <MapFormContainer regions={tours.edges.map(tour => tour.node.frontmatter.region)} title={contactSection.title} options={contactSection.list} />}
 
-      <div className="container home-section smaller-section white-bg">
+      <div className="container home-section smaller-section description-section white-bg">
         <div className="row">
           <div className="col-md-12 section-title-wrapper">
             <h2 className="text-center brand-text">{infoSection.title}</h2>
@@ -93,7 +93,7 @@ export const HomePageTemplate = (props) => {
           <div className="col-md-12 lead-text">
             <PostContent content={content} />
           </div>
-          <div className="col-md-12 lead-text" style={{ marginBottom: '8rem' }}>
+          <div className="col-md-12 lead-text">
             <strong>I forgot something? Just ask me, I can make your holiday dream true!</strong>
           </div>
           <div className="col-md-12 text-center">
