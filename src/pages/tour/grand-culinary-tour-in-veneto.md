@@ -8,7 +8,7 @@ region: Veneto
 hero:
   ctaLink: /
   ctaText: ask me more
-  image: /img/chemex.jpg
+  image: /img/candre-mandawe-770521-unsplash.jpg
   subtitle: >-
     An unforgettable gourmet journey among the most antique and precious
     culinary and cultural traditions of Italy
