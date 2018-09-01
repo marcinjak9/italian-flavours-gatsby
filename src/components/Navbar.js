@@ -1,66 +1,18 @@
 import React, { Component } from 'react'
 import Link from 'gatsby-link'
+import PropTypes from 'prop-types'
 import Icon from 'material-icons-react'
 
 import landscapeLogo from '../img/landscape@2x.png'
 import logoWhite from '../img/logo-white.png'
-
-class MenuItem extends Component {
-  constructor(props) {
-    super(props)
-    this.state = {
-      open: false
-    }
-  }
-
-  componentDidMount = () => {
-    if (this.props.regionDropdown) {
-      document.addEventListener('mousedown', this.handleClick, false)
-    }
-  }
-
-  componentWillUnmount = () => {
-    if (this.props.regionDropdown) {
-      document.removeEventListener('mousedown', this.handleClick, false)
-    }
-  }
-
-  handleClick = (e) => {
-    if (this.dropdown && !this.dropdown.contains(e.target) && !this.button.contains(e.target)) {
-      return this.setState({ open: false })
-    }
-  }
-
-  render() {
-    console.log(this.dropdown)
-    const { text, path, active, regionDropdown, regions } = this.props
-    if (regionDropdown) {
-      return (
-        <li className={`nav-item ${active && "active"}`}>
-          <button className={`btn btn-link nav-link ${regionDropdown && "d-flex"}`} to={path} onClick={() => this.setState(prevState => ({ open: !prevState.open }))} ref={(node) => this.button = node}>
-            {text}
-            {regionDropdown && <Icon icon="expand_more" color="#00B2A7" size={30} />}
-          </button>
-          <div className={`dropdown-menu custom-dropdown ${this.state.open ? "show" : ''}`} ref={(node) => this.dropdown = node}>
-            {regions.map(region => <Link key={region.id} to={region.slug} className="dropdown-item" onClick={() => this.setState({ open: false })}>{region.name}</Link>)}
-          </div>
-        </li>
-      )
-    }
-    return (
-      <li className={`nav-item ${active && "active"}`}>
-        <Link className={`nav-link`} to={path}>
-          {text}
-        </Link>
-      </li>
-    )
-  }
-}
+import logoMobile from '../img/portrait@2x.png'
+import MenuItem from './MenuItem'
 
 class Navbar extends Component {
   state = {
-    pinned: false
+    pinned: false,
   }
+
   componentDidMount() {
     window.addEventListener('scroll', this.handleScroll, { passive: true })
   }
@@ -69,7 +21,7 @@ class Navbar extends Component {
     window.removeEventListener('scroll', this.handleScroll)
   }
 
-  handleScroll = (event) => {
+  handleScroll = () => {
     const { pinned } = this.state
     if (window.scrollY > 250 && !pinned) {
       this.setState({ pinned: true })
@@ -78,23 +30,27 @@ class Navbar extends Component {
       this.setState({ pinned: false })
     }
   }
+
   render() {
     const { pinned } = this.state
-    const { menuItems, menuCta, pathname, regions } = this.props
+    const {
+      menuItems, menuCta, pathname, regions, openMobileMenu,
+    } = this.props
     return (
-      <nav className={`navbar navbar-expand-lg navbar-light bg-light navbar-fixed-top ${!pinned && "before-scroll"}`}>
+      <nav className={`navbar navbar-expand-lg navbar-light bg-light navbar-fixed-top ${!pinned && 'before-scroll'}`}>
         <div className="container">
           <Link className="navbar-brand" to="/">
             <img src={landscapeLogo} alt="" className="brand-logo" />
             <img src={logoWhite} alt="" className="white-logo" />
+            <img src={logoMobile} alt="" className="mobile-logo" />
           </Link>
-          <button className="navbar-custom-toggler" id="mobile-navigation-toggle" type="button">
+          <button className="navbar-custom-toggler" id="mobile-navigation-toggle" type="button" onClick={openMobileMenu}>
             <Icon icon="menu" />
           </button>
 
           <div className="collapse navbar-collapse" id="navigation">
             <ul className="navbar-nav navbar-flex">
-              {menuItems.map(menuItem => <MenuItem key={menuItem.title} text={menuItem.title} path={menuItem.path} active={menuItem.path===pathname} regionDropdown={menuItem.regionDropdown} regions={regions} />)}
+              {menuItems.map(menuItem => <MenuItem key={menuItem.title} text={menuItem.title} path={menuItem.path} active={menuItem.path === pathname} regionDropdown={menuItem.regionDropdown} regions={regions} />)}
             </ul>
             <ul className="navbar-nav">
               <li className="nav-item">
@@ -106,6 +62,28 @@ class Navbar extends Component {
       </nav>
     )
   }
+}
+
+Navbar.propTypes = {
+  menuItems: PropTypes.arrayOf(PropTypes.shape({
+    title: PropTypes.string,
+    path: PropTypes.string,
+    regionDropdown: PropTypes.bool,
+    regions: PropTypes.arrayOf({
+      title: PropTypes.string,
+    }),
+  })),
+  menuCta: PropTypes.shape({
+    link: PropTypes.string,
+    text: PropTypes.string,
+  }),
+  pathname: PropTypes.string,
+  regions: PropTypes.arrayOf(PropTypes.shape({
+    id: PropTypes.string,
+    name: PropTypes.string,
+    slug: PropTypes.string,
+  })),
+  openMobileMenu: PropTypes.func,
 }
 
 

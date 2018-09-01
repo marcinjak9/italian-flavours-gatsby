@@ -1,26 +1,27 @@
 import React, { Component } from 'react'
 import { SvgLoader, SvgProxy } from 'react-svgmt'
+import PropTypes from 'prop-types'
 import map from '../img/Regions-new.svg'
 
 class MapFormContainer extends Component {
   constructor(props) {
     super(props)
     this.state = {
-      selectedRegion: "",
+      selectedRegion: '',
       onClient: false,
       error: {
         region: null,
         activity: null,
-        email: null
+        email: null,
       },
-      success: false
+      success: false,
     }
     this.activitySelect = React.createRef();
     this.emailForm = React.createRef();
   }
 
-  componentDidMount () {
-    this.setState({ onClient: true })
+  componentDidMount() {
+    this.setState({ onClient: true }) // eslint-disable-line
   }
 
   selectRegionHandler = (region) => {
@@ -32,20 +33,20 @@ class MapFormContainer extends Component {
     const { selectedRegion } = this.state
     let allValid = true
     if (!selectedRegion) {
-      this.setState(prevState => ({ ...prevState, error: { ...prevState.error, region: "You must select a region!" } }))
+      this.setState(prevState => ({ ...prevState, error: { ...prevState.error, region: 'You must select a region!' } }))
       allValid = false
     } else {
       this.setState(prevState => ({ ...prevState, error: { ...prevState.error, region: null } }))
     }
     if (!this.activitySelect.current.value) {
-      this.setState(prevState => ({ ...prevState, error: { ...prevState.error, activity: "You must select an activity!" } }))
+      this.setState(prevState => ({ ...prevState, error: { ...prevState.error, activity: 'You must select an activity!' } }))
       allValid = false
     } else {
       this.setState(prevState => ({ ...prevState, error: { ...prevState.error, activity: null } }))
     }
-    const regex = new RegExp(/^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/);
+    const regex = new RegExp(/^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/); // eslint-disable-line
     if (!this.emailForm.current.value || !regex.test(this.emailForm.current.value)) {
-      this.setState(prevState => ({ ...prevState, error: { ...prevState.error, email: "You must enter a valid email!" } }))
+      this.setState(prevState => ({ ...prevState, error: { ...prevState.error, email: 'You must enter a valid email!' } }))
       allValid = false
     } else {
       this.setState(prevState => ({ ...prevState, error: { ...prevState.error, email: null } }))
@@ -54,39 +55,40 @@ class MapFormContainer extends Component {
     if (allValid) {
       return this.submitForm({ email: this.emailForm.current.value, region: selectedRegion, activity: this.activitySelect.current.value })
     }
+    return null
   }
 
-  encode = (data) => {
-    return Object.keys(data)
-      .map(key => encodeURIComponent(key) + "=" + encodeURIComponent(data[key]))
-      .join("&");
-  }
+  encode = data => Object.keys(data)
+    .map(key => `${encodeURIComponent(key)}=${encodeURIComponent(data[key])}`)
+    .join('&')
 
   submitForm = (data) => {
     console.log(data)
-    fetch("/", {
-      method: "POST",
-      headers: { "Content-Type": "application/x-www-form-urlencoded" },
-      body: this.encode({ "form-name": "contact-home", ...data})
+    fetch('/', {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
+      body: this.encode({ 'form-name': 'contact-home', ...data }),
     })
-      .then(() => alert("Success!"))
+      .then(() => alert('Success!'))
       .catch(error => alert(error));
 
-    this.setState({ success: true })
+    this.setState({ success: true })
     this.resetForm()
   }
 
   resetForm = () => {
-    this.setState({ selectedRegion: "" });
-    this.emailForm.current.value = ""
-    this.activitySelect.current.value = ""
+    this.setState({ selectedRegion: '' });
+    this.emailForm.current.value = ''
+    this.activitySelect.current.value = ''
   }
-  
+
   render() {
-    const { selectedRegion, onClient, error, success } = this.state 
-    const { regions, title, options } = this.props
+    const {
+      selectedRegion, onClient, error, success,
+    } = this.state
+    const { regions, title, options } = this.props
     return (
-      <div className="container-fluid cari-amici-section grey-bg">
+      <div className="container-fluid cari-amici-section home-contact-section grey-bg">
         <div className="row">
           <div className="col">
             <div className="container">
@@ -99,16 +101,16 @@ class MapFormContainer extends Component {
                 <form className="col-md-6 d-flex flex-column home-form" onSubmit={this.handleSubmit} name="contact-home" data-netlify="true" data-netlify-honeypot="bot-field">
                   <div className="select-group">
                     <div className="form-group select-form" style={{ marginBottom: 80 }}>
-                      <select name="region" className="form-control" id="region-select" onChange={(e) => this.selectRegionHandler(e.target.value)}>
-                        <option style={{ marginTop: 50 }} value="" defaultChecked>Select the region you don’t want missy</option>
-                        {regions.map(region => <option key={region} selected={region === selectedRegion}>{region}</option>)}
+                      <select name="region" className="form-control" id="region-select" value={selectedRegion} onChange={e => this.selectRegionHandler(e.target.value)}>
+                        <option value="" disabled>Select the region you don’t want missy</option>
+                        {regions.map(region => <option key={region}>{region}</option>)}
                       </select>
                       {error.region && <p className="error-message">{error.region}</p>}
                     </div>
                     <div className="form-group select-form">
-                      <select name="activity" className="form-control" id="activity-select" ref={this.activitySelect}>
-                        <option value="" disabled selected>Select one “must to do” holiday’s activity</option>
-                       {options.map(option => <option key={option.title}>{option.title}</option>)}
+                      <select name="activity" className="form-control" defaultValue="" id="activity-select" ref={this.activitySelect}>
+                        <option value="" disabled>Select one “must to do” holiday’s activity</option>
+                        {options.map(option => <option key={option.title}>{option.title}</option>)}
                       </select>
                       {error.activity && <p className="error-message">{error.activity}</p>}
                     </div>
@@ -119,27 +121,34 @@ class MapFormContainer extends Component {
                     <strong className="brand-text">I will let you know within 24-hrs</strong>
                     <div className="text-right">
                       <button type="submit" className="btn btn-primary">Let Me know</button>
-                      {success && <p className="success-message">Thank you for the message, I'll let you know!</p>}
+                      {success && (
+                        <p className="success-message">
+                          Thank you for the message, I
+                          {"'"}
+                          ll let you know!
+                        </p>
+                      )}
                     </div>
                   </div>
                 </form>
                 <div className="col-md-6 map-container">
-                  {/* <Svg src={map} className="img-fluid" alt="" /> */}
                   <SvgLoader path={map}>
-                    {regions.map((region) => (
+                    {regions.map(region => (
                       <span key={region}>
                         <SvgProxy selector={`g#${region}`} onElementSelected={element => element.addEventListener('click', () => this.selectRegionHandler(region))} />
-                        {onClient  && document.querySelector(`g#${region} path[data-name="bg"]`)
-                          ?
+                        {onClient && document.querySelector(`g#${region} path[data-name="bg"]`)
+                          ? (
                             <span>
-                              <SvgProxy selector={`g#${region} path[data-name="bg"]`} style={`${selectedRegion === region && "fill: #00B2A7;"}`} />
-                              <SvgProxy selector={`g#${region} g[data-name="text"] path`} style={`${selectedRegion === region && "fill: #fff;"}`} />
+                              <SvgProxy selector={`g#${region} path[data-name="bg"]`} style={`${selectedRegion === region && 'fill: #00B2A7;'}`} />
+                              <SvgProxy selector={`g#${region} g[data-name="text"] path`} style={`${selectedRegion === region && 'fill: #fff;'}`} />
                             </span>
-                          :
+                          )
+                          : (
                             <span>
-                              <SvgProxy selector={`g#${region} #bg path`} style={`${selectedRegion === region && "fill: #00B2A7;"}`} />
-                              <SvgProxy selector={`g#${region} #text path`} style={`${selectedRegion === region && "fill: #fff;"}`} />
+                              <SvgProxy selector={`g#${region} #bg path`} style={`${selectedRegion === region && 'fill: #00B2A7;'}`} />
+                              <SvgProxy selector={`g#${region} #text path`} style={`${selectedRegion === region && 'fill: #fff;'}`} />
                             </span>
+                          )
                         }
                       </span>
                     ))}
@@ -152,6 +161,14 @@ class MapFormContainer extends Component {
       </div>
     )
   }
+}
+
+MapFormContainer.propTypes = {
+  regions: PropTypes.arrayOf(PropTypes.string),
+  title: PropTypes.string,
+  options: PropTypes.arrayOf(PropTypes.shape({
+    title: PropTypes.string,
+  })),
 }
 
 export default MapFormContainer

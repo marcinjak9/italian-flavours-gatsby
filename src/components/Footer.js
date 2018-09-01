@@ -12,7 +12,7 @@ const Footer = () => (
         <img src={logoWhite} alt="" className="footer-logo" />
       </div>
       <div className="container">
-        <div className="row">
+        <div className="row desktop-footer">
           <div className="col footer-item">
             <Link to="/personalized-events">Tailored Tours</Link>
           </div>
@@ -32,17 +32,28 @@ const Footer = () => (
               <a href="mailto:info@italianflavours.it">info@italianflavours.it</a>
             </p>
           </div>
+        </div>
 
+        <div className="row mobile-footer">
+          <div className="col footer-item">
+            <h3 className="brand-text">I listen to your dreams and make them true</h3>
+          </div>
+          <div className="col footer-item contact-item">
+            <a href="tel:+39 38 86 20 67">+39 38 86 20 67</a>
+          </div>
+          <div className="col footer-item contact-item">
+            <a href="mailto:info@italianflavours.it">info@italianflavours.it</a>
+          </div>
         </div>
 
         <div className="row">
           <div className="col-md-8 offset-md-2 text-center">
             <div className="row">
               <div className="col-md-12 footer-social-icons">
-                <a href="https://instagram.com" target="_blank">
+                <a href="https://instagram.com" target="_blank" rel="noopener noreferrer">
                   <img src={instagramLogo} alt="" />
                 </a>
-                <a href="https://facebook.com" target="_blank">
+                <a href="https://facebook.com" target="_blank" rel="noopener noreferrer">
                   <img src={facebookLogo} alt="" />
                 </a>
               </div>

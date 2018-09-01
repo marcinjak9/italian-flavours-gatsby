@@ -69,17 +69,19 @@ p
   background-color: #ffffff
   position: absolute
   opacity: 0
-  margin-top: 5px
   display: block
   visibility: hidden
   width: 100%
   overflow: hidden
   height: 0
+  padding: 0
 
   &.show
     visibility: visible
     opacity: 1
     height: inherit
+    padding: 0.5rem 0
+    margin-top: 5px
     opacity: 1
     transition: height 0ms 0ms, opacity 300ms 0ms
 
@@ -119,20 +121,8 @@ p
 #navigation.mobile.show .nav-link.btn 
   display: block
 
-
-#mobile-navigation-toggle.show 
-  position: fixed
-  top: 1rem
-  right: 1rem
-  z-index: 999
-
-
 .navbar-fixed-top #mobile-navigation-toggle i 
   color: $primary
-
-
-#navigation.mobile.show #mobile-navigation-toggle.show i 
-  color: #fff
 
 
 #navigation.mobile.show .navbar-nav.navbar-flex 
@@ -297,7 +287,7 @@ strong
 .home-section .section-title-wrapper h2 
   font-size: 2.2rem
   margin-bottom: 42px
-  font-size: normal
+  font-weight: normal
   color: #434A54
 
 
@@ -333,6 +323,9 @@ strong
   background-size: cover
   border-radius: 0
 
+.card-img-top
+  height: 100%
+  object-fit: cover
 
 .home-card .card-title 
   color: #18AA9A
@@ -396,7 +389,11 @@ strong
 
 .card-gallery 
   border: 2px solid #fff
+  height: 100%
 
+.instagram-wrapper
+  padding-bottom: 15px
+  padding-top: 15px
 
 .cta-blog 
   margin-top: 4rem
@@ -721,12 +718,6 @@ p.text-spacing,
 .padding-2 
   padding-left: 2rem
 
-
-.left-right 
-  margin-left: 10rem
-  margin-right: 10rem
-
-
 .no-margin 
   margin: 0 !important
 
@@ -759,6 +750,21 @@ p.text-spacing,
 .hero-bg-img .gatsby-image-wrapper 
   height: 100%
 
+.description-section
+  .btn
+    margin-top: 100px
+
+.desktop-footer
+  display: block
+
+.mobile-footer
+  display: none
+
+.mobile-menu-overlay
+  display: none
+
+.mobile-logo
+  display: none
 
 @media screen and (max-width: 480px) 
   .hero-container 
@@ -782,7 +788,162 @@ p.text-spacing,
   
   .navbar-custom-toggler 
     display: block
-  
+
+  .navbar-fixed-top
+    .mobile-logo
+      display: none
+
+  .navbar-fixed-top.before-scroll
+    min-height: 110px 
+    .navbar-brand
+      margin: 0 auto
+      margin-right: 74px
+      .mobile-logo
+        display: block
+        max-height: 72px
+    .white-logo
+      display: none
+    .navbar-custom-toggler i
+      color: #fff !important
+
+
+
+  .navbar-custom-toggler i
+    font-size: 30px
+
+    &:focus
+      outline: none
+
+  .brand-logo
+    max-height: 40px
+
+  .hero-container
+    min-height: inherit
+
+  .hero
+    h1
+      font-size: 2.6rem
+      line-height: 1.2
+    h3
+      font-weight: 300
+      font-size: 20px
+      margin-bottom: 30px
+  .home-section
+    .row>div
+      padding-left: 0
+      padding-right: 0
+    
+    .section-title-wrapper h2
+      font-size: 30px
+
+  .home-contact-section
+    display: none
+
+  .lead-text
+    font-size: 1.2rem
+    padding-right: 10px !important
+    padding-left: 10px !important
+
+    ul li
+      margin-bottom: 1rem
+
+  .description-section
+    .btn
+      margin-top: 50px
+      i.material-icons
+        padding-top: 10px
+
+  .desktop-footer
+    display: none
+
+  .mobile-footer
+    display: block
+
+    .contact-item a
+      border: 1px solid #fff
+      padding: 18px
+      border-radius: 4px
+      font-size: 26px
+
+  .instagram-wrapper
+    padding: 3px
+
+  .text-spacing-container
+    padding-left: 10px !important
+    padding-right: 10px !important
+
+  .mobile-menu-overlay
+    position: fixed
+    top: 0
+    left: 0
+    width: 100%
+    background-color: #434A54
+    display: block
+    z-index: 9999
+    transform: translateX(-100%)
+    transition: all .3s
+    height: 100%
+    overflow-y: auto
+    overflow-x: hidden
+    text-align: center
+    display: flex
+
+    .mobile-menu-wrapper
+      height: 100%
+      width: 100%
+      padding: 10px
+
+    .mobile-menu-nav
+      margin-top: 50px
+
+    .menu-footer
+      margin-top: 30px
+
+    .overlay-logo
+      max-width: 200px
+
+    .navbar-nav
+      font-weight: 300
+      text-align: center
+
+      .nav-item
+        margin-bottom: 17px
+        text-align: center
+
+        &.active a
+          color: #fff
+
+        a, button.nav-link
+          color: rgba(255,255,255, 0.6)
+          font-weight: 300
+          text-align: center
+
+        button.nav-link
+          margin: 0 auto
+          padding-left: 15px
+
+      li, button.nav-link
+        color: rgba(255,255,255, 0.6)
+        font-size: 30px
+
+      .dropdown-menu.custom-dropdown 
+        background-color: transparent
+        border: none
+
+        .dropdown-item
+          font-size: 30px
+          color: #fff
+          margin-bottom: 20px
+
+    &.show
+      transform: translateX(0)
+
+  .main-container-overflow 
+    overflow: hidden
+  .content-to-push
+    transition: all .3s
+    &.active
+      transform: translateX(100%)
 
 
 body.no-scroll 
