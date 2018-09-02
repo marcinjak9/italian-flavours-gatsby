@@ -9,6 +9,7 @@ region: Campania
 hero:
   ctaLink: /
   ctaText: ask me more
+  heroBgOverlay: true
   image: /img/flavor_wheel.jpg
   subtitle: >-
     An unforgettable gourmet journey among the most antique and precious
