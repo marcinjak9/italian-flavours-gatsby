@@ -6,6 +6,7 @@ const HomePagePreview = ({ entry, getAsset, widgetFor }) => (
   <HomePageTemplate
     hero={{
       bgImage: getAsset(entry.getIn(['data', 'hero', 'image'])),
+      bgOverlay: entry.getIn(['data', 'hero', 'heroBgOverlay']),
       title: entry.getIn(['data', 'hero', 'title']),
       payoff: entry.getIn(['data', 'hero', 'payoff']),
       buttonText: entry.getIn(['data', 'hero', 'ctaText']),

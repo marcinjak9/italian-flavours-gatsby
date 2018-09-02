@@ -43,6 +43,7 @@ const TourPagePreview = ({
         image: getAsset(entry.getIn(['data', 'hero', 'image'])),
         ctaText: entry.getIn(['data', 'hero', 'ctaText']),
         ctaLink: entry.getIn(['data', 'hero', 'ctaLink']),
+        bgOverlay: entry.getIn(['data', 'hero', 'heroBgOverlay']),
       }}
       tourTitle={entry.getIn(['data', 'tourSectionTitle'])}
       descriptionSection={{

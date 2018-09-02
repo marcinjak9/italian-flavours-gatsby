@@ -14,6 +14,7 @@ const AboutPagePreview = ({
         title: entry.getIn(['data', 'title']),
         subtitle: entry.getIn(['data', 'hero', 'subtitle']),
         image: getAsset(entry.getIn(['data', 'hero', 'bgImage'])),
+        bgOverlay: entry.getIn(['data', 'hero', 'heroBgOverlay']),
         ctaText: entry.getIn(['data', 'hero', 'ctaText']),
         ctaLink: entry.getIn(['data', 'hero', 'ctaLink']),
       }}

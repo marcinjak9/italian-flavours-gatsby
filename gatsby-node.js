@@ -36,7 +36,7 @@ exports.createPages = ({ boundActionCreators, graphql }) => {
           path: edge.node.fields.slug,
           // tags: edge.node.frontmatter.tags,
           component: path.resolve(
-            `src/templates/${String(edge.node.frontmatter.templateKey)}.js`
+            `src/templates/${String(edge.node.frontmatter.templateKey)}.js`,
           ),
           // additional data can be passed via context
           context: {
@@ -73,13 +73,37 @@ exports.createPages = ({ boundActionCreators, graphql }) => {
   })
 }
 
-exports.onCreateNode = ({ node, boundActionCreators, getNode }) => {
+const fs = require('fs')
+
+exports.onCreateNode = ({
+  node, boundActionCreators, getNode, getNodes,
+}) => {
   const { createNodeField } = boundActionCreators
 
-  if (node.internal.type === `MarkdownRemark`) {
+
+  if (node.internal.type === 'MarkdownRemark') {
+    // if (node.frontmatter && node.frontmatter.hero) {
+    //   if (node.frontmatter.hero.image) {
+    //     const pathToFile = path
+    //       .join(__dirname, 'static', node.frontmatter.hero.image)
+    //       // .split(path.sep)
+    //       // .join('/');
+    //     // console.log(pathToFile)
+    //     const fileNode = getNodes()
+    //     // fs.writeFile('./prova.json', fileNode, () => console.log('written'))
+    //     fs.writeFile('./prova.json', JSON.stringify(fileNode), 'utf8', (err) => {
+    //       if (err) {
+    //         return console.log(err);
+    //       }
+
+    //       console.log('The file was saved!');
+    //     });
+    //     // console.log(fileNode)
+    //   }
+    // }
     const value = createFilePath({ node, getNode })
     createNodeField({
-      name: `slug`,
+      name: 'slug',
       node,
       value,
     })
