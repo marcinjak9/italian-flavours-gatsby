@@ -3,7 +3,6 @@ import Link from 'gatsby-link'
 import PropTypes from 'prop-types'
 import Icon from 'material-icons-react'
 
-import landscapeLogo from '../img/landscape@2x.png'
 import logoWhite from '../img/logo-white.png'
 import MenuItem from './MenuItem'
 import styles from '../layouts/styles/styles'
@@ -11,13 +10,16 @@ import styles from '../layouts/styles/styles'
 class MobileNavbar extends Component {
   render() {
     const {
-      menuItems, menuCta, pathname, regions, openMobileMenu, close,
+      menuItems, pathname, regions, close,
     } = this.props
     return (
       <div className="mobile-menu-wrapper">
         <Link to="/" onClick={close}>
           <img src={logoWhite} alt="" className="overlay-logo" />
         </Link>
+        <button type="button" onClick={close}>
+          <Icon icon="close" color="#fff" style={{ position: 'absolute', top: 20, right: 20 }} size={40} />
+        </button>
         <div className="mobile-menu-nav">
           <ul className="navbar-nav">
             {menuItems.map(menuItem => (
@@ -34,7 +36,7 @@ class MobileNavbar extends Component {
             ))}
           </ul>
           <div className="menu-footer">
-            <Icon icon="favorite" color={styles.primary} />
+            <Icon icon="favorite" color={styles.primary} className="close-mobile-menu" />
             <p className="brand-text text-center">
               © 2018 - ❤ Travel. As much as you can. As far as you can. As long as you can.
             </p>

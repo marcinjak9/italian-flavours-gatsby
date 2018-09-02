@@ -59,7 +59,7 @@ export const AboutPageTemplate = ({
           <img src={instagram} alt="" />
           @italian_flavours
         </div>
-        <div className="row">
+        <div className="row justify-content-center">
           {instagramPhotos.map(item => (
             <InstagramPhoto key={item.id} id={item.id} />
           ))}

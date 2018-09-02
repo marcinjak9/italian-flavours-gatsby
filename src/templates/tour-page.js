@@ -169,7 +169,7 @@ export const TourPageTemplate = ({
         @
         {instagram.username}
       </div>
-      <div className="row">
+      <div className="row justify-content-center">
 
         {instagram.images.map(photo => (
           <InstagramPhoto id={photo.id} key={photo.id} />

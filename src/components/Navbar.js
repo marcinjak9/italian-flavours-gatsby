@@ -23,10 +23,10 @@ class Navbar extends Component {
 
   handleScroll = () => {
     const { pinned } = this.state
-    if (window.scrollY > 250 && !pinned) {
+    if (window.scrollY > 150 && !pinned) {
       this.setState({ pinned: true })
     }
-    if (window.scrollY <= 250 && pinned) {
+    if (window.scrollY <= 150 && pinned) {
       this.setState({ pinned: false })
     }
   }

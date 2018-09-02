@@ -115,7 +115,7 @@ export const PersonalizedEventsTemplate = ({
           <img src={instagram} alt="" />
           @italian_flavours
         </div>
-        <div className="row">
+        <div className="row justify-content-center">
 
           {instagramPhotos.map(photo => <InstagramPhoto id={photo.id} key={photo.id} />)}
 

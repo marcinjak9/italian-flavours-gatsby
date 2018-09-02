@@ -5,6 +5,16 @@ body
 p 
   white-space: pre-line
 
+button, input[type="submit"], input[type="reset"]
+  background: none
+  color: inherit
+  border: none
+  padding: 0
+  font: inherit
+  cursor: pointer
+  outline: inherit
+  cursor: pointer
+
 .navbar-fixed-top 
   position: fixed
   top: 0
@@ -571,6 +581,30 @@ footer .footer-social-icons img
 .instagram-img-container 
   width: 100%
   position: relative
+  padding-bottom: 100%
+  background: #EEE
+  height: 0
+  position: relative
+
+@keyframes placeHolderShimmer
+  0%
+    background-position: -468px 0
+  
+  100%
+    background-position: 468px 0
+    
+.animated-background 
+  animation-duration: 1.5s
+  animation-fill-mode: forwards
+  animation-iteration-count: infinite
+  animation-name: placeHolderShimmer
+  animation-timing-function: linear
+  background: #f6f7f8
+  background: linear-gradient(to right, #eeeeee 8%, #dddddd 18%, #eeeeee 33%)
+  background-size: 800px 104px
+  height: 96px
+  position: relative
+
 
 
 .instagram-img 
@@ -755,7 +789,7 @@ p.text-spacing,
     margin-top: 100px
 
 .desktop-footer
-  display: block
+  display: flex
 
 .mobile-footer
   display: none
@@ -766,186 +800,7 @@ p.text-spacing,
 .mobile-logo
   display: none
 
-@media screen and (max-width: 480px) 
-  .hero-container 
-    padding-top: 200px
-    padding-bottom: 200px
   
-  .home-form 
-    padding: 3rem 0
-  
-  footer 
-    text-align: center
-  
-  footer .footer-item 
-    margin: 1.2rem 0
-  
-  footer .footer-item a 
-    display: block
-  
-  .instagram-img-container 
-    margin-bottom: 1rem
-  
-  .navbar-custom-toggler 
-    display: block
-
-  .navbar-fixed-top
-    .mobile-logo
-      display: none
-
-  .navbar-fixed-top.before-scroll
-    min-height: 110px 
-    .navbar-brand
-      margin: 0 auto
-      margin-right: 74px
-      .mobile-logo
-        display: block
-        max-height: 72px
-    .white-logo
-      display: none
-    .navbar-custom-toggler i
-      color: #fff !important
-
-
-
-  .navbar-custom-toggler i
-    font-size: 30px
-
-    &:focus
-      outline: none
-
-  .brand-logo
-    max-height: 40px
-
-  .hero-container
-    min-height: inherit
-
-  .hero
-    h1
-      font-size: 2.6rem
-      line-height: 1.2
-    h3
-      font-weight: 300
-      font-size: 20px
-      margin-bottom: 30px
-  .home-section
-    .row>div
-      padding-left: 0
-      padding-right: 0
-    
-    .section-title-wrapper h2
-      font-size: 30px
-
-  .home-contact-section
-    display: none
-
-  .lead-text
-    font-size: 1.2rem
-    padding-right: 10px !important
-    padding-left: 10px !important
-
-    ul li
-      margin-bottom: 1rem
-
-  .description-section
-    .btn
-      margin-top: 50px
-      i.material-icons
-        padding-top: 10px
-
-  .desktop-footer
-    display: none
-
-  .mobile-footer
-    display: block
-
-    .contact-item a
-      border: 1px solid #fff
-      padding: 18px
-      border-radius: 4px
-      font-size: 26px
-
-  .instagram-wrapper
-    padding: 3px
-
-  .text-spacing-container
-    padding-left: 10px !important
-    padding-right: 10px !important
-
-  .mobile-menu-overlay
-    position: fixed
-    top: 0
-    left: 0
-    width: 100%
-    background-color: #434A54
-    display: block
-    z-index: 9999
-    transform: translateX(-100%)
-    transition: all .3s
-    height: 100%
-    overflow-y: auto
-    overflow-x: hidden
-    text-align: center
-    display: flex
-
-    .mobile-menu-wrapper
-      height: 100%
-      width: 100%
-      padding: 10px
-
-    .mobile-menu-nav
-      margin-top: 50px
-
-    .menu-footer
-      margin-top: 30px
-
-    .overlay-logo
-      max-width: 200px
-
-    .navbar-nav
-      font-weight: 300
-      text-align: center
-
-      .nav-item
-        margin-bottom: 17px
-        text-align: center
-
-        &.active a
-          color: #fff
-
-        a, button.nav-link
-          color: rgba(255,255,255, 0.6)
-          font-weight: 300
-          text-align: center
-
-        button.nav-link
-          margin: 0 auto
-          padding-left: 15px
-
-      li, button.nav-link
-        color: rgba(255,255,255, 0.6)
-        font-size: 30px
-
-      .dropdown-menu.custom-dropdown 
-        background-color: transparent
-        border: none
-
-        .dropdown-item
-          font-size: 30px
-          color: #fff
-          margin-bottom: 20px
-
-    &.show
-      transform: translateX(0)
-
-  .main-container-overflow 
-    overflow: hidden
-  .content-to-push
-    transition: all .3s
-    &.active
-      transform: translateX(100%)
-
-
 body.no-scroll 
   overflow: hidden
   margin: 0
