@@ -51,8 +51,8 @@ calendarTitle: Ultime date disponibili!
 calendarBody: organizza la tua prossima vacanza
 calendarNotes: fkjfirgbesuos
 aviabilityDates:
-  - endDate: Sep 29th 18
-    startDate: Sep 5th 18
+  - endDate: '2018-08-27'
+    startDate: '2018-08-24'
 instagramUsername: littletonya
 instagramPhotos:
   - id: '123'

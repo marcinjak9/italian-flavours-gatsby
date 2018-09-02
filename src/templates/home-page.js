@@ -19,6 +19,7 @@ export const HomePageTemplate = (props) => {
     <div>
       <div className="container-fluid hero-container">
         <img src={hero.bgImage} className="hero-bg-img" alt="" />
+        {hero.bgOverlay && <div className="hero-overlay" />}
         <div className="row outer-row">
           <div className="col">
             <div className="container">
@@ -114,6 +115,7 @@ HomePageTemplate.propTypes = {
     payoff: PropTypes.string,
     buttonText: PropTypes.string,
     buttonLink: PropTypes.string,
+    bgOverlay: PropTypes.bool,
   }),
   tourTitle: PropTypes.string,
   infoSection: PropTypes.shape({
@@ -155,6 +157,7 @@ const HomePage = ({
       payoff: pageData.frontmatter.hero.payoff,
       buttonText: pageData.frontmatter.hero.ctaText,
       buttonLink: pageData.frontmatter.hero.ctaUrl,
+      bgOverlay: pageData.frontmatter.hero.heroBgOverlay,
     }}
     tourTitle={pageData.frontmatter.tourSectionTitle}
     infoSection={{
@@ -175,7 +178,25 @@ const HomePage = ({
 
 HomePage.propTypes = {
   data: PropTypes.shape({
-    pageData: PropTypes.object,
+    pageData: PropTypes.shape({
+      frontmatter: PropTypes.shape({
+        hero: PropTypes.shape({
+          image: PropTypes.string,
+          title: PropTypes.string,
+          payoff: PropTypes.string,
+          buttonText: PropTypes.string,
+          buttonLink: PropTypes.string,
+          bgOverlay: PropTypes.bool,
+        }),
+        tourSectionTitle: PropTypes.string,
+        infoSection: PropTypes.shape({
+          title: PropTypes.string,
+          ctaUrl: PropTypes.string,
+          ctaText: PropTypes.string,
+        }),
+      }),
+      html: PropTypes.string,
+    }),
     tours: PropTypes.object,
   }),
 }
@@ -213,6 +234,7 @@ export const HomePageQuery = graphql`
           ctaText
           ctaUrl
           image
+          heroBgOverlay
           payoff
           title
         }

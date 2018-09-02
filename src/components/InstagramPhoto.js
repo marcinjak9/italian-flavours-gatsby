@@ -20,16 +20,11 @@ class InstagramPhoto extends React.Component {
         <div className="thumbnail instagram-img-container animated-background">
           <a href={`https://instagram.com/p/${id}`} target="blank" className="instagram-link">
             <img src={img} onError={() => this.setState({ error: true })} className="instagram-img" alt="Lights" />
+            {!error && (
             <div className="instagram-overlay">
-              <span className="d-flex">
-                <Icon icon="favorite" color="#fff" style={{ marginRight: 10 }} size={23} />
-                78
-              </span>
-              <span className="d-flex">
-                <Icon icon="mode_comment" color="#fff" style={{ marginRight: 10 }} size={23} />
-                12
-              </span>
+              <Icon icon="favorite" color="#fff" style={{ marginRight: 10 }} />
             </div>
+            )}
           </a>
         </div>
       </div>

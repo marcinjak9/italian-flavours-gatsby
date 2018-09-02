@@ -13,8 +13,8 @@ export const PersonalizedEventsTemplate = ({
   const PostContent = contentComponent || Content
   return (
     <div>
-
       <div className="container-fluid hero-container" style={{ backgroundImage: `url('${hero.image}')` }}>
+        {hero.bgOverlay && <div className="hero-overlay" /> }
         <div className="row outer-row">
           <div className="col">
             <div className="container">
@@ -131,7 +131,8 @@ PersonalizedEventsTemplate.propTypes = {
     title: PropTypes.string,
     subtitle: PropTypes.string,
     ctaLink: PropTypes.string,
-    ctaText: PropTypes.string,
+    bgOverlay: PropTypes.string,
+    bgImage: PropTypes.string,
   }),
   descriptionSection: PropTypes.shape({
     title: PropTypes.string,
@@ -239,6 +240,7 @@ export const personalizedEventsQuery = graphql`
         hero {
           subtitle
           bgImage
+          heroBgOverlay
           ctaText
           ctaLink
         }

@@ -3,6 +3,7 @@ module.exports = {
     title: 'Gatsby + Netlify CMS Starter',
   },
   plugins: [
+    'gatsby-plugin-react-next',
     'gatsby-plugin-react-helmet',
     'gatsby-plugin-sass',
     {
@@ -24,12 +25,6 @@ module.exports = {
       options: {
         path: `${__dirname}/src/img`,
         name: 'images',
-      },
-    },
-    {
-      resolve: 'gatsby-plugin-page-transitions',
-      options: {
-        transitionTime: 500,
       },
     },
     'gatsby-plugin-sharp',

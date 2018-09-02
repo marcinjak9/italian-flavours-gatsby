@@ -48,8 +48,8 @@ calendarTitle: Dai un'occhiata!
 calendarBody: Scopri le ultime date ancora disponibili
 calendarNotes: Enjoy
 aviabilityDates:
-  - endDate: Sep 21st 18
-    startDate: Sep 3rd 18
+  - endDate: '2018-08-27'
+    startDate: '2018-08-24'
 instagramUsername: matilda
 instagramPhotos:
   - id: fewnjferw

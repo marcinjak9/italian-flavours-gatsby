@@ -57,8 +57,8 @@ calendarBody: >
 calendarNotes: |
   Same additional notes can be placed here.
 aviabilityDates:
-  - endDate: Sep 22nd 18
-    startDate: Sep 5th 18
+  - endDate: '2018-08-27'
+    startDate: '2018-08-24'
 instagramUsername: italian_flavours
 instagramPhotos:
   - id: '534543'

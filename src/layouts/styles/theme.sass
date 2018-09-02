@@ -53,6 +53,9 @@ button, input[type="submit"], input[type="reset"]
 
     .nav-item 
       position: relative
+      .material-icons
+        font-size: 30px !important
+
       .nav-link:hover, .nav-link:focus, &.active .nav-link
         color: #fff
       
@@ -64,6 +67,10 @@ button, input[type="submit"], input[type="reset"]
         margin: 0 100px
 .nav-item 
   position: relative
+  .btn 
+    font-size: 1rem
+  .material-icons
+    font-size: 25px
 .navbar-nav
   &.navbar-flex 
     flex: 1
@@ -219,22 +226,27 @@ strong
 
 .hero 
   text-align: center
+  h1 
+    color: #FFFFFF
+    font-size: 3.6rem
+    line-height: 73px
+    text-align: center
+    margin-bottom: 1.9rem
 
+  h3 
+    color: #fff
+    font-size: 1.5rem
+    font-weight: normal
+    text-align: center
+    margin-bottom: 4.3rem
 
-.hero h1 
-  color: #FFFFFF
-  font-size: 3.6rem
-  line-height: 73px
-  text-align: center
-  margin-bottom: 1.9rem
-
-
-.hero h3 
-  color: #fff
-  font-size: 1.5rem
-  font-weight: normal
-  text-align: center
-  margin-bottom: 4.3rem
+.hero-overlay
+  position: absolute
+  top: 0
+  left: 0
+  right: 0
+  bottom: 0
+  background-color: rgba(0,0,0,0.5)
 
 
 .hero-container 
@@ -604,7 +616,7 @@ footer .footer-social-icons img
     
 .animated-background 
   animation-duration: 1.5s
-  animation-fill-mode: forwards
+  animation-fill-mode: both
   animation-iteration-count: infinite
   animation-name: placeHolderShimmer
   animation-timing-function: linear
@@ -614,7 +626,26 @@ footer .footer-social-icons img
   height: 96px
   position: relative
 
+@keyframes likeAnimation
+  0%
+    font-size: 45px
+  
+  30%
+    font-size: 60px
 
+  70%
+    font-size: 45px
+
+  100%
+    font-size: 45px
+    
+
+.instagram-overlay i.material-icons
+  animation-duration: 1s
+  animation-fill-mode: forwards
+  animation-iteration-count: infinite
+  animation-name: likeAnimation
+  animation-timing-function: linear
 
 .instagram-img 
   width: 100%

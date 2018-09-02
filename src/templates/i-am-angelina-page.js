@@ -14,6 +14,7 @@ export const AboutPageTemplate = ({
   return (
     <div>
       <div className="container-fluid hero-container" style={{ backgroundImage: `url('${hero.image}')` }}>
+        {hero.bgOverlay && <div className="hero-overlay" /> }
         <div className="row outer-row">
           <div className="col">
             <div className="container">
@@ -104,6 +105,7 @@ const AboutPage = ({
       image: hero.bgImage,
       ctaLink: hero.ctaLink,
       ctaText: hero.ctaText,
+      bgOverlay: hero.heroBgOverlay,
     }}
     instagramPhotos={instagramPhotos}
     contentComponent={HTMLContent}
@@ -129,6 +131,7 @@ AboutPage.propTypes = {
           image: PropTypes.string,
           ctaLink: PropTypes.string,
           ctaText: PropTypes.string,
+          heroBgOverlay: PropTypes.bool,
         }),
       }),
     }),
@@ -147,6 +150,7 @@ export const aboutPageQuery = graphql`
         hero {
           subtitle
           bgImage
+          heroBgOverlay
           ctaText
           ctaLink
         }

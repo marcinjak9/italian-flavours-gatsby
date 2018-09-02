@@ -54,8 +54,8 @@ calendarTitle: Scopri le ultime date disponibili
 calendarBody: Dai un'occhiata e scegli il periodo migliore per te
 calendarNotes: Enjoy
 aviabilityDates:
-  - endDate: Feb 14th 19
-    startDate: Sep 11th 18
+  - endDate: '2018-08-27'
+    startDate: '2018-08-24'
 instagramUsername: alexeintree
 instagramPhotos:
   - id: '4325435543'

@@ -5,12 +5,15 @@ import shortid from 'shortid'
 import instagramIcon from '../img/instagram-icon-black.png'
 import InstagramPhoto from '../components/InstagramPhoto'
 import ContactForm from '../components/ContactForm'
+import CalendarComponent from '../components/CalendarComponent'
+import BlogCard from '../components/BlogCard'
 
 export const TourPageTemplate = ({
   hero, descriptionSection, gallery, blogSectionTitle, calendar, instagram,
 }) => (
   <div>
     <div className="container-fluid hero-container" style={{ backgroundImage: `url('${hero.image}')` }}>
+      {hero.bgOverlay && <div className="hero-overlay" /> }
       <div className="row outer-row">
         <div className="col">
           <div className="container">
@@ -85,47 +88,17 @@ export const TourPageTemplate = ({
     </div>
 
     <div className="container-fluid cari-amici-section grey-bg">
-      <h1 className="text-center grey-text">{blogSectionTitle}</h1>
       <div className="row">
-
-        <div className="col-md-6">
-          <div className="card home-card">
-            <div className="card-img-top" style={{ backgroundImage: "url('https://placehold.it/400x200')" }} alt="Card image cap" />
-            <div className="card-body">
-              <h5 className="card-title font-italic">Alex and Jane Sullivan (Canada)</h5>
-              <p className="card-text">
-                Angelina was wonderful and did a terrific job. We both thoroughly enjoyed the trip as did Janet and Adrian -
-                mostly due to Angelina. She was a delight. I can’t tell you how excited we are to be coming back to Italy and
-                to be seeing you again. It was always our dream that we would come back one day and have you share your beautiful
-                country with us.
-              </p>
-              <div className="card-date text-center">
-                September 2017
-              </div>
-            </div>
-            <div className="card-action text-center">
-              <a href="/" className="btn btn-link">Read more</a>
-            </div>
-          </div>
+        <div className="col-md-12 section-title-wrapper">
+          <h2 className="text-center brand-text">{blogSectionTitle}</h2>
         </div>
 
-        <div className="col-md-6">
-          <div className="card home-card">
-            <div className="card-img-top" style={{ backgroundImage: "url('https://placehold.it/400x200')" }} alt="Card image cap" />
-            <div className="card-body">
-              <h5 className="card-title font-italic">Yu Yan - Taipei (Taiwan)</h5>
-              <p className="card-text">
-                Angelina was wonderful and did a terrific job. We both thoroughly enjoyed the trip as did Janet and Adrian -
-                mostly due to Angelina. She was a delight. I can’t tell you how excited we are to be coming back to Italy and
-                to be seeing you again. It was always our dream that we would come back one day and have you share your beautiful
-                country with us.
-              </p>
-              <div className="card-date text-center">
-                September 2017
-              </div>
-            </div>
-            <div className="card-action text-center">
-              <a href="/" className="btn btn-link">Read more</a>
+        <div className="col">
+          <div className="container">
+            <div className="row">
+              {[1, 1].map((post, i) => (
+                  <BlogCard key={i} /> /* eslint-disable-line */
+              ))}
             </div>
           </div>
         </div>
@@ -142,13 +115,7 @@ export const TourPageTemplate = ({
         </div>
         <div className="col-md-6 offset-md-3 d-flex justify-content-center">
           <div id="calendar" />
-          {calendar.dates.map(date => (
-            <p key={date.startDate}>
-              {date.startDate}
-              {' '}
-              {date.endDate}
-            </p>
-          ))}
+          {calendar.dates && <CalendarComponent dates={calendar.dates} />}
         </div>
         <div className="col-md-4 offset-md-4">
           <br />
@@ -189,6 +156,7 @@ TourPageTemplate.propTypes = {
     image: PropTypes.string,
     ctaText: PropTypes.string,
     ctaLink: PropTypes.string,
+    bgOverlay: PropTypes.bool,
   }),
   descriptionSection: PropTypes.shape({
     title: PropTypes.string,
@@ -240,6 +208,7 @@ const TourPage = ({
       image: hero.image,
       ctaText: hero.ctaText,
       ctaLink: hero.ctaLink,
+      bgOverlay: hero.heroBgOverlay,
     }}
     descriptionSection={{
       title: tourDescription.title,
@@ -286,6 +255,7 @@ export const tourPageQuery = graphql`
           subtitle
           ctaText
           ctaLink
+          heroBgOverlay
         }
         tourDescription {
           title

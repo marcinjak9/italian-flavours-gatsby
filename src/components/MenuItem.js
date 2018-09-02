@@ -42,7 +42,7 @@ class MenuItem extends Component {
         <li className={`nav-item ${active && 'active'} ${mobile && 'mobile'}`}>
           <button type="button" className={`btn btn-link nav-link ${regionDropdown && 'd-flex'} ${open && 'text-white'}`} to={path} onClick={() => this.setState(prevState => ({ open: !prevState.open }))} ref={node => this.button = node}>
             {text}
-            {regionDropdown && <Icon icon="expand_more" color="#00B2A7" size={30} style={{ paddingTop: mobile ? 10 : 0 }} />}
+            {regionDropdown && <Icon icon="expand_more" color="#00B2A7" style={{ paddingTop: mobile ? 10 : 0 }} />}
           </button>
           <div className={`dropdown-menu custom-dropdown ${open ? 'show' : ''}`} ref={node => this.dropdown = node}>
             {regions.map(region => <Link key={region.id} to={region.slug} className="dropdown-item" onClick={() => { onClick(); this.setState({ open: false }) }}>{region.name}</Link>)}

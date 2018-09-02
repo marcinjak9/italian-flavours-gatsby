@@ -50,8 +50,8 @@ calendarTitle: Prenota subito
 calendarBody: sjhasdhjas
 calendarNotes: enjoy
 aviabilityDates:
-  - endDate: Feb 15th 19
-    startDate: Nov 6th 18
+  - endDate: '2018-08-27'
+    startDate: '2018-08-24'
 instagramUsername: ruber
 instagramPhotos:
   - id: hdhewyu

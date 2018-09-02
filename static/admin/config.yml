@@ -30,7 +30,7 @@ collections:
                 widget: string
               - label: Region Dropdown
                 name: regionDropdown
-                widget: boolean
+                widget: 
                 default: false
           - label: Menu CTA text
             name: menuCtaText
@@ -106,6 +106,10 @@ collections:
         - label: Background Image
           name: image
           widget: image
+        - label: Hero Background Dark Overlay
+          name: heroBgOverlay
+          widget: boolean
+          default: false
         - label: Tour Subtitle
           name: subtitle
           widget: string
@@ -181,13 +185,11 @@ collections:
             name: startDate
             widget: date
             default: ""
-            format: "MMM Do YY"
             
           - label: End Date
             name: endDate
             widget: date
             default: ""
-            format: "MMM Do YY"
 
       - label: Instagram username
         name: instagramUsername
@@ -237,6 +239,11 @@ collections:
               - label: Hero Background Image
                 name: image
                 widget: image
+              
+              - label: Hero Background Dark Overlay
+                name: heroBgOverlay
+                widget: boolean
+                default: false
 
           - label: Tour Section Title
             name: tourSectionTitle
@@ -303,6 +310,10 @@ collections:
             - label: Background Image
               name: bgImage
               widget: image
+            - label: Hero Background Dark Overlay
+              name: heroBgOverlay
+              widget: boolean
+              default: false
             - label: Call to action Text
               name: ctaText
               widget: string
@@ -347,6 +358,10 @@ collections:
             - label: Background Image
               name: bgImage
               widget: image
+            - label: Hero Background Dark Overlay
+              name: heroBgOverlay
+              widget: boolean
+              default: false
             - label: Call to action Text
               name: ctaText
               widget: string
