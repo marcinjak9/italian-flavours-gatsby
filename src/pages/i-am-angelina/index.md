@@ -5,6 +5,7 @@ hero:
   bgImage: /img/products-grid1.jpg
   ctaLink: /
   ctaText: Talk to me
+  heroBgOverlay: true
   subtitle: >-
     I am a Sardinian professional gourmet travel consultant, founder of Italian
     Flavours, a boutique gourmet tour operator specialised in creating unique
