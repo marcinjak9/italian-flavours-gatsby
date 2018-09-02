@@ -5,6 +5,7 @@ hero:
   bgImage: /img/chemex.jpg
   ctaLink: /
   ctaText: ASK ME MORE
+  heroBgOverlay: true
   subtitle: >-
     An unforgettable gourmet journey among the most antique and precious
     culinary and cultural traditions of Italy
