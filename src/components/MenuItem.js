@@ -40,7 +40,7 @@ class MenuItem extends Component {
     if (regionDropdown) {
       return (
         <li className={`nav-item ${active && 'active'} ${mobile && 'mobile'}`}>
-          <button type="button" className={`btn btn-link nav-link ${regionDropdown && 'd-flex'} ${open && 'text-white'}`} to={path} onClick={() => this.setState(prevState => ({ open: !prevState.open }))} ref={node => this.button = node}>
+          <button type="button" className={`btn btn-link nav-link ${regionDropdown && 'd-flex'}`} to={path} onClick={() => this.setState(prevState => ({ open: !prevState.open }))} ref={node => this.button = node}>
             {text}
             {regionDropdown && <Icon icon="expand_more" color="#00B2A7" style={{ paddingTop: mobile ? 10 : 0 }} />}
           </button>
