@@ -45,13 +45,16 @@ galleryBottom:
   - image: /img/products-grid2.jpg
   - image: /img/products-grid3.jpg
 blogSectionTitle: Cari Amici on this tour with me
-calendarTitle: Prenota le ultime date!
-calendarBody: Ecco le ultime date disponibili
-calendarNotes: Enjoy!
+calendarTitle: Available dates for your amazing tour
+calendarBody: >
+  Pick your more suitable period among the two blocks of 10 days on which I
+  usually run this tour.
+calendarNotes: |
+  Same additional notes can be placed here.
 aviabilityDates:
   - endDate: Dec 13th 18
     startDate: Sep 5th 18
-instagramUsername: campaniatours
+instagramUsername: italian_flavours
 instagramPhotos:
   - id: '423432'
   - id: '4326'
