@@ -59,7 +59,7 @@ const Footer = () => (
               </div>
               <div className="col-md-12 footer-copyright">
                 <p className="brand-text">© 2018 - ❤ Travel. As much as you can. As far as you can. As long as you can.</p>
-                <p className="white-text">Italian Flavours is a trademark of Sardinia Flavour srl - P.IVA: 01091230951 – R.E.A: 129805</p>
+                <p className="legal">Italian Flavours is a trademark of Sardinia Flavour srl - P.IVA: 01091230951 – R.E.A: 129805</p>
               </div>
             </div>
           </div>

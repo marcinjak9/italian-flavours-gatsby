@@ -162,7 +162,7 @@ strong
 .btn-primary 
   border-color: $primary
   background-color: $primary
-  font-weight: 600
+  font-weight: 400
   padding: 13px 30px
   text-transform: uppercase
   transition: all .3s
@@ -437,21 +437,27 @@ footer
 
 
 footer .footer-item 
-  color: #fff
   min-width: 200px
 
 
 .footer-item a 
-  color: rgba(255, 255, 255, .8)
+  color: rgba(255,255,255, 0.5)
   text-decoration: none
   font-size: 20px
   font-weight: 300
   line-height: 25px
+  transition: color .3s
+
+  &:hover
+    color: rgba(255,255,255, 1)
 
 
 footer .footer-contacts 
   margin-top: .5rem
   line-height: 2.2rem
+
+  a
+    display: block
 
 
 footer .footer-social-icons img 
@@ -461,6 +467,9 @@ footer .footer-social-icons img
 
 .footer-copyright 
   font-weight: 300
+
+  .legal
+    color: rgba(255,255,255, 0.5)
 
 
 .footer-copyright p 
