@@ -3,6 +3,7 @@ templateKey: home-page
 hero:
   ctaText: You tasty holiday in Fracs
   ctaUrl: /
+  heroBgOverlay: true
   image: /img/jumbotron.jpg
   payoff: >
     I am specialised in tailor-made gourmet holidays. I love creating travel
