@@ -55,6 +55,10 @@ calendarNotes: |
 aviabilityDates:
   - endDate: '2018-08-24'
     startDate: '2018-08-27'
+  - endDate: '2018-09-20'
+    startDate: '2018-09-11'
+  - endDate: '2018-10-26'
+    startDate: '2018-10-09'
 instagramUsername: italian_flavours
 instagramPhotos:
   - id: '423432'
