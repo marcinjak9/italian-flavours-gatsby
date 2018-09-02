@@ -1,11 +1,17 @@
 import React from 'react'
 import Link from 'gatsby-link'
+import PropTypes from 'prop-types'
+import shortid from 'shortid'
 
 import logoWhite from '../img/logo-white.png'
 import instagramLogo from '../img/Instagram@2x.png'
 import facebookLogo from '../img/Facebook@2x.png'
 
-const Footer = () => (
+const Footer = ({
+  copyrightText, creditsText,
+  footerContacts: { emailAddress, phoneNumber },
+  footerMenuItems, socialInfo: { facebookUrl, instagramUsername },
+}) => (
   <footer className="container-fluid no-top-padding">
     <div className="row">
       <div className="col-md-12 text-center">
@@ -13,25 +19,24 @@ const Footer = () => (
       </div>
       <div className="container">
         <div className="row desktop-footer">
-          <div className="col footer-item">
-            <Link to="/personalized-events">Tailored Tours</Link>
-          </div>
-          <div className="col footer-item">
-            <Link to="/personalized-events">Personalised events</Link>
-          </div>
-          <div className="col footer-item">
-            <Link to="/">Experiences Blog</Link>
-          </div>
-          <div className="col footer-item">
-            <Link to="/i-am-angelina">I am Angelina</Link>
-          </div>
-          <div className="col footer-item">
-            <Link to="/">Contact me</Link>
-            <p className="footer-contacts">
-              <a href="tel:+39 38 86 20 67 20">+39 38 86 20 67 20</a>
-              <a href="mailto:info@italianflavours.it">info@italianflavours.it</a>
-            </p>
-          </div>
+          {footerMenuItems.map((item, i) => {
+            if (i === footerMenuItems.length - 1) {
+              return (
+                <div key={shortid.generate()} className="col footer-item">
+                  <Link to={item.url}>{item.title}</Link>
+                  <p className="footer-contacts">
+                    <a href={`tel:${phoneNumber}`}>{phoneNumber}</a>
+                    <a href={`mailto:${emailAddress}`}>{emailAddress}</a>
+                  </p>
+                </div>
+              )
+            }
+            return (
+              <div key={shortid.generate()} className="col footer-item">
+                <Link to={item.url}>{item.title}</Link>
+              </div>
+            )
+          })}
         </div>
 
         <div className="row mobile-footer">
@@ -39,10 +44,10 @@ const Footer = () => (
             <h3 className="brand-text">I listen to your dreams and make them true</h3>
           </div>
           <div className="col footer-item contact-item">
-            <a href="tel:+39 38 86 20 67">+39 38 86 20 67</a>
+            <a href={`tel:${phoneNumber}`}>{phoneNumber}</a>
           </div>
           <div className="col footer-item contact-item">
-            <a href="mailto:info@italianflavours.it">info@italianflavours.it</a>
+            <a href={`mailto:${emailAddress}`}>{emailAddress}</a>
           </div>
         </div>
 
@@ -50,16 +55,16 @@ const Footer = () => (
           <div className="col-md-8 offset-md-2 text-center">
             <div className="row">
               <div className="col-md-12 footer-social-icons">
-                <a href="https://instagram.com" target="_blank" rel="noopener noreferrer">
+                <a href={`https://instagram.com/${instagramUsername}`} target="_blank" rel="noopener noreferrer">
                   <img src={instagramLogo} alt="" />
                 </a>
-                <a href="https://facebook.com" target="_blank" rel="noopener noreferrer">
+                <a href={facebookUrl} target="_blank" rel="noopener noreferrer">
                   <img src={facebookLogo} alt="" />
                 </a>
               </div>
               <div className="col-md-12 footer-copyright">
-                <p className="brand-text">© 2018 - ❤ Travel. As much as you can. As far as you can. As long as you can.</p>
-                <p className="legal">Italian Flavours is a trademark of Sardinia Flavour srl - P.IVA: 01091230951 – R.E.A: 129805</p>
+                <p className="brand-text">{creditsText}</p>
+                <p className="legal">{copyrightText}</p>
               </div>
             </div>
           </div>
@@ -69,5 +74,22 @@ const Footer = () => (
     </div>
   </footer>
 )
+
+Footer.propTypes = {
+  copyrightText: PropTypes.string,
+  creditsText: PropTypes.string,
+  footerContacts: PropTypes.shape({
+    emailAddress: PropTypes.string,
+    phoneNumber: PropTypes.string,
+  }),
+  footerMenuItems: PropTypes.arrayOf(PropTypes.shape({
+    title: PropTypes.string,
+    url: PropTypes.string,
+  })),
+  socialInfo: PropTypes.shape({
+    facebookUrl: PropTypes.string,
+    instagramUsername: PropTypes.string,
+  }),
+}
 
 export default Footer
