@@ -45,10 +45,6 @@ galleryUpper:
   - image: /img/candre-mandawe-770521-unsplash.jpg
   - image: /img/4.jpg
   - image: /img/chemex.jpg
-galleryBottom:
-  - image: /img/candre-mandawe-770521-unsplash.jpg
-  - image: /img/jumbotron.jpg
-  - image: /img/flavor_wheel.jpg
 blogSectionTitle: Cari Amici on this tour with me
 calendarTitle: Available dates for your amazing tour
 calendarBody: >

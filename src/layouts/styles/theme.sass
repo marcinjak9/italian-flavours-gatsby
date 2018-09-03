@@ -356,39 +356,38 @@ strong
   line-height: 26px
 
 
-.home-card .card-action 
-  margin: 1rem
-  padding-top: 1rem
-  margin-top: 0
-  border-top: 1px solid #E0ECE1
+.home-card 
+  .card-action 
+    margin: 1rem
+    padding-top: 1rem
+    margin-top: 0
+    border-top: 1px solid #E0ECE1
 
+  .card-body 
+    position: relative
+    padding-top: 3rem
 
-.home-card.card p 
-  color: $text-dark
-  font-size: 1rem
-  margin-bottom: 2.5rem
-  font-weight: 300
+  .plus-button-card 
+    position: absolute
+    top: 0
+    right: 2.3rem
+    margin-top: 0
+    transform: translateY(-50%)
+    display: flex
+    justify-content: center
+    align-items: center
+    border-radius: 50%
+    background-color: $primary
+    color: #fff
+    padding: .5rem
+    transition: all .3s
 
-
-.home-card .card-body 
-  position: relative
-  padding-top: 3rem
-
-
-.home-card .plus-button-card 
-  position: absolute
-  top: 0
-  right: 1rem
-  margin-top: 0
-  transform: translateY(-50%)
-  display: flex
-  justify-content: center
-  align-items: center
-  border-radius: 50%
-  background-color: $primary
-  color: #fff
-  padding: .5rem
-  transition: all .3s
+  .card-text
+    font-size: .95rem
+    color: $text-dark
+    margin-bottom: 2.5rem
+    font-weight: 300
+    line-height: 1.45rem
 
 
 .blog-section .plus-button-card 

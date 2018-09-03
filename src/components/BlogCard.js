@@ -8,7 +8,7 @@ import Icon from 'material-icons-react'
 const BlogCard = ({ title, image, description }) => (
   <div className="col-md-6">
     <div className="card home-card">
-      <img src="https://placehold.it/800x400" style={{ height: 250 }} alt="" />
+      <img src="https://source.unsplash.com/collection/148531/1200x600" style={{ height: 250 }} alt="" />
       <div className="card-body">
         <Link to="/" className="plus-button-card">
           <Icon icon="nature_people" color="white" />

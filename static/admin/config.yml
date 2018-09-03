@@ -170,14 +170,28 @@ collections:
           - label: Image
             name: image
             widget: image
-      - label: Bottom Gallery
-        name: galleryBottom
+      # - label: Bottom Gallery
+      #   name: galleryBottom
+      #   widget: list
+      #   default: [{ image: https://source.unsplash.com/collection/148531/800x800 }, { image: https://source.unsplash.com/collection/148531/800x800 }, { image: https://source.unsplash.com/collection/148531/800x800 }, { image: https://source.unsplash.com/collection/148531/800x800 }, { image: https://source.unsplash.com/collection/148531/800x800 }, { image: https://source.unsplash.com/collection/148531/800x800 }, ]
+      #   fields: 
+      #     - label: Image
+      #       name: image
+      #       widget: image
+      - label: Description Cards
+        name: descriptionCards
         widget: list
-        default: [{ image: https://source.unsplash.com/collection/148531/800x800 }, { image: https://source.unsplash.com/collection/148531/800x800 }, { image: https://source.unsplash.com/collection/148531/800x800 }, { image: https://source.unsplash.com/collection/148531/800x800 }, { image: https://source.unsplash.com/collection/148531/800x800 }, { image: https://source.unsplash.com/collection/148531/800x800 }, ]
         fields: 
-          - label: Image
-            name: image
-            widget: image
+          - label: title
+            name: title
+            widget: string
+          - label: Subtitle
+            name: subtitle
+            widget: string
+          - label: Body
+            name: body
+            widget: text
+
       - label: Blog Section Title
         name: blogSectionTitle
         widget: string

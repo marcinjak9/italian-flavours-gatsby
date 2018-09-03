@@ -42,10 +42,6 @@ galleryUpper:
   - image: /img/4.jpg
   - image: /img/chemex.jpg
   - image: /img/jumbotron.jpg
-galleryBottom:
-  - image: /img/products-full-width.jpg
-  - image: /img/chemex.jpg
-  - image: /img/products-grid1.jpg
 blogSectionTitle: Cari Amici on this tour with me
 calendarTitle: Ultime date disponibili!
 calendarBody: organizza la tua prossima vacanza

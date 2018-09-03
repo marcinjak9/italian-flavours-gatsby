@@ -41,10 +41,6 @@ galleryUpper:
   - image: /img/4.jpg
   - image: /img/chemex.jpg
   - image: /img/jumbotron.jpg
-galleryBottom:
-  - image: /img/products-full-width.jpg
-  - image: /img/products-grid2.jpg
-  - image: /img/products-grid3.jpg
 blogSectionTitle: Cari Amici on this tour with me
 calendarTitle: Available dates for your amazing tour
 calendarBody: >

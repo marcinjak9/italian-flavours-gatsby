@@ -41,10 +41,6 @@ galleryUpper:
   - image: /img/products-grid3.jpg
   - image: /img/jumbotron.jpg
   - image: /img/4.jpg
-galleryBottom:
-  - image: /img/candre-mandawe-770521-unsplash.jpg
-  - image: /img/products-grid2.jpg
-  - image: /img/products-full-width.jpg
 blogSectionTitle: Cari Amici on this tour with me
 calendarTitle: Prenota subito
 calendarBody: sjhasdhjas

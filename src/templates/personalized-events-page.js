@@ -39,7 +39,7 @@ export const PersonalizedEventsTemplate = ({
           </div>
         </div>
         <div className="row">
-          <div className="col-md-10 offset-md-1 padding-2 text-spacing-container">
+          <div className="col-md-10 offset-md-1 text-spacing-container">
             <PostContent content={content} />
           </div>
         </div>
@@ -61,7 +61,7 @@ export const PersonalizedEventsTemplate = ({
       <div className="container personalized-events-section">
         <div className="row">
           <div className="col-md-12">
-            <h2 className="text-center dk-brand-text padding-2">{gallerySection.title}</h2>
+            <h2 className="text-center dk-brand-text">{gallerySection.title}</h2>
             <div className="col-md-10 offset-md-1">
               <p className="text-center grey-text">
                 {gallerySection.body}

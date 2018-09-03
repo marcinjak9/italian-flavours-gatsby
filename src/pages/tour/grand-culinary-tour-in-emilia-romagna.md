@@ -45,10 +45,6 @@ galleryUpper:
   - image: /img/chemex.jpg
   - image: /img/candre-mandawe-770521-unsplash.jpg
   - image: /img/jumbotron.jpg
-galleryBottom:
-  - image: /img/products-full-width.jpg
-  - image: /img/products-grid2.jpg
-  - image: /img/flavor_wheel.jpg
 blogSectionTitle: Cari Amici on this Tour with me!
 calendarTitle: Scopri le ultime date disponibili
 calendarBody: Dai un'occhiata e scegli il periodo migliore per te

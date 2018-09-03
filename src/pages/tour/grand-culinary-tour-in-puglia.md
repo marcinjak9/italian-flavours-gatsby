@@ -39,10 +39,6 @@ galleryUpper:
   - image: /img/chemex.jpg
   - image: /img/jumbotron.jpg
   - image: /img/products-grid1.jpg
-galleryBottom:
-  - image: /img/candre-mandawe-770521-unsplash.jpg
-  - image: /img/4.jpg
-  - image: /img/products-grid2.jpg
 blogSectionTitle: Cari Amici on this tour with me
 calendarTitle: Dai un'occhiata!
 calendarBody: Scopri le ultime date ancora disponibili
