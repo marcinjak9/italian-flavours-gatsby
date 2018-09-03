@@ -73,7 +73,7 @@ export const TourPageTemplate = ({
       </div>
     </div>
 
-    <div className="container-fluid personalized-events-section">
+    {/* <div className="container-fluid personalized-events-section">
       <div className="row">
 
         {gallery.galleryBottom && gallery.galleryBottom.map(photo => (
@@ -85,7 +85,24 @@ export const TourPageTemplate = ({
         ))}
 
       </div>
+    </div> */}
+    <div className="container-fluid personalized-events-section tour-page-cards">
+      <div className="row">
+
+        {gallery.cards.map((card, i) => (
+          <div className="col-md-4 no-padding" key={i}> {/* eslint-disable-line */}
+            <div className={`events-card ${i % 2 === 0 && 'light'}`}>
+              <h3>{card.title}</h3>
+              <h4 className="text-center">{card.subtitle}</h4>
+              <p>{card.body}</p>
+            </div>
+          </div>
+        ))}
+
+
+      </div>
     </div>
+
 
     <div className="container-fluid cari-amici-section grey-bg">
       <div className="row">
@@ -109,7 +126,7 @@ export const TourPageTemplate = ({
       <h1 className="text-center grey-text">{calendar.title}</h1>
       <div className="row">
         <div className="col-md-4 offset-md-4">
-          <h6 className="text-center grey-text">
+          <h6 className="text-center grey-text mb-4 mt-4">
             {calendar.body}
           </h6>
         </div>
@@ -169,9 +186,9 @@ TourPageTemplate.propTypes = {
     })),
     galleryTitle: PropTypes.string,
     galleryDescription: PropTypes.string,
-    galleryBottom: PropTypes.arrayOf(PropTypes.shape({
-      image: PropTypes.string,
-    })),
+    // galleryBottom: PropTypes.arrayOf(PropTypes.shape({
+    //   image: PropTypes.string,
+    // })),
   }),
   blogSectionTitle: PropTypes.string,
   calendar: PropTypes.shape({
@@ -196,7 +213,7 @@ const TourPage = ({
     markdownRemark: {
       frontmatter: {
         blogSectionTitle, gallery, hero, instagramPhotos, instagramUsername, title, tourDescription,
-        galleryUpper, galleryBottom, calendarTitle, calendarBody, calendarNotes, aviabilityDates,
+        galleryUpper, calendarTitle, calendarBody, calendarNotes, aviabilityDates, descriptionCards,
       },
     },
   },
@@ -219,7 +236,7 @@ const TourPage = ({
       galleryUpper,
       galleryTitle: gallery.textTitle,
       galleryDescription: gallery.textBody,
-      galleryBottom,
+      cards: descriptionCards,
     }}
     blogSectionTitle={blogSectionTitle}
     calendar={{
@@ -266,12 +283,15 @@ export const tourPageQuery = graphql`
         galleryUpper {
           image
         }
-        galleryBottom {
-          image
-        }
         gallery {
           textTitle
           textBody
+        }
+
+        descriptionCards {
+          title
+          subtitle
+          body
         }
         
         blogSectionTitle

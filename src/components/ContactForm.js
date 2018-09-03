@@ -97,7 +97,7 @@ class ContactForm extends React.Component {
               </div>
               <div className="col-md-12 contact-form-wrapper">
                 <div className="row">
-                  <div className="col-md-7">
+                  <div className="col-md-6 offset-md-1">
                     <div className="form-group">
                       <input type="text" className="form-control" id="nome" placeholder="Name" ref={this.name} name="name" />
                       {error.name && <p className="error-message">{error.name}</p>}

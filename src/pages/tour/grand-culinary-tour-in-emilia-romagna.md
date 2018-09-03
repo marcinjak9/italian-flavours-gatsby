@@ -46,6 +46,49 @@ galleryUpper:
   - image: /img/candre-mandawe-770521-unsplash.jpg
   - image: /img/jumbotron.jpg
 blogSectionTitle: Cari Amici on this Tour with me!
+descriptionCards:
+  - body: >-
+      Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sunt asperiores,
+      vero molestias facilis fuga est recusandae totam. Neque, quae voluptatibus
+      reprehenderit tempora quia temporibus. Eum tenetur dolor temporibus
+      voluptate veniam.
+    subtitle: Lorem ipsum dolor set
+    title: Lorem Ipsum
+  - body: >-
+      Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sunt asperiores,
+      vero molestias facilis fuga est recusandae totam. Neque, quae voluptatibus
+      reprehenderit tempora quia temporibus. Eum tenetur dolor temporibus
+      voluptate veniam.
+    subtitle: Lorem ipsum dolor set
+    title: Lorem Ipsum
+  - body: >-
+      Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sunt asperiores,
+      vero molestias facilis fuga est recusandae totam. Neque, quae voluptatibus
+      reprehenderit tempora quia temporibus. Eum tenetur dolor temporibus
+      voluptate veniam.
+    subtitle: Lorem ipsum dolor set
+    title: Lorem Ipsum
+  - body: >-
+      Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sunt asperiores,
+      vero molestias facilis fuga est recusandae totam. Neque, quae voluptatibus
+      reprehenderit tempora quia temporibus. Eum tenetur dolor temporibus
+      voluptate veniam.
+    subtitle: Lorem ipsum dolor set
+    title: Lorem Ipsum
+  - body: >-
+      Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sunt asperiores,
+      vero molestias facilis fuga est recusandae totam. Neque, quae voluptatibus
+      reprehenderit tempora quia temporibus. Eum tenetur dolor temporibus
+      voluptate veniam.
+    subtitle: Lorem ipsum dolor set
+    title: Lorem Ipsum
+  - body: >-
+      Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sunt asperiores,
+      vero molestias facilis fuga est recusandae totam. Neque, quae voluptatibus
+      reprehenderit tempora quia temporibus. Eum tenetur dolor temporibus
+      voluptate veniam.
+    subtitle: Lorem ipsum dolor set
+    title: Lorem Ipsum
 calendarTitle: Scopri le ultime date disponibili
 calendarBody: Dai un'occhiata e scegli il periodo migliore per te
 calendarNotes: Enjoy

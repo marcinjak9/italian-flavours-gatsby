@@ -34,7 +34,7 @@ export const PersonalizedEventsTemplate = ({
 
       <div className="container personalized-events-section first-section white-bg">
         <div className="row">
-          <div className="col-md-12 section-title-wrapper">
+          <div className="col-md-12 section-title-wrapper mb-5">
             <h2 className="grey-text text-center">{descriptionSection.title}</h2>
           </div>
         </div>

@@ -42,6 +42,49 @@ galleryUpper:
   - image: /img/jumbotron.jpg
   - image: /img/4.jpg
 blogSectionTitle: Cari Amici on this tour with me
+descriptionCards:
+  - body: >-
+      Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sunt asperiores,
+      vero molestias facilis fuga est recusandae totam. Neque, quae voluptatibus
+      reprehenderit tempora quia temporibus. Eum tenetur dolor temporibus
+      voluptate veniam.
+    subtitle: Lorem ipsum dolor set
+    title: Lorem Ipsum
+  - body: >-
+      Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sunt asperiores,
+      vero molestias facilis fuga est recusandae totam. Neque, quae voluptatibus
+      reprehenderit tempora quia temporibus. Eum tenetur dolor temporibus
+      voluptate veniam.
+    subtitle: Lorem ipsum dolor set
+    title: Lorem Ipsum
+  - body: >-
+      Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sunt asperiores,
+      vero molestias facilis fuga est recusandae totam. Neque, quae voluptatibus
+      reprehenderit tempora quia temporibus. Eum tenetur dolor temporibus
+      voluptate veniam.
+    subtitle: Lorem ipsum dolor set
+    title: Lorem Ipsum
+  - body: >-
+      Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sunt asperiores,
+      vero molestias facilis fuga est recusandae totam. Neque, quae voluptatibus
+      reprehenderit tempora quia temporibus. Eum tenetur dolor temporibus
+      voluptate veniam.
+    subtitle: Lorem ipsum dolor set
+    title: Lorem Ipsum
+  - body: >-
+      Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sunt asperiores,
+      vero molestias facilis fuga est recusandae totam. Neque, quae voluptatibus
+      reprehenderit tempora quia temporibus. Eum tenetur dolor temporibus
+      voluptate veniam.
+    subtitle: Lorem ipsum dolor set
+    title: Lorem Ipsum
+  - body: >-
+      Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sunt asperiores,
+      vero molestias facilis fuga est recusandae totam. Neque, quae voluptatibus
+      reprehenderit tempora quia temporibus. Eum tenetur dolor temporibus
+      voluptate veniam.
+    subtitle: Lorem ipsum dolor set
+    title: Lorem Ipsum
 calendarTitle: Prenota subito
 calendarBody: sjhasdhjas
 calendarNotes: enjoy

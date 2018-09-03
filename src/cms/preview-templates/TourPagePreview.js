@@ -11,12 +11,6 @@ const TourPagePreview = ({
       imagesUpper.push({ image: getAsset(item.getIn(['data', 'image'])) })
     }
   })
-  const imagesBottom = []
-  widgetsFor('galleryBottom').map((item) => {
-    if (item) {
-      imagesBottom.push({ image: getAsset(item.getIn(['data', 'image'])) })
-    }
-  })
   const instagramPhotos = []
   widgetsFor('instagramPhotos').map((item) => {
     if (item) {
@@ -34,6 +28,12 @@ const TourPagePreview = ({
     }
   })
 
+  const cards = []
+  widgetsFor('descriptionCards').map((item) => {
+    if (item) {
+      cards.push({ title: item.getIn(['data', 'title']), subtitle: item.getIn(['data', 'title']), body: item.getIn(['data', 'body']) })
+    }
+  })
 
   return (
     <TourPageTemplate
@@ -55,7 +55,7 @@ const TourPagePreview = ({
         galleryUpper: imagesUpper,
         galleryTitle: entry.getIn(['data', 'gallery', 'textTitle']),
         galleryDescription: entry.getIn(['data', 'gallery', 'textBody']),
-        galleryBottom: imagesBottom,
+        cards,
       }}
       calendar={{
         body: entry.getIn(['data', 'calendarBody']),
