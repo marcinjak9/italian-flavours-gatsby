@@ -11,11 +11,11 @@ hero:
     culinary and cultural traditions of Italy
 descriptionTitle: Share your passion for Italy with people you love directly at your place
 personalizedEventsGallery:
-  - image: /img/coffee-gear.png
-  - image: /img/coffee.png
+  - image: /img/simon-rae-732820-unsplash.jpg
+  - image: /img/simon-rae-732820-unsplash.jpg
   - image: /img/flavor_wheel.jpg
-  - image: /img/meeting-space.png
-  - image: /img/tutorials.png
+  - image: /img/simon-rae-732820-unsplash.jpg
+  - image: /img/simon-rae-732820-unsplash.jpg
   - image: /img/products-grid2.jpg
 midDescriptionTitle: I bring italian food culture at your home
 midDescriptionBody: >-
