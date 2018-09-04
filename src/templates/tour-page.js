@@ -8,11 +8,13 @@ import InstagramPhoto from '../components/InstagramPhoto'
 import ContactForm from '../components/ContactForm'
 import CalendarComponent from '../components/CalendarComponent'
 import BlogCard from '../components/BlogCard'
+import HelmetSection from '../components/HelmetSection'
 
 export const TourPageTemplate = ({
-  hero, descriptionSection, gallery, blogSectionTitle, calendar, instagram,
+  hero, descriptionSection, gallery, blogSectionTitle, calendar, instagram, seoSection,
 }) => (
   <PageTransition>
+    {seoSection && <HelmetSection seoSection={seoSection} />}
     <div className="container-fluid hero-container" style={{ backgroundImage: `url('${hero.image}')` }}>
       {hero.bgOverlay && <div className="hero-overlay" /> }
       <div className="row outer-row">
@@ -168,6 +170,14 @@ export const TourPageTemplate = ({
 
 
 TourPageTemplate.propTypes = {
+  seoSection: PropTypes.shape({
+    ogImage: PropTypes.string,
+    ogTitle: PropTypes.string,
+    ogUrl: PropTypes.string,
+    seoDescription: PropTypes.string,
+    seoKeywords: PropTypes.string,
+    seoTitle: PropTypes.string,
+  }),
   hero: PropTypes.shape({
     title: PropTypes.string,
     subtitle: PropTypes.string,
@@ -214,12 +224,13 @@ const TourPage = ({
     markdownRemark: {
       frontmatter: {
         blogSectionTitle, gallery, hero, instagramPhotos, instagramUsername, title, tourDescription,
-        galleryUpper, calendarTitle, calendarBody, calendarNotes, aviabilityDates, descriptionCards,
+        galleryUpper, calendarTitle, calendarBody, calendarNotes, aviabilityDates, descriptionCards, seoSection,
       },
     },
   },
 }) => (
   <TourPageTemplate
+    seoSection={seoSection}
     hero={{
       title,
       subtitle: hero.subtitle,
@@ -267,6 +278,14 @@ export const tourPageQuery = graphql`
     markdownRemark(id: { eq: $id }) {
       id 
       frontmatter {
+        seoSection {
+          ogImage
+          ogTitle
+          ogUrl
+          seoDescription
+          seoKeywords
+          seoTitle
+        }
         title
         hero {
           image

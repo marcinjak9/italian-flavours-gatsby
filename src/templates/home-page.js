@@ -2,23 +2,24 @@ import React from 'react'
 import PropTypes from 'prop-types'
 import Link from 'gatsby-link'
 import PageTransition from 'gatsby-plugin-page-transitions';
-
 // import Img from 'gatsby-image'
 import Content, { HTMLContent } from '../components/Content'
 import TourCard from '../components/TourCard'
 import BlogCard from '../components/BlogCard'
 import MapFormContainer from '../components/MapFormContainer'
+import HelmetSection from '../components/HelmetSection'
 
 
 export const HomePageTemplate = (props) => {
   const {
     hero, tourTitle, infoSection,
     content, contentComponent, tours,
-    contactSection,
+    contactSection, seoSection,
   } = props
   const PostContent = contentComponent || Content
   return (
     <PageTransition>
+      {seoSection && <HelmetSection seoSection={seoSection} />}
       <div className="container-fluid hero-container">
         <img src={hero.bgImage} className="hero-bg-img" alt="" />
         {hero.bgOverlay && <div className="hero-overlay" />}
@@ -111,6 +112,14 @@ export const HomePageTemplate = (props) => {
 }
 
 HomePageTemplate.propTypes = {
+  seoSection: PropTypes.shape({
+    ogImage: PropTypes.string,
+    ogTitle: PropTypes.string,
+    ogUrl: PropTypes.string,
+    seoDescription: PropTypes.string,
+    seoKeywords: PropTypes.string,
+    seoTitle: PropTypes.string,
+  }),
   hero: PropTypes.shape({
     bgImage: PropTypes.string,
     title: PropTypes.string,
@@ -153,6 +162,7 @@ const HomePage = ({
   },
 }) => (
   <HomePageTemplate
+    seoSection={pageData.frontmatter.seoSection}
     hero={{
       bgImage: pageData.frontmatter.hero.image,
       title: pageData.frontmatter.hero.title,
@@ -182,6 +192,14 @@ HomePage.propTypes = {
   data: PropTypes.shape({
     pageData: PropTypes.shape({
       frontmatter: PropTypes.shape({
+        seoSection: PropTypes.shape({
+          ogImage: PropTypes.string,
+          ogTitle: PropTypes.string,
+          ogUrl: PropTypes.string,
+          seoDescription: PropTypes.string,
+          seoKeywords: PropTypes.string,
+          seoTitle: PropTypes.string,
+        }),
         hero: PropTypes.shape({
           image: PropTypes.string,
           title: PropTypes.string,
@@ -208,7 +226,7 @@ export default HomePage
 
 export const HomePageQuery = graphql`
   query HomepageQuery {
-    tours: allMarkdownRemark(filter: { frontmatter: { templateKey: { eq: "tour-page" } } } limit: 6) {
+    tours: allMarkdownRemark(filter: { frontmatter: { templateKey: { eq: "tour-page" } featured: { eq: true } } }) {
       edges {
         node {
           id
@@ -232,6 +250,14 @@ export const HomePageQuery = graphql`
       id
       html
       frontmatter {
+        seoSection {
+          ogImage
+          ogTitle
+          ogUrl
+          seoDescription
+          seoKeywords
+          seoTitle
+        }
         hero {
           ctaText
           ctaUrl

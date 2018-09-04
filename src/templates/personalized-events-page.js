@@ -8,14 +8,16 @@ import instagram from '../img/instagram-icon-black.png'
 import BlogCard from '../components/BlogCard';
 import ContactForm from '../components/ContactForm';
 import InstagramPhoto from '../components/InstagramPhoto';
+import HelmetSection from '../components/HelmetSection';
 
 export const PersonalizedEventsTemplate = ({
   hero, descriptionSection, gallerySection, blogSectionTitle, contactSectionTitle,
-  content, contentComponent, instagramPhotos,
+  content, contentComponent, instagramPhotos, seoSection,
 }) => {
   const PostContent = contentComponent || Content
   return (
     <PageTransition>
+      {seoSection && <HelmetSection seoSection={seoSection} />}
       <div className="container-fluid hero-container" style={{ backgroundImage: `url('${hero.image}')` }}>
         {hero.bgOverlay && <div className="hero-overlay" /> }
         <div className="row outer-row">
@@ -129,6 +131,14 @@ export const PersonalizedEventsTemplate = ({
 }
 
 PersonalizedEventsTemplate.propTypes = {
+  seoSection: PropTypes.shape({
+    ogImage: PropTypes.string,
+    ogTitle: PropTypes.string,
+    ogUrl: PropTypes.string,
+    seoDescription: PropTypes.string,
+    seoKeywords: PropTypes.string,
+    seoTitle: PropTypes.string,
+  }),
   hero: PropTypes.shape({
     image: PropTypes.string,
     title: PropTypes.string,
@@ -168,11 +178,13 @@ const PersonalizedEvents = ({
         contactSectionTitle, blogSectionTitle, descriptionCards,
         descriptionTitle, hero, title, personalizedEventsGallery,
         midDescriptionTitle, midDescriptionBody, instagramPhotos,
+        seoSection,
       }, html,
     },
   },
 }) => (
   <PersonalizedEventsTemplate
+    seoSection={seoSection}
     hero={{
       image: hero.bgImage,
       title,
@@ -204,6 +216,14 @@ export default PersonalizedEvents
 
 PersonalizedEvents.propTypes = {
   data: PropTypes.shape({
+    seoSection: PropTypes.shape({
+      ogImage: PropTypes.string,
+      ogTitle: PropTypes.string,
+      ogUrl: PropTypes.string,
+      seoDescription: PropTypes.string,
+      seoKeywords: PropTypes.string,
+      seoTitle: PropTypes.string,
+    }),
     hero: PropTypes.shape({
       bgImage: PropTypes.string,
       title: PropTypes.string,
@@ -239,6 +259,14 @@ export const personalizedEventsQuery = graphql`
       id
       html
       frontmatter {
+        seoSection {
+          ogImage
+          ogTitle
+          ogUrl
+          seoDescription
+          seoKeywords
+          seoTitle
+        }
         title
         hero {
           subtitle

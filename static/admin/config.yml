@@ -10,14 +10,45 @@ collections:
     label: "Site Options"
     files:
       - file: src/options/headerAndFooter.md
-        label: Header and Footer options
+        label: SEO, Header and Footer options
         name: configuration
-        preview: false
+        editor:
+          preview: false
         fields: 
           - label: Data type
             name: dataType
             widget: hidden
             default: headerAndFooterOptions
+
+          - label: SEO Section
+            name: generalSeoSection
+            widget: object
+            fields: 
+              - label: SEO Page title
+                name: seoTitle
+                widget: string
+
+              - label: SEO Page description
+                name: seoDescription
+                widget: text
+
+              - label: SEO Keywords
+                name: seoKeywords
+                widget: string
+
+              - label: Open Graph Title
+                name: ogTitle
+                widget: string
+              
+              - label: Open Graph Image
+                name: ogImage
+                widget: image
+
+              - label: Open Graph Url
+                name: ogUrl
+                widget: string
+
+
           - label: Menu Items
             name: menuItems
             widget: list
@@ -86,6 +117,34 @@ collections:
         widget: hidden
         default: tour-page
 
+      - label: SEO Section
+        name: seoSection
+        widget: object
+        fields: 
+          - label: SEO Page title
+            name: seoTitle
+            widget: string
+
+          - label: SEO Page description
+            name: seoDescription
+            widget: text
+
+          - label: SEO Keywords
+            name: seoKeywords
+            widget: string
+
+          - label: Open Graph Title
+            name: ogTitle
+            widget: string
+          
+          - label: Open Graph Image
+            name: ogImage
+            widget: image
+
+          - label: Open Graph Url
+            name: ogUrl
+            widget: string
+
       - label: Tour Title
         name: title
         widget: string
@@ -100,6 +159,11 @@ collections:
         name: region
         widget: select
         options: [Abruzzo,Apulia,Basilicata,Calabria,Campania,Emilia-Romagna,Friuli-Venezia-Giulia,Latium,Liguria,Lombardy,Marche,Molise,Piedmont,Sardinia,Sicily,Tuscany,Trentino,Umbria,Aosta_Valley,Veneto]
+
+      - label: Show on Home Page
+        name: featured
+        widget: boolean
+        default: false
 
       - label: Hero Section
         name: hero
@@ -193,6 +257,10 @@ collections:
             name: body
             widget: text
 
+          - label: Icon
+            name: icon
+            widget: image
+
       - label: Blog Section Title
         name: blogSectionTitle
         widget: string
@@ -253,6 +321,34 @@ collections:
             name: templateKey
             widget: hidden
             default: home-page
+
+          - label: SEO Section
+            name: seoSection
+            widget: object
+            fields: 
+              - label: SEO Page title
+                name: seoTitle
+                widget: string
+
+              - label: SEO Page description
+                name: seoDescription
+                widget: text
+
+              - label: SEO Keywords
+                name: seoKeywords
+                widget: string
+
+              - label: Open Graph Title
+                name: ogTitle
+                widget: string
+              
+              - label: Open Graph Image
+                name: ogImage
+                widget: image
+
+              - label: Open Graph Url
+                name: ogUrl
+                widget: string
 
           - label: Hero Section
             name: hero
@@ -335,6 +431,33 @@ collections:
             name: "templateKey"
             widget: "hidden"
             default: "i-am-angelina-page"
+          - label: SEO Section
+            name: seoSection
+            widget: object
+            fields: 
+              - label: SEO Page title
+                name: seoTitle
+                widget: string
+
+              - label: SEO Page description
+                name: seoDescription
+                widget: text
+
+              - label: SEO Keywords
+                name: seoKeywords
+                widget: string
+
+              - label: Open Graph Title
+                name: ogTitle
+                widget: string
+              
+              - label: Open Graph Image
+                name: ogImage
+                widget: image
+
+              - label: Open Graph Url
+                name: ogUrl
+                widget: string
           - label: title
             name: title
             widget: string
@@ -383,6 +506,33 @@ collections:
             name: "templateKey"
             widget: "hidden"
             default: "personalized-events-page"
+          - label: SEO Section
+            name: seoSection
+            widget: object
+            fields: 
+              - label: SEO Page title
+                name: seoTitle
+                widget: string
+
+              - label: SEO Page description
+                name: seoDescription
+                widget: text
+
+              - label: SEO Keywords
+                name: seoKeywords
+                widget: string
+
+              - label: Open Graph Title
+                name: ogTitle
+                widget: string
+              
+              - label: Open Graph Image
+                name: ogImage
+                widget: image
+
+              - label: Open Graph Url
+                name: ogUrl
+                widget: string
           - label: Title
             name: title
             widget: string

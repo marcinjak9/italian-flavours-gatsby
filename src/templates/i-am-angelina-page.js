@@ -9,13 +9,15 @@ import instagram from '../img/instagram-icon-black.png'
 import InstagramPhoto from '../components/InstagramPhoto'
 import ContactForm from '../components/ContactForm'
 import styles from '../layouts/styles/styles'
+import HelmetSection from '../components/HelmetSection';
 
 export const AboutPageTemplate = ({
-  hero, instagramPhotos, contentComponent, descriptionTitle, contactSectionTitle, content,
+  hero, instagramPhotos, contentComponent, descriptionTitle, contactSectionTitle, content, seoSection,
 }) => {
   const PostContent = contentComponent || Content
   return (
     <PageTransition>
+      {seoSection && <HelmetSection seoSection={seoSection} />}
       <div className="container-fluid hero-container" style={{ backgroundImage: `url('${hero.image}')` }}>
         {hero.bgOverlay && <div className="hero-overlay" /> }
         <div className="row outer-row">
@@ -74,6 +76,14 @@ export const AboutPageTemplate = ({
 }
 
 AboutPageTemplate.propTypes = {
+  seoSection: PropTypes.shape({
+    ogImage: PropTypes.string,
+    ogTitle: PropTypes.string,
+    ogUrl: PropTypes.string,
+    seoDescription: PropTypes.string,
+    seoKeywords: PropTypes.string,
+    seoTitle: PropTypes.string,
+  }),
   hero: PropTypes.shape({
     subtitle: PropTypes.string,
     image: PropTypes.string,
@@ -95,13 +105,14 @@ const AboutPage = ({
     markdownRemark: {
       frontmatter: {
         title, contactSectionTitle, descriptionTitle,
-        hero, instagramPhotos,
+        hero, instagramPhotos, seoSection,
       },
       html,
     },
   },
 }) => (
   <AboutPageTemplate
+    seoSection={seoSection}
     hero={{
       title,
       subtitle: hero.subtitle,
@@ -122,6 +133,14 @@ AboutPage.propTypes = {
   data: PropTypes.shape({
     markdownRemark: PropTypes.shape({
       frontmatter: PropTypes.shape({
+        seoSection: PropTypes.shape({
+          ogImage: PropTypes.string,
+          ogTitle: PropTypes.string,
+          ogUrl: PropTypes.string,
+          seoDescription: PropTypes.string,
+          seoKeywords: PropTypes.string,
+          seoTitle: PropTypes.string,
+        }),
         title: PropTypes.string,
         contactSectionTitle: PropTypes.string,
         descriptionTitle: PropTypes.string,
@@ -149,6 +168,14 @@ export const aboutPageQuery = graphql`
       
       html
       frontmatter {
+        seoSection {
+          ogImage
+          ogTitle
+          ogUrl
+          seoDescription
+          seoKeywords
+          seoTitle
+        }
         title
         hero {
           subtitle

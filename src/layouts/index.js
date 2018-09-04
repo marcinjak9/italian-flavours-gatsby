@@ -12,6 +12,25 @@ class TemplateWrapper extends Component {
     menuOpen: false,
   }
 
+  componentDidMount() {
+    (function () {
+      const options = {
+        facebook: '207512882926609', // Facebook page ID
+        whatsapp: '+393661461483', // WhatsApp number
+        // call_to_action: 'Message us', // Call to action
+        button_color: '#00B2A7', // Color of button
+        position: 'right', // Position may be 'right' or 'left'
+        order: 'facebook,whatsapp', // Order of buttons
+      };
+      const proto = document.location.protocol; const host = 'whatshelp.io'; const
+        url = `${proto}//static.${host}`;
+      const s = document.createElement('script'); s.type = 'text/javascript'; s.async = true; s.src = `${url}/widget-send-button/js/init.js`;
+      s.onload = function () { WhWidgetSendButton.init(host, proto, options); };
+      const x = document.getElementsByTagName('script')[0]; x.parentNode.insertBefore(s, x);
+    }());
+  }
+
+
   render() {
     const {
       location,
@@ -19,7 +38,7 @@ class TemplateWrapper extends Component {
       data: {
         markdownRemark: {
           frontmatter: {
-            menuItems, menuCtaText, menuCtaLink, footerMenu, footerContacts, creditsText, copyrightText, socialInfo,
+            menuItems, menuCtaText, menuCtaLink, footerMenu, footerContacts, creditsText, copyrightText, socialInfo, generalSeoSection,
           },
         },
         regions: { edges },
@@ -40,7 +59,13 @@ class TemplateWrapper extends Component {
         </div>
         <div className={`content-to-push ${menuOpen && 'active'}`}>
           <Helmet>
-            <title>Home | Gatsby + Netlify CMS</title>
+            <title>{generalSeoSection.seoTitle || ''}</title>
+            <meta name="description" content={generalSeoSection.seoDescription || ''} />
+            <meta name="keywords" content={generalSeoSection.seoKeywords || ''} />
+            <meta name="og:title" content={generalSeoSection.ogTitle} />
+            <meta name="og:url" content={generalSeoSection.ogUrl} />
+            <meta name="og:image" content={generalSeoSection.ogImage} />
+            <meta name="og:description" content={generalSeoSection.seoDescription} />
           </Helmet>
           <Navbar
             menuItems={menuItems}
@@ -50,6 +75,7 @@ class TemplateWrapper extends Component {
             openMobileMenu={() => this.setState({ menuOpen: true })}
           />
           <div>{children()}</div>
+
           <Footer
             footerMenuItems={footerMenu}
             footerContacts={footerContacts}
@@ -68,6 +94,14 @@ TemplateWrapper.propTypes = {
   location: PropTypes.object, // eslint-disable-line
   data: PropTypes.shape({
     markdownRemark: PropTypes.shape({
+      generalSeoSection: PropTypes.shape({
+        ogImage: PropTypes.string,
+        ogTitle: PropTypes.string,
+        ogUrl: PropTypes.string,
+        seoDescription: PropTypes.string,
+        seoKeywords: PropTypes.string,
+        seoTitle: PropTypes.string,
+      }),
       frontmatter: PropTypes.shape({
         menuItems: PropTypes.arrayOf(PropTypes.shape({
           title: PropTypes.string,
@@ -113,6 +147,14 @@ export const templateWrapperQuery = graphql`
   query metadataQuery {
     markdownRemark(frontmatter: { dataType: { eq: "headerAndFooterOptions" } }) {
       frontmatter {
+        generalSeoSection {
+          ogImage
+          ogTitle
+          ogUrl
+          seoDescription
+          seoKeywords
+          seoTitle
+        }
         menuItems {
           path
           title
