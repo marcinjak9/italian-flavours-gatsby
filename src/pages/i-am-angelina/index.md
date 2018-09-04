@@ -2,7 +2,7 @@
 templateKey: i-am-angelina-page
 title: I am Angelina
 hero:
-  bgImage: /img/products-grid1.jpg
+  bgImage: /img/candre-mandawe-770521-unsplash.jpg
   ctaLink: /
   ctaText: Talk to me
   heroBgOverlay: true
