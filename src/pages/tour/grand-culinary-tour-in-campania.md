@@ -16,6 +16,8 @@ highlights: >+
   chaffeur - boutique hotels and high-level agriturismi
 
 region: Campania
+subRegions:
+  - value: Basilicata
 featured: true
 hero:
   ctaLink: /
