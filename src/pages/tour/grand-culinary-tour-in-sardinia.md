@@ -1,11 +1,24 @@
 ---
 templateKey: tour-page
+seoSection:
+  ogImage: /img/jumbotron.jpg
+  ogTitle: Grand Culinary Tour in Sardinia
+  ogUrl: /
+  seoDescription: >+
+    Highlights wine tastings - relaxing environment - horse riding - private
+    chaffeur - boutique hotels and high-level agriturismi
+
+  seoKeywords: >-
+    Highlights wine tastings - relaxing environment - horse riding - private
+    chaffeur - boutique hotels and high-level agriturismi
+  seoTitle: Grand Culinary Tour in Sardinia
 title: Grand Culinary Tour in Sardinia
 highlights: >+
   Highlights wine tastings - relaxing environment - horse riding - private
   chaffeur - boutique hotels and high-level agriturismi
 
 region: Sardinia
+featured: true
 hero:
   ctaLink: /
   ctaText: ask me more
@@ -45,7 +58,6 @@ galleryUpper:
   - image: /img/candre-mandawe-770521-unsplash.jpg
   - image: /img/4.jpg
   - image: /img/chemex.jpg
-blogSectionTitle: Cari Amici on this tour with me
 descriptionCards:
   - body: >-
       Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sunt asperiores,
@@ -89,6 +101,7 @@ descriptionCards:
       voluptate veniam.
     subtitle: Lorem ipsum dolor set
     title: Lorem Ipsum
+blogSectionTitle: Cari Amici on this tour with me
 calendarTitle: Available dates for your amazing tour
 calendarBody: >
   Pick your more suitable period among the two blocks of 10 days on which I

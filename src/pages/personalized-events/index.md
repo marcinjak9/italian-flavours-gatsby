@@ -1,5 +1,14 @@
 ---
 templateKey: personalized-events-page
+seoSection:
+  ogImage: /img/chemex.jpg
+  ogTitle: 'We do it all together, in anyplace you want'
+  ogUrl: /
+  seoDescription: >-
+    An unforgettable gourmet journey among the most antique and precious
+    culinary and cultural traditions of Italy
+  seoKeywords: 'We do it all together, in anyplace you want'
+  seoTitle: 'We do it all together, in anyplace you want'
 title: 'We do it all together, in anyplace you want'
 hero:
   bgImage: /img/chemex.jpg

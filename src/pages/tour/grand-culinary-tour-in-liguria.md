@@ -1,11 +1,22 @@
 ---
 templateKey: tour-page
+seoSection:
+  ogImage: /img/candre-mandawe-770521-unsplash.jpg
+  ogTitle: Grand Culinary Tour in Liguria
+  ogUrl: 'https://it.marcinjakubik.io'
+  seoDescription: >+
+    Highlights wine tastings - relaxing environment - horse riding - private
+    chaffeur - boutique hotels and high-level agriturismi
+
+  seoKeywords: 'tour, liguria'
+  seoTitle: Grand Culinary Tour in Liguria
 title: Grand Culinary Tour in Liguria
 highlights: >+
   Highlights wine tastings - relaxing environment - horse riding - private
   chaffeur - boutique hotels and high-level agriturismi
 
 region: Liguria
+featured: false
 hero:
   ctaLink: /
   ctaText: ask me more
@@ -41,7 +52,6 @@ galleryUpper:
   - image: /img/products-grid3.jpg
   - image: /img/jumbotron.jpg
   - image: /img/4.jpg
-blogSectionTitle: Cari Amici on this tour with me
 descriptionCards:
   - body: >-
       Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sunt asperiores,
@@ -85,6 +95,7 @@ descriptionCards:
       voluptate veniam.
     subtitle: Lorem ipsum dolor set
     title: Lorem Ipsum
+blogSectionTitle: Cari Amici on this tour with me
 calendarTitle: Prenota subito
 calendarBody: sjhasdhjas
 calendarNotes: enjoy

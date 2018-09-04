@@ -1,11 +1,22 @@
 ---
 templateKey: tour-page
+seoSection:
+  ogImage: /img/candre-mandawe-770521-unsplash.jpg
+  ogTitle: Grand Culinary Tour in Campania
+  ogUrl: 'https://it.marcinjakubik.io'
+  seoDescription: >+
+    Highlights wine tastings - relaxing environment - horse riding - private
+    chaffeur - boutique hotels and high-level agriturismi
+
+  seoKeywords: 'tour, campania'
+  seoTitle: Grand Culinary Tour in Campania
 title: Grand Culinary Tour in Campania
 highlights: >+
   Highlights wine tastings - relaxing environment - horse riding - private
   chaffeur - boutique hotels and high-level agriturismi
 
 region: Campania
+featured: true
 hero:
   ctaLink: /
   ctaText: ask me more
