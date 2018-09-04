@@ -1,5 +1,15 @@
 ---
 templateKey: home-page
+seoSection:
+  ogImage: /img/candre-mandawe-770521-unsplash.jpg
+  ogTitle: You tasty holiday in Italy
+  ogUrl: /
+  seoDescription: >
+    I am specialised in tailor-made gourmet holidays. I love creating travel
+    solutions that perfectly suit my guest needs, who have always appreciated my
+    attention to detail and creativity in organising unforgettable experiences.
+  seoKeywords: You tasty holiday in Italy
+  seoTitle: You tasty holiday in Italy
 hero:
   ctaText: You tasty holiday in Fracs
   ctaUrl: /
@@ -9,7 +19,7 @@ hero:
     I am specialised in tailor-made gourmet holidays. I love creating travel
     solutions that perfectly suit my guest needs, who have always appreciated my
     attention to detail and creativity in organising unforgettable experiences.
-  title: You tasty holiday in Rome
+  title: You tasty holiday in Italy
 tourSectionTitle: Savour your next holiday
 blogNewsTitle: 'More than clients, but Cari Amici'
 contactSectionTitle: Let's start from here your tailor-made holidays
