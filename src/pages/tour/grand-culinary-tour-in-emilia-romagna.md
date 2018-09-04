@@ -1,11 +1,22 @@
 ---
 templateKey: tour-page
+seoSection:
+  ogImage: /img/simon-rae-732820-unsplash.jpg
+  ogTitle: Grand Culinary Tour in Emilia-Romagna
+  ogUrl: 'https://it.marcinjakubik.io'
+  seoDescription: >+
+    Highlights wine tastings - relaxing environment - horse riding - private
+    chaffeur - boutique hotels and high-level agriturismi
+
+  seoKeywords: 'tour, gourmet'
+  seoTitle: Grand Culinary Tour in Emilia-Romagna
 title: Grand Culinary Tour in Emilia-Romagna
 highlights: >+
   Highlights wine tastings - relaxing environment - horse riding - private
   chaffeur - boutique hotels and high-level agriturismi
 
 region: Emilia-Romagna
+featured: true
 hero:
   ctaLink: /
   ctaText: ask me more
@@ -45,7 +56,6 @@ galleryUpper:
   - image: /img/chemex.jpg
   - image: /img/candre-mandawe-770521-unsplash.jpg
   - image: /img/jumbotron.jpg
-blogSectionTitle: Cari Amici on this Tour with me!
 descriptionCards:
   - body: >-
       Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sunt asperiores,
@@ -89,6 +99,7 @@ descriptionCards:
       voluptate veniam.
     subtitle: Lorem ipsum dolor set
     title: Lorem Ipsum
+blogSectionTitle: Cari Amici on this Tour with me!
 calendarTitle: Scopri le ultime date disponibili
 calendarBody: Dai un'occhiata e scegli il periodo migliore per te
 calendarNotes: Enjoy
