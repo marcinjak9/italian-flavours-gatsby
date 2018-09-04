@@ -1,5 +1,19 @@
 ---
 dataType: headerAndFooterOptions
+generalSeoSection:
+  ogImage: /img/candre-mandawe-770521-unsplash.jpg
+  ogTitle: >-
+    Italian Flavours | Scopri con noi i sapori nascosti della tradizione
+    italiana
+  ogUrl: 'https://it.marcinjakubik.io'
+  seoDescription: >-
+    Vivi con noi il buono dell'Italia. Assaggerai prelibatezze, brinderemo alla
+    vita con deliziosi vini portandoti alla scoperta della vera tradizione
+    italiana
+  seoKeywords: 'italian flavours, cucina, gourmet, tours'
+  seoTitle: >-
+    Italian Flavours | Scopri con noi i sapori nascosti della tradizione
+    italiana
 menuItems:
   - path: /tours
     regionDropdown: true
