@@ -1,6 +1,9 @@
 import React from 'react'
 import PropTypes from 'prop-types'
+import Link from 'gatsby-link'
 import Icon from 'material-icons-react'
+import PageTransition from 'gatsby-plugin-page-transitions';
+
 import Content, { HTMLContent } from '../components/Content'
 import instagram from '../img/instagram-icon-black.png'
 import InstagramPhoto from '../components/InstagramPhoto'
@@ -12,7 +15,7 @@ export const AboutPageTemplate = ({
 }) => {
   const PostContent = contentComponent || Content
   return (
-    <div>
+    <PageTransition>
       <div className="container-fluid hero-container" style={{ backgroundImage: `url('${hero.image}')` }}>
         {hero.bgOverlay && <div className="hero-overlay" /> }
         <div className="row outer-row">
@@ -24,7 +27,7 @@ export const AboutPageTemplate = ({
                   <h3>
                     {hero.subtitle}
                   </h3>
-                  <a href={hero.ctaLink} className="btn btn-primary">{hero.ctaText}</a>
+                  <Link href={hero.ctaLink} className="btn btn-primary">{hero.ctaText}</Link>
                 </div>
               </div>
 
@@ -66,7 +69,7 @@ export const AboutPageTemplate = ({
           ))}
         </div>
       </div>
-    </div>
+    </PageTransition>
   )
 }
 

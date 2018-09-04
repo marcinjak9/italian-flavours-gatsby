@@ -2,6 +2,7 @@ import React from 'react'
 import PropTypes from 'prop-types'
 import Link from 'gatsby-link'
 import shortid from 'shortid'
+import PageTransition from 'gatsby-plugin-page-transitions'
 import instagramIcon from '../img/instagram-icon-black.png'
 import InstagramPhoto from '../components/InstagramPhoto'
 import ContactForm from '../components/ContactForm'
@@ -11,7 +12,7 @@ import BlogCard from '../components/BlogCard'
 export const TourPageTemplate = ({
   hero, descriptionSection, gallery, blogSectionTitle, calendar, instagram,
 }) => (
-  <div>
+  <PageTransition>
     <div className="container-fluid hero-container" style={{ backgroundImage: `url('${hero.image}')` }}>
       {hero.bgOverlay && <div className="hero-overlay" /> }
       <div className="row outer-row">
@@ -162,7 +163,7 @@ export const TourPageTemplate = ({
       </div>
     </div>
 
-  </div>
+  </PageTransition>
 )
 
 

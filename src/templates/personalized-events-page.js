@@ -1,5 +1,8 @@
 import React from 'react'
 import PropTypes from 'prop-types'
+import Link from 'gatsby-link'
+import PageTransition from 'gatsby-plugin-page-transitions';
+
 import Content, { HTMLContent } from '../components/Content'
 import instagram from '../img/instagram-icon-black.png'
 import BlogCard from '../components/BlogCard';
@@ -12,7 +15,7 @@ export const PersonalizedEventsTemplate = ({
 }) => {
   const PostContent = contentComponent || Content
   return (
-    <div>
+    <PageTransition>
       <div className="container-fluid hero-container" style={{ backgroundImage: `url('${hero.image}')` }}>
         {hero.bgOverlay && <div className="hero-overlay" /> }
         <div className="row outer-row">
@@ -22,7 +25,7 @@ export const PersonalizedEventsTemplate = ({
                 <div className="col-md-8 offset-md-2 hero">
                   <h1 className="white-text">{hero.title}</h1>
                   <h3>{hero.subtitle}</h3>
-                  <a href={hero.ctaLink} className="btn btn-primary">{hero.ctaText}</a>
+                  <Link href={hero.ctaLink} className="btn btn-primary">{hero.ctaText}</Link>
                 </div>
               </div>
 
@@ -121,7 +124,7 @@ export const PersonalizedEventsTemplate = ({
 
         </div>
       </div>
-    </div>
+    </PageTransition>
   )
 }
 

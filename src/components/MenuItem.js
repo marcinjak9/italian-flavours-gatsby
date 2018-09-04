@@ -32,6 +32,14 @@ class MenuItem extends Component {
     return null
   }
 
+  handleClose = () => {
+    const { onClick } = this.props
+    if (onClick) {
+      return onClick()
+    }
+    return this.setState({ open: false })
+  }
+
   render() {
     const {
       text, path, active, regionDropdown, regions, mobile, onClick,
@@ -45,7 +53,7 @@ class MenuItem extends Component {
             {regionDropdown && <Icon icon="expand_more" color="#00B2A7" style={{ paddingTop: mobile ? 10 : 0 }} />}
           </button>
           <div className={`dropdown-menu custom-dropdown ${open ? 'show' : ''}`} ref={node => this.dropdown = node}>
-            {regions.map(region => <Link key={region.id} to={region.slug} className="dropdown-item" onClick={() => { onClick(); this.setState({ open: false }) }}>{region.name}</Link>)}
+            {regions.map(region => <Link key={region.id} to={region.slug} className="dropdown-item" onClick={this.handleClose}>{region.name}</Link>)}
           </div>
         </li>
       )

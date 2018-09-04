@@ -1,6 +1,8 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 import Link from 'gatsby-link'
+import PageTransition from 'gatsby-plugin-page-transitions';
+
 // import Img from 'gatsby-image'
 import Content, { HTMLContent } from '../components/Content'
 import TourCard from '../components/TourCard'
@@ -16,7 +18,7 @@ export const HomePageTemplate = (props) => {
   } = props
   const PostContent = contentComponent || Content
   return (
-    <div>
+    <PageTransition>
       <div className="container-fluid hero-container">
         <img src={hero.bgImage} className="hero-bg-img" alt="" />
         {hero.bgOverlay && <div className="hero-overlay" />}
@@ -104,7 +106,7 @@ export const HomePageTemplate = (props) => {
           </div>
         </div>
       </div>
-    </div>
+    </PageTransition>
   )
 }
 
