@@ -1,8 +1,16 @@
 ---
 templateKey: tour-page
+seoSection:
+  ogImage: /img/flavor_wheel.jpg
+  ogTitle: Grand Culinary Tour in Puglia
+  ogUrl: /
+  seoDescription: de bellum- alicuius est aniqua - dolor sit amet
+  seoKeywords: de bellum- alicuius est aniqua - dolor sit amet
+  seoTitle: Grand Culinary Tour in Puglia
 title: Grand Culinary Tour in Puglia
 highlights: de bellum- alicuius est aniqua - dolor sit amet
 region: Apulia
+featured: false
 hero:
   ctaLink: /
   ctaText: ask me more
@@ -39,7 +47,6 @@ galleryUpper:
   - image: /img/chemex.jpg
   - image: /img/jumbotron.jpg
   - image: /img/products-grid1.jpg
-blogSectionTitle: Cari Amici on this tour with me
 descriptionCards:
   - body: >-
       Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sunt asperiores,
@@ -83,6 +90,7 @@ descriptionCards:
       voluptate veniam.
     subtitle: Lorem ipsum dolor set
     title: Lorem Ipsum
+blogSectionTitle: Cari Amici on this tour with me
 calendarTitle: Dai un'occhiata!
 calendarBody: Scopri le ultime date ancora disponibili
 calendarNotes: Enjoy
