@@ -1,5 +1,15 @@
 ---
 templateKey: i-am-angelina-page
+seoSection:
+  ogImage: /img/flavor_wheel.jpg
+  ogTitle: I am Angelina
+  ogUrl: /
+  seoDescription: >-
+    I am a Sardinian professional gourmet travel consultant, founder of Italian
+    Flavours, a boutique gourmet tour operator specialised in creating unique
+    cultural-culinary holidays in Italy.
+  seoKeywords: I am Angelina
+  seoTitle: I am Angelina
 title: I am Angelina
 hero:
   bgImage: /img/candre-mandawe-770521-unsplash.jpg
