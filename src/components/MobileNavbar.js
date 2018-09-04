@@ -18,7 +18,7 @@ class MobileNavbar extends Component {
           <img src={logoWhite} alt="" className="overlay-logo" />
         </Link>
         <button type="button" onClick={close}>
-          <Icon icon="close" color="#fff" style={{ position: 'absolute', top: 20, right: 20 }} size={40} />
+          <Icon icon="close" color="#fff" style={{ position: 'absolute', top: 35, right: 12 }} size={32} />
         </button>
         <div className="mobile-menu-nav">
           <ul className="navbar-nav">
@@ -38,7 +38,7 @@ class MobileNavbar extends Component {
           <div className="menu-footer">
             <Icon icon="favorite" color={styles.primary} className="close-mobile-menu" />
             <p className="brand-text text-center">
-              © 2018 - ❤ Travel. As much as you can. As far as you can. As long as you can.
+              © 2018 - Travel. As much as you can. As far as you can. As long as you can.
             </p>
           </div>
         </div>

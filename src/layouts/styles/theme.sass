@@ -1,6 +1,8 @@
 body 
   background: #fff
   font-family: 'Source Sans Pro', sans-serif
+  font-weight: $font-light
+  font-kerning: none
 
 p 
   white-space: pre-line
@@ -45,11 +47,12 @@ button, input[type="submit"], input[type="reset"]
 
     .nav-link 
       color: #fff
-      font-weight: 400
+      font-weight: $font-light
       font-size: 1.2rem
 
     .nav-link.btn 
       display: none
+      font-weight: $font-light
 
     .nav-item 
       position: relative
@@ -104,7 +107,7 @@ button, input[type="submit"], input[type="reset"]
 
   .dropdown-item
     font-size: 1.2rem
-    font-weight: normal
+    font-weight: $font-light
     color: #434A54
     line-height: 25px
     padding: 5px 23px
@@ -132,7 +135,7 @@ button, input[type="submit"], input[type="reset"]
 #navigation.mobile.show .nav-link 
   color: #fff
   font-size: 1.6rem
-  font-weight: 400
+  font-weight: $font-normal
 
 
 #navigation.mobile.show .nav-link.btn 
@@ -157,7 +160,7 @@ button, input[type="submit"], input[type="reset"]
 
 
 strong 
-  font-weight: bold
+  font-weight: $font-bold
   color: #1C8174
 
 
@@ -169,7 +172,7 @@ strong
 .btn-primary 
   border-color: $primary
   background-color: $primary
-  font-weight: 400
+  font-weight: $font-normal
   padding: 13px 30px
   text-transform: uppercase
   transition: all .3s
@@ -213,6 +216,7 @@ strong
 .btn-link 
   color: $primary
   transition: all .3s
+  font-weight: $font-normal
 
 
 .btn-link:hover 
@@ -236,7 +240,7 @@ strong
   h3 
     color: #fff
     font-size: 1.5rem
-    font-weight: normal
+    font-weight: $font-normal
     text-align: center
     margin-bottom: 4.3rem
 
@@ -254,8 +258,6 @@ strong
   background-position: center
   background-size: cover
   min-height: 1000px
-  /* Per prototipare è comodo fare i vh, che significa view height, in pratica è la percentuale in base all'altezza dello schermo */
-  /* uso min-height perché nel caso il contenuti sia piu grosso dell'altezza relativa non sbordi ma si adatti */
   width: 100%
   display: flex
   justify-content: center
@@ -274,10 +276,6 @@ strong
     height: 100%
 
 
-/* .hero-container .outer-row 
-  flex: 1
- */
-
 .hero-container:after 
   display: block
   content: ""
@@ -293,7 +291,6 @@ strong
 
 .home-section 
   min-height: 90vh
-  /* qua usiamo i rem, cerca cosa significano su google, sono in pratica i px relativi, comodi per alcune cose */
   margin-top: 10rem
   margin-bottom: 10rem
   padding-bottom: 4rem
@@ -309,7 +306,7 @@ strong
 .home-section .section-title-wrapper h2 
   font-size: 2.2rem
   margin-bottom: 42px
-  font-weight: normal
+  font-weight: $font-normal
   color: #434A54
 
 
@@ -329,8 +326,6 @@ strong
 .cari-amici-section h2 
   margin-bottom: 3rem
 
-
-/* modificare direttamente le card prima di sapere se ovunque saranno uguali secondo me è meglio aggiungerci una classe custom .home-card e poi metterla prima dei vari tag */
 
 .home-card 
   margin-top: 2rem
@@ -386,7 +381,7 @@ strong
     font-size: .95rem
     color: $text-dark
     margin-bottom: 2.5rem
-    font-weight: 300
+    font-weight: $font-light
     line-height: 1.45rem
 
 
@@ -398,7 +393,7 @@ strong
 .card-date 
   font-size: .9rem
   color: $text-dark
-  font-weight: 300
+  font-weight: $font-light
   line-height: 18px
   text-align: center
 
@@ -427,7 +422,7 @@ strong
 .lead-text 
   color: $text-dark
   font-size: 1.5rem
-  font-weight: 300
+  font-weight: $font-light
   line-height: 2rem
 
 
@@ -455,7 +450,7 @@ footer .footer-item
   color: rgba(255,255,255, 0.5)
   text-decoration: none
   font-size: 20px
-  font-weight: 300
+  font-weight: $font-light
   line-height: 25px
   transition: color .3s
 
@@ -477,7 +472,7 @@ footer .footer-social-icons img
 
 
 .footer-copyright 
-  font-weight: 300
+  font-weight: $font-light
 
   .legal
     color: rgba(255,255,255, 0.5)
@@ -525,16 +520,16 @@ footer .footer-social-icons img
 
   .error-message 
     color: red
-    font-weight: bold
+    font-weight: $font-bold
   
   .success-message
     color: $primary
-    font-weight: bold
+    font-weight: $font-bold
     margin-top: 20px
 
 .success-message
   color: $primary
-  font-weight: bold
+  font-weight: $font-bold
   margin-top: 20px
 
 .home-form 
@@ -543,7 +538,7 @@ footer .footer-social-icons img
 
   .error-message 
     color: red
-    font-weight: bold
+    font-weight: $font-bold
   
   
   
@@ -704,7 +699,7 @@ footer .footer-social-icons img
       color: $text-dark
     h4
       font-size: 26px
-      font-weight: 300
+      font-weight: $font-normal
       margin-bottom: 28px
 
 
@@ -735,7 +730,7 @@ footer .footer-social-icons img
 
 .events-card p 
   font-size: 16px
-  font-weight: 300
+  font-weight: $font-light
 
 
 .jsCalendar tbody td.jsCalendar-selected,
@@ -791,7 +786,7 @@ p.text-spacing,
 .text-spacing-container p 
   line-height: 2.5rem
   font-size: 1.3rem
-  font-weight: 300
+  font-weight: $font-light
   color: $text-dark
 
 
