@@ -75,7 +75,6 @@ class TemplateWrapper extends Component {
             openMobileMenu={() => this.setState({ menuOpen: true })}
           />
           <div>{children()}</div>
-
           <Footer
             footerMenuItems={footerMenu}
             footerContacts={footerContacts}

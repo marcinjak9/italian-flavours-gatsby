@@ -87,7 +87,15 @@ export const HomePageTemplate = (props) => {
         </div>
       </div>
 
-      {tours && <MapFormContainer regions={tours.edges.map(tour => tour.node.frontmatter.region)} title={contactSection.title} options={contactSection.list} />}
+      {tours
+        && (
+        <MapFormContainer
+          regions={tours.edges.map(tour => tour.node.frontmatter.region)}
+          title={contactSection.title}
+          options={contactSection.list}
+          subregion={tours.edges.map(tour => tour.node.frontmatter.subRegion)}
+        />
+        )}
 
       <div className="container home-section smaller-section description-section white-bg">
         <div className="row">
@@ -239,6 +247,7 @@ export const HomePageQuery = graphql`
               image
             }
             region
+            subRegion
             tourShortDescription
             highlights
           }

@@ -63,7 +63,6 @@ class MapFormContainer extends Component {
     .join('&')
 
   submitForm = (data) => {
-    console.log(data)
     fetch('/', {
       method: 'POST',
       headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
@@ -86,7 +85,9 @@ class MapFormContainer extends Component {
     const {
       selectedRegion, onClient, error, success,
     } = this.state
-    const { regions, title, options } = this.props
+    const {
+      regions, title, options, subregion,
+    } = this.props
     return (
       <div className="container-fluid cari-amici-section home-contact-section grey-bg">
         <div className="row">
@@ -133,7 +134,7 @@ class MapFormContainer extends Component {
                 </form>
                 <div className="col-md-6 map-container">
                   <SvgLoader path={map}>
-                    {regions.map(region => (
+                    {regions.map((region, i) => (
                       <span key={region}>
                         <SvgProxy selector={`g#${region}`} onElementSelected={element => element.addEventListener('click', () => this.selectRegionHandler(region))} />
                         {onClient && document.querySelector(`g#${region} path[data-name="bg"]`)
@@ -141,12 +142,16 @@ class MapFormContainer extends Component {
                             <span>
                               <SvgProxy selector={`g#${region} path[data-name="bg"]`} style={`${selectedRegion === region && 'fill: #00B2A7;'}`} />
                               <SvgProxy selector={`g#${region} g[data-name="text"] path`} style={`${selectedRegion === region && 'fill: #fff;'}`} />
+                              {subregion && <SvgProxy selector={`g#${subregion[i]} path[data-name="bg"]`} style={`${selectedRegion === region && 'fill: #00B2A7;'}`} />}
+                              {subregion && <SvgProxy selector={`g#${subregion[i]} g[data-name="text"] path`} style={`${selectedRegion === region && 'fill: #fff;'}`} />}
                             </span>
                           )
                           : (
                             <span>
                               <SvgProxy selector={`g#${region} #bg path`} style={`${selectedRegion === region && 'fill: #00B2A7;'}`} />
                               <SvgProxy selector={`g#${region} #text path`} style={`${selectedRegion === region && 'fill: #fff;'}`} />
+                              {subregion && <SvgProxy selector={`g#${subregion[i]} #bg path`} style={`${selectedRegion === region && 'fill: #00B2A7;'}`} />}
+                              {subregion && <SvgProxy selector={`g#${subregion[i]} #text path`} style={`${selectedRegion === region && 'fill: #fff;'}`} />}
                             </span>
                           )
                         }

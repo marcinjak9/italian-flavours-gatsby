@@ -64,7 +64,6 @@ class ContactForm extends React.Component {
     .join('&')
 
   submitForm = (data) => {
-    console.log(data)
     fetch('/', {
       method: 'POST',
       headers: { 'Content-Type': 'application/x-www-form-urlencoded' },

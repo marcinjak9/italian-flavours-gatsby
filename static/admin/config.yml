@@ -154,9 +154,14 @@ collections:
         name: highlights
         widget: text
         default: Here you can insert your main featues of the tour, they will be shown in homepage tour card
-        
-      - label: Tour Region
+      
+      - label: Tour Main Region
         name: region
+        widget: select
+        options: [Abruzzo,Apulia,Basilicata,Calabria,Campania,Emilia-Romagna,Friuli-Venezia-Giulia,Latium,Liguria,Lombardy,Marche,Molise,Piedmont,Sardinia,Sicily,Tuscany,Trentino,Umbria,Aosta_Valley,Veneto]
+
+      - label: Tour Sub Region
+        name: subRegion
         widget: select
         options: [Abruzzo,Apulia,Basilicata,Calabria,Campania,Emilia-Romagna,Friuli-Venezia-Giulia,Latium,Liguria,Lombardy,Marche,Molise,Piedmont,Sardinia,Sicily,Tuscany,Trentino,Umbria,Aosta_Valley,Veneto]
 
