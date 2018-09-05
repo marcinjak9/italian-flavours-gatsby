@@ -40,6 +40,7 @@ descriptionCards:
       A charming dinner will follow, where we will talk about Italy and Italian
       traditions, while enjoying my personal selection of delicious Italian
       wines.
+    icon: /img/qa.png
   - title: Pop-up dinners Italian style
     body: >-
       In a funny show-cooking I will make the most traditional Italian recipes
@@ -56,6 +57,7 @@ descriptionCards:
       A charming dinner will follow, where we will talk about Italy and Italian
       traditions, while enjoying my personal selection of delicious Italian
       wines.
+    icon: /img/qa.png
   - title: Pop-up dinners Italian style
     body: >-
       In a funny show-cooking I will make the most traditional Italian recipes
@@ -64,6 +66,7 @@ descriptionCards:
       A charming dinner will follow, where we will talk about Italy and Italian
       traditions, while enjoying my personal selection of delicious Italian
       wines.
+    icon: /img/qa.png
   - title: Pop-up dinners Italian style
     body: >-
       In a funny show-cooking I will make the most traditional Italian recipes
@@ -72,6 +75,7 @@ descriptionCards:
       A charming dinner will follow, where we will talk about Italy and Italian
       traditions, while enjoying my personal selection of delicious Italian
       wines.
+    icon: /img/qa.png
   - title: Pop-up dinners Italian style
     body: >-
       In a funny show-cooking I will make the most traditional Italian recipes
@@ -80,6 +84,7 @@ descriptionCards:
       A charming dinner will follow, where we will talk about Italy and Italian
       traditions, while enjoying my personal selection of delicious Italian
       wines.
+    icon: /img/qa.png
 blogSectionTitle: Cari Amici from some personalised events
 blogPosts:
   - slug: publishing-options
