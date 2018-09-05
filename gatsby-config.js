@@ -5,6 +5,7 @@ module.exports = {
   plugins: [
     'gatsby-plugin-react-next',
     'gatsby-plugin-react-helmet',
+    'gatsby-plugin-netlify-cache',
     'gatsby-plugin-sass',
     {
       resolve: 'gatsby-plugin-page-transitions',
@@ -33,6 +34,14 @@ module.exports = {
         name: 'images',
       },
     },
+    // {
+    //   resolve: 'gatsby-source-ghost',
+    //   options: {
+    //     apiUrl: 'https://blog.it.marcinjakubik.io',
+    //     clientId: 'ghost-frontend',
+    //     clientSecret: 'ab4dac795465',
+    //   },
+    // },
     'gatsby-plugin-sharp',
     'gatsby-transformer-sharp',
     {

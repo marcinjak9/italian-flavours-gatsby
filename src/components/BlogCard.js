@@ -2,34 +2,92 @@
 
 import React from 'react'
 import PropTypes from 'prop-types'
-import Link from 'gatsby-link'
 import Icon from 'material-icons-react'
+import moment from 'moment'
 
-const BlogCard = ({ title, image, description }) => (
-  <div className="col-md-6">
-    <div className="card home-card">
-      <img src="https://source.unsplash.com/collection/148531/1200x600" style={{ height: 250 }} alt="" />
-      <div className="card-body">
-        <Link to="/" className="plus-button-card">
-          <Icon icon="nature_people" color="white" />
-        </Link>
-        <h5 className="card-title font-italic">John and Katina - Brisbane (Australia)</h5>
-        <p className="card-text">
-          Angelina was wonderful and did a terrific job. We both thoroughly enjoyed the trip as did Janet and Adrian -
-          mostly due to Angelina. She was a delight. I can’t tell you how excited we are to be coming back to Italy and
-          to be seeing you again. It was always our dream that we would come back one day and have you share your beautiful
-          country with us.
-        </p>
-        <div className="card-date text-center">
-          June 2018
+class BlogCard extends React.Component {
+  state = {
+    title: '',
+    body: '',
+    image: '',
+    url: '',
+    date: '',
+    error: false,
+  }
+
+  componentWillUpdate(nextProps, nextState) {
+    if (nextProps.scriptLoad && !nextState.error && !nextState.title) {
+      this.fetchPosts()
+    }
+  }
+
+
+  fetchPosts = () => {
+    const { slug } = this.props
+    window.ghost.init({
+      clientId: 'ghost-frontend',
+      clientSecret: 'ab4dac795465',
+    })
+    fetch(window.ghost.url.api(`posts/slug/${slug}`, { limit: 1 }))
+      .then((response) => {
+        if (response.status !== 200) {
+          console.log(`Looks like there was a problem. Status Code: ${response.status}`);
+          this.setState({ error: true })
+          return;
+        }
+
+        // Examine the text in the response
+        response.json().then((data) => {
+          const post = data.posts[0]
+          const {
+            title, custom_excerpt, published_at, feature_image, slug,
+          } = post
+          this.setState({
+            title,
+            body: custom_excerpt,
+            image: feature_image,
+            url: `https://blog.it.marcinjakubik.io/${slug}`,
+            date: moment(published_at).format('MMMM YYYY'),
+          })
+        });
+      })
+      .catch((err) => {
+        console.log(err);
+      });
+  }
+
+
+  render() {
+    const {
+      title, body, image, url, date,
+    } = this.state
+    if (!title && !url) {
+      return null
+    }
+    return (
+      <div className="col-md-6">
+        <div className="card home-card">
+          <img src={image} style={{ height: 250, objectFit: 'cover' }} alt="" />
+          <div className="card-body">
+            <a href={url} target="_blank" rel="noopener noreferrer" className="plus-button-card">
+              <Icon icon="nature_people" color="white" />
+            </a>
+            <h5 className="card-title font-italic">{title}</h5>
+            <p className="card-text">
+              {body}
+            </p>
+            <div className="card-date text-center">
+              {date}
+            </div>
+          </div>
+          <div className="card-action text-center">
+            <a href={url} target="_blank" rel="noopener noreferrer" className="btn btn-link">Discover more</a>
+          </div>
         </div>
       </div>
-      <div className="card-action text-center">
-        <Link to="/" className="btn btn-link">Discover more</Link>
-      </div>
-    </div>
-  </div>
-)
+    )
+  }
+}
 
 BlogCard.propTypes = {
   title: PropTypes.string,
