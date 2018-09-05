@@ -31,7 +31,9 @@ const TourPagePreview = ({
   const cards = []
   widgetsFor('descriptionCards').map((item) => {
     if (item) {
-      cards.push({ title: item.getIn(['data', 'title']), subtitle: item.getIn(['data', 'title']), body: item.getIn(['data', 'body']) })
+      cards.push({
+        title: item.getIn(['data', 'title']), subtitle: item.getIn(['data', 'title']), body: item.getIn(['data', 'body']), icon: item.getIn(['data', 'icon']),
+      })
     }
   })
 

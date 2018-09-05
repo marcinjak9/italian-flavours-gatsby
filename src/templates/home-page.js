@@ -5,18 +5,19 @@ import PageTransition from 'gatsby-plugin-page-transitions';
 // import Img from 'gatsby-image'
 import Content, { HTMLContent } from '../components/Content'
 import TourCard from '../components/TourCard'
-import BlogCard from '../components/BlogCard'
 import MapFormContainer from '../components/MapFormContainer'
 import HelmetSection from '../components/HelmetSection'
+import BlogSection from '../components/BlogSection';
 
 
 export const HomePageTemplate = (props) => {
   const {
     hero, tourTitle, infoSection,
     content, contentComponent, tours,
-    contactSection, seoSection,
+    contactSection, seoSection, blogTitle, blogPosts,
   } = props
   const PostContent = contentComponent || Content
+  const posts = blogPosts ? blogPosts.map(post => post.slug) : []
   return (
     <PageTransition>
       {seoSection && <HelmetSection seoSection={seoSection} />}
@@ -65,27 +66,12 @@ export const HomePageTemplate = (props) => {
       </div>
 
 
-      <div className="container-fluid home-section smaller-section brand-bg">
-        <div className="row">
-          <div className="col-md-12 section-title-wrapper">
-            <h2 className="text-center white-text">More than clients, but Cari Amici</h2>
-          </div>
-          <div className="col">
-            <div className="container">
-              <div className="row">
-                {[1, 1, 1, 1].map((item, i) => (
-                  <BlogCard key={i} /> // eslint-disable-line
-                ))}
-              </div>
-            </div>
-          </div>
-
-          <div className="col-md-12 text-center cta-blog">
-            <Link to="/" className="btn btn-outline-light btn-lg">see the blog</Link>
-          </div>
-
-        </div>
-      </div>
+      <BlogSection
+        posts={posts}
+        title={blogTitle}
+        cta={() => <a href="https://blog.it.marcinjakubik.io" target="_blank" rel="noopener noreferrer" className="btn btn-outline-light btn-lg">see the blog</a>}
+        home
+      />
 
       {tours
         && (
@@ -137,6 +123,10 @@ HomePageTemplate.propTypes = {
     bgOverlay: PropTypes.bool,
   }),
   tourTitle: PropTypes.string,
+  blogTitle: PropTypes.string,
+  blogPosts: PropTypes.arrayOf(PropTypes.shape({
+    slug: PropTypes.string,
+  })),
   infoSection: PropTypes.shape({
     title: PropTypes.string,
     buttonUrl: PropTypes.string,
@@ -185,6 +175,8 @@ const HomePage = ({
       buttonUrl: pageData.frontmatter.infoSection.ctaUrl,
       buttonText: pageData.frontmatter.infoSection.ctaText,
     }}
+    blogTitle={pageData.frontmatter.blogNewsTitle}
+    blogPosts={pageData.frontmatter.blogPosts}
     tours={tours}
     content={pageData.html}
     contentComponent={HTMLContent}
@@ -208,6 +200,10 @@ HomePage.propTypes = {
           seoKeywords: PropTypes.string,
           seoTitle: PropTypes.string,
         }),
+        blogNewsTitle: PropTypes.string,
+        blogPosts: PropTypes.arrayOf(PropTypes.shape({
+          slug: PropTypes.string,
+        })),
         hero: PropTypes.shape({
           image: PropTypes.string,
           title: PropTypes.string,
@@ -277,6 +273,9 @@ export const HomePageQuery = graphql`
         }
         tourSectionTitle
         blogNewsTitle
+        blogPosts {
+          slug
+        }
         contactSectionTitle
         contactFormOptions {
           title

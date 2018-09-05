@@ -16,7 +16,7 @@ highlights: >+
   chaffeur - boutique hotels and high-level agriturismi
 
 region: Campania
-subRegion: Basilicata
+subRegion: Abruzzo
 featured: true
 hero:
   ctaLink: /
@@ -97,6 +97,9 @@ descriptionCards:
     subtitle: Lorem ipsum dolor set
     title: Lorem Ipsum
 blogSectionTitle: Cari Amici on this tour with me
+blogPosts:
+  - slug: admin-settings
+  - slug: apps-integrations
 calendarTitle: Available dates for your amazing tour
 calendarBody: >
   Pick your more suitable period among the two blocks of 10 days on which I

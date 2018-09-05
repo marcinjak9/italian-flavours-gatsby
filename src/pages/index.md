@@ -22,6 +22,9 @@ hero:
   title: You tasty holiday in Italy
 tourSectionTitle: Savour your next holiday
 blogNewsTitle: 'More than clients, but Cari Amici'
+blogPosts:
+  - slug: the-editor
+  - slug: publishing-options
 contactSectionTitle: Let's start from here your tailor-made holidays
 contactFormOptions:
   - title: Lorem Ipsum
