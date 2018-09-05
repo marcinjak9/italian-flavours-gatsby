@@ -7,11 +7,12 @@ import instagramIcon from '../img/instagram-icon-black.png'
 import InstagramPhoto from '../components/InstagramPhoto'
 import ContactForm from '../components/ContactForm'
 import CalendarComponent from '../components/CalendarComponent'
-import BlogCard from '../components/BlogCard'
+import BlogSection from '../components/BlogSection'
 import HelmetSection from '../components/HelmetSection'
 
 export const TourPageTemplate = ({
   hero, descriptionSection, gallery, blogSectionTitle, calendar, instagram, seoSection,
+  blogPosts,
 }) => (
   <PageTransition>
     {seoSection && <HelmetSection seoSection={seoSection} />}
@@ -98,6 +99,7 @@ export const TourPageTemplate = ({
               <h3>{card.title}</h3>
               <h4 className="text-center">{card.subtitle}</h4>
               <p>{card.body}</p>
+              {card.icon && <img src={card.icon} className="card-icon" />}
             </div>
           </div>
         ))}
@@ -107,23 +109,12 @@ export const TourPageTemplate = ({
     </div>
 
 
-    <div className="container-fluid cari-amici-section grey-bg">
-      <div className="row">
-        <div className="col-md-12 section-title-wrapper">
-          <h2 className="text-center brand-text">{blogSectionTitle}</h2>
-        </div>
-
-        <div className="col">
-          <div className="container">
-            <div className="row">
-              {[1, 1].map((post, i) => (
-                  <BlogCard key={i} /> /* eslint-disable-line */
-              ))}
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
+    <BlogSection
+      posts={blogPosts ? blogPosts.map(post => post.slug) : []}
+      title={blogSectionTitle}
+      // cta={() => <Link to="/" className="btn btn-outline-light btn-lg">see the blog</Link>}
+      tour
+    />
 
     <div className="container-fluid cari-amici-section white-bg">
       <h1 className="text-center grey-text">{calendar.title}</h1>
@@ -202,6 +193,9 @@ TourPageTemplate.propTypes = {
     // })),
   }),
   blogSectionTitle: PropTypes.string,
+  blogPosts: PropTypes.arrayOf(PropTypes.shape({
+    slug: PropTypes.string,
+  })),
   calendar: PropTypes.shape({
     body: PropTypes.string,
     title: PropTypes.string,
@@ -225,6 +219,7 @@ const TourPage = ({
       frontmatter: {
         blogSectionTitle, gallery, hero, instagramPhotos, instagramUsername, title, tourDescription,
         galleryUpper, calendarTitle, calendarBody, calendarNotes, aviabilityDates, descriptionCards, seoSection,
+        blogPosts,
       },
     },
   },
@@ -251,6 +246,7 @@ const TourPage = ({
       cards: descriptionCards,
     }}
     blogSectionTitle={blogSectionTitle}
+    blogPosts={blogPosts}
     calendar={{
       body: calendarBody,
       title: calendarTitle,
@@ -312,9 +308,13 @@ export const tourPageQuery = graphql`
           title
           subtitle
           body
+          icon
         }
         
         blogSectionTitle
+        blogPosts {
+          slug
+        }
         
         calendarTitle
         calendarBody

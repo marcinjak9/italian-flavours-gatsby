@@ -9,7 +9,7 @@ const PersonalizedEventsPreview = ({
   widgetsFor('personalizedEventsGallery').map(item => images.push({ image: getAsset(item.getIn(['data', 'image'])) }))
 
   const cards = []
-  widgetsFor('descriptionCards').map(item => cards.push({ title: item.getIn(['data', 'title']), body: item.getIn(['data', 'body']) }))
+  widgetsFor('descriptionCards').map(item => cards.push({ title: item.getIn(['data', 'title']), body: item.getIn(['data', 'body']), icon: getAsset(item.getIn(['data', 'icon'])) }))
 
   const instagramPhotos = []
   widgetsFor('instagramPhotos').map(item => instagramPhotos.push({ id: item.getIn(['data', 'id']) }))

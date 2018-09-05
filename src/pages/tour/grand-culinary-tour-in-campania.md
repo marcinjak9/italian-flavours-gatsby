@@ -61,6 +61,7 @@ descriptionCards:
       voluptate veniam.
     subtitle: Lorem ipsum dolor set
     title: Lorem Ipsum
+    icon: /img/qa.png
   - body: >-
       Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sunt asperiores,
       vero molestias facilis fuga est recusandae totam. Neque, quae voluptatibus
@@ -68,6 +69,7 @@ descriptionCards:
       voluptate veniam.
     subtitle: Lorem ipsum dolor set
     title: Lorem Ipsum
+    icon: /img/qa.png
   - body: >-
       Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sunt asperiores,
       vero molestias facilis fuga est recusandae totam. Neque, quae voluptatibus
@@ -75,6 +77,7 @@ descriptionCards:
       voluptate veniam.
     subtitle: Lorem ipsum dolor set
     title: Lorem Ipsum
+    icon: /img/qa.png
   - body: >-
       Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sunt asperiores,
       vero molestias facilis fuga est recusandae totam. Neque, quae voluptatibus
@@ -82,6 +85,7 @@ descriptionCards:
       voluptate veniam.
     subtitle: Lorem ipsum dolor set
     title: Lorem Ipsum
+    icon: /img/qa.png
   - body: >-
       Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sunt asperiores,
       vero molestias facilis fuga est recusandae totam. Neque, quae voluptatibus
@@ -89,6 +93,7 @@ descriptionCards:
       voluptate veniam.
     subtitle: Lorem ipsum dolor set
     title: Lorem Ipsum
+    icon: /img/qa.png
   - body: >-
       Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sunt asperiores,
       vero molestias facilis fuga est recusandae totam. Neque, quae voluptatibus
@@ -96,6 +101,7 @@ descriptionCards:
       voluptate veniam.
     subtitle: Lorem ipsum dolor set
     title: Lorem Ipsum
+    icon: /img/qa.png
 blogSectionTitle: Cari Amici on this tour with me
 blogPosts:
   - slug: admin-settings

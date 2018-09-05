@@ -2,19 +2,20 @@ import React from 'react'
 import PropTypes from 'prop-types'
 import Link from 'gatsby-link'
 import PageTransition from 'gatsby-plugin-page-transitions';
-
+import shortid from 'shortid'
 import Content, { HTMLContent } from '../components/Content'
 import instagram from '../img/instagram-icon-black.png'
-import BlogCard from '../components/BlogCard';
+import BlogSection from '../components/BlogSection';
 import ContactForm from '../components/ContactForm';
 import InstagramPhoto from '../components/InstagramPhoto';
 import HelmetSection from '../components/HelmetSection';
 
 export const PersonalizedEventsTemplate = ({
   hero, descriptionSection, gallerySection, blogSectionTitle, contactSectionTitle,
-  content, contentComponent, instagramPhotos, seoSection,
+  content, contentComponent, instagramPhotos, seoSection, blogPosts,
 }) => {
   const PostContent = contentComponent || Content
+  const posts = blogPosts ? blogPosts.map(post => post.slug) : []
   return (
     <PageTransition>
       {seoSection && <HelmetSection seoSection={seoSection} />}
@@ -27,7 +28,7 @@ export const PersonalizedEventsTemplate = ({
                 <div className="col-md-8 offset-md-2 hero">
                   <h1 className="white-text">{hero.title}</h1>
                   <h3>{hero.subtitle}</h3>
-                  <Link href={hero.ctaLink} className="btn btn-primary">{hero.ctaText}</Link>
+                  <Link to={hero.ctaLink} className="btn btn-primary">{hero.ctaText}</Link>
                 </div>
               </div>
 
@@ -52,9 +53,8 @@ export const PersonalizedEventsTemplate = ({
 
       <div className="container-fluid personalized-events-section">
         <div className="row">
-
           {gallerySection.images.map(item => (
-            <div className="col-md-4 padding-1" key={item.image}>
+            <div className="col-md-4 padding-1" key={shortid.generate()}>
               <div className="card card-gallery">
                 <img className="card-img-top" src={item.image} alt="Card image cap" />
               </div>
@@ -85,6 +85,7 @@ export const PersonalizedEventsTemplate = ({
               <div className={`events-card ${i % 2 === 1 && 'light'}`}>
                 <h3>{card.title}</h3>
                 <p>{card.body}</p>
+                {card.icon && <img src={card.icon} className="card-icon" />}
               </div>
             </div>
           ))}
@@ -94,23 +95,12 @@ export const PersonalizedEventsTemplate = ({
       </div>
 
 
-      <div className="container-fluid cari-amici-section brand-bg">
-        <div className="row">
-          <div className="col-md-12 section-title-wrapper">
-            <h2 className="text-center white-text">{blogSectionTitle}</h2>
-          </div>
-
-          <div className="col">
-            <div className="container">
-              <div className="row">
-                {[1, 1].map((post, i) => (
-                  <BlogCard key={i} /> /* eslint-disable-line */
-                ))}
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
+      <BlogSection
+        posts={posts}
+        title={blogSectionTitle}
+        cta={() => <a href="https://blog.it.marcinjakubik.io" target="_blank" rel="noopener noreferrer" className="btn btn-outline-light btn-lg">see the blog</a>}
+        home
+      />
 
       <ContactForm title={contactSectionTitle} />
 
@@ -162,6 +152,9 @@ PersonalizedEventsTemplate.propTypes = {
     })),
   }),
   blogSectionTitle: PropTypes.string,
+  blogPosts: PropTypes.arrayOf(PropTypes.shape({
+    slug: PropTypes.string,
+  })),
   contactSectionTitle: PropTypes.string,
   content: PropTypes.string,
   contentComponent: PropTypes.func,
@@ -178,7 +171,7 @@ const PersonalizedEvents = ({
         contactSectionTitle, blogSectionTitle, descriptionCards,
         descriptionTitle, hero, title, personalizedEventsGallery,
         midDescriptionTitle, midDescriptionBody, instagramPhotos,
-        seoSection,
+        seoSection, blogPosts,
       }, html,
     },
   },
@@ -204,6 +197,7 @@ const PersonalizedEvents = ({
     }}
 
     blogSectionTitle={blogSectionTitle}
+    blogPosts={blogPosts}
     contactSectionTitle={contactSectionTitle}
 
     content={html}
@@ -284,8 +278,12 @@ export const personalizedEventsQuery = graphql`
         descriptionCards {
           title
           body
+          icon
         }
         blogSectionTitle
+        blogPosts {
+          slug
+        }
         contactSectionTitle
         instagramPhotos {
           id

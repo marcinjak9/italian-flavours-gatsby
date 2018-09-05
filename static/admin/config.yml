@@ -154,10 +154,16 @@ collections:
         name: highlights
         widget: text
         default: Here you can insert your main featues of the tour, they will be shown in homepage tour card
-        
-      - label: Tour Region
+      
+      - label: Tour Main Region
         name: region
         widget: select
+        options: [Abruzzo,Apulia,Basilicata,Calabria,Campania,Emilia-Romagna,Friuli-Venezia-Giulia,Latium,Liguria,Lombardy,Marche,Molise,Piedmont,Sardinia,Sicily,Tuscany,Trentino,Umbria,Aosta_Valley,Veneto]
+
+      - label: Tour Sub Region
+        name: subRegion
+        widget: select
+        required: false
         options: [Abruzzo,Apulia,Basilicata,Calabria,Campania,Emilia-Romagna,Friuli-Venezia-Giulia,Latium,Liguria,Lombardy,Marche,Molise,Piedmont,Sardinia,Sicily,Tuscany,Trentino,Umbria,Aosta_Valley,Veneto]
 
       - label: Show on Home Page
@@ -259,12 +265,21 @@ collections:
 
           - label: Icon
             name: icon
+            required: false
             widget: image
 
       - label: Blog Section Title
         name: blogSectionTitle
         widget: string
         default: Your blog section title
+
+      - label: Blog Posts
+        name: blogPosts
+        widget: list
+        fields: 
+          - label: Post Slug
+            name: slug
+            widget: string
 
       - label: CalendarTitle
         name: calendarTitle
@@ -386,6 +401,14 @@ collections:
           - label: Blog News title
             name: blogNewsTitle
             widget: string
+
+          - label: Blog Posts
+            name: blogPosts
+            widget: list
+            fields: 
+              - label: Post Slug
+                name: slug
+                widget: string
 
           - label: Contact section title
             name: contactSectionTitle
@@ -585,9 +608,21 @@ collections:
               - label: Body
                 name: body
                 widget: text
+                
+              - label: Icon
+                name: icon
+                required: false
+                widget: image
           - label: Blog Section Title
             name: blogSectionTitle
             widget: string
+          - label: Blog Posts
+            name: blogPosts
+            widget: list
+            fields: 
+              - label: Post Slug
+                name: slug
+                widget: string
           - label: Contact Section Title
             name: contactSectionTitle
             widget: string

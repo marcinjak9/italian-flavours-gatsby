@@ -1,7 +1,6 @@
 import React, { Component } from 'react'
 import PropTypes from 'prop-types'
 import Helmet from 'react-helmet'
-
 import Navbar from '../components/Navbar'
 import MobileNavbar from '../components/MobileNavbar'
 import Footer from '../components/Footer'
@@ -13,6 +12,7 @@ class TemplateWrapper extends Component {
   }
 
   componentDidMount() {
+    // eslint-disable-next-line
     (function () {
       const options = {
         facebook: '207512882926609', // Facebook page ID
@@ -25,11 +25,10 @@ class TemplateWrapper extends Component {
       const proto = document.location.protocol; const host = 'whatshelp.io'; const
         url = `${proto}//static.${host}`;
       const s = document.createElement('script'); s.type = 'text/javascript'; s.async = true; s.src = `${url}/widget-send-button/js/init.js`;
-      s.onload = function () { WhWidgetSendButton.init(host, proto, options); };
+      s.onload = function () { WhWidgetSendButton.init(host, proto, options); }; // eslint-disable-line
       const x = document.getElementsByTagName('script')[0]; x.parentNode.insertBefore(s, x);
     }());
   }
-
 
   render() {
     const {
@@ -66,6 +65,7 @@ class TemplateWrapper extends Component {
             <meta name="og:url" content={generalSeoSection.ogUrl} />
             <meta name="og:image" content={generalSeoSection.ogImage} />
             <meta name="og:description" content={generalSeoSection.seoDescription} />
+
           </Helmet>
           <Navbar
             menuItems={menuItems}
@@ -75,7 +75,6 @@ class TemplateWrapper extends Component {
             openMobileMenu={() => this.setState({ menuOpen: true })}
           />
           <div>{children()}</div>
-
           <Footer
             footerMenuItems={footerMenu}
             footerContacts={footerContacts}
