@@ -32,8 +32,15 @@ const TourPagePreview = ({
   widgetsFor('descriptionCards').map((item) => {
     if (item) {
       cards.push({
-        title: item.getIn(['data', 'title']), subtitle: item.getIn(['data', 'title']), body: item.getIn(['data', 'body']), icon: item.getIn(['data', 'icon']),
+        title: item.getIn(['data', 'title']), subtitle: item.getIn(['data', 'title']), body: item.getIn(['data', 'body']), icon: getAsset(item.getIn(['data', 'icon'])),
       })
+    }
+  })
+
+  const posts = []
+  widgetsFor('blogPosts').map((item) => {
+    if (item) {
+      posts.push(item.getIn(['data', 'slug']))
     }
   })
 
@@ -65,7 +72,7 @@ const TourPagePreview = ({
         notes: entry.getIn(['data', 'calendarNotes']),
         dates,
       }}
-
+      blogPosts={widgetsFor('blogPosts')}
       instagram={{
         images: instagramPhotos,
         username: entry.getIn(['data', 'instagramUsername']),

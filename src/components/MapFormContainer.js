@@ -8,6 +8,7 @@ class MapFormContainer extends Component {
     super(props)
     this.state = {
       selectedRegion: '',
+      selectedActivity: '',
       onClient: false,
       error: {
         region: null,
@@ -16,7 +17,7 @@ class MapFormContainer extends Component {
       },
       success: false,
     }
-    this.activitySelect = React.createRef();
+    // this.activitySelect = React.createRef();
     this.emailForm = React.createRef();
   }
 
@@ -30,7 +31,7 @@ class MapFormContainer extends Component {
 
   handleSubmit = (e) => {
     e.preventDefault()
-    const { selectedRegion } = this.state
+    const { selectedRegion, selectedActivity } = this.state
     let allValid = true
     if (!selectedRegion) {
       this.setState(prevState => ({ ...prevState, error: { ...prevState.error, region: 'You must select a region!' } }))
@@ -38,7 +39,7 @@ class MapFormContainer extends Component {
     } else {
       this.setState(prevState => ({ ...prevState, error: { ...prevState.error, region: null } }))
     }
-    if (!this.activitySelect.current.value) {
+    if (!selectedActivity) {
       this.setState(prevState => ({ ...prevState, error: { ...prevState.error, activity: 'You must select an activity!' } }))
       allValid = false
     } else {
@@ -53,7 +54,7 @@ class MapFormContainer extends Component {
     }
 
     if (allValid) {
-      return this.submitForm({ email: this.emailForm.current.value, region: selectedRegion, activity: this.activitySelect.current.value })
+      return this.submitForm({ email: this.emailForm.current.value, region: selectedRegion, activity: selectedActivity })
     }
     return null
   }
@@ -76,14 +77,14 @@ class MapFormContainer extends Component {
   }
 
   resetForm = () => {
-    this.setState({ selectedRegion: '' });
+    this.setState({ selectedRegion: '', selectedActivity: '' });
     this.emailForm.current.value = ''
-    this.activitySelect.current.value = ''
+    // this.activitySelect.current.value = ''
   }
 
   render() {
     const {
-      selectedRegion, onClient, error, success,
+      selectedRegion, onClient, error, success, selectedActivity,
     } = this.state
     const {
       regions, title, options, subregion,
@@ -100,26 +101,49 @@ class MapFormContainer extends Component {
                   </h2>
                 </div>
                 <form className="col-md-6 d-flex flex-column home-form" onSubmit={this.handleSubmit} name="contact-home" data-netlify="true" data-netlify-honeypot="bot-field">
-                  <div className="select-group">
-                    <div className="form-group select-form" style={{ marginBottom: 80 }}>
-                      <select name="region" className="form-control" id="region-select" value={selectedRegion} onChange={e => this.selectRegionHandler(e.target.value)}>
-                        <option value="" disabled>Select the region you don’t want missy</option>
-                        {regions.map(region => <option key={region}>{region}</option>)}
-                      </select>
-                      {error.region && <p className="error-message">{error.region}</p>}
-                    </div>
-                    <div className="form-group select-form">
-                      <select name="activity" className="form-control" defaultValue="" id="activity-select" ref={this.activitySelect}>
-                        <option value="" disabled>Select one “must to do” holiday’s activity</option>
-                        {options.map(option => <option key={option.title}>{option.title}</option>)}
-                      </select>
-                      {error.activity && <p className="error-message">{error.activity}</p>}
-                    </div>
+                  <div className="form-group select-form">
+                    <select
+                      name="region"
+                      className="form-control"
+                      id="region-select"
+                      value={selectedRegion}
+                      style={{ color: selectedRegion ? '#333' : '#777' }}
+                      onChange={e => this.selectRegionHandler(e.target.value)}
+                    >
+                      <option value="" disabled><span style={{ color: 'red' }}>Select the region you don’t want missy</span></option>
+                      {regions.map(region => <option key={region}>{region}</option>)}
+                    </select>
+                    {error.region && <p className="error-message">{error.region}</p>}
+
+                  </div>
+                  <div className="form-group select-form">
+                    <select
+                      name="activity"
+                      className="form-control"
+                      value={selectedActivity}
+                      id="activity-select"
+                      // ref={this.activitySelect}
+                      style={{ color: selectedActivity ? '#333' : '#777' }}
+                      onChange={e => this.setState({ selectedActivity: e.target.value })}
+                    >
+                      <option value="" disabled>Select one “must to do” holiday’s activity</option>
+                      {options.map(option => <option key={option.title}>{option.title}</option>)}
+                    </select>
+                    {error.activity && <p className="error-message">{error.activity}</p>}
                   </div>
                   <div className="form-group">
-                    <input name="email" type="email" className="form-control" id="email" placeholder="Your email address" ref={this.emailForm} />
+                    <input
+                      name="email"
+                      type="email"
+                      className="form-control"
+                      id="email"
+                      placeholder="Your email address"
+                      ref={this.emailForm}
+                      onFocus={e => e.target.placeholder = ''}
+                      onBlur={e => e.target.placeholder = 'Your email address'}
+                    />
                     {error.email && <p className="error-message">{error.email}</p>}
-                    <strong className="brand-text">I will let you know within 24-hrs</strong>
+                    <strong className="brand-text">I will reply within 24-hrs</strong>
                     <div className="text-right">
                       <button type="submit" className="btn btn-primary">Let Me know</button>
                       {success && (

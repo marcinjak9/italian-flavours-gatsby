@@ -16,7 +16,7 @@ class BlogCard extends React.Component {
   }
 
   componentWillUpdate(nextProps, nextState) {
-    if (nextProps.scriptLoad && !nextState.error) {
+    if (nextProps.scriptLoad && !nextState.error && !nextState.title) {
       this.fetchPosts()
     }
   }

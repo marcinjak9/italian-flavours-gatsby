@@ -308,6 +308,7 @@ export const tourPageQuery = graphql`
           title
           subtitle
           body
+          icon
         }
         
         blogSectionTitle

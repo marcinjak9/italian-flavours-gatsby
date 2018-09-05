@@ -278,6 +278,7 @@ export const personalizedEventsQuery = graphql`
         descriptionCards {
           title
           body
+          icon
         }
         blogSectionTitle
         blogPosts {
