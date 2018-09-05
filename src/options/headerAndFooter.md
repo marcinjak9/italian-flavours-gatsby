@@ -15,6 +15,8 @@ generalSeoSection:
     Italian Flavours | Scopri con noi i sapori nascosti della tradizione
     italiana
 menuItems:
+  - path: /
+    title: Home
   - path: /tours
     regionDropdown: true
     title: Tailored Tours
@@ -30,8 +32,6 @@ menuItems:
   - path: /i-am-angelina
     regionDropdown: false
     title: I am Angelina
-  - path: /
-    title: Home
 menuCtaText: CONTACT ME NOW
 menuCtaLink: '#contact'
 footerMenu:
