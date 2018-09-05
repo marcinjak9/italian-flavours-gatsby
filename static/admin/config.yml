@@ -61,7 +61,7 @@ collections:
                 widget: string
               - label: Region Dropdown
                 name: regionDropdown
-                widget: 
+                widget: boolean
                 default: false
           - label: Menu CTA text
             name: menuCtaText

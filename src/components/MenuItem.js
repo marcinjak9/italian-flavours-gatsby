@@ -40,6 +40,24 @@ class MenuItem extends Component {
     return this.setState({ open: false })
   }
 
+  renderLink = () => {
+    const {
+      text, path, active, regionDropdown, regions, mobile, onClick,
+    } = this.props
+    if (path.indexOf('http') >= 0) {
+      return (
+        <a href={path} className="nav-link" onClick={onClick ? () => onClick() : () => null}>
+          {text}
+        </a>
+      )
+    }
+    return (
+      <Link className="nav-link" to={path} onClick={onClick ? () => onClick() : () => null}>
+        {text}
+      </Link>
+    )
+  }
+
   render() {
     const {
       text, path, active, regionDropdown, regions, mobile, onClick,
@@ -60,9 +78,7 @@ class MenuItem extends Component {
     }
     return (
       <li className={`nav-item ${active && 'active'} ${mobile && 'mobile'}`}>
-        <Link className="nav-link" to={path} onClick={onClick ? () => onClick() : () => null}>
-          {text}
-        </Link>
+        {this.renderLink()}
       </li>
     )
   }
@@ -78,6 +94,7 @@ MenuItem.propTypes = {
     slug: PropTypes.string,
     name: PropTypes.string,
   })),
+  mobile: PropTypes.bool,
 }
 
 export default MenuItem
