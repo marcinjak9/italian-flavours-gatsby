@@ -21,7 +21,7 @@ menuItems:
   - path: /personalized-events
     regionDropdown: false
     title: Personalised events
-  - path: /blog
+  - path: 'https://blog.it.marcinjakubik.io'
     regionDropdown: false
     title: Experiences Blog
   - path: '#contact'
@@ -30,6 +30,8 @@ menuItems:
   - path: /i-am-angelina
     regionDropdown: false
     title: I am Angelina
+  - path: /
+    title: Home
 menuCtaText: CONTACT ME NOW
 menuCtaLink: '#contact'
 footerMenu:
