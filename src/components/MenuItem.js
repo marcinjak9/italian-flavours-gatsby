@@ -46,10 +46,13 @@ class MenuItem extends Component {
     } = this.props
     if (path.indexOf('http') >= 0) {
       return (
-        <a href={path} className="nav-link" onClick={onClick ? () => onClick() : () => null}>
+        <a href={path} className="nav-link" target="_blank" rel="noopener noreferrer" onClick={onClick ? () => onClick() : () => null}>
           {text}
         </a>
       )
+    }
+    if (path.indexOf('#') === 0) {
+      return <a href={!mobile ? path : `${path}-mobile`} className="nav-link" onClick={onClick ? () => onClick() : () => null}>{text}</a>
     }
     return (
       <Link className="nav-link" to={path} onClick={onClick ? () => onClick() : () => null}>

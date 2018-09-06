@@ -87,7 +87,7 @@ class ContactForm extends React.Component {
     const { title } = this.props
     const { error, success } = this.state
     return (
-      <div className="container-fluid cari-amici-section grey-bg d-flex justify-content-center flex-column">
+      <div id="contact" className="container-fluid cari-amici-section grey-bg d-flex justify-content-center flex-column">
         <div className="row">
           <div className="container">
             <form className="row contact-form d-flex flex-column" onSubmit={this.handleOnSubmit} name="contact-form" data-netlify="true" data-netlify-honeypot="bot-field">

@@ -90,7 +90,7 @@ class MapFormContainer extends Component {
       regions, title, options, subregion,
     } = this.props
     return (
-      <div className="container-fluid cari-amici-section home-contact-section grey-bg">
+      <div id="contact" className="container-fluid cari-amici-section home-contact-section grey-bg">
         <div className="row">
           <div className="col">
             <div className="container">
@@ -110,7 +110,7 @@ class MapFormContainer extends Component {
                       style={{ color: selectedRegion ? '#333' : '#777' }}
                       onChange={e => this.selectRegionHandler(e.target.value)}
                     >
-                      <option value="" disabled><span style={{ color: 'red' }}>Select the region you don’t want missy</span></option>
+                      <option value="" disabled>Select the region you don’t want missy</option>
                       {regions.map(region => <option key={region}>{region}</option>)}
                     </select>
                     {error.region && <p className="error-message">{error.region}</p>}

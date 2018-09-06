@@ -12,7 +12,7 @@ const Footer = ({
   footerContacts: { emailAddress, phoneNumber },
   footerMenuItems, socialInfo: { facebookUrl, instagramUsername },
 }) => (
-  <footer className="container-fluid no-top-padding">
+  <footer className="container-fluid no-top-padding" id="contact-mobile">
     <div className="row">
       <div className="col-md-12 text-center">
         <img src={logoWhite} alt="" className="footer-logo" />
