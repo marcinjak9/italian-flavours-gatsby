@@ -37,7 +37,7 @@ infoSection:
 ---
 * **Tailor-made tours or travel solutions** for whatever region or city in Italy
 * Tailored tours for specific cultural and folkloric events in Italy (as Terra Madre in Turin, Vinitaly in Verona, Taste in Florence, Cibus in Parma)
-* Customized wine tastings and visits to the finest and most historical wineries in Italy
+* **Customized wine tastings** and visits to the finest and most historical wineries in Italy
 * Dedicated master classes at the Banca del Vino (the Slow food bank of wine) in Piedmont
 * Truffle hunting
 * Exclusive extra-virgin olive oil tastings based on your desires
