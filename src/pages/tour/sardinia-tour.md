@@ -1,10 +1,20 @@
 ---
 templateKey: tour-page
+seoSection:
+  ogImage: /img/tuscany.png
+  ogTitle: Grand Culinary Tour in Tuscany
+  ogUrl: /
+  seoDescription: >-
+    Highlights wine tastings - relaxing environment - horse riding - private
+    chaffeur - boutique hotels and high-level agriturismi
+  seoKeywords: culinary
+  seoTitle: Grand Culinary Tour in Tuscany
 title: Grand Culinary Tour in Tuscany
 highlights: >-
   Highlights wine tastings - relaxing environment - horse riding - private
   chaffeur - boutique hotels and high-level agriturismi
 region: Tuscany
+featured: true
 hero:
   ctaLink: /
   ctaText: ASK ME MORE
@@ -26,7 +36,7 @@ tourDescription:
     field, I decided to put these experiences to use and I founded my first own
     company, Sardinia Flavour, which aim was to make people all over the world
     know and taste the most precious and traditional delicacies from Italy.
-  image: /img/mappa-2x.9c95c556.png
+  image: /img/tuscany.png
   title: Come with me. We dive into flavours and beauty.
 tourShortDescription: >-
   A memorable gourmet journey among the most antique and precious culinary and
@@ -46,56 +56,59 @@ galleryUpper:
   - image: /img/products-grid3.jpg
   - image: /img/products-grid2.jpg
   - image: /img/chemex.jpg
-blogSectionTitle: Cari Amici on this tour with me
 descriptionCards:
   - body: >-
       Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sunt asperiores,
       vero molestias facilis fuga est recusandae totam. Neque, quae voluptatibus
       reprehenderit tempora quia temporibus. Eum tenetur dolor temporibus
       voluptate veniam.
+    icon: /img/qa.png
     subtitle: Lorem ipsum dolor set
     title: Lorem Ipsum
-    icon: /img/qa.png
   - body: >-
       Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sunt asperiores,
       vero molestias facilis fuga est recusandae totam. Neque, quae voluptatibus
       reprehenderit tempora quia temporibus. Eum tenetur dolor temporibus
       voluptate veniam.
+    icon: /img/qa.png
     subtitle: Lorem ipsum dolor set
     title: Lorem Ipsum
-    icon: /img/qa.png
   - body: >-
       Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sunt asperiores,
       vero molestias facilis fuga est recusandae totam. Neque, quae voluptatibus
       reprehenderit tempora quia temporibus. Eum tenetur dolor temporibus
       voluptate veniam.
+    icon: /img/qa.png
     subtitle: Lorem ipsum dolor set
     title: Lorem Ipsum
-    icon: /img/qa.png
   - body: >-
       Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sunt asperiores,
       vero molestias facilis fuga est recusandae totam. Neque, quae voluptatibus
       reprehenderit tempora quia temporibus. Eum tenetur dolor temporibus
       voluptate veniam.
+    icon: /img/qa.png
     subtitle: Lorem ipsum dolor set
     title: Lorem Ipsum
-    icon: /img/qa.png
   - body: >-
       Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sunt asperiores,
       vero molestias facilis fuga est recusandae totam. Neque, quae voluptatibus
       reprehenderit tempora quia temporibus. Eum tenetur dolor temporibus
       voluptate veniam.
+    icon: /img/qa.png
     subtitle: Lorem ipsum dolor set
     title: Lorem Ipsum
-    icon: /img/qa.png
   - body: >-
       Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sunt asperiores,
       vero molestias facilis fuga est recusandae totam. Neque, quae voluptatibus
       reprehenderit tempora quia temporibus. Eum tenetur dolor temporibus
       voluptate veniam.
+    icon: /img/qa.png
     subtitle: Lorem ipsum dolor set
     title: Lorem Ipsum
-    icon: /img/qa.png
+blogSectionTitle: Cari Amici on this tour with me
+blogPosts:
+  - slug: welcome
+  - slug: welcome
 calendarTitle: Available dates for your amazing tour
 calendarBody: >-
   Pick your more suitable period among the two blocks of 10 days on which I
