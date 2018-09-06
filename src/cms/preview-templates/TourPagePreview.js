@@ -37,12 +37,12 @@ const TourPagePreview = ({
     }
   })
 
-  const posts = []
-  widgetsFor('blogPosts').map((item) => {
-    if (item) {
-      posts.push(item.getIn(['data', 'slug']))
-    }
-  })
+  // const posts = []
+  // widgetsFor('blogPosts').map((item) => {
+  //   if (item) {
+  //     posts.push(item.getIn(['data', 'slug']))
+  //   }
+  // })
 
   return (
     <TourPageTemplate
@@ -72,7 +72,7 @@ const TourPagePreview = ({
         notes: entry.getIn(['data', 'calendarNotes']),
         dates,
       }}
-      blogPosts={widgetsFor('blogPosts')}
+      blogPosts={[]}
       instagram={{
         images: instagramPhotos,
         username: entry.getIn(['data', 'instagramUsername']),
