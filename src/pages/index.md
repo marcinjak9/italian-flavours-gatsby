@@ -12,7 +12,7 @@ seoSection:
   seoTitle: You tasty holiday in Italy
 hero:
   ctaText: I listen to your dreams
-  ctaUrl: /
+  ctaUrl: '#contact'
   heroBgOverlay: true
   image: /img/desktop-1024.jpg
   payoff: >
