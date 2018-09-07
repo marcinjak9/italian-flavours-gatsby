@@ -8,7 +8,7 @@ import TourCard from '../components/TourCard'
 import MapFormContainer from '../components/MapFormContainer'
 import HelmetSection from '../components/HelmetSection'
 import BlogSection from '../components/BlogSection';
-
+import Hero from '../components/Hero'
 
 export const HomePageTemplate = (props) => {
   const {
@@ -21,29 +21,20 @@ export const HomePageTemplate = (props) => {
   return (
     <PageTransition>
       {seoSection && <HelmetSection seoSection={seoSection} />}
-      <div className="container-fluid hero-container">
-        <img src={hero.bgImage} className="hero-bg-img" alt="" />
-        {hero.bgOverlay && <div className="hero-overlay" />}
-        <div className="row outer-row">
-          <div className="col">
-            <div className="container">
-              <div className="row d-flex flex-column justify-content-center">
-                <div className="col-md-7 hero">
-                  <h1 className="white-text">
-                    {hero.title}
-                  </h1>
-                  <h3>
-                    {hero.payoff}
-                  </h3>
-                  <Link to={hero.buttonLink} className="btn btn-primary">{hero.buttonText}</Link>
-                </div>
-              </div>
-
-            </div>
-          </div>
-        </div>
-      </div>
-
+      <Hero
+        images={{
+          bgImage: hero.bgImage,
+          bgImage1280: hero.bgImage1280,
+          bgImage1024: hero.bgImage1024,
+          bgImage768: hero.bgImage768,
+          bgImage480: hero.bgImage480,
+          bgImage320: hero.bgImage320,
+        }}
+        bgOverlay={hero.bgOverlay}
+        title={hero.title}
+        payoff={hero.payoff}
+        cta={() => <Link to={hero.buttonLink} className="btn btn-primary">{hero.buttonText}</Link>}
+      />
 
       <div className="container home-section first-section white-bg">
         <div className="row">
@@ -116,6 +107,11 @@ HomePageTemplate.propTypes = {
   }),
   hero: PropTypes.shape({
     bgImage: PropTypes.string,
+    bgImage1280: PropTypes.string,
+    bgImage1024: PropTypes.string,
+    bgImage768: PropTypes.string,
+    bgImage480: PropTypes.string,
+    bgImage320: PropTypes.string,
     title: PropTypes.string,
     payoff: PropTypes.string,
     buttonText: PropTypes.string,
@@ -163,6 +159,11 @@ const HomePage = ({
     seoSection={pageData.frontmatter.seoSection}
     hero={{
       bgImage: pageData.frontmatter.hero.image,
+      bgImage1280: pageData.frontmatter.hero.image1280,
+      bgImage1024: pageData.frontmatter.hero.image1024,
+      bgImage768: pageData.frontmatter.hero.image768,
+      bgImage480: pageData.frontmatter.hero.image480,
+      bgImage320: pageData.frontmatter.hero.image320,
       title: pageData.frontmatter.hero.title,
       payoff: pageData.frontmatter.hero.payoff,
       buttonText: pageData.frontmatter.hero.ctaText,
@@ -267,6 +268,11 @@ export const HomePageQuery = graphql`
           ctaText
           ctaUrl
           image
+          image1280
+          image1024
+          image768
+          image480
+          image320
           heroBgOverlay
           payoff
           title

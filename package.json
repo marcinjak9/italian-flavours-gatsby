@@ -33,6 +33,7 @@
     "react-dom": "^16.4.2",
     "react-helmet": "^5.2.0",
     "react-markdown": "^3.4.1",
+    "react-responsive": "^5.0.0",
     "react-svgmt": "^1.1.6",
     "react-with-styles-interface-aphrodite": "^5.0.1",
     "require-yml": "^1.3.1",

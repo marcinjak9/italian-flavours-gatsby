@@ -63,6 +63,10 @@ collections:
                 name: regionDropdown
                 widget: boolean
                 default: false
+              - label: Show only on mobile
+                name: oblyMobile
+                type: boolean
+                default: false
           - label: Menu CTA text
             name: menuCtaText
             widget: string
@@ -86,9 +90,11 @@ collections:
               - label: Telephone Number
                 name: phoneNumber
                 widget: string
+                required: false
               - label: Email address
                 name: emailAddress
                 widget: string
+                required: false
           - label: Credits text
             name: creditsText
             widget: text
@@ -385,9 +391,29 @@ collections:
                 name: ctaUrl
                 widget: string
 
-              - label: Hero Background Image
+              - label: Hero Background Image (1920)
                 name: image
                 widget: image
+              - label: Hero Background Image (1280)
+                name: image1280
+                widget: image
+                required: false
+              - label: Hero Background Image (1024)
+                name: image1024
+                widget: image
+                required: false
+              - label: Hero Background Image (768)
+                name: image768
+                widget: image
+                required: false
+              - label: Hero Background Image (480)
+                name: image480
+                widget: image
+                required: false
+              - label: Hero Background Image (320)
+                name: image320
+                widget: image
+                required: false
               
               - label: Hero Background Dark Overlay
                 name: heroBgOverlay
@@ -491,9 +517,30 @@ collections:
             - label: subtitle
               name: subtitle
               widget: text
-            - label: Background Image
+            - label: Hero Background Image (1920)
               name: bgImage
               widget: image
+            - label: Hero Background Image (1280)
+              name: bgImage1280
+              widget: image
+              required: false
+            - label: Hero Background Image (1024)
+              name: bgImage1024
+              widget: image
+              required: false
+            - label: Hero Background Image (768)
+              name: bgImage768
+              widget: image
+              required: false
+            - label: Hero Background Image (480)
+              name: bgImage480
+              widget: image
+              required: false
+            - label: Hero Background Image (320)
+              name: bgImage320
+              widget: image
+              required: false
+
             - label: Hero Background Dark Overlay
               name: heroBgOverlay
               widget: boolean
@@ -566,9 +613,30 @@ collections:
             - label: subtitle
               name: subtitle
               widget: text
-            - label: Background Image
+            - label: Hero Background Image (1920)
               name: bgImage
               widget: image
+            - label: Hero Background Image (1280)
+              name: bgImage1280
+              widget: image
+              required: false
+            - label: Hero Background Image (1024)
+              name: bgImage1024
+              widget: image
+              required: false
+            - label: Hero Background Image (768)
+              name: bgImage768
+              widget: image
+              required: false
+            - label: Hero Background Image (480)
+              name: bgImage480
+              widget: image
+              required: false
+            - label: Hero Background Image (320)
+              name: bgImage320
+              widget: image
+              required: false
+
             - label: Hero Background Dark Overlay
               name: heroBgOverlay
               widget: boolean

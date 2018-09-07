@@ -9,6 +9,7 @@ import ContactForm from '../components/ContactForm'
 import CalendarComponent from '../components/CalendarComponent'
 import BlogSection from '../components/BlogSection'
 import HelmetSection from '../components/HelmetSection'
+import Hero from '../components/Hero'
 
 export const TourPageTemplate = ({
   hero, descriptionSection, gallery, blogSectionTitle, calendar, instagram, seoSection,
@@ -16,27 +17,21 @@ export const TourPageTemplate = ({
 }) => (
   <PageTransition>
     {seoSection && <HelmetSection seoSection={seoSection} />}
-    <div className="container-fluid hero-container" style={{ backgroundImage: `url('${hero.image}')` }}>
-      {hero.bgOverlay && <div className="hero-overlay" /> }
-      <div className="row outer-row">
-        <div className="col">
-          <div className="container">
-            <div className="row no-margin d-flex flex-column justify-content-center">
-              <div className="col-md-12 hero">
-                <h1 className="white-text">{hero.title}</h1>
-                <div className="col-md-6 offset-md-3">
-                  <h3>
-                    {hero.subtitle}
-                  </h3>
-                </div>
-                <Link to={hero.ctaLink} className="btn btn-primary">{hero.ctaText}</Link>
-              </div>
-            </div>
-
-          </div>
-        </div>
-      </div>
-    </div>
+    <Hero
+      title={hero.title}
+      payoff={hero.subtitle}
+      cta={() => <Link to={hero.ctaLink} className="btn btn-primary">{hero.ctaText}</Link>}
+      bgOverlay={hero.bgOverlay}
+      images={{
+        bgImage: hero.image,
+        bgImage1280: hero.image1280,
+        bgImage1024: hero.image1024,
+        bgImage768: hero.image768,
+        bgImage480: hero.image480,
+        bgImage320: hero.image320,
+      }}
+      centerText
+    />
 
     <div className="container personalized-events-section first-section white-bg">
       <div className="row">
@@ -230,6 +225,11 @@ const TourPage = ({
       title,
       subtitle: hero.subtitle,
       image: hero.image,
+      image1280: hero.image1280,
+      image1024: hero.image1024,
+      image768: hero.image768,
+      image480: hero.image480,
+      image320: hero.image320,
       ctaText: hero.ctaText,
       ctaLink: hero.ctaLink,
       bgOverlay: hero.heroBgOverlay,
@@ -285,6 +285,12 @@ export const tourPageQuery = graphql`
         title
         hero {
           image
+          image1280
+          image1024
+          image768
+          image480
+          image320
+          heroBgOverlay
           subtitle
           ctaText
           ctaLink

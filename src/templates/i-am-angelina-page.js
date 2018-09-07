@@ -10,6 +10,7 @@ import InstagramPhoto from '../components/InstagramPhoto'
 import ContactForm from '../components/ContactForm'
 import styles from '../layouts/styles/styles'
 import HelmetSection from '../components/HelmetSection';
+import Hero from '../components/Hero';
 
 export const AboutPageTemplate = ({
   hero, instagramPhotos, contentComponent, descriptionTitle, contactSectionTitle, content, seoSection,
@@ -18,25 +19,21 @@ export const AboutPageTemplate = ({
   return (
     <PageTransition>
       {seoSection && <HelmetSection seoSection={seoSection} />}
-      <div className="container-fluid hero-container" style={{ backgroundImage: `url('${hero.image}')` }}>
-        {hero.bgOverlay && <div className="hero-overlay" /> }
-        <div className="row outer-row">
-          <div className="col">
-            <div className="container">
-              <div className="row no-margin d-flex flex-column justify-content-center">
-                <div className="col-md-8 hero">
-                  <h1 className="white-text">{hero.title}</h1>
-                  <h3>
-                    {hero.subtitle}
-                  </h3>
-                  <Link href={hero.ctaLink} className="btn btn-primary">{hero.ctaText}</Link>
-                </div>
-              </div>
-
-            </div>
-          </div>
-        </div>
-      </div>
+      <Hero
+        images={{
+          bgImage: hero.image,
+          bgImage1280: hero.image1280,
+          bgImage1024: hero.image1024,
+          bgImage768: hero.image768,
+          bgImage480: hero.image480,
+          bgImage320: hero.image320,
+        }}
+        bgOverlay={hero.bgOverlay}
+        title={hero.title}
+        payoff={hero.subtitle}
+        cta={() => <Link to={hero.ctaLink} className="btn btn-primary">{hero.ctaText}</Link>}
+        centerText
+      />
       <div className="container home-section first-section white-bg">
         <div className="row">
           <div className="col-md-12 section-title-wrapper">
@@ -117,6 +114,11 @@ const AboutPage = ({
       title,
       subtitle: hero.subtitle,
       image: hero.bgImage,
+      image1280: hero.bgImage1280,
+      image1024: hero.bgImage1024,
+      image768: hero.bgImage768,
+      image480: hero.bgImage480,
+      image320: hero.bgImage320,
       ctaLink: hero.ctaLink,
       ctaText: hero.ctaText,
       bgOverlay: hero.heroBgOverlay,
@@ -180,6 +182,11 @@ export const aboutPageQuery = graphql`
         hero {
           subtitle
           bgImage
+          bgImage1280
+          bgImage1024
+          bgImage768
+          bgImage480
+          bgImage320
           heroBgOverlay
           ctaText
           ctaLink
