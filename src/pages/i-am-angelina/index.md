@@ -12,7 +12,12 @@ seoSection:
   seoTitle: I am Angelina
 title: I am Angelina
 hero:
-  bgImage: /img/candre-mandawe-770521-unsplash.jpg
+  bgImage: /img/about-cover-1920.jpg
+  bgImage1024: /img/about-desktop-1024.jpg
+  bgImage1280: /img/abut-desktop-1280.jpg
+  bgImage320: /img/about-mobile-360.jpg
+  bgImage480: /img/about-mobile-480.jpg
+  bgImage768: /img/about-tablet-768.jpg
   ctaLink: /
   ctaText: Talk to me
   heroBgOverlay: true
