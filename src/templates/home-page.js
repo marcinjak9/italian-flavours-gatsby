@@ -8,6 +8,7 @@ import TourCard from '../components/TourCard'
 import MapFormContainer from '../components/MapFormContainer'
 import HelmetSection from '../components/HelmetSection'
 import BlogSection from '../components/BlogSection';
+import Layout from '../components/LayoutWrapper';
 
 
 export const HomePageTemplate = (props) => {
@@ -15,65 +16,67 @@ export const HomePageTemplate = (props) => {
     hero, tourTitle, infoSection,
     content, contentComponent, tours,
     contactSection, seoSection, blogTitle, blogPosts,
+    siteOptions, regions, location,
   } = props
   const PostContent = contentComponent || Content
   const posts = blogPosts ? blogPosts.map(post => post.slug) : []
   return (
-    <PageTransition>
-      {seoSection && <HelmetSection seoSection={seoSection} />}
-      <div className="container-fluid hero-container">
-        <img src={hero.bgImage} className="hero-bg-img" alt="" />
-        {hero.bgOverlay && <div className="hero-overlay" />}
-        <div className="row outer-row">
-          <div className="col">
-            <div className="container">
-              <div className="row d-flex flex-column justify-content-center">
-                <div className="col-md-7 hero">
-                  <h1 className="white-text">
-                    {hero.title}
-                  </h1>
-                  <h3>
-                    {hero.payoff}
-                  </h3>
-                  <Link to={hero.buttonLink} className="btn btn-primary">{hero.buttonText}</Link>
+    <Layout siteOptions={siteOptions} regions={regions} location={location}>
+      <PageTransition>
+        {seoSection && <HelmetSection seoSection={seoSection} />}
+        <div className="container-fluid hero-container">
+          <img src={hero.bgImage} className="hero-bg-img" alt="" />
+          {hero.bgOverlay && <div className="hero-overlay" />}
+          <div className="row outer-row">
+            <div className="col">
+              <div className="container">
+                <div className="row d-flex flex-column justify-content-center">
+                  <div className="col-md-7 hero">
+                    <h1 className="white-text">
+                      {hero.title}
+                    </h1>
+                    <h3>
+                      {hero.payoff}
+                    </h3>
+                    <Link to={hero.buttonLink} className="btn btn-primary">{hero.buttonText}</Link>
+                  </div>
                 </div>
-              </div>
 
+              </div>
             </div>
           </div>
         </div>
-      </div>
 
 
-      <div className="container home-section first-section white-bg">
-        <div className="row">
-          <div className="col-md-12 section-title-wrapper">
-            <h2 className="text-center">{tourTitle}</h2>
+        <div className="container home-section first-section white-bg">
+          <div className="row">
+            <div className="col-md-12 section-title-wrapper">
+              <h2 className="text-center">{tourTitle}</h2>
+            </div>
+
+            {tours && tours.edges && tours.edges.map(item => (
+              <TourCard
+                key={item.node.id}
+                title={item.node.frontmatter.title}
+                image={item.node.frontmatter.hero.image}
+                description={item.node.frontmatter.tourShortDescription}
+                highlights={item.node.frontmatter.highlights}
+                url={item.node.fields.slug}
+              />
+            ))}
+
           </div>
-
-          {tours && tours.edges && tours.edges.map(item => (
-            <TourCard
-              key={item.node.id}
-              title={item.node.frontmatter.title}
-              image={item.node.frontmatter.hero.image}
-              description={item.node.frontmatter.tourShortDescription}
-              highlights={item.node.frontmatter.highlights}
-              url={item.node.fields.slug}
-            />
-          ))}
-
         </div>
-      </div>
 
 
-      <BlogSection
-        posts={posts}
-        title={blogTitle}
-        cta={() => <a href="https://blog.it.marcinjakubik.io" target="_blank" rel="noopener noreferrer" className="btn btn-outline-light btn-lg">see the blog</a>}
-        home
-      />
+        <BlogSection
+          posts={posts}
+          title={blogTitle}
+          cta={() => <a href="https://blog.it.marcinjakubik.io" target="_blank" rel="noopener noreferrer" className="btn btn-outline-light btn-lg">see the blog</a>}
+          home
+        />
 
-      {tours
+        {tours
         && (
         <MapFormContainer
           regions={tours.edges.map(tour => tour.node.frontmatter.region)}
@@ -83,25 +86,26 @@ export const HomePageTemplate = (props) => {
         />
         )}
 
-      <div className="container home-section smaller-section description-section white-bg">
-        <div className="row">
-          <div className="col-md-12 section-title-wrapper">
-            <h2 className="text-center brand-text">{infoSection.title}</h2>
-          </div>
-          <div className="col-md-12 lead-text">
-            <PostContent content={content} />
-          </div>
-          <div className="col-md-12 lead-text">
-            <strong>I forgot something? Just ask me, I can make your holiday dream true!</strong>
-          </div>
-          <div className="col-md-12 text-center">
-            <Link to={infoSection.buttonUrl} className="btn btn-primary btn-large">
-              {infoSection.buttonText}
-            </Link>
+        <div className="container home-section smaller-section description-section white-bg">
+          <div className="row">
+            <div className="col-md-12 section-title-wrapper">
+              <h2 className="text-center brand-text">{infoSection.title}</h2>
+            </div>
+            <div className="col-md-12 lead-text">
+              <PostContent content={content} />
+            </div>
+            <div className="col-md-12 lead-text">
+              <strong>I forgot something? Just ask me, I can make your holiday dream true!</strong>
+            </div>
+            <div className="col-md-12 text-center">
+              <Link to={infoSection.buttonUrl} className="btn btn-primary btn-large">
+                {infoSection.buttonText}
+              </Link>
+            </div>
           </div>
         </div>
-      </div>
-    </PageTransition>
+      </PageTransition>
+    </Layout>
   )
 }
 
@@ -155,8 +159,9 @@ HomePageTemplate.propTypes = {
 }
 
 const HomePage = ({
+  location,
   data: {
-    pageData, tours,
+    pageData, tours, siteOptions, regions,
   },
 }) => (
   <HomePageTemplate
@@ -184,6 +189,9 @@ const HomePage = ({
       title: pageData.frontmatter.contactSectionTitle,
       list: pageData.frontmatter.contactFormOptions,
     }}
+    siteOptions={siteOptions}
+    regions={regions}
+    location={location}
   />
 )
 
@@ -284,6 +292,54 @@ export const HomePageQuery = graphql`
           ctaText
           ctaUrl
           title
+        }
+      }
+    }
+
+    siteOptions: markdownRemark(frontmatter: { dataType: { eq: "headerAndFooterOptions" } }) {
+      frontmatter {
+        generalSeoSection {
+          ogImage
+          ogTitle
+          ogUrl
+          seoDescription
+          seoKeywords
+          seoTitle
+        }
+        menuItems {
+          path
+          title
+          regionDropdown
+        }
+        menuCtaText
+        menuCtaLink
+        footerMenu {
+          title
+          url
+        }
+        footerContacts {
+          emailAddress
+          phoneNumber
+        }
+        creditsText
+        copyrightText
+        socialInfo {
+          facebookUrl
+          instagramUsername
+        }
+      }
+    }
+
+    regions: allMarkdownRemark(filter: { frontmatter: { templateKey: { eq: "tour-page"}}}) {
+      edges {
+        node {
+          id
+            fields {
+              slug
+            }
+            frontmatter {
+              region
+            }
         }
       }
     }

@@ -3,9 +3,7 @@ module.exports = {
     title: 'Gatsby + Netlify CMS Starter',
   },
   plugins: [
-    'gatsby-plugin-react-next',
     'gatsby-plugin-react-helmet',
-    'gatsby-plugin-netlify-cache',
     'gatsby-plugin-sass',
     {
       resolve: 'gatsby-plugin-page-transitions',

@@ -1,10 +1,10 @@
 import React, { Component } from 'react'
 import PropTypes from 'prop-types'
 import Helmet from 'react-helmet'
-import Navbar from '../components/Navbar'
-import MobileNavbar from '../components/MobileNavbar'
-import Footer from '../components/Footer'
-import './all.sass'
+import Navbar from './Navbar'
+import MobileNavbar from './MobileNavbar'
+import Footer from './Footer'
+import '../layouts/all.sass'
 
 class TemplateWrapper extends Component {
   state = {
@@ -34,14 +34,12 @@ class TemplateWrapper extends Component {
     const {
       location,
       children,
-      data: {
-        markdownRemark: {
-          frontmatter: {
-            menuItems, menuCtaText, menuCtaLink, footerMenu, footerContacts, creditsText, copyrightText, socialInfo, generalSeoSection,
-          },
+      siteOptions: {
+        frontmatter: {
+          menuItems, menuCtaText, menuCtaLink, footerMenu, footerContacts, creditsText, copyrightText, socialInfo, generalSeoSection,
         },
-        regions: { edges },
       },
+      regions: { edges },
     } = this.props
     const { menuOpen } = this.state
     const regions = edges.map(singleRegion => ({ id: singleRegion.node.id, slug: singleRegion.node.fields.slug, name: singleRegion.node.frontmatter.region }))
@@ -74,7 +72,7 @@ class TemplateWrapper extends Component {
             regions={regions}
             openMobileMenu={() => this.setState({ menuOpen: true })}
           />
-          <div>{children()}</div>
+          <div>{children}</div>
           <Footer
             footerMenuItems={footerMenu}
             footerContacts={footerContacts}
@@ -141,55 +139,3 @@ TemplateWrapper.propTypes = {
 }
 
 export default TemplateWrapper
-
-export const templateWrapperQuery = graphql`
-  query metadataQuery {
-    markdownRemark(frontmatter: { dataType: { eq: "headerAndFooterOptions" } }) {
-      frontmatter {
-        generalSeoSection {
-          ogImage
-          ogTitle
-          ogUrl
-          seoDescription
-          seoKeywords
-          seoTitle
-        }
-        menuItems {
-          path
-          title
-          regionDropdown
-        }
-        menuCtaText
-        menuCtaLink
-        footerMenu {
-          title
-          url
-        }
-        footerContacts {
-          emailAddress
-          phoneNumber
-        }
-        creditsText
-        copyrightText
-        socialInfo {
-          facebookUrl
-          instagramUsername
-        }
-      }
-    }
-
-    regions: allMarkdownRemark(filter: { frontmatter: { templateKey: { eq: "tour-page"}}}) {
-      edges {
-        node {
-          id
-           fields {
-             slug
-           }
-           frontmatter {
-             region
-           }
-        }
-      }
-    }
-  }  
-`
