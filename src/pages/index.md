@@ -11,7 +11,7 @@ seoSection:
   seoKeywords: You tasty holiday in Italy
   seoTitle: You tasty holiday in Italy
 hero:
-  ctaText: You tasty holiday in Fracs
+  ctaText: I listen to your dreams
   ctaUrl: /
   heroBgOverlay: true
   image: /img/desktop-1024.jpg
