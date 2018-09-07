@@ -14,7 +14,12 @@ hero:
   ctaText: I listen to your dreams
   ctaUrl: '#contact'
   heroBgOverlay: true
-  image: /img/desktop-1024.jpg
+  image: /img/desktop-1920.jpg
+  image1024: /img/desktop-1024.jpg
+  image1280: /img/desktop-1280.jpg
+  image320: /img/mobile-360.jpg
+  image480: /img/mobile-480.jpg
+  image768: /img/tablet-768.jpg
   payoff: >
     I am specialised in tailor-made gourmet holidays. I love creating travel
     solutions that perfectly suit my guest needs, who have always appreciated my
