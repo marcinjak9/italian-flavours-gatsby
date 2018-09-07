@@ -26,7 +26,7 @@ menuItems:
   - path: 'https://blog.it.marcinjakubik.io'
     regionDropdown: false
     title: Experiences Blog
-  - path: '#contact'
+  - path: '/i-am-angelina#contact'
     regionDropdown: false
     title: Contact Me
   - path: /i-am-angelina
