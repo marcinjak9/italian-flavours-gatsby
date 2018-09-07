@@ -17,21 +17,28 @@ generalSeoSection:
 menuItems:
   - path: /
     title: Home
+    onlyMobile: false
+    regionDropdown: false
   - path: /tours
     regionDropdown: true
     title: Tailored Tours
+    onlyMobile: false
   - path: /personalized-events
     regionDropdown: false
     title: Personalised events
+    onlyMobile: false
   - path: 'https://blog.it.marcinjakubik.io'
     regionDropdown: false
     title: Experiences Blog
+    onlyMobile: false
   - path: '/i-am-angelina#contact'
     regionDropdown: false
     title: Contact Me
+    onlyMobile: true
   - path: /i-am-angelina
     regionDropdown: false
     title: I am Angelina
+    onlyMobile: false
 menuCtaText: CONTACT ME NOW
 menuCtaLink: '#contact'
 footerMenu:

@@ -42,8 +42,12 @@ class MenuItem extends Component {
 
   renderLink = () => {
     const {
-      text, path, active, regionDropdown, regions, mobile, onClick,
+      text, path, mobile, onClick, onlyMobile,
     } = this.props
+    console.log(mobile, onlyMobile)
+    if (onlyMobile && !mobile) {
+      return null
+    }
     if (path.indexOf('http') >= 0) {
       return (
         <a href={path} className="nav-link" target="_blank" rel="noopener noreferrer" onClick={onClick ? () => onClick() : () => null}>
@@ -63,7 +67,7 @@ class MenuItem extends Component {
 
   render() {
     const {
-      text, path, active, regionDropdown, regions, mobile, onClick,
+      text, path, active, regionDropdown, regions, mobile,
     } = this.props
     const { open } = this.state
     if (regionDropdown) {

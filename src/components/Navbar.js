@@ -50,7 +50,7 @@ class Navbar extends Component {
 
           <div className="collapse navbar-collapse" id="navigation">
             <ul className="navbar-nav navbar-flex">
-              {menuItems.map(menuItem => <MenuItem key={menuItem.title} text={menuItem.title} path={menuItem.path} active={menuItem.path === pathname} regionDropdown={menuItem.regionDropdown} regions={regions} />)}
+              {menuItems.map(menuItem => <MenuItem key={menuItem.title} text={menuItem.title} path={menuItem.path} active={menuItem.path === pathname} regionDropdown={menuItem.regionDropdown} regions={regions} onlyMobile={menuItem.onlyMobile} />)}
             </ul>
             <ul className="navbar-nav">
               <li className="nav-item">

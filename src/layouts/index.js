@@ -16,7 +16,7 @@ class TemplateWrapper extends Component {
     (function () {
       const options = {
         facebook: '207512882926609', // Facebook page ID
-        whatsapp: '+393661461483', // WhatsApp number
+        // whatsapp: '+393661461483', // WhatsApp number
         // call_to_action: 'Message us', // Call to action
         button_color: '#00B2A7', // Color of button
         position: 'right', // Position may be 'right' or 'left'
@@ -158,6 +158,7 @@ export const templateWrapperQuery = graphql`
           path
           title
           regionDropdown
+          onlyMobile
         }
         menuCtaText
         menuCtaLink

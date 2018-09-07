@@ -64,7 +64,7 @@ collections:
                 widget: boolean
                 default: false
               - label: Show only on mobile
-                name: oblyMobile
+                name: onlyMobile
                 type: boolean
                 default: false
           - label: Menu CTA text
