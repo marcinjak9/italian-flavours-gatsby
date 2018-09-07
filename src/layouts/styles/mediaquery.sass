@@ -59,7 +59,7 @@
       font-size: 2.6rem
       line-height: 1.2
     h3
-      font-weight: 300
+      font-weight: $font-normal
       font-size: 20px
       margin-bottom: 30px
   .home-section
@@ -74,7 +74,7 @@
     display: none
 
   .lead-text
-    font-size: 1.2rem
+    font-size: 1.1rem
     padding-right: 10px !important
     padding-left: 10px !important
 
@@ -137,7 +137,7 @@
       max-width: 165px
 
     .navbar-nav
-      font-weight: 300
+      font-weight: $font-normal
       text-align: center
 
       .nav-item
@@ -149,7 +149,7 @@
 
         a, button.nav-link
           color: rgba(255,255,255, 0.6)
-          font-weight: 300
+          font-weight: $font-normal
           text-align: center
 
         button.nav-link
@@ -183,3 +183,6 @@
     &.active
       transform: translateX(100%)
 
+@include media-breakpoint-between(sm, lg)
+  .dashed-container
+    padding: 15px !important

@@ -87,7 +87,8 @@ class ContactForm extends React.Component {
     const { title } = this.props
     const { error, success } = this.state
     return (
-      <div id="contact" className="container-fluid cari-amici-section grey-bg d-flex justify-content-center flex-column">
+      <div className="container-fluid cari-amici-section grey-bg d-flex justify-content-center flex-column" style={{ position: 'relative' }}>
+        <span id="contact" style={{ top: -150, position: 'absolute' }} />
         <div className="row">
           <div className="container">
             <form className="row contact-form d-flex flex-column" onSubmit={this.handleOnSubmit} name="contact-form" data-netlify="true" data-netlify-honeypot="bot-field">
@@ -114,7 +115,8 @@ class ContactForm extends React.Component {
                       {error.message && <p className="error-message">{error.message}</p>}
                     </div>
                   </div>
-                  <div className="col-md-5 d-flex justify-content-center align-items-start">
+
+                  <div className="col-md-5 justify-content-center align-items-start d-none d-md-flex">
                     <div className="dashed-container flex-column">
                       <p className="title">HEADQUARTER</p>
                       <div className="d-flex flex-row">
@@ -141,6 +143,7 @@ class ContactForm extends React.Component {
                       </div>
                     </div>
                   </div>
+
                 </div>
               </div>
               <div className="col-md-12 text-center">
@@ -152,6 +155,33 @@ class ContactForm extends React.Component {
                     ll let you know!
                   </p>
                 )}
+              </div>
+              <div className="col-md-5 d-flex justify-content-center align-items-start d-sm-flex d-md-none" style={{ marginTop: 50 }}>
+                <div className="dashed-container flex-column">
+                  <p className="title">HEADQUARTER</p>
+                  <div className="d-flex flex-row">
+                    <Icon icon="location_on" color={styles.primary} />
+                    <p>
+                      Piazza Roma 46
+                      <br />
+                      09170 - Oristano
+                      <br />
+                      Sardinia - Italy
+                    </p>
+                  </div>
+                  <div className="d-flex flex-row">
+                    <Icon icon="phone" color={styles.primary} />
+                    <p>
+                      +39 123 456 7890
+                    </p>
+                  </div>
+                  <div className="d-flex flex-row">
+                    <Icon icon="email" color={styles.primary} />
+                    <p>
+                      angelafadda@italianflavours.it
+                    </p>
+                  </div>
+                </div>
               </div>
             </form>
           </div>
