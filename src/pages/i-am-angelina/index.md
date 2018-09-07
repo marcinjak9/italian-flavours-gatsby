@@ -1,7 +1,7 @@
 ---
 templateKey: i-am-angelina-page
 seoSection:
-  ogImage: /img/flavor_wheel.jpg
+  ogImage: /img/i-am-desktop-1024.jpg
   ogTitle: I am Angelina
   ogUrl: /
   seoDescription: >-
