@@ -25,8 +25,8 @@ const Footer = ({
                 <div key={shortid.generate()} className="col footer-item">
                   <Link to={item.url}>{item.title}</Link>
                   <p className="footer-contacts">
-                    <a href={`tel:${phoneNumber}`}>{phoneNumber}</a>
-                    <a href={`mailto:${emailAddress}`}>{emailAddress}</a>
+                    {phoneNumber && <a href={`tel:${phoneNumber}`}>{phoneNumber}</a>}
+                    {emailAddress && <a href={`mailto:${emailAddress}`}>{emailAddress}</a>}
                   </p>
                 </div>
               )
@@ -44,10 +44,10 @@ const Footer = ({
             <h3 className="brand-text">I listen to your dreams and make them true</h3>
           </div>
           <div className="col footer-item contact-item">
-            <a href={`tel:${phoneNumber}`}>{phoneNumber}</a>
+            {phoneNumber && <a href={`tel:${phoneNumber}`}>{phoneNumber}</a>}
           </div>
           <div className="col footer-item contact-item">
-            <a href={`mailto:${emailAddress}`}>{emailAddress}</a>
+            {emailAddress && <a href={`mailto:${emailAddress}`}>{emailAddress}</a>}
           </div>
         </div>
 
