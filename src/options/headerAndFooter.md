@@ -15,30 +15,30 @@ generalSeoSection:
     Italian Flavours | Scopri con noi i sapori nascosti della tradizione
     italiana
 menuItems:
-  - path: /
-    title: Home
-    onlyMobile: false
+  - onlyMobile: false
+    path: /
     regionDropdown: false
-  - path: /tours
+    title: Home
+  - onlyMobile: false
+    path: /tours
     regionDropdown: true
     title: Tailored Tours
-    onlyMobile: false
-  - path: /personalized-events
+  - onlyMobile: false
+    path: /personalized-events
     regionDropdown: false
     title: Personalised events
-    onlyMobile: false
-  - path: 'https://blog.it.marcinjakubik.io'
+  - onlyMobile: false
+    path: 'https://blog.it.marcinjakubik.io'
     regionDropdown: false
     title: Experiences Blog
-    onlyMobile: false
-  - path: '/i-am-angelina#contact'
+  - onlyMobile: true
+    path: '/i-am-angelina#contact'
     regionDropdown: false
     title: Contact Me
-    onlyMobile: true
-  - path: /i-am-angelina
+  - onlyMobile: false
+    path: /i-am-angelina
     regionDropdown: false
     title: I am Angelina
-    onlyMobile: false
 menuCtaText: CONTACT ME NOW
 menuCtaLink: '#contact'
 footerMenu:
@@ -54,11 +54,11 @@ footerMenu:
     url: '#contact'
 footerContacts:
   emailAddress: info@italianflavors.it
-  phoneNumber: +39 38 86 20 67
-creditsText: © 2018 - ❤ Travel. As much as you can. As far as you can. As long as you can.
+  phoneNumber: ''
+creditsText: ❤ Travel. As much as you can. As far as you can. As long as you can.
 copyrightText: >-
-  Italian Flavours is a trademark of Sardinia Flavour srl - P.IVA: 01091230951 –
-  R.E.A: 129805
+  © 2018 - Italian Flavours is a trademark of Sardinia Flavour srl - P.IVA:
+  01091230951 – R.E.A: 129805
 socialInfo:
   facebookUrl: 'https://www.facebook.com/italianflavours'
   instagramUsername: italian_flavour
