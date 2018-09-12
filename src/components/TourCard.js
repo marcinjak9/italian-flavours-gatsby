@@ -7,7 +7,7 @@ const TourCard = ({
   title, image, description, url, highlights,
 }) => (
   <div className="col-md-4 d-flex">
-    <div className="card home-card">
+    <div className="card shadow-sm home-card">
       <img src={image} className="hero-bg-img" style={{ height: 250 }} alt="" />
       <div className="card-body d-flex flex-column justify-content-between">
         <Link to={url} className="plus-button-card">

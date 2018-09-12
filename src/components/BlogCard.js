@@ -66,7 +66,7 @@ class BlogCard extends React.Component {
     }
     return (
       <div className="col-md-6">
-        <div className="card home-card">
+        <div className="card shadow-sm home-card">
           <img src={image} style={{ height: 250, objectFit: 'cover' }} alt="" />
           <div className="card-body">
             <a href={url} target="_blank" rel="noopener noreferrer" className="plus-button-card">
