@@ -1,44 +1,41 @@
 ---
 templateKey: home-page
 seoSection:
-  ogImage: /img/candre-mandawe-770521-unsplash.jpg	
-  ogTitle: You tasty holiday in Italy	
-  ogUrl: https://it.marcinjakubik.io	
-  seoDescription: >	
-    I am specialised in tailor-made gourmet holidays. I love creating travel	
-    solutions that perfectly suit my guest needs, who have always appreciated my	
-    attention to detail and creativity in organising unforgettable experiences.	
-  seoKeywords: You tasty holiday in Italy	
-  seoTitle: You tasty holiday in Italy	
-hero:	
-  ctaText: I listen to your dreams	
-  ctaUrl: '#contact'	
-  heroBgOverlay: true	
-  image: /img/desktop-1920.jpg	
-  image1024: /img/desktop-1024.jpg	
-  image1280: /img/desktop-1280.jpg	
-  image320: /img/mobile-360.jpg	
-  image480: /img/mobile-480.jpg	
-  image768: /img/tablet-768.jpg	
-  payoff: >	
-    I am specialised in tailor-made gourmet holidays. I love creating travel	
-    solutions that perfectly suit my guest needs, who have always appreciated my	
-    attention to detail and creativity in organising unforgettable experiences.	
-  title: You tasty holiday in Italy	
-tourSectionTitle: Savour your next holiday	
-blogNewsTitle: 'More than clients, but Cari Amici'	
-blogPosts:	
-  - slug: the-editor	
-  - slug: publishing-options	
-contactSectionTitle: Let's start from here your tailor-made holidays	
-contactFormOptions:	
-  - title: Lorem Ipsum	
-  - title: Loremmm Ipsum	
-  - title: Lorem	
-infoSection:	
-  ctaText: tell me about your desires	
-  ctaUrl: /tour	
-  title: What can i do for you...	
+  ogImage: /img/candre-mandawe-770521-unsplash.jpg
+  ogTitle: Your tasty holiday in Italy
+  ogUrl: 'https://it.marcinjakubik.io'
+  seoDescription: "I am specialised in tailor-made gourmet holidays. I love creating travel\t solutions that perfectly suit my guest needs, who have always appreciated my\t attention to detail and creativity in organising unforgettable experiences.\t\n"
+  seoKeywords: Your tasty holiday in Italy
+  seoTitle: Your tasty holiday in Italy
+hero:
+  ctaText: I listen to your dreams
+  ctaUrl: '#contact'
+  heroBgOverlay: true
+  image: /img/desktop-1920.jpg
+  image1024: /img/desktop-1024.jpg
+  image1280: /img/desktop-1280.jpg
+  image320: /img/mobile-360.jpg
+  image480: /img/mobile-480.jpg
+  image768: /img/tablet-768.jpg
+  payoff: >
+    From exclusive small groups culinary tours, to boutique tailor-made travel
+    experiences for groups, companies and solo travellers, we create inspiring
+    itineraries fashioned for You
+  title: Your tasty holiday in Italy
+tourSectionTitle: Savour your next holiday
+blogNewsTitle: 'More than clients, but Cari Amici'
+blogPosts:
+  - slug: the-editor
+  - slug: publishing-options
+contactSectionTitle: Let's start from here your tailor-made holidays
+contactFormOptions:
+  - title: Lorem Ipsum
+  - title: Loremmm Ipsum
+  - title: Lorem
+infoSection:
+  ctaText: tell me about your desires
+  ctaUrl: /tour
+  title: What can i do for you...
 ---
 * **Tailor-made tours or travel solutions** for whatever region or city in Italy	
 * Tailored tours for specific cultural and folkloric events in Italy (as Terra Madre in Turin, Vinitaly in Verona, Taste in Florence, Cibus in Parma)	
