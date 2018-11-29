@@ -19,8 +19,8 @@ hero:
   image768: /img/tablet-768.jpg
   payoff: >
     From exclusive small groups culinary tours, to boutique tailor-made travel
-    experiences for groups of friends, couples and solo travellers, we create
-    inspiring itineraries fashioned only for You
+    experiences for groups, couples and solo travellers, we create inspiring
+    itineraries fashioned only for You
   title: Your tasty holiday in Italy
 tourSectionTitle: Savour your next holiday
 blogNewsTitle: 'More than clients, but Cari Amici'
