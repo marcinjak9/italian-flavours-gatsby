@@ -34,7 +34,7 @@ instagramPhotos:
   - id: Bm8TPUJFjbl
   - id: Bm5o30klO-N
 ---
-Are you dreaming of an exclusive, tailor made wine & food tour made of authentic and deeply immersive experiences that would give you a fine insider-access to local life and to the oldest Italian traditions? Maybe in the most charming and genuine parts of Italy? 
+Are you dreaming of an exclusive, tailor made wine & food tour in the most charming and genuine parts of Italy, made of authentic and deeply immersive experiences, that would give you a fine insider-access to local life and to the oldest traditions of the _Bella Italia_?
 
 You are definitely in the right place, and I could not be more happy!
 
