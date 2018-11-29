@@ -26,7 +26,7 @@ hero:
     a boutique tour operator specialised in creating unique cultural-culinary
     holidays in Italy. Of course I am Italian, 100%.
 
-descriptionTitle: Are you dreaming of a tasty holiday in Italy? You are in good hands!
+descriptionTitle: Are you dreaming of a tasty holiday? You are in good hands!
 contactSectionTitle: Let's get in touch! I'd love to hear from you.
 instagramPhotos:
   - id: BnBX5s9lMc8
