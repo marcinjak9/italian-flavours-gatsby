@@ -22,9 +22,9 @@ hero:
   ctaText: Get Inspired! Talk to me
   heroBgOverlay: true
   subtitle: >+
-    I am a professional gourmet travel curator and the founder of Italian
-    Flavours, a boutique tour operator specialised in creating unique
-    cultural-culinary holidays in Italy. Of course I am Italian, 100%.
+    I am a professional gourmet travel curator and founder of Italian Flavours,
+    a boutique tour operator specialised in creating unique cultural-culinary
+    holidays in Italy. Of course I am Italian, 100%.
 
 descriptionTitle: Are you dreaming bout a tasty holiday? You are in good hands!
 contactSectionTitle: Let's get in touch! I'd love to hear from you.
