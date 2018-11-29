@@ -27,7 +27,7 @@ hero:
     holidays in Italy. Of course I am Italian, 100%.
 
 descriptionTitle: Are you dreaming of a tasty holiday? You are in good hands!
-contactSectionTitle: Let's get in touch! I'd love to hear from you.
+contactSectionTitle: 'I''d love to hear from you. Listen to your holidays dreams, drop me a line!'
 instagramPhotos:
   - id: BnBX5s9lMc8
   - id: Bm-2VXDln8d
