@@ -5,9 +5,9 @@ seoSection:
   ogTitle: I am Angelina
   ogUrl: /
   seoDescription: >-
-    I am a professional gourmet travel curator and the founder of Italian
-    Flavours, a boutique tour operator specialised in creating unique
-    cultural-culinary holidays in Italy. Oh...and of course I am Italian, 100%. 
+    I am a professional gourmet travel curator and founder of Italian Flavours,
+    a boutique tour operator specialised in creating unique cultural-culinary
+    holidays in Italy. Oh...and of course I am Italian, 100%. 
   seoKeywords: I am Angelina
   seoTitle: I am Angelina
 title: I am Angelina
