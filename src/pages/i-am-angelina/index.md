@@ -34,7 +34,7 @@ instagramPhotos:
   - id: Bm8TPUJFjbl
   - id: Bm5o30klO-N
 ---
-Are you dreaming of an exclusive, tailor made wine & food tour made of authentic and deeply immersive experiences that would give you a fine insider-access to local life and to the oldest Italian traditions in the most charming and genuine parts of Italy? 
+Are you dreaming of an exclusive, tailor made wine & food tour made of authentic and deeply immersive experiences that would give you a fine insider-access to local life and to the oldest Italian traditions? Maybe in the most charming and genuine parts of Italy? 
 
 You are definitely in the right place, and I could not be more happy!
 
@@ -42,11 +42,11 @@ I am sure you are now curious to know something more about me. Am I right? Here 
 
 I am Angelina, I am Sardinian and I have been heels over head in love with Italian gourmet traditions since I was a little child. I always felt my mission was to dedicate my life to sharing the beauty and uniqueness of Italian food & wine culture.
 
-I was born in a cozy house at a stone's trow from the romantic shores of the Como Lake, were I spent my childhood, breathing the calmness and the magic of that stunning place. 
+I was born in a cozy house at a stone's trow from the romantic shores of the Como Lake, were I spent my childhood, breathing the calmness and the magic of that stunning place. 
 
-I was still a little girl when my parents, who were born in Sardinia, decided it was time to go back to the Island, so I started making Sardinian handmade pasta and sweets very early!
+I was still a little girl when my parents, who were born in Sardinia, decided it was time to go back to the Island, so I started making Sardinian handmade pasta and sweets very early!
 
-My life have flowed very fast since then, among perfumed summers in the family olive groves and vineyards, waiting for the best wind to harvest the olives, making wine with _nonno_ and preserved delicious dry tomatoes with _nonna_.
+My life have flowed very fast since then, among perfumed summers in the family olive groves and vineyards, waiting for the best wind to harvest the olives, making wine with _nonno_ and preserved delicious dry tomatoes with _nonna_.
 
 I graduated in Italian Literature and I attained a **Master degree in Gourmet and Quality Food** at the renowned University of Florence, where I had the chance to deepen my knowledge about the story and the quality of Italian gourmet food products.
 
@@ -58,7 +58,7 @@ My mission now is to give my little contribution to preserve small artisan produ
 
 My passion in sharing the beauty and uniqueness of the authentic Italian cultural heritage has given me the chance to build strong and meaningful relationships with my guests. Most of them have been travelling with me for years, enjoying the relaxing atmosphere of lovely boutique hotels and agriturismi, funny cooking classes, which some of them I lead personally, mouth-watering wine and food tastings and knowing the most authentic soul of Italy and, at the end, becoming more than simple guests for me, but _cari amici_.
 
-Oh, wait...I am super passionate globettrotter too! Very interested in knowing new cultures and traditions. This has led me to visit half the World, but I still lack the other half :).
+Oh, wait...I am super passionate globettrotter too! Very interested in knowing new cultures and traditions. This has led me to visit half the World, but I still lack the other half :).
 
 So are you ready to "taste" an immersive travel in Italy able to give you the authentic energy and distinctive flavours of Italian local life? Are you ready to participate to authentic, exclusive and engaging local interactions that will connect you to my beloved Country in unexpected and unforgettable way? 
 
