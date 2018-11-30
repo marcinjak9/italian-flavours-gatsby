@@ -19,7 +19,7 @@ hero:
   image768: /img/tablet-768.jpg
   payoff: >
     From exclusive small groups culinary tours, to boutique tailor-made travel
-    experiences for groups, couples and solo travellers, we create inspiring
+    experiences for groups, couples or solo travellers, I create inspiring
     itineraries fashioned only for You
   title: Your tasty holiday in Italy
 tourSectionTitle: Savour your next holiday
@@ -27,17 +27,41 @@ blogNewsTitle: 'More than clients, but Cari Amici'
 blogPosts:
   - slug: the-editor
   - slug: publishing-options
-contactSectionTitle: Let's start from here your tailor-made holidays
+contactSectionTitle: Let's start your tailor-made holiday from here
 contactFormOptions:
   - title: Lorem Ipsum
   - title: Loremmm Ipsum
   - title: Lorem
 infoSection:
-  ctaText: tell me about your desires
+  ctaText: Tell me about your desires
   ctaUrl: /tour
-  title: What can i do for you...
+  title: This is what I can do for you...
 ---
-* **Tailor-made tours or travel solutions** for whatever region or city in Italy	
+Setting the standard for luxury small-group travel worldwide, Abercrombie & Kent's Luxury Small Group Journeys deliver the best in comfort and service in the world's greatest destinations.
+
+allows you to experience A&K’s hallmark blend of insider access and style in more than 100 countries around the world, on an itinerary created for you and your family or friends. From arrival to departure, every detail is anticipated and every effort made to ensure a seamless, unforgettable travel experience. With A&K, you walk right in where others wait in line, visit world-famous sites before they open to the public and experience authentic local interactions beyond the scope of any guidebook.
+
+
+
+Your hand-picked, English-speaking A&K local guides join you at each step on your Luxury Tailor Made Journey, bringing your destination to life through authentic, beyond-the-guidebook knowledge.
+
+
+
+Every traveler is different — and so is every Luxury Tailor Made Journey. We consider what you want to do and how you like to travel, and then put that knowledge to work to make a journey uniquely yours.
+
+
+
+Create a journey based on one of these themes, mix and match them or make up your own for a journey that’s just right for you.
+
+
+
+Browse a market and prepare lunch with a local chef, or dine with a local family in their home for a taste of authentic hospitality.
+
+When it comes to art and architecture, some travellers can’t get enough. Luxury Tailor Made Journeys connect you with local artists for private visits to their studios, or with collectors who take you on a guided tour of their favorite galleries.
+
+
+
+* **Tailor-made tours or travel solutions** for any region or city in Italy	
 * Tailored tours for specific cultural and folkloric events in Italy (as Terra Madre in Turin, Vinitaly in Verona, Taste in Florence, Cibus in Parma)	
 * **Customized wine tastings** and visits to the finest and most historical wineries in Italy	
 * Dedicated master classes at the Banca del Vino (the Slow food bank of wine) in Piedmont	
