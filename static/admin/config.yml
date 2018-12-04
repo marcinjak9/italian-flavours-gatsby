@@ -65,7 +65,7 @@ collections:
                 default: false
               - label: Show only on mobile
                 name: onlyMobile
-                type: boolean
+                widget: boolean
                 default: false
           - label: Menu CTA text
             name: menuCtaText
