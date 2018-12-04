@@ -1,8 +1,11 @@
 import React from 'react'
 import PropTypes from 'prop-types'
+import { graphql } from 'gatsby'
 import TourPageTemplate from './Wrappers/TourPageTemplate'
+import Layout from '../components/LayoutWrapper'
 
 const TourPage = ({
+  location,
   data: {
     markdownRemark: {
       frontmatter: {
@@ -13,40 +16,42 @@ const TourPage = ({
     },
   },
 }) => (
-  <TourPageTemplate
-    seoSection={seoSection}
-    hero={{
-      title,
-      subtitle: hero.subtitle,
-      image: hero.image,
-      ctaText: hero.ctaText,
-      ctaLink: hero.ctaLink,
-      bgOverlay: hero.heroBgOverlay,
-    }}
-    descriptionSection={{
-      title: tourDescription.title,
-      body: tourDescription.body,
-      image: tourDescription.image,
-    }}
-    gallery={{
-      galleryUpper,
-      galleryTitle: gallery.textTitle,
-      galleryDescription: gallery.textBody,
-      cards: descriptionCards,
-    }}
-    blogSectionTitle={blogSectionTitle}
-    blogPosts={blogPosts}
-    calendar={{
-      body: calendarBody,
-      title: calendarTitle,
-      notes: calendarNotes,
-      dates: aviabilityDates,
-    }}
-    instagram={{
-      images: instagramPhotos,
-      username: instagramUsername,
-    }}
-  />
+  <Layout location={location}>
+    <TourPageTemplate
+      seoSection={seoSection}
+      hero={{
+        title,
+        subtitle: hero.subtitle,
+        image: hero.image,
+        ctaText: hero.ctaText,
+        ctaLink: hero.ctaLink,
+        bgOverlay: hero.heroBgOverlay,
+      }}
+      descriptionSection={{
+        title: tourDescription.title,
+        body: tourDescription.body,
+        image: tourDescription.image,
+      }}
+      gallery={{
+        galleryUpper,
+        galleryTitle: gallery.textTitle,
+        galleryDescription: gallery.textBody,
+        cards: descriptionCards,
+      }}
+      blogSectionTitle={blogSectionTitle}
+      blogPosts={blogPosts}
+      calendar={{
+        body: calendarBody,
+        title: calendarTitle,
+        notes: calendarNotes,
+        dates: aviabilityDates,
+      }}
+      instagram={{
+        images: instagramPhotos,
+        username: instagramUsername,
+      }}
+    />
+  </Layout>
 )
 
 TourPage.propTypes = {

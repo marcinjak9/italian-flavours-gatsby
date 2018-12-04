@@ -1,6 +1,6 @@
 import React from 'react'
 import PropTypes from 'prop-types'
-import { TourPageTemplate } from '../../templates/tour-page'
+import TourPageTemplate from '../../templates/Wrappers/TourPageTemplate'
 
 const TourPagePreview = ({
   entry, getAsset, widgetsFor,

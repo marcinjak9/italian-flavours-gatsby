@@ -1,46 +1,50 @@
 import React from 'react'
 import PropTypes from 'prop-types'
-// import Img from 'gatsby-image'
-import Content, { HTMLContent } from '../components/Content'
+import { graphql } from 'gatsby'
+import { HTMLContent } from '../components/Content'
+import Layout from '../components/LayoutWrapper'
 import HomePageTemplate from './Wrappers/HomePageTemplate'
 
 const HomePage = ({
   location,
   data: {
-    pageData, tours, siteOptions, regions,
+    pageData, tours,
   },
 }) => (
-  <HomePageTemplate
-    seoSection={pageData.frontmatter.seoSection}
-    hero={{
-      bgImage: pageData.frontmatter.hero.image,
-      title: pageData.frontmatter.hero.title,
-      payoff: pageData.frontmatter.hero.payoff,
-      buttonText: pageData.frontmatter.hero.ctaText,
-      buttonLink: pageData.frontmatter.hero.ctaUrl,
-      bgOverlay: pageData.frontmatter.hero.heroBgOverlay,
-    }}
-    tourTitle={pageData.frontmatter.tourSectionTitle}
-    infoSection={{
-      title: pageData.frontmatter.infoSection.title,
-      buttonUrl: pageData.frontmatter.infoSection.ctaUrl,
-      buttonText: pageData.frontmatter.infoSection.ctaText,
-    }}
-    blogTitle={pageData.frontmatter.blogNewsTitle}
-    blogPosts={pageData.frontmatter.blogPosts}
-    tours={tours}
-    content={pageData.html}
-    contentComponent={HTMLContent}
-    contactSection={{
-      title: pageData.frontmatter.contactSectionTitle,
-      list: pageData.frontmatter.contactFormOptions,
-    }}
-    location={location}
-  />
+  <Layout location={location}>
+    <HomePageTemplate
+      seoSection={pageData.frontmatter.seoSection}
+      hero={{
+        bgImage: pageData.frontmatter.hero.image,
+        title: pageData.frontmatter.hero.title,
+        payoff: pageData.frontmatter.hero.payoff,
+        buttonText: pageData.frontmatter.hero.ctaText,
+        buttonLink: pageData.frontmatter.hero.ctaUrl,
+        bgOverlay: pageData.frontmatter.hero.heroBgOverlay,
+      }}
+      tourTitle={pageData.frontmatter.tourSectionTitle}
+      infoSection={{
+        title: pageData.frontmatter.infoSection.title,
+        buttonUrl: pageData.frontmatter.infoSection.ctaUrl,
+        buttonText: pageData.frontmatter.infoSection.ctaText,
+      }}
+      blogTitle={pageData.frontmatter.blogNewsTitle}
+      blogPosts={pageData.frontmatter.blogPosts}
+      tours={tours}
+      content={pageData.html}
+      contentComponent={HTMLContent}
+      contactSection={{
+        title: pageData.frontmatter.contactSectionTitle,
+        list: pageData.frontmatter.contactFormOptions,
+      }}
+      location={location}
+    />
+  </Layout>
 )
 
 
 HomePage.propTypes = {
+  location: PropTypes.any,
   data: PropTypes.shape({
     pageData: PropTypes.shape({
       frontmatter: PropTypes.shape({

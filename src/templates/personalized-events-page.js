@@ -1,9 +1,11 @@
 import React from 'react'
 import PropTypes from 'prop-types'
-import Content, { HTMLContent } from '../components/Content'
+import { HTMLContent } from '../components/Content'
+import Layout from '../components/LayoutWrapper'
 import PersonalizedEventsTemplate from './Wrappers/PersonalizedEventsTemplate'
 
 const PersonalizedEvents = ({
+  location,
   data: {
     markdownRemark: {
       frontmatter: {
@@ -15,34 +17,36 @@ const PersonalizedEvents = ({
     },
   },
 }) => (
-  <PersonalizedEventsTemplate
-    seoSection={seoSection}
-    hero={{
-      image: hero.bgImage,
-      title,
-      subtitle: hero.subtitle,
-      ctaText: hero.ctaText,
-      ctaLink: hero.ctaLink,
-    }}
-    descriptionSection={{
-      title: descriptionTitle,
-    }}
+  <Layout location={location}>
+    <PersonalizedEventsTemplate
+      seoSection={seoSection}
+      hero={{
+        image: hero.bgImage,
+        title,
+        subtitle: hero.subtitle,
+        ctaText: hero.ctaText,
+        ctaLink: hero.ctaLink,
+      }}
+      descriptionSection={{
+        title: descriptionTitle,
+      }}
 
-    gallerySection={{
-      images: personalizedEventsGallery,
-      title: midDescriptionTitle,
-      body: midDescriptionBody,
-      cards: descriptionCards,
-    }}
+      gallerySection={{
+        images: personalizedEventsGallery,
+        title: midDescriptionTitle,
+        body: midDescriptionBody,
+        cards: descriptionCards,
+      }}
 
-    blogSectionTitle={blogSectionTitle}
-    blogPosts={blogPosts}
-    contactSectionTitle={contactSectionTitle}
+      blogSectionTitle={blogSectionTitle}
+      blogPosts={blogPosts}
+      contactSectionTitle={contactSectionTitle}
 
-    content={html}
-    contentComponent={HTMLContent}
-    instagramPhotos={instagramPhotos}
-  />
+      content={html}
+      contentComponent={HTMLContent}
+      instagramPhotos={instagramPhotos}
+    />
+  </Layout>
 )
 
 export default PersonalizedEvents

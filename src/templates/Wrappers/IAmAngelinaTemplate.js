@@ -10,69 +10,66 @@ import InstagramPhoto from '../../components/InstagramPhoto'
 import ContactForm from '../../components/ContactForm'
 import styles from '../../layouts/styles/styles'
 import HelmetSection from '../../components/HelmetSection';
-import Layout from '../../components/LayoutWrapper';
 import { getImageLink } from '../../components/Image'
 
 const AboutPageTemplate = ({
-  hero, instagramPhotos, contentComponent, descriptionTitle, contactSectionTitle, content, seoSection, location,
+  hero, instagramPhotos, contentComponent, descriptionTitle, contactSectionTitle, content, seoSection,
 }) => {
   const PostContent = contentComponent || Content
   return (
-    <Layout location={location}>
-      <PageTransition>
-        {seoSection && <HelmetSection seoSection={seoSection} />}
-        <div className="container-fluid hero-container" style={{ backgroundImage: `url('${getImageLink(hero.image)}')` }}>
-          {hero.bgOverlay && <div className="hero-overlay" /> }
-          <div className="row outer-row">
-            <div className="col">
-              <div className="container">
-                <div className="row no-margin d-flex flex-column justify-content-center">
-                  <div className="col-md-8 hero">
-                    <h1 className="white-text">{hero.title}</h1>
-                    <h3>
-                      {hero.subtitle}
-                    </h3>
-                    <Link href={hero.ctaLink} className="btn btn-primary">{hero.ctaText}</Link>
-                  </div>
+    <PageTransition>
+      {seoSection && <HelmetSection seoSection={seoSection} />}
+      <div className="container-fluid hero-container" style={{ backgroundImage: `url('${getImageLink(hero.image)}')` }}>
+        {hero.bgOverlay && <div className="hero-overlay" /> }
+        <div className="row outer-row">
+          <div className="col">
+            <div className="container">
+              <div className="row no-margin d-flex flex-column justify-content-center">
+                <div className="col-md-8 hero">
+                  <h1 className="white-text">{hero.title}</h1>
+                  <h3>
+                    {hero.subtitle}
+                  </h3>
+                  <Link href={hero.ctaLink} className="btn btn-primary">{hero.ctaText}</Link>
                 </div>
-
               </div>
-            </div>
-          </div>
-        </div>
-        <div className="container home-section first-section white-bg">
-          <div className="row">
-            <div className="col-md-12 section-title-wrapper">
-              <h2 className="text-center">{descriptionTitle}</h2>
-            </div>
-          </div>
-          <div className="row">
-            <div className="col-md-10 offset-md-1 text-spacing-container">
-              <PostContent content={content} />
-            </div>
-          </div>
-          <div className="row">
-            <div className="col-md-12 text-center">
-              <Icon icon="favorite" color={styles.primary} />
-            </div>
-          </div>
 
+            </div>
+          </div>
         </div>
-        <ContactForm title={contactSectionTitle} />
-        <div className="container cari-amici-section white-bg">
-          <h2 className="text-center dk-brand-text">Follow me on Instagram</h2>
-          <div className="instagram-container text-center">
-            <img src={instagram} alt="" />
+      </div>
+      <div className="container home-section first-section white-bg">
+        <div className="row">
+          <div className="col-md-12 section-title-wrapper">
+            <h2 className="text-center">{descriptionTitle}</h2>
+          </div>
+        </div>
+        <div className="row">
+          <div className="col-md-10 offset-md-1 text-spacing-container">
+            <PostContent content={content} />
+          </div>
+        </div>
+        <div className="row">
+          <div className="col-md-12 text-center">
+            <Icon icon="favorite" color={styles.primary} />
+          </div>
+        </div>
+
+      </div>
+      <ContactForm title={contactSectionTitle} />
+      <div className="container cari-amici-section white-bg">
+        <h2 className="text-center dk-brand-text">Follow me on Instagram</h2>
+        <div className="instagram-container text-center">
+          <img src={instagram} alt="" />
             @italian_flavours
-          </div>
-          <div className="row justify-content-center">
-            {instagramPhotos.map(item => (
-              <InstagramPhoto key={item.id} id={item.id} />
-            ))}
-          </div>
         </div>
-      </PageTransition>
-    </Layout>
+        <div className="row justify-content-center">
+          {instagramPhotos.map(item => (
+            <InstagramPhoto key={item.id} id={item.id} />
+          ))}
+        </div>
+      </div>
+    </PageTransition>
   )
 }
 

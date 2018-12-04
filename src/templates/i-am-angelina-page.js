@@ -1,15 +1,8 @@
 import React from 'react'
 import PropTypes from 'prop-types'
-import Link from 'gatsby-link'
-import Icon from 'material-icons-react'
-import PageTransition from 'gatsby-plugin-page-transitions';
-
-import Content, { HTMLContent } from '../components/Content'
-import instagram from '../img/instagram-icon-black.png'
-import InstagramPhoto from '../components/InstagramPhoto'
-import ContactForm from '../components/ContactForm'
-import styles from '../layouts/styles/styles'
-import HelmetSection from '../components/HelmetSection';
+import { graphql } from 'gatsby'
+import { HTMLContent } from '../components/Content'
+import Layout from '../components/LayoutWrapper'
 import AboutPageTemplate from './Wrappers/IAmAngelinaTemplate'
 
 const AboutPage = ({
@@ -24,23 +17,24 @@ const AboutPage = ({
     },
   },
 }) => (
-  <AboutPageTemplate
-    seoSection={seoSection}
-    hero={{
-      title,
-      subtitle: hero.subtitle,
-      image: hero.bgImage,
-      ctaLink: hero.ctaLink,
-      ctaText: hero.ctaText,
-      bgOverlay: hero.heroBgOverlay,
-    }}
-    instagramPhotos={instagramPhotos}
-    contentComponent={HTMLContent}
-    descriptionTitle={descriptionTitle}
-    contactSectionTitle={contactSectionTitle}
-    content={html}
-    location={location}
-  />
+  <Layout location={location}>
+    <AboutPageTemplate
+      seoSection={seoSection}
+      hero={{
+        title,
+        subtitle: hero.subtitle,
+        image: hero.bgImage,
+        ctaLink: hero.ctaLink,
+        ctaText: hero.ctaText,
+        bgOverlay: hero.heroBgOverlay,
+      }}
+      instagramPhotos={instagramPhotos}
+      contentComponent={HTMLContent}
+      descriptionTitle={descriptionTitle}
+      contactSectionTitle={contactSectionTitle}
+      content={html}
+    />
+  </Layout>
 )
 
 AboutPage.propTypes = {

@@ -9,79 +9,77 @@ import ContactForm from '../../components/ContactForm'
 import CalendarComponent from '../../components/CalendarComponent'
 import BlogSection from '../../components/BlogSection'
 import HelmetSection from '../../components/HelmetSection'
-import Layout from '../../components/LayoutWrapper'
 import Image, { getImageLink } from '../../components/Image'
 
 
 const TourPageTemplate = ({
   hero, descriptionSection, gallery, blogSectionTitle, calendar, instagram, seoSection,
-  blogPosts, location,
+  blogPosts,
 }) => (
-  <Layout location={location}>
-    <PageTransition>
-      {seoSection && <HelmetSection seoSection={seoSection} />}
-      <div className="container-fluid hero-container" style={{ backgroundImage: `url('${getImageLink(hero.image)}')` }}>
-        {hero.bgOverlay && <div className="hero-overlay" /> }
-        <div className="row outer-row">
-          <div className="col">
-            <div className="container">
-              <div className="row no-margin d-flex flex-column justify-content-center">
-                <div className="col-md-12 hero">
-                  <h1 className="white-text">{hero.title}</h1>
-                  <div className="col-md-6 offset-md-3">
-                    <h3>
-                      {hero.subtitle}
-                    </h3>
-                  </div>
-                  <Link to={hero.ctaLink} className="btn btn-primary">{hero.ctaText}</Link>
+  <PageTransition>
+    {seoSection && <HelmetSection seoSection={seoSection} />}
+    <div className="container-fluid hero-container" style={{ backgroundImage: `url('${getImageLink(hero.image)}')` }}>
+      {hero.bgOverlay && <div className="hero-overlay" /> }
+      <div className="row outer-row">
+        <div className="col">
+          <div className="container">
+            <div className="row no-margin d-flex flex-column justify-content-center">
+              <div className="col-md-12 hero">
+                <h1 className="white-text">{hero.title}</h1>
+                <div className="col-md-6 offset-md-3">
+                  <h3>
+                    {hero.subtitle}
+                  </h3>
                 </div>
-              </div>
-
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <div className="container personalized-events-section first-section white-bg">
-        <div className="row">
-          <div className="col-md-8 section-title-wrapper">
-            <h2 className="grey-text">{descriptionSection.title}</h2>
-            <p className="text-spacing">
-              {descriptionSection.body}
-            </p>
-          </div>
-          <div className="col-md-4">
-            <img src={descriptionSection.image} alt="" className="img-fluid" />
-          </div>
-        </div>
-      </div>
-
-      <div className="container-fluid personalized-events-section">
-        <div className="row">
-
-          {gallery.galleryUpper && gallery.galleryUpper.map(photo => (
-            <div className="col-md-4 padding-1" key={shortid.generate()}>
-              <div className="card card-gallery">
-                <img className="card-img-top" src={photo.image} alt="" />
+                <Link to={hero.ctaLink} className="btn btn-primary">{hero.ctaText}</Link>
               </div>
             </div>
-          ))}
 
-        </div>
-      </div>
-
-      <div className="container-fluid personalized-events-section">
-        <div className="row">
-          <div className="col-md-8 offset-md-2">
-            <h2 className="text-center dk-brand-text">{gallery.galleryTitle}</h2>
-            <p className="text-center grey-text">
-              {gallery.galleryDescription}
-            </p>
           </div>
         </div>
       </div>
+    </div>
 
-      {/* <div className="container-fluid personalized-events-section">
+    <div className="container personalized-events-section first-section white-bg">
+      <div className="row">
+        <div className="col-md-8 section-title-wrapper">
+          <h2 className="grey-text">{descriptionSection.title}</h2>
+          <p className="text-spacing">
+            {descriptionSection.body}
+          </p>
+        </div>
+        <div className="col-md-4">
+          <img src={descriptionSection.image} alt="" className="img-fluid" />
+        </div>
+      </div>
+    </div>
+
+    <div className="container-fluid personalized-events-section">
+      <div className="row">
+
+        {gallery.galleryUpper && gallery.galleryUpper.map(photo => (
+          <div className="col-md-4 padding-1" key={shortid.generate()}>
+            <div className="card card-gallery">
+              <img className="card-img-top" src={photo.image} alt="" />
+            </div>
+          </div>
+        ))}
+
+      </div>
+    </div>
+
+    <div className="container-fluid personalized-events-section">
+      <div className="row">
+        <div className="col-md-8 offset-md-2">
+          <h2 className="text-center dk-brand-text">{gallery.galleryTitle}</h2>
+          <p className="text-center grey-text">
+            {gallery.galleryDescription}
+          </p>
+        </div>
+      </div>
+    </div>
+
+    {/* <div className="container-fluid personalized-events-section">
       <div className="row">
 
         {gallery.galleryBottom && gallery.galleryBottom.map(photo => (
@@ -94,10 +92,10 @@ const TourPageTemplate = ({
 
       </div>
     </div> */}
-      <div className="container-fluid personalized-events-section tour-page-cards">
-        <div className="row">
+    <div className="container-fluid personalized-events-section tour-page-cards">
+      <div className="row">
 
-          {gallery.cards.map((card, i) => (
+        {gallery.cards.map((card, i) => (
           <div className="col-md-4 no-padding" key={i}> {/* eslint-disable-line */}
             <div className={`events-card ${i % 2 === 0 && 'light'}`}>
               <h3>{card.title}</h3>
@@ -106,62 +104,61 @@ const TourPageTemplate = ({
               {card.icon && <Image image={card.icon} className="card-icon" />}
             </div>
           </div>
-          ))}
+        ))}
 
 
-        </div>
       </div>
+    </div>
 
 
-      <BlogSection
-        posts={blogPosts ? blogPosts.map(post => post.slug) : []}
-        title={blogSectionTitle}
+    <BlogSection
+      posts={blogPosts ? blogPosts.map(post => post.slug) : []}
+      title={blogSectionTitle}
       // cta={() => <Link to="/" className="btn btn-outline-light btn-lg">see the blog</Link>}
-        tour
-      />
+      tour
+    />
 
-      <div className="container-fluid cari-amici-section white-bg">
-        <h1 className="text-center grey-text">{calendar.title}</h1>
-        <div className="row">
-          <div className="col-md-4 offset-md-4">
-            <h6 className="text-center grey-text mb-4 mt-4">
-              {calendar.body}
-            </h6>
-          </div>
-          <div className="col-md-6 offset-md-3 d-flex justify-content-center">
-            <div id="calendar" />
-            {calendar.dates && <CalendarComponent dates={calendar.dates} />}
-          </div>
-          <div className="col-md-4 offset-md-4">
-            <br />
-            <h6 className="text-center grey-text">
-              {calendar.notes}
-            </h6>
-          </div>
+    <div className="container-fluid cari-amici-section white-bg">
+      <h1 className="text-center grey-text">{calendar.title}</h1>
+      <div className="row">
+        <div className="col-md-4 offset-md-4">
+          <h6 className="text-center grey-text mb-4 mt-4">
+            {calendar.body}
+          </h6>
+        </div>
+        <div className="col-md-6 offset-md-3 d-flex justify-content-center">
+          <div id="calendar" />
+          {calendar.dates && <CalendarComponent dates={calendar.dates} />}
+        </div>
+        <div className="col-md-4 offset-md-4">
+          <br />
+          <h6 className="text-center grey-text">
+            {calendar.notes}
+          </h6>
         </div>
       </div>
+    </div>
 
-      <ContactForm title={"Let's talk about your staying in Italy!"} />
+    <ContactForm title={"Let's talk about your staying in Italy!"} />
 
-      <div className="container cari-amici-section white-bg">
-        <h2 className="text-center dk-brand-text">Follow me on Instagram</h2>
-        <div className="instagram-container text-center">
-          <img src={instagramIcon} alt="" />
-          {' '}
+    <div className="container cari-amici-section white-bg">
+      <h2 className="text-center dk-brand-text">Follow me on Instagram</h2>
+      <div className="instagram-container text-center">
+        <img src={instagramIcon} alt="" />
+        {' '}
         @
-          {instagram.username}
-        </div>
-        <div className="row justify-content-center">
-
-          {instagram.images.map(photo => (
-            <InstagramPhoto id={photo.id} key={photo.id} />
-          ))}
-
-        </div>
+        {instagram.username}
       </div>
+      <div className="row justify-content-center">
 
-    </PageTransition>
-  </Layout>
+        {instagram.images.map(photo => (
+          <InstagramPhoto id={photo.id} key={photo.id} />
+        ))}
+
+      </div>
+    </div>
+
+  </PageTransition>
 )
 
 

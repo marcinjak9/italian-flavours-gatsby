@@ -41,6 +41,16 @@ const Image = ({
       />
     )
   }
+  if (image.path) {
+    return (
+      <img
+        src={image.path}
+        className={className}
+        style={style}
+        alt={alt}
+      />
+    )
+  }
   return null
 }
 
@@ -56,6 +66,9 @@ export const getImageLink = (image) => {
     if (childImageSharp.fixed) {
       return childImageSharp.fixed.src
     }
+  }
+  if (image.path) {
+    return image.path
   }
   return ''
 }
