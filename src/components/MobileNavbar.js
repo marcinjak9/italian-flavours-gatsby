@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import Link from 'gatsby-link'
+import { Link } from 'gatsby'
 import PropTypes from 'prop-types'
 import Icon from 'material-icons-react'
 

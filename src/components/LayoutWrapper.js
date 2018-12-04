@@ -36,7 +36,7 @@ class TemplateWrapper extends Component {
 
   render() {
     const { menuOpen } = this.state
-    const { children } = this.props
+    const { children, location } = this.props
     return (
       <StaticQuery
         query={graphql`
@@ -44,7 +44,13 @@ class TemplateWrapper extends Component {
             siteOptions: markdownRemark(frontmatter: { dataType: { eq: "headerAndFooterOptions" } }) {
               frontmatter {
                 generalSeoSection {
-                  ogImage 
+                  ogImage {
+                    childImageSharp {
+                      fluid(maxWidth: 1920) {
+                        ...GatsbyImageSharpFluid
+                      }
+                    }
+                  }
                   ogTitle
                   ogUrl
                   seoDescription

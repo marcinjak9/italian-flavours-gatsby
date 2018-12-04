@@ -1,7 +1,7 @@
 import React from 'react'
 import PropTypes from 'prop-types'
-import Link from 'gatsby-link'
-import PageTransition from 'gatsby-plugin-page-transitions';
+import { Link } from 'gatsby'
+import PageTransition from 'gatsby-v2-plugin-page-transitions';
 import shortid from 'shortid'
 import Content from '../../components/Content'
 import instagram from '../../img/instagram-icon-black.png'

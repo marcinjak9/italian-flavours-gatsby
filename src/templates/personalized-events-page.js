@@ -1,5 +1,6 @@
 import React from 'react'
 import PropTypes from 'prop-types'
+import { graphql } from 'gatsby'
 import { HTMLContent } from '../components/Content'
 import Layout from '../components/LayoutWrapper'
 import PersonalizedEventsTemplate from './Wrappers/PersonalizedEventsTemplate'
