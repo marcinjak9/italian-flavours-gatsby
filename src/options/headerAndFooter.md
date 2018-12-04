@@ -16,27 +16,27 @@ generalSeoSection:
     italiana
 menuItems:
   - onlyMobile: false
-    path: /
+    href: /
     regionDropdown: false
     title: Home
   - onlyMobile: false
-    path: /tours
+    href: /tours
     regionDropdown: true
     title: Tailored Tours
   - onlyMobile: false
-    path: /personalized-events
+    href: /personalized-events
     regionDropdown: false
     title: Personalised events
   - onlyMobile: false
-    path: 'https://blog.it.marcinjakubik.io'
+    href: 'https://blog.it.marcinjakubik.io'
     regionDropdown: false
     title: Experiences Blog
   - onlyMobile: true
-    path: '/i-am-angelina#contact'
+    href: '/i-am-angelina#contact'
     regionDropdown: false
     title: Contact Me
   - onlyMobile: false
-    path: /i-am-angelina
+    href: /i-am-angelina
     regionDropdown: false
     title: I am Angelina
 menuCtaText: CONTACT ME NOW
@@ -45,11 +45,11 @@ footerMenu:
   - title: Tailored Tours
     url: /
   - title: Personalised events
-    url: /personalized-events
+    url: personalized-events
   - title: Experiences Blog
-    url: /blog
+    url: https://blog.it.marcinjakubik.io
   - title: I am Angelina
-    url: /i-am-angelina
+    url: i-am-angelina
   - title: Contact me
     url: '#contact'
 footerContacts:

@@ -1,5 +1,5 @@
 import React from 'react'
-import Link from 'gatsby-link'
+import { Link } from 'gatsby'
 import PropTypes from 'prop-types'
 import shortid from 'shortid'
 
@@ -28,6 +28,13 @@ const Footer = ({
                     {phoneNumber && <a href={`tel:${phoneNumber}`}>{phoneNumber}</a>}
                     {emailAddress && <a href={`mailto:${emailAddress}`}>{emailAddress}</a>}
                   </p>
+                </div>
+              )
+            }
+            if (item.url.indexOf('http') >= 0) {
+              return (
+                <div key={shortid.generate()} className="col footer-item">
+                  <a href={item.url}>{item.title}</a>
                 </div>
               )
             }

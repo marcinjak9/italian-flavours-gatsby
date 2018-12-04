@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import Link from 'gatsby-link'
+import { Link } from 'gatsby'
 import PropTypes from 'prop-types'
 import Icon from 'material-icons-react'
 
@@ -80,6 +80,15 @@ class MenuItem extends Component {
           <div className={`dropdown-menu custom-dropdown ${open ? 'show' : ''}`} ref={node => this.dropdown = node}>
             {regions.map(region => <Link key={region.id} to={region.slug} className="dropdown-item" onClick={this.handleClose}>{region.name}</Link>)}
           </div>
+        </li>
+      )
+    }
+    if (path.indexOf('http') >= 0) {
+      return (
+        <li className={`nav-item ${mobile && 'mobile'}`}>
+          <a className="nav-link" href={path}>
+            {text}
+          </a>
         </li>
       )
     }

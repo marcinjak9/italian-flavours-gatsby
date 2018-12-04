@@ -1,14 +1,15 @@
 import React from 'react'
 import PropTypes from 'prop-types'
-import Link from 'gatsby-link'
+import { Link } from 'gatsby'
 import Icon from 'material-icons-react'
+import Image from './Image'
 
 const TourCard = ({
   title, image, description, url, highlights,
 }) => (
   <div className="col-md-4 d-flex">
-    <div className="card shadow-sm home-card">
-      <img src={image} className="hero-bg-img" style={{ height: 250 }} alt="" />
+    <div className="card home-card">
+      <Image image={image} className="hero-bg-img" style={{ height: 250 }} alt="" />
       <div className="card-body d-flex flex-column justify-content-between">
         <Link to={url} className="plus-button-card">
           <Icon icon="add" color="white" />
@@ -35,7 +36,7 @@ const TourCard = ({
 
 TourCard.propTypes = {
   title: PropTypes.string,
-  image: PropTypes.string,
+  image: PropTypes.any,
   description: PropTypes.string,
   url: PropTypes.string,
   highlights: PropTypes.string,

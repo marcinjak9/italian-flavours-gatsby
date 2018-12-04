@@ -1,14 +1,17 @@
 module.exports = {
   siteMetadata: {
-    title: 'Gatsby + Netlify CMS Starter',
+    title: 'Italianflavours Gatsby Website',
   },
   plugins: [
-    'gatsby-plugin-react-next',
-    'gatsby-plugin-react-helmet',
-    'gatsby-plugin-netlify-cache',
-    'gatsby-plugin-sass',
     {
-      resolve: 'gatsby-plugin-page-transitions',
+      resolve: 'gatsby-source-filesystem',
+      options: {
+        path: `${__dirname}/static/img`,
+        name: 'static/images',
+      },
+    },
+    {
+      resolve: 'gatsby-v2-plugin-page-transitions',
       options: {
         transitionTime: 150,
       },
@@ -27,27 +30,25 @@ module.exports = {
         name: 'pages',
       },
     },
-    {
-      resolve: 'gatsby-source-filesystem',
-      options: {
-        path: `${__dirname}/src/img`,
-        name: 'images',
-      },
-    },
-    // {
-    //   resolve: 'gatsby-source-ghost',
-    //   options: {
-    //     apiUrl: 'https://blog.it.marcinjakubik.io',
-    //     clientId: 'ghost-frontend',
-    //     clientSecret: 'ab4dac795465',
-    //   },
-    // },
+    'gatsby-plugin-react-helmet',
+    'gatsby-plugin-sass',
     'gatsby-plugin-sharp',
     'gatsby-transformer-sharp',
     {
       resolve: 'gatsby-transformer-remark',
       options: {
-        plugins: [],
+        plugins: [
+          {
+            resolve: 'gatsby-remark-relative-images',
+            options: {
+              name: 'static/images',
+            },
+          },
+          {
+            resolve: 'gatsby-remark-images',
+            options: {},
+          },
+        ],
       },
     },
     {
@@ -57,5 +58,5 @@ module.exports = {
       },
     },
     'gatsby-plugin-netlify', // make sure to keep it last in the array
-  ],
+  ].filter(Boolean),
 }
