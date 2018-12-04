@@ -37,23 +37,23 @@ infoSection:
   ctaUrl: /tour
   title: This is what I can do for you...
 ---
-Every traveler is different as well as every exclusive journey I create for my guests. I attentively consider your needs, how you like to travel and what kind of activities make your vacation meaningful to you, I then put that knowledge to work to make your holiday in Italy uniquely **yours**. 
+Every traveler is different as well as every exclusive journey I create for my guests. I consider with great care your needs, how you prefer to travel and what are the activities and experiences that make your vacation meaningful to you, these are essential elements that allow me to design **your** unique holiday in Italy.
 
-**With me you will save the most precious thing you have, time.**
+**With me you will save the most precious thing you have, TIME.**
 
-When I start working on your tour, on the tailor-made itinerary for you, your family or friends, I work in order to make you **save time**. I work closely with you to create a made-to-order travel experience of a lifetime, optimized to make sure you get the most out of every moment, so that when the time comes to book your next holiday, I know what your preferences and desires are and I am ready to provide a personal, one-on-one, dedicated service. 
+When I start working on your tour, on the tailor-made itinerary for you, your family or friends, I work in order to make you **save time**. I work closely with you to create a made-to-order travel experience of a lifetime, refined to make sure you get the most out of every moment. This part of my work is very important for me, but for you too: when the time comes to book your next adventure in Italy, I know what your preferences and desires are and I am ready to provide a personal, one-on-one, dedicated service. 
 
 ## What kind of experience in Italy are you dreaming of?
 
-**Culinary Small Group Tour  **           
+**Culinary Slow-Tours for small groups  **           
 
-Count on intimate group sizes of no more than 18 guests, stay in only the finest hotels and experience unmatched insider access to revered sites, often before the crowds arrive. Backed by the support and expertise of over 55 offices in more than 30 countries, you also travel under the wing of A&K's award-winning Resident Tour Directors®, who bring your destination to life with one-of-a-kind local insight.
+Count on intimate group sizes of no more than 12 guests, relax in the finest hotels in Italy and experience unique insider access to divine sites. Backed by my expertise and deep knowledge of Italy, you are going to travel under the wing of professional tour guides, who will bring your best holiday to life with an unmatched local insight.
 
-Our unmatched service, local knowledge and painstaking attention to detail are an award-winning combination that has earned us praise from both travellers and travel professionals, who for more than a decade have consistently chosen A&K as the world's finest luxury travel company.
+I have longstanding relationships in every destination and during my tours I like sharing my precious patrimony of connections with my guests. My on-the-ground presence allows me to give you a preferral access to the most authentic and untouched places in Italy, together we will discover the real soul of la _Bella Italia._
 
-When you travel with A&K, you enjoy unrivaled insider access to the authentic heart and soul of a place — and to people and sites that lie far beyond the reach of the average traveller. Our longstanding relationships in every destination we visit make it all possible, from the seamless flow of an A&K itinerary to the prompt attention paid to an unanticipated request. This trustworthy, on-the-ground presence also allows us to manage your safety and security, which are always our first priorities.
+And of course your safety and security are always my first priorities. You only have to sit back, relax and enjoy every minute of your journey!
 
-Every journey we offer has been designed by on-the-ground experts who know each destination intimately. Our ideal small group size and unrivaled insider access allow them to create itineraries that feature iconic destinations experienced at the perfect pace. You enjoy the benefits, including extra time on safari, longer stops in places you most want to see and even multiple stops, such as viewing the Taj Mahal at both sunrise and sunset.
+Thanks to my intimate knowledge of each destination, I personally designed every journey, creating itineraries that feature the most iconic destinations in Italy. You enjoy the benefits, including extra time on safari, longer stops in places you most want to see and even multiple stops, such as viewing the Taj Mahal at both sunrise and sunset.
 
 Your A&K Resident Tour Director brings your itinerary to life through decades of firsthand experience in your destination, sharing insights into the culture that can only come from someone who is, in fact, a local. Overseeing your entire journey and accompanying you every day, he or she reveals the real spirit of a place, connecting you to the people, places and wildlife you encounter in a way you’ll never forget.
 
