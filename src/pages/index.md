@@ -43,13 +43,13 @@ Every traveler is different as well as every exclusive journey I create for my g
 
 When I start working on your tour, on the tailor-made itinerary for you, your family or friends, I work in order to make you **save time**. I work closely with you to create a made-to-order travel experience of a lifetime, optimized to make sure you get the most out of every moment, so that when the time comes to book your next holiday, I know what your preferences and desires are and I am ready to provide a personal, one-on-one, dedicated service. 
 
-What kind of experience in Italy are you dreaming of?
+# What kind of experience in Italy are you dreaming of?
 
 **Culinary Small Group Tour  **           
 
 Count on intimate group sizes of no more than 18 guests, stay in only the finest hotels and experience unmatched insider access to revered sites, often before the crowds arrive. Backed by the support and expertise of over 55 offices in more than 30 countries, you also travel under the wing of A&K's award-winning Resident Tour Directors®, who bring your destination to life with one-of-a-kind local insight.
 
-Our unmatched service, local knowledge and painstaking attention to detail are an award-winning combination that has earned us praise from both travellers and travel professionals, who for more than a decade have consistently chosen A&K as the world's finest luxury travel company.
+Our unmatched service, local knowledge and painstaking attention to detail are an award-winning combination that has earned us praise from both travellers and travel professionals, who for more than a decade have consistently chosen A&K as the world's finest luxury travel company.
 
 When you travel with A&K, you enjoy unrivaled insider access to the authentic heart and soul of a place — and to people and sites that lie far beyond the reach of the average traveller. Our longstanding relationships in every destination we visit make it all possible, from the seamless flow of an A&K itinerary to the prompt attention paid to an unanticipated request. This trustworthy, on-the-ground presence also allows us to manage your safety and security, which are always our first priorities.
 
@@ -73,15 +73,11 @@ A&K excels at planning travel for custom groups, whether a professional or alumn
 
 Setting the standard for luxury small-group travel worldwide, Abercrombie & Kent's Luxury Small Group Journeys deliver the best in comfort and service in the world's greatest destinations.
 
-
-
 Create a journey based on one of these themes, mix and match them or make up your own for a journey that’s just right for you.
 
 allows you to experience A&K’s hallmark blend of insider access and style in more than 100 countries around the world, on an itinerary created for you and your family or friends. From arrival to departure, every detail is anticipated and every effort made to ensure a seamless, unforgettable travel experience. With A&K, you walk right in where others wait in line, visit world-famous sites before they open to the public and experience authentic local interactions beyond the scope of any guidebook.
 
 Your hand-picked, English-speaking A&K local guides join you at each step on your Luxury Tailor Made Journey, bringing your destination to life through authentic, beyond-the-guidebook knowledge.
-
-
 
 Browse a market and prepare lunch with a local chef, or dine with a local family in their home for a taste of authentic hospitality.
 
