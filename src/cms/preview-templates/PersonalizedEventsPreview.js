@@ -1,6 +1,6 @@
 import React from 'react'
 import PropTypes from 'prop-types'
-import { PersonalizedEventsTemplate } from '../../templates/personalized-events-page'
+import PersonalizedEventsTemplate from '../../templates/Wrappers/PersonalizedEventsTemplate'
 
 const PersonalizedEventsPreview = ({
   entry, getAsset, widgetFor, widgetsFor,

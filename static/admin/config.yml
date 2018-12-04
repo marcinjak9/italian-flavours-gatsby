@@ -56,12 +56,12 @@ collections:
               - label: Title
                 name: title
                 widget: string
-              - label: Path
-                name: path
+              - label: Link
+                name: href
                 widget: string
               - label: Region Dropdown
                 name: regionDropdown
-                widget: 
+                widget: boolean
                 default: false
           - label: Menu CTA text
             name: menuCtaText

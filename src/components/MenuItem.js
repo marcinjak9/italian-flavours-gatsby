@@ -58,6 +58,15 @@ class MenuItem extends Component {
         </li>
       )
     }
+    if (path.indexOf('http') >= 0) {
+      return (
+        <li className={`nav-item ${mobile && 'mobile'}`}>
+          <a className="nav-link" href={path}>
+            {text}
+          </a>
+        </li>
+      )
+    }
     return (
       <li className={`nav-item ${active && 'active'} ${mobile && 'mobile'}`}>
         <Link className="nav-link" to={path} onClick={onClick ? () => onClick() : () => null}>

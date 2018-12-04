@@ -1,6 +1,6 @@
 import React from 'react'
 import PropTypes from 'prop-types'
-import { AboutPageTemplate } from '../../templates/i-am-angelina-page'
+import AboutPageTemplate from '../../templates/Wrappers/IAmAngelinaTemplate'
 
 const AboutPagePreview = ({
   entry, getAsset, widgetFor, widgetsFor,

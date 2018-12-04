@@ -1,5 +1,6 @@
 import React from 'react'
 import Helmet from 'react-helmet'
+import { getImageLink } from './Image'
 
 const HelmetSection = ({ seoSection }) => (
   <Helmet>
@@ -8,7 +9,7 @@ const HelmetSection = ({ seoSection }) => (
     {seoSection.seoKeywords && <meta name="keywords" content={seoSection.seoKeywords} />}
     {seoSection.ogTitle && <meta name="og:title" content={seoSection.ogTitle} />}
     {seoSection.ogUrl && <meta name="og:url" content={seoSection.ogUrl} />}
-    {seoSection.ogImage && <meta name="og:image" content={seoSection.ogImage} />}
+    {seoSection.ogImage && <meta name="og:image" content={getImageLink(seoSection.ogImage)} />}
     {seoSection.seoDescription && <meta name="og:description" content={seoSection.seoDescription} />}
   </Helmet>
 )

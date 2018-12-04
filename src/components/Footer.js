@@ -31,6 +31,13 @@ const Footer = ({
                 </div>
               )
             }
+            if (item.url.indexOf('http') >= 0) {
+              return (
+                <div key={shortid.generate()} className="col footer-item">
+                  <a href={item.url}>{item.title}</a>
+                </div>
+              )
+            }
             return (
               <div key={shortid.generate()} className="col footer-item">
                 <Link to={item.url}>{item.title}</Link>
