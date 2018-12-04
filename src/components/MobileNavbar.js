@@ -27,8 +27,8 @@ class MobileNavbar extends Component {
                 mobile
                 key={menuItem.title}
                 text={menuItem.title}
-                path={menuItem.path}
-                active={menuItem.path === pathname}
+                path={menuItem.href}
+                active={menuItem.href === pathname}
                 regionDropdown={menuItem.regionDropdown}
                 regions={regions}
                 onClick={() => close()}

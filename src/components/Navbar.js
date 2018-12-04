@@ -50,7 +50,7 @@ class Navbar extends Component {
 
           <div className="collapse navbar-collapse" id="navigation">
             <ul className="navbar-nav navbar-flex">
-              {menuItems.map(menuItem => <MenuItem key={menuItem.title} text={menuItem.title} path={menuItem.path} active={menuItem.path === pathname} regionDropdown={menuItem.regionDropdown} regions={regions} />)}
+              {menuItems.map(menuItem => <MenuItem key={menuItem.title} text={menuItem.title} path={menuItem.href} active={menuItem.href === pathname} regionDropdown={menuItem.regionDropdown} regions={regions} />)}
             </ul>
             <ul className="navbar-nav">
               <li className="nav-item">
@@ -67,7 +67,7 @@ class Navbar extends Component {
 Navbar.propTypes = {
   menuItems: PropTypes.arrayOf(PropTypes.shape({
     title: PropTypes.string,
-    path: PropTypes.string,
+    href: PropTypes.string,
     regionDropdown: PropTypes.bool,
     regions: PropTypes.arrayOf({
       title: PropTypes.string,

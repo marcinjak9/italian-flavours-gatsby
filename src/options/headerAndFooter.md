@@ -15,19 +15,19 @@ generalSeoSection:
     Italian Flavours | Scopri con noi i sapori nascosti della tradizione
     italiana
 menuItems:
-  - path: /tours
+  - href: tours
     regionDropdown: true
     title: Tailored Tours
-  - path: /personalized-events
+  - href: personalized-events
     regionDropdown: false
     title: Personalised events
-  - path: /blog
+  - href: https://blog.it.marcinjakubik.io
     regionDropdown: false
     title: Experiences Blog
-  - path: '#contact'
+  - href: '#contact'
     regionDropdown: false
     title: Contact Me
-  - path: /i-am-angelina
+  - href: i-am-angelina
     regionDropdown: false
     title: I am Angelina
 menuCtaText: CONTACT ME NOW
@@ -36,11 +36,11 @@ footerMenu:
   - title: Tailored Tours
     url: /
   - title: Personalised events
-    url: /personalized-events
+    url: personalized-events
   - title: Experiences Blog
-    url: /blog
+    url: https://blog.it.marcinjakubik.io
   - title: I am Angelina
-    url: /i-am-angelina
+    url: i-am-angelina
   - title: Contact me
     url: '#contact'
 footerContacts:

@@ -1,9 +1,11 @@
 import React, { Component } from 'react'
 import PropTypes from 'prop-types'
 import Helmet from 'react-helmet'
+import { graphql, StaticQuery } from 'gatsby'
 import Navbar from './Navbar'
 import MobileNavbar from './MobileNavbar'
 import Footer from './Footer'
+
 import '../layouts/all.sass'
 
 class TemplateWrapper extends Component {
@@ -30,64 +32,121 @@ class TemplateWrapper extends Component {
     }());
   }
 
-  render() {
-    const {
-      location,
-      children,
-      siteOptions: {
-        frontmatter: {
-          menuItems, menuCtaText, menuCtaLink, footerMenu, footerContacts, creditsText, copyrightText, socialInfo, generalSeoSection,
-        },
-      },
-      regions: { edges },
-    } = this.props
-    const { menuOpen } = this.state
-    const regions = edges.map(singleRegion => ({ id: singleRegion.node.id, slug: singleRegion.node.fields.slug, name: singleRegion.node.frontmatter.region }))
-    return (
-      <div className="main-container-overflow">
-        <div className={`mobile-menu-overlay ${menuOpen && 'show'}`}>
-          <MobileNavbar
-            menuItems={menuItems}
-            menuCta={{ text: menuCtaText, link: menuCtaLink }}
-            pathname={location.pathname}
-            regions={regions}
-            close={() => this.setState({ menuOpen: false })}
-          />
-        </div>
-        <div className={`content-to-push ${menuOpen && 'active'}`}>
-          <Helmet>
-            <title>{generalSeoSection.seoTitle || ''}</title>
-            <meta name="description" content={generalSeoSection.seoDescription || ''} />
-            <meta name="keywords" content={generalSeoSection.seoKeywords || ''} />
-            <meta name="og:title" content={generalSeoSection.ogTitle} />
-            <meta name="og:url" content={generalSeoSection.ogUrl} />
-            <meta name="og:image" content={generalSeoSection.ogImage} />
-            <meta name="og:description" content={generalSeoSection.seoDescription} />
+  getRegions = edges => edges.map(singleRegion => ({ id: singleRegion.node.id, slug: singleRegion.node.fields.slug, name: singleRegion.node.frontmatter.region }))
 
-          </Helmet>
-          <Navbar
-            menuItems={menuItems}
-            menuCta={{ text: menuCtaText, link: menuCtaLink }}
-            pathname={location.pathname}
-            regions={regions}
-            openMobileMenu={() => this.setState({ menuOpen: true })}
-          />
-          <div>{children}</div>
-          <Footer
-            footerMenuItems={footerMenu}
-            footerContacts={footerContacts}
-            creditsText={creditsText}
-            copyrightText={copyrightText}
-            socialInfo={socialInfo}
-          />
-        </div>
-      </div>
+  render() {
+    const { menuOpen } = this.state
+    const { children } = this.props
+    return (
+      <StaticQuery
+        query={graphql`
+          query SiteMetadata {
+            siteOptions: markdownRemark(frontmatter: { dataType: { eq: "headerAndFooterOptions" } }) {
+              frontmatter {
+                generalSeoSection {
+                  ogImage 
+                  ogTitle
+                  ogUrl
+                  seoDescription
+                  seoKeywords
+                  seoTitle
+                }
+                menuItems {
+                  href
+                  title
+                  regionDropdown
+                }
+                menuCtaText
+                menuCtaLink
+                footerMenu {
+                  title
+                  url
+                }
+                footerContacts {
+                  emailAddress
+                  phoneNumber
+                }
+                creditsText
+                copyrightText
+                socialInfo {
+                  facebookUrl
+                  instagramUsername
+                }
+              }
+            }
+            regions: allMarkdownRemark(filter: { frontmatter: { templateKey: { eq: "tour-page"}}}) {
+              edges {
+                node {
+                  id
+                    fields {
+                      slug
+                    }
+                    frontmatter {
+                      region
+                    }
+                }
+              }
+            }
+          }
+      `}
+        render={(data) => {
+          const {
+            siteOptions: {
+              frontmatter: {
+                menuItems, menuCtaText, menuCtaLink, footerMenu, footerContacts, creditsText, copyrightText, socialInfo, generalSeoSection,
+              },
+            },
+            regions: { edges },
+          } = data
+          const regions = edges.map(singleRegion => ({ id: singleRegion.node.id, slug: singleRegion.node.fields.slug, name: singleRegion.node.frontmatter.region }))
+          return (
+            <div className="main-container-overflow">
+              <div className={`mobile-menu-overlay ${menuOpen && 'show'}`}>
+                <MobileNavbar
+                  menuItems={menuItems}
+                  menuCta={{ text: menuCtaText, link: menuCtaLink }}
+                  pathname={location.pathname}
+                  regions={regions}
+                  close={() => this.setState({ menuOpen: false })}
+                />
+              </div>
+              <div className={`content-to-push ${menuOpen && 'active'}`}>
+                <Helmet>
+                  <title>{generalSeoSection.seoTitle || ''}</title>
+                  <meta name="description" content={generalSeoSection.seoDescription || ''} />
+                  <meta name="keywords" content={generalSeoSection.seoKeywords || ''} />
+                  <meta name="og:title" content={generalSeoSection.ogTitle} />
+                  <meta name="og:url" content={generalSeoSection.ogUrl} />
+                  <meta name="og:image" content={generalSeoSection.ogImage} />
+                  <meta name="og:description" content={generalSeoSection.seoDescription} />
+
+                </Helmet>
+                <Navbar
+                  menuItems={menuItems}
+                  menuCta={{ text: menuCtaText, link: menuCtaLink }}
+                  pathname={location.pathname}
+                  regions={regions}
+                  openMobileMenu={() => this.setState({ menuOpen: true })}
+                />
+                <div>{children}</div>
+                <Footer
+                  footerMenuItems={footerMenu}
+                  footerContacts={footerContacts}
+                  creditsText={creditsText}
+                  copyrightText={copyrightText}
+                  socialInfo={socialInfo}
+                />
+              </div>
+            </div>
+          )
+        }}
+      />
     )
   }
 }
 
 TemplateWrapper.propTypes = {
-  children: PropTypes.func,
+  children: PropTypes.any,
   location: PropTypes.object, // eslint-disable-line
   data: PropTypes.shape({
     markdownRemark: PropTypes.shape({
