@@ -47,27 +47,25 @@ When I start working on your tour, on the tailor-made itinerary for you, your fa
 
 **Culinary Slow-Tours for small groups  **           
 
-Count on intimate group sizes of no more than 12 guests, relax in the finest hotels in Italy and experience unique insider access to divine sites. Backed by my expertise and deep knowledge of Italy, you are going to travel under the wing of professional tour guides, who will bring your best holiday to life with an unmatched local insight.
+Count on intimate group sizes of no more than 12 guests, relax in the finest hotels in Italy and experience unique insider access to divine sites. Backed by my expertise and deep knowledge of Italy, you are going to travel under the wing of professional tour guide, who will bring your best holiday to life with an unmatched local insight.
 
-I have longstanding relationships in every destination and during my tours I like sharing my precious patrimony of connections with my guests. My on-the-ground presence allows me to give you a preferral access to the most authentic and untouched places in Italy, together we will discover the real soul of la _Bella Italia._
+I have longstanding relationships in every destination and during my tours I like sharing  with my guests my precious patrimony of connections. **My on-the-ground presence **allows me to give you a preferral access to the most authentic and untouched places in Italy, together we will discover the real soul of la _Bella Italia._
 
 And of course your safety and security are always my first priorities. You only have to sit back, relax and enjoy every minute of your journey!
 
-Thanks to my intimate knowledge of each destination, I personally designed every journey, creating itineraries that feature the most iconic destinations in Italy. You enjoy the benefits, including extra time on safari, longer stops in places you most want to see and even multiple stops, such as viewing the Taj Mahal at both sunrise and sunset.
+Thanks to my intimate knowledge of each destination, I personally design every journey, creating itineraries that feature the most iconic destinations in Italy. You enjoy the benefits as longer stops in places you most want to see, such as enjoying a sunset in Ostuni or a sunrise in front of the Arena di Verona.
 
-Your A&K Resident Tour Director brings your itinerary to life through decades of firsthand experience in your destination, sharing insights into the culture that can only come from someone who is, in fact, a local. Overseeing your entire journey and accompanying you every day, he or she reveals the real spirit of a place, connecting you to the people, places and wildlife you encounter in a way you’ll never forget.
+I will be sharing with you the best insights into Italian wine & food culture, art and traditions, the ones that can only come from someone who is, in fact, a local, as I am. I will be supervising your entire journey and accompanying you every day, revealing you the real spirit of a place and connecting you to locals in a way you’ll never forget. Of course I will also leave you the privacy you need whenever you need.
 
-Our Luxury Small Group Journeys are limited to just 18 like-minded guests — seasoned travellers who bring their own unique perspectives to your journey — allowing us to reserve hotels that can’t accommodate the typically larger (40-plus) groups that travel with other companies. This also opens up a world of exclusive insider-access opportunities, while affording you more time to interact with your Resident Tour Director.
+You can choose to travel with your family or friends or join one of my already set **small group tours**, they are limited to no more than 12 guests, happy travellers who will bring their joy and their own perspectives to your journey. It will be a great chance to make new valuable friendships, to know new cultures and receive inspiring precious stimuli.
 
-**Tailor-made Journey     **    
+**Tailor-made Gourmet Journeys in Italy     **    
 
-Luxury Tailor Made Travel means seeing the world exactly how you want to see it, on an itinerary fashioned for you by the world’s foremost experts.
+Are you ready to see Italy exactly how you want to see it, on an itinerary fashioned only for you?
 
-Your hand-picked, English-speaking A&K local guides join you at each step on your Luxury Tailor Made Journey, bringing your destination to life through authentic, beyond-the-guidebook knowledge.
+Treat yourself for a special occasion, as a birthday, an anniversary or a retirement, celebrate your milestone with your family or with your friends in a luxury tailor-made gourmet tour in Italy.
 
-A birthday, anniversary or retirement: Whatever the milestone, a Luxury Tailor Made Journey is the perfect way to commemorate it. Celebrate your birthday with a private dinner with friends and family in the ancient library of Ephesus, or start your retirement with an artist’s tour of Paris, exploring the Louvre with an expert guide and visiting an artist in his own atelier.
-
-A&K excels at planning travel for custom groups, whether a professional or alumni association, museum society or a local seniors’ group. We create an itinerary packed with sightseeing, activities and guest speakers that all reflect your group’s focus and interests. Our dedicated staff has decades of experience in creating journeys for groups of all sizes, all ages and all interests.
+I will create for you an unforgettable travel experience with unique activities and sightseeings, a journey that will reflect your desires and interests. Whatever the group composition, whether a group of friends, a family, a senior group or a company looking for an incentive travel, I will design a highly personalised itinerary that will ensure a deep immersive experience in the soul of Italy. 
 
 **Solo Traveller**
 
