@@ -23,7 +23,7 @@ hero:
   heroBgOverlay: true
   subtitle: >+
     I am a professional gourmet travel curator and founder of Italian Flavours,
-    a boutique tour operator specialised in creating unique cultural-culinary
+    aboutique tour operator specialised in creating unique cultural-culinary
     holidays in Italy. Of course I am Italian, 100%.
 
 descriptionTitle: Dreaming of a tasty holiday in Italy? You are in good hands!
