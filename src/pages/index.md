@@ -4,7 +4,7 @@ seoSection:
   ogImage: /img/candre-mandawe-770521-unsplash.jpg
   ogTitle: Your tasty holiday in Italy
   ogUrl: 'https://it.marcinjakubik.io'
-  seoDescription: "I am specialised in tailor-made gourmet holidays. I love creating travel\t solutions that perfectly suit my guest needs, who have always appreciated my\t attention to detail and creativity in organising unforgettable experiences.\t\n"
+  seoDescription: "I am specialised in tailor-made gourmet holidays. I love creating travel\t solutions that perfectly suit my guests needs, who have always appreciated my\t attention to detail and creativity in organising unforgettable experiences.\t\n"
   seoKeywords: Your tasty holiday in Italy
   seoTitle: Your tasty holiday in Italy
 hero:
