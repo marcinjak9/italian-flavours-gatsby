@@ -62,57 +62,59 @@ descriptionCards:
       vero molestias facilis fuga est recusandae totam. Neque, quae voluptatibus
       reprehenderit tempora quia temporibus. Eum tenetur dolor temporibus
       voluptate veniam.
+    icon: /img/qa.png
     subtitle: Lorem ipsum dolor set
     title: Lorem Ipsum
-    icon: /img/qa.png
   - body: >-
       Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sunt asperiores,
       vero molestias facilis fuga est recusandae totam. Neque, quae voluptatibus
       reprehenderit tempora quia temporibus. Eum tenetur dolor temporibus
       voluptate veniam.
+    icon: /img/qa.png
     subtitle: Lorem ipsum dolor set
     title: Lorem Ipsum
-    icon: /img/qa.png
   - body: >-
       Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sunt asperiores,
       vero molestias facilis fuga est recusandae totam. Neque, quae voluptatibus
       reprehenderit tempora quia temporibus. Eum tenetur dolor temporibus
       voluptate veniam.
+    icon: /img/qa.png
     subtitle: Lorem ipsum dolor set
     title: Lorem Ipsum
-    icon: /img/qa.png
   - body: >-
       Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sunt asperiores,
       vero molestias facilis fuga est recusandae totam. Neque, quae voluptatibus
       reprehenderit tempora quia temporibus. Eum tenetur dolor temporibus
       voluptate veniam.
+    icon: /img/qa.png
     subtitle: Lorem ipsum dolor set
     title: Lorem Ipsum
-    icon: /img/qa.png
   - body: >-
       Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sunt asperiores,
       vero molestias facilis fuga est recusandae totam. Neque, quae voluptatibus
       reprehenderit tempora quia temporibus. Eum tenetur dolor temporibus
       voluptate veniam.
+    icon: /img/qa.png
     subtitle: Lorem ipsum dolor set
     title: Lorem Ipsum
-    icon: /img/qa.png
   - body: >-
       Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sunt asperiores,
       vero molestias facilis fuga est recusandae totam. Neque, quae voluptatibus
       reprehenderit tempora quia temporibus. Eum tenetur dolor temporibus
       voluptate veniam.
+    icon: /img/qa.png
     subtitle: Lorem ipsum dolor set
     title: Lorem Ipsum
-    icon: /img/qa.png
 blogSectionTitle: Cari Amici on this Tour with me!
+blogPosts:
+  - slug: prova
 calendarTitle: Scopri le ultime date disponibili
 calendarBody: Dai un'occhiata e scegli il periodo migliore per te
 calendarNotes: Enjoy
 aviabilityDates:
   - endDate: '2018-08-27'
     startDate: '2018-08-24'
-instagramUsername: alexeintree
+instagramUsername: italianflavours
 instagramPhotos:
   - id: '4325435543'
   - id: '65756'
