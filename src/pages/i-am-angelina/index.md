@@ -23,7 +23,7 @@ hero:
   heroBgOverlay: true
   subtitle: >+
     I am a professional gourmet travel curator and founder of Italian Flavours,
-    a boutique tour operator specialised in creating unique cultural-culinary
+    aboutique tour operator specialised in creating unique cultural-culinary
     holidays in Italy. Of course I am Italian, 100%.
 
 descriptionTitle: Dreaming of a tasty holiday in Italy? You are in good hands!
@@ -36,7 +36,7 @@ instagramPhotos:
 ---
 Are you dreaming of an exclusive, tailor made wine & food journey in the most charming and genuine parts of Italy, made of authentic and deeply immersive experiences that would give you a fine insider-access to local life and to the oldest traditions of the _Bella Italia_?
 
-You are definitely in the right place, and I could not be more happy!
+You are definitely in the right place, and I couldn't be more happy!
 
 I am sure you are now curious to know something more about me. Am I right? Here is my story:
 
@@ -60,6 +60,6 @@ My passion in sharing the beauty and uniqueness of Italian cultural heritage has
 
 Oh, wait...I am a super passionate globettrotter too! Very interested in knowing new cultures and traditions. This led me to visit half the World, but I still lack the other half :).
 
-So, are you ready to "taste" an **immersive travel in Italy** able to give you the authentic energy and distinctive flavours of Italian local life? Are you ready to participate to authentic, exclusive and engaging local interactions that will connect you to my beloved Country in unexpected and unforgettable way? 
+So, are you ready to "taste" an **immersive travel in Italy** able to give you the authentic energy and distinctive flavours of Italian local life? Ready to participate to authentic, exclusive and engaging local interactions that will connect you to my beloved Country in unexpected and unforgettable ways? 
 
-**Contact me** and I will bring you were real gourmet Italian people go, to do things real Italians do, taste food real Italians eat and drink wines real Italians drink.
+**Contact me** and I will bring you were real gourmet Italian people go, to do things real Italians do, taste food real Italians eat and drink wines real Italians drink!

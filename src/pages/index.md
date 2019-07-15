@@ -4,7 +4,7 @@ seoSection:
   ogImage: /img/candre-mandawe-770521-unsplash.jpg
   ogTitle: Your tasty holiday in Italy
   ogUrl: 'https://it.marcinjakubik.io'
-  seoDescription: "I am specialised in tailor-made gourmet holidays. I love creating travel\t solutions that perfectly suit my guest needs, who have always appreciated my\t attention to detail and creativity in organising unforgettable experiences.\t\n"
+  seoDescription: "I am specialised in tailor-made gourmet holidays. I love creating travel\t solutions that perfectly suit my guests needs, who have always appreciated my\t attention to detail and creativity in organising unforgettable experiences.\t\n"
   seoKeywords: Your tasty holiday in Italy
   seoTitle: Your tasty holiday in Italy
 hero:
@@ -18,9 +18,11 @@ hero:
   image480: /img/mobile-480.jpg
   image768: /img/tablet-768.jpg
   payoff: >
-    From exclusive small groups culinary tours, to boutique tailor-made travel
-    experiences for groups, couples or solo travellers, I create inspiring
-    itineraries fashioned only for You
+    From exclusive culinary tours, to boutique tailor-made             travel
+    experiences for groups, couples or solo travellers,              I create
+    inspiring itineraries fashioned only for You
+
+    test
   title: Your tasty holiday in Italy
 tourSectionTitle: Savour your next holiday
 blogNewsTitle: 'More than clients, but Cari Amici'
@@ -37,51 +39,45 @@ infoSection:
   ctaUrl: /tour
   title: This is what I can do for you...
 ---
-Every traveler is different as well as every exclusive journey I create for my guests. I attentively consider your needs, how you like to travel and what kind of activities make your vacation meaningful to you, I then put that knowledge to work to make your holiday in Italy uniquely **yours**. 
+Every traveler is different as well as every exclusive journey I create for my guests. I consider with great care your needs, how you prefer to travel and what are the activities and experiences that make your vacation meaningful to you, these are essential elements that allow me to design **your** unique holiday in Italy.
 
-**With me you will save the most precious thing you have, time.**
+**With me you will save the most precious thing you have, TIME.**
 
-When I start working on your tour, on the tailor-made itinerary for you, your family or friends, I work in order to make you **save time**. I work closely with you to create a made-to-order travel experience of a lifetime, optimized to make sure you get the most out of every moment, so that when the time comes to book your next holiday, I know what your preferences and desires are and I am ready to provide a personal, one-on-one, dedicated service. 
+When I start working on your tour, on the tailor-made itinerary for you, your family or friends, I work in order to make you **save time**. I work closely with you to create a made-to-order travel experience of a lifetime, refined to make sure you get the most out of every moment. This part of my work is very important for me, but for you too: when the time comes to book your next adventure in Italy, I know what your preferences and desires are and I am ready to provide a personal, one-on-one, dedicated service. 
 
-What kind of experience in Italy are you dreaming of?
+## What kind of experience in Italy are you dreaming of?
 
-**Culinary Small Group Tour  **           
+**Culinary Slow-Tours for small groups  **           
 
-Count on intimate group sizes of no more than 18 guests, stay in only the finest hotels and experience unmatched insider access to revered sites, often before the crowds arrive. Backed by the support and expertise of over 55 offices in more than 30 countries, you also travel under the wing of A&K's award-winning Resident Tour Directors®, who bring your destination to life with one-of-a-kind local insight.
+Count on intimate group sizes of no more than 12 guests, relax in the finest hotels in Italy and experience unique insider access to divine sites. Backed by my expertise and deep knowledge of Italy, you are going to travel under the wing of professional tour guide, who will bring your best holiday to life with an unmatched local insight.
 
-Our unmatched service, local knowledge and painstaking attention to detail are an award-winning combination that has earned us praise from both travellers and travel professionals, who for more than a decade have consistently chosen A&K as the world's finest luxury travel company.
+I have longstanding relationships in every destination and during my tours I like sharing  with my guests my precious patrimony of connections. **My on-the-ground presence **allows me to give you a preferral access to the most authentic and untouched places in Italy, together we will discover the real soul of la _Bella Italia._
 
-When you travel with A&K, you enjoy unrivaled insider access to the authentic heart and soul of a place — and to people and sites that lie far beyond the reach of the average traveller. Our longstanding relationships in every destination we visit make it all possible, from the seamless flow of an A&K itinerary to the prompt attention paid to an unanticipated request. This trustworthy, on-the-ground presence also allows us to manage your safety and security, which are always our first priorities.
+And of course your safety and security are always my first priorities. You only have to sit back, relax and enjoy every minute of your journey!
 
-Every journey we offer has been designed by on-the-ground experts who know each destination intimately. Our ideal small group size and unrivaled insider access allow them to create itineraries that feature iconic destinations experienced at the perfect pace. You enjoy the benefits, including extra time on safari, longer stops in places you most want to see and even multiple stops, such as viewing the Taj Mahal at both sunrise and sunset.
+Thanks to my intimate knowledge of each destination, I personally design every journey, creating itineraries that feature the most iconic destinations in Italy. You enjoy the benefits as longer stops in places you most want to see, such as enjoying a sunset in Ostuni or a sunrise in front of the Arena di Verona.
 
-Your A&K Resident Tour Director brings your itinerary to life through decades of firsthand experience in your destination, sharing insights into the culture that can only come from someone who is, in fact, a local. Overseeing your entire journey and accompanying you every day, he or she reveals the real spirit of a place, connecting you to the people, places and wildlife you encounter in a way you’ll never forget.
+I will be sharing with you the best insights into Italian wine & food culture, art and traditions, the ones that can only come from someone who is, in fact, a local, as I am. I will be supervising your entire journey and accompanying you every day, revealing you the real spirit of a place and connecting you to locals in a way you’ll never forget. Of course I will also leave you the privacy you need whenever you need.
 
-Our Luxury Small Group Journeys are limited to just 18 like-minded guests — seasoned travellers who bring their own unique perspectives to your journey — allowing us to reserve hotels that can’t accommodate the typically larger (40-plus) groups that travel with other companies. This also opens up a world of exclusive insider-access opportunities, while affording you more time to interact with your Resident Tour Director.
+You can choose to travel with your family or friends or join one of my already set **small group tours**, they are limited to no more than 12 guests, happy travellers who will bring their joy and their own perspectives to your journey. It will be a great chance to make new valuable friendships, to know new cultures and receive inspiring precious stimuli.
 
-**Tailor-made Journey     **    
+**Tailor-made Gourmet Journeys in Italy     **    
 
-Luxury Tailor Made Travel means seeing the world exactly how you want to see it, on an itinerary fashioned for you by the world’s foremost experts.
+Are you ready to see Italy exactly how you want to see it, on an itinerary fashioned only for you?
 
-Your hand-picked, English-speaking A&K local guides join you at each step on your Luxury Tailor Made Journey, bringing your destination to life through authentic, beyond-the-guidebook knowledge.
+Treat yourself for a special occasion, as a birthday, an anniversary or a retirement, celebrate your milestone with your family or with your friends in a luxury tailor-made gourmet tour in Italy.
 
-A birthday, anniversary or retirement: Whatever the milestone, a Luxury Tailor Made Journey is the perfect way to commemorate it. Celebrate your birthday with a private dinner with friends and family in the ancient library of Ephesus, or start your retirement with an artist’s tour of Paris, exploring the Louvre with an expert guide and visiting an artist in his own atelier.
-
-A&K excels at planning travel for custom groups, whether a professional or alumni association, museum society or a local seniors’ group. We create an itinerary packed with sightseeing, activities and guest speakers that all reflect your group’s focus and interests. Our dedicated staff has decades of experience in creating journeys for groups of all sizes, all ages and all interests.
+I will create for you an unforgettable travel experience with unique activities and sightseeings, a journey that will reflect your desires and interests. Whatever the group composition, whether a group of friends, a family, a senior group or a company looking for an incentive travel, I will design a highly personalised itinerary that will ensure a deep immersive experience in the soul of Italy. 
 
 **Solo Traveller**
 
 Setting the standard for luxury small-group travel worldwide, Abercrombie & Kent's Luxury Small Group Journeys deliver the best in comfort and service in the world's greatest destinations.
-
-
 
 Create a journey based on one of these themes, mix and match them or make up your own for a journey that’s just right for you.
 
 allows you to experience A&K’s hallmark blend of insider access and style in more than 100 countries around the world, on an itinerary created for you and your family or friends. From arrival to departure, every detail is anticipated and every effort made to ensure a seamless, unforgettable travel experience. With A&K, you walk right in where others wait in line, visit world-famous sites before they open to the public and experience authentic local interactions beyond the scope of any guidebook.
 
 Your hand-picked, English-speaking A&K local guides join you at each step on your Luxury Tailor Made Journey, bringing your destination to life through authentic, beyond-the-guidebook knowledge.
-
-
 
 Browse a market and prepare lunch with a local chef, or dine with a local family in their home for a taste of authentic hospitality.
 
