@@ -24,6 +24,9 @@ class BlogCard extends React.Component {
 
   fetchPosts = () => {
     const { slug } = this.props
+    if (!window.ghost) {
+      return null
+    }
     window.ghost.init({
       clientId: 'ghost-frontend',
       clientSecret: 'ab4dac795465',
