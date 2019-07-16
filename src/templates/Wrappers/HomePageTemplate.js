@@ -44,46 +44,7 @@ const HomePageTemplate = (props) => {
         </div>
       </div>
 
-
-      <div className="container home-section first-section white-bg">
-        <div className="row">
-          <div className="col-md-12 section-title-wrapper">
-            <h2 className="text-center">{tourTitle}</h2>
-          </div>
-
-          {tours && tours.edges && tours.edges.map(item => (
-            <TourCard
-              key={item.node.id}
-              title={item.node.frontmatter.title}
-              image={item.node.frontmatter.hero.image}
-              description={item.node.frontmatter.tourShortDescription}
-              highlights={item.node.frontmatter.highlights}
-              url={item.node.fields.slug}
-            />
-          ))}
-
-        </div>
-      </div>
-
-
-      <BlogSection
-        posts={posts}
-        title={blogTitle}
-        cta={() => <a href="https://blog.it.marcinjakubik.io" target="_blank" rel="noopener noreferrer" className="btn btn-outline-light btn-lg">see the blog</a>}
-        home
-      />
-
-      {tours
-      && (
-      <MapFormContainer
-        regions={tours.edges.map(tour => tour.node.frontmatter.region)}
-        title={contactSection.title}
-        options={contactSection.list}
-        subregion={tours.edges.map(tour => tour.node.frontmatter.subRegion)}
-      />
-      )}
-
-      <div className="container home-section smaller-section description-section white-bg">
+      <div className="container home-section smaller-section description-section white-bg first-section">
         <div className="row">
           <div className="col-md-12 section-title-wrapper">
             <h2 className="text-center brand-text">{infoSection.title}</h2>
@@ -101,6 +62,46 @@ const HomePageTemplate = (props) => {
           </div>
         </div>
       </div>
+
+      <div className="container-fluid grey-bg">
+        <div className="container home-section">
+          <div className="row">
+            <div className="col-md-12 section-title-wrapper">
+              <h2 className="text-center">{tourTitle}</h2>
+            </div>
+
+            {tours && tours.edges && tours.edges.map(item => (
+              <TourCard
+                key={item.node.id}
+                title={item.node.frontmatter.title}
+                image={item.node.frontmatter.hero.image}
+                description={item.node.frontmatter.tourShortDescription}
+                highlights={item.node.frontmatter.highlights}
+                url={item.node.fields.slug}
+              />
+            ))}
+
+          </div>
+        </div>
+      </div>
+
+      {tours
+      && (
+      <MapFormContainer
+        regions={tours.edges.map(tour => tour.node.frontmatter.region)}
+        title={contactSection.title}
+        options={contactSection.list}
+        subregion={tours.edges.map(tour => tour.node.frontmatter.subRegion)}
+      />
+      )}
+
+      <BlogSection
+        posts={posts}
+        title={blogTitle}
+        cta={() => <a href="https://blog.it.marcinjakubik.io" target="_blank" rel="noopener noreferrer" className="btn btn-outline-light btn-lg">see the blog</a>}
+        home
+      />
+
     </PageTransition>
   )
 }

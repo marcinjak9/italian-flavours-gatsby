@@ -38,12 +38,12 @@ module.exports = {
       resolve: 'gatsby-transformer-remark',
       options: {
         plugins: [
-          {
-            resolve: 'gatsby-remark-relative-images',
-            options: {
-              name: 'static/images',
-            },
-          },
+          // {
+          //   resolve: 'gatsby-remark-relative-images',
+          //   options: {
+          //     name: 'static/images',
+          //   },
+          // },
           {
             resolve: 'gatsby-remark-images',
             options: {},

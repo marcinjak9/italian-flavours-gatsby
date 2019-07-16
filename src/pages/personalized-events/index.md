@@ -23,9 +23,9 @@ personalizedEventsGallery:
   - image: /img/simon-rae-732820-unsplash.jpg
   - image: /img/simon-rae-732820-unsplash.jpg
   - image: /img/flavor_wheel.jpg
-  - image: /img/simon-rae-732820-unsplash.jpg
-  - image: /img/simon-rae-732820-unsplash.jpg
-  - image: /img/products-grid2.jpg
+  # - image: /img/simon-rae-732820-unsplash.jpg
+  # - image: /img/simon-rae-732820-unsplash.jpg
+  # - image: /img/products-grid2.jpg
 midDescriptionTitle: I bring italian food culture at your home
 midDescriptionBody: >-
   These are only some of the high class culinary experiences I can organise

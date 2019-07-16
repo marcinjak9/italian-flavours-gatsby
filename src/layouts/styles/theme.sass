@@ -34,6 +34,12 @@ button, input[type="submit"], input[type="reset"]
 
   .brand-logo 
     display: inline-block
+  
+  .nav-item
+    .nav-link
+      color: $text-dark 
+    &.active, &:hover
+      border-bottom: 1px solid $primary
 
   &.before-scroll 
     background: linear-gradient(0deg, transparent, rgba(0, 0, 0, 0.8))
@@ -85,7 +91,7 @@ button, input[type="submit"], input[type="reset"]
 
 
 .navbar-brand img 
-  max-height: 55px
+  max-height: 60px
   padding: 5px
 
 .custom-dropdown
@@ -163,7 +169,8 @@ button, input[type="submit"], input[type="reset"]
 
 
 strong 
-  font-weight: $font-bold
+  // font-weight: $font-bold
+  font-weight: 800
   color: #1C8174
 
 
@@ -425,9 +432,9 @@ strong
 
 .lead-text 
   color: $text-dark
-  font-size: 1.1rem
+  font-size: 1rem
   font-weight: $font-light
-  line-height: 1.7rem
+  line-height: 1.5rem
 
 
 .lead-text ul li 
@@ -448,18 +455,20 @@ footer
 
 footer .footer-item 
   min-width: 200px
+  margin: 1rem 0
 
 
 .footer-item a 
   color: rgba(255,255,255, 0.5)
   text-decoration: none
-  font-size: 20px
-  font-weight: $font-light
-  line-height: 25px
+  font-size: 18px
+  font-weight: $font-bold
+  line-height: 22px
   transition: color .3s
 
   &:hover
-    color: rgba(255,255,255, 1)
+    // color: rgba(255,255,255, 1)
+    color: $primary
 
 
 footer .footer-contacts 
@@ -484,7 +493,7 @@ footer .footer-social-icons img
 
 .footer-copyright p 
   margin-bottom: .2rem
-  font-size: .9rem
+  font-size: 1rem
 
 
 .contact-form .form-control 
@@ -608,6 +617,7 @@ footer .footer-social-icons img
   background: #EEE
   height: 0
   position: relative
+  overflow: hidden
 
 @keyframes placeHolderShimmer
   0%
@@ -873,3 +883,12 @@ body.no-scroll
 .map-container svg>g:hover
   #bg path, path[data-name="bg"]
     fill: #d6d5d5
+
+
+.content-body 
+  img 
+    max-width: 100%
+    margin: 2rem 0
+
+  a
+    text-decoration: underline

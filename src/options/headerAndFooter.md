@@ -22,19 +22,19 @@ menuItems:
   - href: tours
     onlyMobile: false
     regionDropdown: true
-    title: Tailored Tours
-  - href: personalized-events
+    title: Tours by region
+  - href: 'i-am-angelina#contact'
     onlyMobile: false
     regionDropdown: false
-    title: Personalised events
+    title: Tailored-made Tours
   - href: 'https://blog.it.marcinjakubik.io'
     onlyMobile: false
     regionDropdown: false
     title: Experiences Blog
-  - href: 'i-am-angelina#contact'
-    onlyMobile: true
+  - href: personalized-events
+    onlyMobile: false
     regionDropdown: false
-    title: Contact Me
+    title: Personalised events
   - href: i-am-angelina
     onlyMobile: false
     regionDropdown: false
