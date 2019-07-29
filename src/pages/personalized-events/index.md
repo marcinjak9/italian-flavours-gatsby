@@ -31,57 +31,27 @@ midDescriptionBody: >-
 descriptionCards:
   - title: Pop-up dinners Italian style
     body: >-
-      In a funny show-cooking I will make the most traditional Italian recipes
-      for you and your guests, using the best Italian gourmet products, as
-      truffles, excellent extra-virgin olive oil, handmade pasta and much more.
-      A charming dinner will follow, where we will talk about Italy and Italian
-      traditions, while enjoying my personal selection of delicious Italian
-      wines.
+      In a fun and interactive cooking demonstration I will make the most
+      traditional Italian recipes for you and your guests, using the best
+      Italian gourmet products, such as truffles, excellent extra-virgin olive
+      oil, handmade pasta and much more. A charming dinner will follow, where we
+      will talk about Italy and Italian traditions, whilst enjoying my personal
+      selection of delicious Italian wines.
     icon: /img/qa.png
   - title: Pop-up dinners Italian style
-    body: >-
-      In a funny show-cooking I will make the most traditional Italian recipes
-      for you and your guests, using the best Italian gourmet products, as
-      truffles, excellent extra-virgin olive oil, handmade pasta and much more.
-      A charming dinner will follow, where we will talk about Italy and Italian
-      traditions, while enjoying my personal selection of delicious Italian
-      wines.
+    body: ''
     icon: /img/qa.png
   - title: Pop-up dinners Italian style
-    body: >-
-      In a funny show-cooking I will make the most traditional Italian recipes
-      for you and your guests, using the best Italian gourmet products, as
-      truffles, excellent extra-virgin olive oil, handmade pasta and much more.
-      A charming dinner will follow, where we will talk about Italy and Italian
-      traditions, while enjoying my personal selection of delicious Italian
-      wines.
+    body: ''
     icon: /img/qa.png
   - title: Pop-up dinners Italian style
-    body: >-
-      In a funny show-cooking I will make the most traditional Italian recipes
-      for you and your guests, using the best Italian gourmet products, as
-      truffles, excellent extra-virgin olive oil, handmade pasta and much more.
-      A charming dinner will follow, where we will talk about Italy and Italian
-      traditions, while enjoying my personal selection of delicious Italian
-      wines.
+    body: ''
     icon: /img/qa.png
   - title: Pop-up dinners Italian style
-    body: >-
-      In a funny show-cooking I will make the most traditional Italian recipes
-      for you and your guests, using the best Italian gourmet products, as
-      truffles, excellent extra-virgin olive oil, handmade pasta and much more.
-      A charming dinner will follow, where we will talk about Italy and Italian
-      traditions, while enjoying my personal selection of delicious Italian
-      wines.
+    body: ''
     icon: /img/qa.png
   - title: Pop-up dinners Italian style
-    body: >-
-      In a funny show-cooking I will make the most traditional Italian recipes
-      for you and your guests, using the best Italian gourmet products, as
-      truffles, excellent extra-virgin olive oil, handmade pasta and much more.
-      A charming dinner will follow, where we will talk about Italy and Italian
-      traditions, while enjoying my personal selection of delicious Italian
-      wines.
+    body: ''
     icon: /img/qa.png
 blogSectionTitle: Cari Amici from some personalised events
 blogPosts:
