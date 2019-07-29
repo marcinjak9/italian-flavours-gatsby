@@ -2,14 +2,14 @@
 templateKey: personalized-events-page
 seoSection:
   ogImage: /img/chemex.jpg
-  ogTitle: 'We do it all together, in anyplace you want'
+  ogTitle: 'We do it all together, in any place you want'
   ogUrl: /
   seoDescription: >-
     An unforgettable gourmet journey among the most antique and precious
     culinary and cultural traditions of Italy
-  seoKeywords: 'We do it all together, in anyplace you want'
-  seoTitle: 'We do it all together, in anyplace you want'
-title: 'We do it all together, in anyplace you want'
+  seoKeywords: 'We do it all together, in any place you want'
+  seoTitle: 'We do it all together, in any place you want'
+title: 'We do it all together, in any place you want'
 hero:
   bgImage: /img/chemex.jpg
   ctaLink: /
@@ -18,15 +18,12 @@ hero:
   subtitle: >-
     An unforgettable gourmet journey among the most antique and precious
     culinary and cultural traditions of Italy
-descriptionTitle: Share your passion for Italy with people you love directly at your place
+descriptionTitle: 'Share your passion for Italy with people you love, directly at your place'
 personalizedEventsGallery:
   - image: /img/simon-rae-732820-unsplash.jpg
   - image: /img/simon-rae-732820-unsplash.jpg
   - image: /img/flavor_wheel.jpg
-  # - image: /img/simon-rae-732820-unsplash.jpg
-  # - image: /img/simon-rae-732820-unsplash.jpg
-  # - image: /img/products-grid2.jpg
-midDescriptionTitle: I bring italian food culture at your home
+midDescriptionTitle: I bring Italian food culture at your home
 midDescriptionBody: >-
   These are only some of the high class culinary experiences I can organise
   personally for family gatherings or celebrations, private dinners, business
@@ -99,18 +96,10 @@ instagramPhotos:
 ---
 Are you dreaming about bringing back home the charming atmosphere you enjoyed during our tour together or during your fabulous holiday in Italy?
 
+Are you missing the authentic smells of that delicious wine or the unique flavours of those truffle crostini you tasted in that hidden trattoria in Tuscany?
 
-
-Are you missing the authentic smells of that delicious wine or the unique flavours of those truffle crostini you tasted in that typical, hidden trattoria in Tuscany?
-
-
-
-I can definitely help you relieving your nostalgia for Italy…awaiting for your next gourmet experience, of course!
-
-
+I can definitely help you satisfy your nostalgic longing for Italy.
 
 I also go on tour abroad and when I do, I love bringing the real soul, flavours and perfumes of Italy directly to my guests houses, wherever they are in the world.
-
-
 
 **During all the events I will hold a special class dedicated to the “Italian gourmet etiquette” and a speech about Italian culture and the most antique wine and food traditions in Italy, this is the Angelina’s Italian Gourmet School.**
