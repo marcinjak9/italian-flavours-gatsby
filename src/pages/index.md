@@ -37,7 +37,7 @@ infoSection:
   ctaUrl: /tour
   title: This is what I can do for you...
 ---
-Every traveller is different, and so is every exclusive journey I create for my guests. I take into consideration your individual needs, how you prefer to travel and which activities and experiences will make your vacation meaningful to you. All of these essential elements allow me to design **your** unique holiday in Italy.
+Every traveller is different, and so is every journey I create exclusively for my guests. I take into consideration your individual needs, how you prefer to travel and which activities and experiences will make your vacation meaningful to you. All of these essential elements allow me to design **your** unique holiday in Italy.
 
 **With me you will save the most precious thing you have, TIME.**
 
@@ -65,7 +65,7 @@ You can choose to travel with your family or friends or to join one of my alread
 
 Are you ready to see Italy exactly how you want to see it, on an itinerary fashioned specially for you?
 
-Treat yourself for a special occasion, as a birthday, an anniversary or a retirement gift: celebrate your milestone with your family or with your friends in a luxury, tailor-made gourmet tour in Italy.
+Treat yourself for a special occasion, as a birthday, an anniversary or a retirement gift: celebrate your milestone with your family or with your friends with a luxury, tailor-made gourmet tour of Italy.
 
 **Solo Traveller**
 
