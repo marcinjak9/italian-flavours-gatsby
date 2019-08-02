@@ -22,7 +22,7 @@ menuItems:
   - href: 'i-am-angelina#contact'
     onlyMobile: false
     regionDropdown: false
-    title: Tailored-made Tours
+    title: Tailor-made Tours
   - href: 'https://blog.it.marcinjakubik.io'
     onlyMobile: false
     regionDropdown: false
