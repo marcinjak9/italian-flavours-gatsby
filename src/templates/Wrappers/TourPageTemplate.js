@@ -144,10 +144,12 @@ const TourPageTemplate = ({
     <div className="container cari-amici-section white-bg">
       <h2 className="text-center dk-brand-text">Follow me on Instagram</h2>
       <div className="instagram-container text-center">
-        <img src={instagramIcon} alt="" />
-        {' '}
-        @
-        {instagram.username}
+        <a href="https://www.instagram.com/italian_flavours/">
+          <img src={instagramIcon} alt="" />
+          {' '}
+            @
+          {instagram.username}
+        </a>
       </div>
       <div className="row justify-content-center">
 

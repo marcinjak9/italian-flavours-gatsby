@@ -1,7 +1,7 @@
 body 
   background: #fff
   font-family: 'Source Sans Pro', sans-serif
-  font-weight: $font-light
+  font-weight: $font-normal
   font-kerning: none
 
 p 
@@ -171,7 +171,7 @@ button, input[type="submit"], input[type="reset"]
 strong 
   // font-weight: $font-bold
   font-weight: 800
-  color: #1C8174
+  color: $primary
 
 
 .btn 
@@ -196,8 +196,8 @@ strong
 
 
 .btn-primary:hover 
-  border-color: #1C8174
-  background-color: #1C8174
+  border-color: $secondary
+  background-color: $secondary
 
 
 .btn-outline-primary 
@@ -212,13 +212,13 @@ strong
 
 
 .btn-outline-light:hover 
-  border-color: #1C8174
-  background-color: #1C8174
+  border-color: $secondary
+  background-color: $secondary
 
 
 .btn-outline-primary:hover 
-  border-color: #1C8174
-  background-color: #1C8174
+  border-color: $secondary
+  background-color: $secondary
   color: #fff
   
 
@@ -230,7 +230,7 @@ strong
 
 
 .btn-link:hover 
-  color: #1C8174
+  color: $secondary
   text-decoration: none
 
 
@@ -328,7 +328,7 @@ strong
 
 .cari-amici-section 
   margin-top: 0px
-  padding-top: 3rem
+  padding-top: 1rem
   padding-bottom: 4rem
   margin-bottom: 0px
 
@@ -411,7 +411,7 @@ strong
 
 .home-card .plus-button-card:hover 
   text-decoration: none
-  background-color: #1C8174
+  background-color: $secondary
 
 
 .card-gallery 
@@ -423,7 +423,7 @@ strong
   padding-top: 15px
 
 .cta-blog 
-  margin-top: 4rem
+  margin-top: 1rem
 
 
 .cta-blog .btn 
@@ -433,7 +433,7 @@ strong
 .lead-text 
   color: $text-dark
   font-size: 1rem
-  font-weight: $font-light
+  font-weight: $font-normal
   line-height: 1.5rem
 
 
@@ -601,6 +601,11 @@ footer .footer-social-icons img
 .instagram-container 
   font-size: 26px
 
+  a
+    color: #212529
+    &:hover
+      text-decoration: none
+
 
 .instagram-container img 
   height: 32px
@@ -708,7 +713,7 @@ footer .footer-social-icons img
 
 .personalized-events-section 
   margin-bottom: 0px
-  margin-top: 70px
+  margin-top: 50px
 
   &.tour-page-cards
     h3

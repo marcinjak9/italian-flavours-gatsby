@@ -45,7 +45,7 @@ const AboutPageTemplate = ({
           </div>
         </div>
         <div className="row">
-          <div className="col-md-10 offset-md-1 text-spacing-container">
+          <div className="col-md-10 offset-md-1">
             <PostContent content={content} />
           </div>
         </div>
@@ -60,8 +60,10 @@ const AboutPageTemplate = ({
       <div className="container cari-amici-section white-bg">
         <h2 className="text-center dk-brand-text">Follow me on Instagram</h2>
         <div className="instagram-container text-center">
-          <img src={instagram} alt="" />
-            @italian_flavours
+          <a href="https://www.instagram.com/italian_flavours/">
+            <img src={instagram} alt="" />
+              @italian_flavours
+          </a>
         </div>
         <div className="row justify-content-center">
           {instagramPhotos.map(item => (

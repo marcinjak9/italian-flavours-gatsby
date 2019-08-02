@@ -14,7 +14,7 @@ const Footer = ({
 }) => (
   <footer className="container-fluid no-top-padding" id="contact-mobile">
     <div className="row">
-      <div className="col-md-12 text-center">
+      <div className="col-md-12 text-center" style={{ marginTop: '2rem' }}>
         <img src={logoWhite} alt="" className="footer-logo" />
       </div>
       <div className="container">

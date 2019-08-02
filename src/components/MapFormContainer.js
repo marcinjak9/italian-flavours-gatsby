@@ -90,7 +90,7 @@ class MapFormContainer extends Component {
       regions, title, options, subregion,
     } = this.props
     return (
-      <div id="contact" className="container-fluid cari-amici-section home-contact-section grey-bg">
+      <div id="contact" className="container-fluid cari-amici-section home-contact-section">
         <div className="row">
           <div className="col">
             <div className="container">
