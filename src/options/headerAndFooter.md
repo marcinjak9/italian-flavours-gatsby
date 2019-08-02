@@ -19,7 +19,7 @@ menuItems:
     onlyMobile: false
     regionDropdown: true
     title: Tours by region
-  - href: 'i-am-angelina#contact'
+  - href: '/#contact'
     onlyMobile: false
     regionDropdown: false
     title: Tailor-made Tours
@@ -38,7 +38,7 @@ menuItems:
 menuCtaText: CONTACT ME NOW
 menuCtaLink: '#contact'
 footerMenu:
-  - title: Tailored Tours
+  - title: Tailor-made Tours
     url: /
   - title: Personalised events
     url: personalized-events
