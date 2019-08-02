@@ -15,10 +15,6 @@ generalSeoSection:
     Italian Flavours | Scopri con noi i sapori nascosti della tradizione
     italiana
 menuItems:
-  - href: /
-    onlyMobile: false
-    regionDropdown: false
-    title: Home
   - href: tours
     onlyMobile: false
     regionDropdown: true
