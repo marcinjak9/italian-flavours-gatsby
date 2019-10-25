@@ -21,7 +21,7 @@ hero:
     From exclusive culinary tours, to tailor-made travel experiences for groups,
     couples or solo travellers, I create inspiring itineraries fashioned purely
     for You.
-  title: Your tasty holiday in Italy
+  title: Your tasty holiday in Italys
 tourSectionTitle: Savour your next holiday
 blogNewsTitle: 'More than clients, but Cari Amici'
 blogPosts:
