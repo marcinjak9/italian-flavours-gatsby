@@ -9,7 +9,7 @@ seoSection:
     chaffeur - boutique hotels and high-level agriturismi
 
   seoKeywords: 'tour, gourmet'
-  seoTitle: Grand Culinary Tour in Emilia-Romagna
+  seoTitle: Tour Puglia&Basilicata
 title: Grand Culinary Tour in Emilia-Romagna
 highlights: >+
   Highlights wine tastings - relaxing environment - horse riding - private
