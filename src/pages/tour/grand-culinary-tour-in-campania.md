@@ -9,7 +9,7 @@ seoSection:
     chaffeur - boutique hotels and high-level agriturismi
 
   seoKeywords: 'tour, campania'
-  seoTitle: Grand Culinary Tour in Campania
+  seoTitle: Tour Tuscany
 title: Grand Culinary Tour in Campania
 highlights: >+
   Highlights wine tastings - relaxing environment - horse riding - private
