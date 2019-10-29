@@ -67,6 +67,8 @@ Are you ready to see Italy exactly how you want to see it, on an itinerary fashi
 
 Treat yourself for a special occasion, as a birthday, an anniversary or a retirement gift: celebrate your milestone with your family or with your friends with a luxury, tailor-made gourmet tour of Italy.
 
+![null](/img/home_03.jpg)
+
 **Solo Traveller**
 
 Setting the standard for luxury small-group travel worldwide, Abercrombie & Kent's Luxury Small Group Journeys deliver the best in comfort and service in the world's greatest destinations.
