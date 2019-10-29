@@ -1,7 +1,7 @@
 ---
 templateKey: personalized-events-page
 seoSection:
-  ogImage: /img/chemex.jpg
+  ogImage: /img/events_01.jpg
   ogTitle: 'We do it all together, in any place you want'
   ogUrl: /
   seoDescription: >-
@@ -11,9 +11,9 @@ seoSection:
   seoTitle: 'We do it all together, in any place you want'
 title: 'We do it all together, in any place you want'
 hero:
-  bgImage: /img/chemex.jpg
+  bgImage: /img/events_01.jpg
   ctaLink: /
-  ctaText: ASK ME MORE
+  ctaText: ASK FOR FULL ITINERARY
   heroBgOverlay: true
   subtitle: >-
     An unforgettable gourmet journey among the most antique and precious
