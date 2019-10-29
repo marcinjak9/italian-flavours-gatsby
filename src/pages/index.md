@@ -11,7 +11,7 @@ hero:
   ctaText: Tell me your dreams
   ctaUrl: '#contact'
   heroBgOverlay: true
-  image: /img/desktop-1920.jpg
+  image: /img/kx6a6320.jpg
   image1024: /img/desktop-1024.jpg
   image1280: /img/desktop-1280.jpg
   image320: /img/mobile-360.jpg
