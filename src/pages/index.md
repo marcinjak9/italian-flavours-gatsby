@@ -41,7 +41,7 @@ Every traveller is different, and so is every journey I create exclusively for m
 
 **With me you will save the most precious thing you have, TIME.**
 
-![null](/img/abut-desktop-1280.jpg)
+![null](/img/home_02.jpg)
 
 When I start working on your tour, on the tailor-made itinerary for you, your family or friends, I work in order to **save you time**. I work closely with you to create a made-to-order travel experience, making sure you get the most out of every moment. This part of my work is very important for me, but for you too: when the time comes to book your next adventure in Italy, I know what your preferences and desires are and I am ready to provide a personal, one-on-one, dedicated service. 
 
