@@ -20,9 +20,9 @@ hero:
     culinary and cultural traditions of Italy
 descriptionTitle: 'Share your passion for Italy with people you love, directly at your place'
 personalizedEventsGallery:
-  - image: /img/simon-rae-732820-unsplash.jpg
-  - image: /img/simon-rae-732820-unsplash.jpg
-  - image: /img/flavor_wheel.jpg
+  - image: /img/events_2c.jpg
+  - image: /img/events_2b.jpg
+  - image: /img/events_2a.jpg
 midDescriptionTitle: I bring Italian food culture at your home
 midDescriptionBody: >-
   These are only some of the high class culinary experiences I can organise
