@@ -49,7 +49,7 @@ footerMenu:
   - title: Contact me
     url: '#contact'
 footerContacts:
-  emailAddress: info@italianflavors.it
+  emailAddress: info@italianflavours.it
   phoneNumber: ''
 creditsText: '❤ Travel. As much as you can. As far as you can. As long as you can.❤ '
 copyrightText: >-
