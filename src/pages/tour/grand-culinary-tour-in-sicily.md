@@ -2,15 +2,15 @@
 templateKey: tour-page
 seoSection:
   ogImage: /img/4.jpg
-  ogTitle: Grand Culinary Tour in Sicily
+  ogTitle: Enchanting Sicily
   ogUrl: /
   seoDescription: >+
     Highlights wine tastings - relaxing environment - horse riding - private
     chaffeur - boutique hotels and high-level agriturismi
 
-  seoKeywords: Grand Culinary Tour in Sicily
-  seoTitle: Grand Culinary Tour in Sicily
-title: Grand Culinary Tour in Sicily
+  seoKeywords: Enchanting Sicily
+  seoTitle: Enchanting Sicily
+title: Enchanting Sicily
 highlights: >+
   Highlights wine tastings - relaxing environment - horse riding - private
   chaffeur - boutique hotels and high-level agriturismi
@@ -62,50 +62,28 @@ descriptionCards:
       vero molestias facilis fuga est recusandae totam. Neque, quae voluptatibus
       reprehenderit tempora quia temporibus. Eum tenetur dolor temporibus
       voluptate veniam.
+    icon: /img/qa.png
     subtitle: Lorem ipsum dolor set
     title: Lorem Ipsum
-    icon: /img/qa.png
   - body: >-
       Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sunt asperiores,
       vero molestias facilis fuga est recusandae totam. Neque, quae voluptatibus
       reprehenderit tempora quia temporibus. Eum tenetur dolor temporibus
       voluptate veniam.
+    icon: /img/qa.png
     subtitle: Lorem ipsum dolor set
     title: Lorem Ipsum
-    icon: /img/qa.png
   - body: >-
       Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sunt asperiores,
       vero molestias facilis fuga est recusandae totam. Neque, quae voluptatibus
       reprehenderit tempora quia temporibus. Eum tenetur dolor temporibus
       voluptate veniam.
+    icon: /img/qa.png
     subtitle: Lorem ipsum dolor set
     title: Lorem Ipsum
-    icon: /img/qa.png
-  - body: >-
-      Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sunt asperiores,
-      vero molestias facilis fuga est recusandae totam. Neque, quae voluptatibus
-      reprehenderit tempora quia temporibus. Eum tenetur dolor temporibus
-      voluptate veniam.
-    subtitle: Lorem ipsum dolor set
-    title: Lorem Ipsum
-    icon: /img/qa.png
-  - body: >-
-      Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sunt asperiores,
-      vero molestias facilis fuga est recusandae totam. Neque, quae voluptatibus
-      reprehenderit tempora quia temporibus. Eum tenetur dolor temporibus
-      voluptate veniam.
-    subtitle: Lorem ipsum dolor set
-    title: Lorem Ipsum
-    icon: /img/qa.png
-  - body: >-
-      Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sunt asperiores,
-      vero molestias facilis fuga est recusandae totam. Neque, quae voluptatibus
-      reprehenderit tempora quia temporibus. Eum tenetur dolor temporibus
-      voluptate veniam.
-    subtitle: Lorem ipsum dolor set
-    title: Lorem Ipsum
-    icon: /img/qa.png
 blogSectionTitle: Cari Amici on this tour with me
+blogPosts:
+  - {}
 calendarTitle: Available dates for your amazing tour
 calendarBody: >
   Pick your more suitable period among the two blocks of 10 days on which I
