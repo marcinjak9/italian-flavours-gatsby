@@ -21,24 +21,68 @@ hero:
   ctaLink: /
   ctaText: ask me more
   image: /img/chemex.jpg
-  subtitle: >-
-    An unforgettable gourmet journey among the most antique and precious
-    culinary and cultural traditions of Italy
+  subtitle: The "Island magic" in a unique culinary adventure
 tourDescription:
-  body: >-
-    I graduated in Italian Literature and I attained a Master degree in Gourmet
-    and Quality Food at the renowned University of Florence, where I had the
-    chance to deepen my knowledge about the history of Italian gourmet culture
-    products. 
+  body: >
+    Sicily is the largest of the Italian islands, separated from the Continent
+    by the Strait of Messina and surrounded by the Ionian, the Tyrrhenian and
+    the Mediterranean Seas. It is one of the pearls of Southern Italy and can be
+    discovered, understood and experienced through a series of itineraries
+    dedicated to areas of interest ranging from nature to history and
+    traditions. Nature seems to have endowed all its wonders to this land:
+    mountains, hills and above all the sea, with its incredible colors, its
+    crystal-clear water and the beauty of its seabeds, in no way inferior to
+    those of other seas. 
 
 
-    I collaborated with the Tourist Board of Oristano, where I live and I worked
-    as a senior quality consultant for 10 years. After many years working in the
-    field, I decided to put these experiences to use and I founded my first own
-    company, Sardinia Flavour, which aim was to make people all over the world
-    know and taste the most precious and traditional delicacies from Italy.
+    Here, the Mediterranean Sea, with its many little islands scattered around
+    the coasts of Sicily - The Aeolians, Egadi and Pelagie Islands, Pantelleria
+    and Ustica - offers unique and the intense sceneries, scents and flavors of
+    uncontaminated nature. And last but not least, its great volcanoes are
+    symbols of the irresistible beauty and vitality of this incredibly charming
+    region.
+
+
+    Together we will enjoy all the beauty this region has to offer, as the
+    archeological area of Agrigento, one of the most important towns of Magna
+    Graecia. The famous Valley of the Temples - surrounded by green olive
+    groves, almond trees, citrus orchards and vineyards that stretch out to the
+    sea with all its imposing and elegant monuments - fantastically evokes an
+    atmosphere of 2500 years ago, when the ancient Akagras Agrigentum was a
+    center of power and learning, and of coruse the stunning UNESCO World
+    Heritage Sites of Syracuse area, the must-sees Late Baroque cities of the
+    Noto Valley, 
+
+
+    And what about Taormina? This small village is only a landscape, yet a
+    landscape where you can find everything to seduce your eyes, your spirit,
+    your imagination." This is how the famous French writer Guy de Maupassant
+    described Taormina, hitting on the essence of this little jewel midway
+    between Messina and Catania. 
+
+    But Sicily is muc, much more, the exuberance and warmth of the island of
+    Sicily is evident in its food as well, which tells of Sicilians' passion and
+    care for good food and genuine flavors and no one should not pass up the
+    famous Sicilian pastries, mainly prepared with ricotta cheese and almond
+    paste. 
+
+    Many Sicilian products are protected by DOP and IGT quality marks, making
+    Sicily one of the  core diets of Mediterranean; it is famous the world over
+    for the genuineness of its ingredients. 
+
+
+    Extra-virgin olive oil, juicy red oranges and the sweet grapes of Canicattì,
+    Pachino tomatoes and Pantelleria capers, prickly pears and the olives of
+    Nocellara del Belice are some of the excellent products that distinguish
+    Sicilian food.
+     Yet, we cannot forget the most famous cheeses, like Ragusano and pecorino, or tasty sausages, like Sant’Angelo salami, or the different types of crispy bread, like the loaves of Dittaino, of course everything accompanied by a glass of one of the island's exquisite, strong and full-bodied wines, ideal when partnered with its unbeatable cuisine. 
+
+    Ready for an unforgettable tour in this enchanting region? It will be a joy
+    for me sharing all of this and even more with you.
   image: /img/chemex.jpg
-  title: Come with me. We dive into flavours and beauty.
+  title: >-
+    Come with me in an unforgettable journey into the flavours, history and
+    beauty of this enchanting Island
 tourShortDescription: >+
   A memorable gourmet journey among the most antique and precious culinary and
   cultural traditions of Italy. Aura spreads light smoothly around a cozy space.
@@ -65,22 +109,18 @@ descriptionCards:
     icon: /img/qa.png
     subtitle: Lorem ipsum dolor set
     title: Lorem Ipsum
+  - body: "Highlights\n\n•\tVisiting the gorgeous Baroque city of Ragusa \n\n•\tDelicious meals showcasing local produce, especially the fantastic seafood \n\n•\tTasting the delicious original “cannolo Siciliano” and a visit to one of the most famous dessert laboratories in Sicily\n \n•\tThe fantastic “Castello di Donnafugata”, an amazing Castle built in the XV Century\n\n•\tBeer tasting\n\n•\tA trip to Modica, the “chocolate paradise” \n\n•\tTypical street food (arancini)\n\n•\tVisit to the gorgeous “Valley of Temples” (Valle dei Templi), which is part of UNESCO heritage\n \n•\tA day with local shepherds\n\n•\tGourmet specialities such as bruschetta alla Siciliana & Nero d’Avola wine\n\n•\tA visit to elegant Taormina \n\n•\tClimbing the biggest active volcano of the Eurasiatic Teutonic Plate\n\n•\tStrolls along the seaside and around the beautiful cities, and plenty of aperitivos!\n\n"
+    icon: /img/qa.png
+    subtitle: ''
+    title: Highlights
   - body: >-
       Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sunt asperiores,
       vero molestias facilis fuga est recusandae totam. Neque, quae voluptatibus
       reprehenderit tempora quia temporibus. Eum tenetur dolor temporibus
       voluptate veniam.
     icon: /img/qa.png
-    subtitle: Lorem ipsum dolor set
-    title: Lorem Ipsum
-  - body: >-
-      Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sunt asperiores,
-      vero molestias facilis fuga est recusandae totam. Neque, quae voluptatibus
-      reprehenderit tempora quia temporibus. Eum tenetur dolor temporibus
-      voluptate veniam.
-    icon: /img/qa.png
-    subtitle: Lorem ipsum dolor set
-    title: Lorem Ipsum
+    subtitle: ''
+    title: 'Suitable for:'
 blogSectionTitle: Cari Amici on this tour with me
 blogPosts:
   - {}
