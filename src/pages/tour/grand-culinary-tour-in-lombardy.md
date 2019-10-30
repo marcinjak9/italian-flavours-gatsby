@@ -63,16 +63,20 @@ descriptionCards:
   - body: >
       • Personal, English-speaking, Food & Wine Expert Guide 
 
+
       • Transportation (from the collection point to the final tour destination)
 
+
       • Meals: gourmet breakfast, lunches and dinner, beverages included (with
-      the best selection of local wines, including 1-2 glasses of wine per
-      person per meal)
+      the best selection of local wines)
+
 
       • Accommodations for 11 nights
 
+
       • Number of people suggested: solo travellers, couples or small groups up
-      to 10 people.
+      to 10 people
+
 
       • Tour available from 1st April to 15th July and from 1st September to
       15th November
