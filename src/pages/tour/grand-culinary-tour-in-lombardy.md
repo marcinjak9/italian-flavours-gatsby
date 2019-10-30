@@ -2,15 +2,15 @@
 templateKey: tour-page
 seoSection:
   ogImage: /img/products-full-width.jpg
-  ogTitle: Grand Culinary Tour in Lombardy
+  ogTitle: Enchanting Calabria
   ogUrl: 'http://localhost:9000/'
-  seoDescription: Grand Culinary Tour in Lombardy
-  seoKeywords: Grand Culinary Tour in Lombardy
-  seoTitle: Grand Culinary Tour in Lombardy
-title: Grand Culinary Tour in Lombardy
-highlights: Grand Culinary Tour in Lombardy
-region: Lombardy
-featured: false
+  seoDescription: Grand Culinary Tour in Calabria
+  seoKeywords: Grand Culinary Tour in Calabria
+  seoTitle: Enchanting Calabria
+title: Enchanting Calabria
+highlights: Enchanting Calabria
+region: Calabria
+featured: true
 hero:
   ctaLink: /
   ctaText: ask me more
@@ -51,30 +51,6 @@ galleryUpper:
   - image: /img/chemex.jpg
   - image: /img/4.jpg
 descriptionCards:
-  - body: >-
-      Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sunt asperiores,
-      vero molestias facilis fuga est recusandae totam. Neque, quae voluptatibus
-      reprehenderit tempora quia temporibus. Eum tenetur dolor temporibus
-      voluptate veniam.
-    icon: /img/qa.png
-    subtitle: Lorem ipsum dolor set
-    title: Lorem Ipsum
-  - body: >-
-      Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sunt asperiores,
-      vero molestias facilis fuga est recusandae totam. Neque, quae voluptatibus
-      reprehenderit tempora quia temporibus. Eum tenetur dolor temporibus
-      voluptate veniam.
-    icon: /img/qa.png
-    subtitle: Lorem ipsum dolor set
-    title: Lorem Ipsum
-  - body: >-
-      Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sunt asperiores,
-      vero molestias facilis fuga est recusandae totam. Neque, quae voluptatibus
-      reprehenderit tempora quia temporibus. Eum tenetur dolor temporibus
-      voluptate veniam.
-    icon: /img/qa.png
-    subtitle: Lorem ipsum dolor set
-    title: Lorem Ipsum
   - body: >-
       Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sunt asperiores,
       vero molestias facilis fuga est recusandae totam. Neque, quae voluptatibus
