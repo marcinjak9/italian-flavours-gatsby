@@ -9,7 +9,7 @@ seoSection:
     chaffeur - boutique hotels and high-level agriturismi
   seoKeywords: culinary
   seoTitle: Grand Culinary Tour in Tuscany
-title: Grand Culinary Tour in Tuscany
+title: Lovely Umbria
 highlights: >-
   Highlights wine tastings - relaxing environment - horse riding - private
   chaffeur - boutique hotels and high-level agriturismi
