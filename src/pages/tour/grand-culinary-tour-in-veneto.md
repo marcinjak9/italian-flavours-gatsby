@@ -1,10 +1,13 @@
 ---
 templateKey: tour-page
-title: Grand Culinary Tour in Veneto
+seoSection:
+  ogUrl: 'https://it.marcinjakubik.io'
+title: 'Veneto, Friuli and the romance of Como Lake'
 highlights: >
   wine tastings - relaxing environment - horse riding - private chaffeur -
   boutique hotels and high-level agriturismi
 region: Veneto
+featured: true
 hero:
   ctaLink: /
   ctaText: ask me more
@@ -42,56 +45,34 @@ galleryUpper:
   - image: /img/4.jpg
   - image: /img/chemex.jpg
   - image: /img/jumbotron.jpg
-blogSectionTitle: Cari Amici on this tour with me
 descriptionCards:
   - body: >-
       Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sunt asperiores,
       vero molestias facilis fuga est recusandae totam. Neque, quae voluptatibus
       reprehenderit tempora quia temporibus. Eum tenetur dolor temporibus
       voluptate veniam.
+    icon: /img/qa.png
     subtitle: Lorem ipsum dolor set
     title: Lorem Ipsum
-    icon: /img/qa.png
   - body: >-
       Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sunt asperiores,
       vero molestias facilis fuga est recusandae totam. Neque, quae voluptatibus
       reprehenderit tempora quia temporibus. Eum tenetur dolor temporibus
       voluptate veniam.
+    icon: /img/qa.png
     subtitle: Lorem ipsum dolor set
     title: Lorem Ipsum
-    icon: /img/qa.png
   - body: >-
       Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sunt asperiores,
       vero molestias facilis fuga est recusandae totam. Neque, quae voluptatibus
       reprehenderit tempora quia temporibus. Eum tenetur dolor temporibus
       voluptate veniam.
+    icon: /img/qa.png
     subtitle: Lorem ipsum dolor set
     title: Lorem Ipsum
-    icon: /img/qa.png
-  - body: >-
-      Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sunt asperiores,
-      vero molestias facilis fuga est recusandae totam. Neque, quae voluptatibus
-      reprehenderit tempora quia temporibus. Eum tenetur dolor temporibus
-      voluptate veniam.
-    subtitle: Lorem ipsum dolor set
-    title: Lorem Ipsum
-    icon: /img/qa.png
-  - body: >-
-      Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sunt asperiores,
-      vero molestias facilis fuga est recusandae totam. Neque, quae voluptatibus
-      reprehenderit tempora quia temporibus. Eum tenetur dolor temporibus
-      voluptate veniam.
-    subtitle: Lorem ipsum dolor set
-    title: Lorem Ipsum
-    icon: /img/qa.png
-  - body: >-
-      Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sunt asperiores,
-      vero molestias facilis fuga est recusandae totam. Neque, quae voluptatibus
-      reprehenderit tempora quia temporibus. Eum tenetur dolor temporibus
-      voluptate veniam.
-    subtitle: Lorem ipsum dolor set
-    title: Lorem Ipsum
-    icon: /img/qa.png
+blogSectionTitle: 'Veneto, Friuli and the Romance of Como Lake'
+blogPosts:
+  - {}
 calendarTitle: Ultime date disponibili!
 calendarBody: organizza la tua prossima vacanza
 calendarNotes: fkjfirgbesuos
