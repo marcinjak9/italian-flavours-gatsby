@@ -16,7 +16,7 @@ highlights: >+
   chaffeur - boutique hotels and high-level agriturismi
 
 region: Liguria
-featured: false
+featured: true
 hero:
   ctaLink: /
   ctaText: ask me more
@@ -58,50 +58,52 @@ descriptionCards:
       vero molestias facilis fuga est recusandae totam. Neque, quae voluptatibus
       reprehenderit tempora quia temporibus. Eum tenetur dolor temporibus
       voluptate veniam.
+    icon: /img/qa.png
     subtitle: Lorem ipsum dolor set
     title: Lorem Ipsum
-    icon: /img/qa.png
   - body: >-
       Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sunt asperiores,
       vero molestias facilis fuga est recusandae totam. Neque, quae voluptatibus
       reprehenderit tempora quia temporibus. Eum tenetur dolor temporibus
       voluptate veniam.
+    icon: /img/qa.png
     subtitle: Lorem ipsum dolor set
     title: Lorem Ipsum
-    icon: /img/qa.png
   - body: >-
       Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sunt asperiores,
       vero molestias facilis fuga est recusandae totam. Neque, quae voluptatibus
       reprehenderit tempora quia temporibus. Eum tenetur dolor temporibus
       voluptate veniam.
+    icon: /img/qa.png
     subtitle: Lorem ipsum dolor set
     title: Lorem Ipsum
-    icon: /img/qa.png
   - body: >-
       Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sunt asperiores,
       vero molestias facilis fuga est recusandae totam. Neque, quae voluptatibus
       reprehenderit tempora quia temporibus. Eum tenetur dolor temporibus
       voluptate veniam.
+    icon: /img/qa.png
     subtitle: Lorem ipsum dolor set
     title: Lorem Ipsum
-    icon: /img/qa.png
   - body: >-
       Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sunt asperiores,
       vero molestias facilis fuga est recusandae totam. Neque, quae voluptatibus
       reprehenderit tempora quia temporibus. Eum tenetur dolor temporibus
       voluptate veniam.
+    icon: /img/qa.png
     subtitle: Lorem ipsum dolor set
     title: Lorem Ipsum
-    icon: /img/qa.png
   - body: >-
       Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sunt asperiores,
       vero molestias facilis fuga est recusandae totam. Neque, quae voluptatibus
       reprehenderit tempora quia temporibus. Eum tenetur dolor temporibus
       voluptate veniam.
+    icon: /img/qa.png
     subtitle: Lorem ipsum dolor set
     title: Lorem Ipsum
-    icon: /img/qa.png
 blogSectionTitle: Cari Amici on this tour with me
+blogPosts:
+  - {}
 calendarTitle: Prenota subito
 calendarBody: sjhasdhjas
 calendarNotes: enjoy
