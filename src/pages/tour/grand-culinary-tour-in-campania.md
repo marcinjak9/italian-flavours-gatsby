@@ -2,21 +2,21 @@
 templateKey: tour-page
 seoSection:
   ogImage: /img/candre-mandawe-770521-unsplash.jpg
-  ogTitle: Grand Culinary Tour in Campania
+  ogTitle: Wonderful Piedmont
   ogUrl: 'https://it.marcinjakubik.io'
   seoDescription: >+
     Highlights wine tastings - relaxing environment - horse riding - private
     chaffeur - boutique hotels and high-level agriturismi
 
-  seoKeywords: 'tour, campania'
-  seoTitle: Tour Tuscany
-title: Grand Culinary Tour in Campania
+  seoKeywords: 'tour, piemonte, piedmont'
+  seoTitle: Tour Piedmont
+title: Wonderful Piedmont
 highlights: >+
   Highlights wine tastings - relaxing environment - horse riding - private
   chaffeur - boutique hotels and high-level agriturismi
 
-region: Campania
-subRegion: Abruzzo
+region: Piedmont
+subRegion: Piedmont
 featured: false
 hero:
   ctaLink: /
