@@ -24,20 +24,41 @@ hero:
   image: /img/4.jpg
   subtitle: 7 days of Bucolic Bliss
 tourDescription:
-  body: >-
-    I graduated in Italian Literature and I attained a Master degree in Gourmet
-    and Quality Food at the renowned University of Florence, where I had the
-    chance to deepen my knowledge about the history of Italian gourmet culture
-    products. 
+  body: >
+    'San Gimignano delle belle Torri' is 56 km south of Florence (Tuscany) and
+    it is indisputably one of the most iconic and recognisable destinations in
+    Tuscany. It served as an important relay point for pilgrims travelling to or
+    from Rome on the Via Francigena. The patrician families who controlled the
+    town built around 72 tower-houses (some as high as 50 m) as symbols of their
+    wealth and power. Although only 14 have survived, San Gimignano has retained
+    its feudal atmosphere and appearance. The town also has several masterpieces
+    of 14th- and 15th-century Italian art.
 
 
-    I collaborated with the Tourist Board of Oristano, where I live and I worked
-    as a senior quality consultant for 10 years. After many years working in the
-    field, I decided to put these experiences to use and I founded my first own
-    company, Sardinia Flavour, which aim was to make people all over the world
-    know and taste the most precious and traditional delicacies from Italy.
+    The town became independent in 1199 and between the 11th and the 13th
+    century the noble families and upper middle-class merchants who controlled
+    the free town built many fortified tower houses (probably 72) as symbols of
+    their wealth and power. 
+
+    But the fame of this stunning place in the Senese countryside derives from
+    more than just its artistic and architectural gems. Tasting the Vernaccia di
+    San Gimignano is an absolute must. This exquisite white wine is produced
+    only in these hills. It is said that vineyards were introduced to this area
+    for the first time around the year 1200. The Vernaccia was the first Tuscan
+    white wine to earn the DOC, Guarantee of Origin (in 1993), and it has been
+    the object of a constant evolution, both in the vineyard and in the cellar. 
+
+
+    This stunning area of Tuscany is also famous for its mouth-watering
+    truffles, excellent extra-virgin Olive Oil and for the delicious red wines,
+    such as the famous Brunello di Montalcino. During our gourmet tour together
+    we will discover all the wonders of this enchanting area and everything
+    about the production methods of these unique products. Of course we will
+    taste them in fantastic tasting of a thousand and one night! 
   image: /img/flavor_wheel.jpg
-  title: Come with me. We dive into flavours and beauty.
+  title: >-
+    Come with me. We dive into flavours and beauty of the gorgeous San Gimignano
+    area
 tourShortDescription: >+
   A memorable gourmet journey among the most antique and precious culinary and
   cultural traditions of Italy. Aura spreads light smoothly around a cozy space.
