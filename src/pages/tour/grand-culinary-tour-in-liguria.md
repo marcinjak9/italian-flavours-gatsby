@@ -73,11 +73,11 @@ galleryUpper:
   - image: /img/jumbotron.jpg
   - image: /img/4.jpg
 descriptionCards:
-  - body: "•\tPersonal, English-speaking, Food & Wine Expert Guide \n•\tTransportation (from the collection point to the final tour destination)\n•\tMeals: gourmet breakfast, lunches and dinner, beverages included (with the best selection of local wines, including 1-2 glasses of wine per person per meal)\n•\tAccommodations for 6 nights\n•\tNumber of people suggested: solo travellers, couples or small groups up to 10 people\n•\tTour available from 1st April to 15th July and from 1st September to 15th November"
+  - body: "•\tPersonal, English-speaking, Food & Wine Expert Guide \n\n•\tTransportation (from the collection point to the final tour destination)\n\n•\tMeals: gourmet breakfast, lunches and dinner, beverages included (with the best selection of local wines)\n\n•\tAccommodations for 6 nights\n\n•\tNumber of people suggested: solo travellers, couples or small groups up to 10 people\n\n•\tTour available from 1st April to 15th July and from 1st September to 15th November"
     icon: /img/qa.png
     subtitle: ''
     title: 'At your service:'
-  - body: "•\tA day at a Tuscan farm, and lunch and tastings \n•\tCooking classes \n•\tA visit to Volterra, the capital of Alabaster \n•\tArtisanal beer tasting \n•\tTruffle hunting and a truffle masterclass\n•\tVisit to spectacular Siena, and a tour of all its highlights\n•\tTastes of fantastic local salamis, cheeses and local sweets\n•\tA visit to Asciano, one the most famous landscapes of Italy\n•\tA taste of the unmissable Fiorentina steak \n•\tSunset apritivos \n•\tA stay in a glorious rural agriturismo \n"
+  - body: "•\tA day at a Tuscan farm, and lunch and tastings \n\n•\tCooking classes \n\n•       Visit to Montalcino \n\n•       Visit to the best Tuscan wineries, unforgettable tastings of Brunello di Montalcino and of the best \"Super Tuscan Wines\"\n\n•\tA visit to Volterra, the capital of Alabaster \n\n•\tArtisanal beer tasting \n\n•\tTruffle hunting and a truffle masterclass\n\n•\tVisit to spectacular Siena, and a tour of all its highlights\n\n•\tTastes of fantastic local salamis, cheeses and local sweets\n\n•\tA visit to Asciano, one the most famous landscapes of Italy\n\n•\tA taste of the unmissable Fiorentina steak \n\n•\tSunset apritivos \n\n•\tA stay in a glorious rural agriturismo \n"
     icon: /img/qa.png
     subtitle: ''
     title: Highlights
