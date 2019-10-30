@@ -60,30 +60,26 @@ descriptionCards:
     icon: /img/qa.png
     subtitle: ''
     title: Highlights
-  - body: >-
-      Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sunt asperiores,
-      vero molestias facilis fuga est recusandae totam. Neque, quae voluptatibus
-      reprehenderit tempora quia temporibus. Eum tenetur dolor temporibus
-      voluptate veniam.
+  - body: >
+      Small groups, couples and solo travellers
+
+
+      Special offers: ask for ‘early-bird’ offers and advanced booking offers,
+      we would love to have you on one of our gourmet adventures in Italy, it
+      will be a life-changing experience!
     icon: /img/qa.png
-    subtitle: Lorem ipsum dolor set
-    title: Lorem Ipsum
-blogSectionTitle: Cari Amici on this tour with me
-blogPosts:
-  - {}
+    subtitle: ''
+    title: 'Suitable for:'
+blogSectionTitle: <3
+blogPosts: []
 calendarTitle: Prenota subito
 calendarBody: sjhasdhjas
 calendarNotes: enjoy
-aviabilityDates:
-  - endDate: '2018-08-27'
-    startDate: '2018-08-24'
+aviabilityDates: []
 instagramUsername: ruber
 instagramPhotos:
   - id: hdhewyu
   - id: fsfbhjer
   - id: fehbfrue
-  - id: vefgte
-  - id: gregt
-  - id: grewyye
 ---
 
