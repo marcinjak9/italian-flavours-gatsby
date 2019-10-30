@@ -8,7 +8,7 @@ seoSection:
     Highlights wine tastings - relaxing environment - horse riding - private
     chaffeur - boutique hotels and high-level agriturismi
 
-  seoKeywords: 'tour, liguria'
+  seoKeywords: 'culinary tour, San Gimignano, Tuscany'
   seoTitle: Treasures Of Tuscany
 title: Treasures Of Tuscany
 highlights: >+
@@ -16,14 +16,13 @@ highlights: >+
   chaffeur - boutique hotels and high-level agriturismi
 
 region: Tuscany
+subRegion: Tuscany
 featured: true
 hero:
   ctaLink: /
-  ctaText: ask me more
+  ctaText: Ask for full itinerary
   image: /img/4.jpg
-  subtitle: >-
-    An unforgettable gourmet journey among the most antique and precious
-    culinary and cultural traditions of Italy
+  subtitle: 7 days of Bucolic Bliss
 tourDescription:
   body: >-
     I graduated in Italian Literature and I attained a Master degree in Gourmet
@@ -46,37 +45,13 @@ tourShortDescription: >+
   environment. Smoothly around a cozy space.
 
 gallery:
-  textBody: Esplora le terre liguri e scopri le meraviglie che hanno da offrire!
-  textTitle: Le meraviglie della Liguria
+  textBody: ''
+  textTitle: ''
 galleryUpper:
   - image: /img/products-grid3.jpg
   - image: /img/jumbotron.jpg
   - image: /img/4.jpg
 descriptionCards:
-  - body: >-
-      Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sunt asperiores,
-      vero molestias facilis fuga est recusandae totam. Neque, quae voluptatibus
-      reprehenderit tempora quia temporibus. Eum tenetur dolor temporibus
-      voluptate veniam.
-    icon: /img/qa.png
-    subtitle: Lorem ipsum dolor set
-    title: Lorem Ipsum
-  - body: >-
-      Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sunt asperiores,
-      vero molestias facilis fuga est recusandae totam. Neque, quae voluptatibus
-      reprehenderit tempora quia temporibus. Eum tenetur dolor temporibus
-      voluptate veniam.
-    icon: /img/qa.png
-    subtitle: Lorem ipsum dolor set
-    title: Lorem Ipsum
-  - body: >-
-      Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sunt asperiores,
-      vero molestias facilis fuga est recusandae totam. Neque, quae voluptatibus
-      reprehenderit tempora quia temporibus. Eum tenetur dolor temporibus
-      voluptate veniam.
-    icon: /img/qa.png
-    subtitle: Lorem ipsum dolor set
-    title: Lorem Ipsum
   - body: >-
       Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sunt asperiores,
       vero molestias facilis fuga est recusandae totam. Neque, quae voluptatibus
