@@ -10,7 +10,7 @@ generalSeoSection:
     Vivi con noi il buono dell'Italia. Assaggerai prelibatezze, brinderemo alla
     vita con deliziosi vini portandoti alla scoperta della vera tradizione
     italiana
-  seoKeywords: 'italian flavours, cucina, gourmet, tours'
+  seoKeywords: 'italian flavours, culinary, gourmet, tours'
   seoTitle: >-
     Italian Flavours | Scopri con noi i sapori nascosti della tradizione
     italiana
@@ -42,8 +42,6 @@ footerMenu:
     url: /
   - title: Personalised events
     url: personalized-events
-  - title: Experiences Blog
-    url: 'https://blog.it.marcinjakubik.io'
   - title: I am Angelina
     url: i-am-angelina
   - title: Contact me
@@ -57,6 +55,6 @@ copyrightText: >-
   01091230951 – R.E.A: 129805
 socialInfo:
   facebookUrl: 'https://www.facebook.com/italianflavours'
-  instagramUsername: italian_flavour
+  instagramUsername: italian_flavours
 ---
 
