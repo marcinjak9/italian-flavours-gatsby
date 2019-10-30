@@ -2,7 +2,7 @@
 templateKey: tour-page
 seoSection:
   ogImage: /img/jumbotron.jpg
-  ogTitle: Grand Culinary Tour in Sardinia
+  ogTitle: Sardinia Gourmet Tour
   ogUrl: /
   seoDescription: >+
     Highlights wine tastings - relaxing environment - horse riding - private
@@ -11,8 +11,8 @@ seoSection:
   seoKeywords: >-
     Highlights wine tastings - relaxing environment - horse riding - private
     chaffeur - boutique hotels and high-level agriturismi
-  seoTitle: Grand Culinary Tour in Sardinia
-title: Grand Culinary Tour in Sardinia
+  seoTitle: Sardinia Gourmet Tour
+title: Sardinia Gourmet Tour
 highlights: >+
   Highlights wine tastings - relaxing environment - horse riding - private
   chaffeur - boutique hotels and high-level agriturismi
