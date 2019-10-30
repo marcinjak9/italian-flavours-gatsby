@@ -82,7 +82,7 @@ descriptionCards:
     icon: /img/qa.png
     subtitle: ''
     title: 'At your service:'
-  - body: "•\ttastings of the famous Agnolotti and Barolo wines \n•\tVenaria Reale, a beautiful city known for its several Savoy residences.\n•\tVisit to Le Langhe, home of some of Italy’s most famous wines \n•\tAccomodation in a fairytale mansion \n•\tA visit to Alba, home of the white truffle \n•\tCooking classes using the local truffles \n•\tA truffle hunting expedition \n•\tA visit to Bra, home to one of Italy’s most famous cheeses\n•\tVisits to the Slow-Food wine bank and Barolo, home of the infamous wine\n•\tTastes of Asti Spumante, the famous sparkling Italian wine\n•\tA visit to the amazing villages on the bank of Lago Maggiore  \n•\tAccommodation in a 5-star hotel right on the banks of the lake \n•\tA visit to the magic Orto San Giulio\n•\tLunch in a 2 start Michelin restaurant    \n"
+  - body: "•\ttastings of the famous Agnolotti and Barolo wines \n•\tVenaria Reale, a beautiful city known for its several Savoy residences.\n•\tVisit to Le Langhe, home of some of Italy’s most famous wines \n•\tAccomodation in a fairytale mansion \n•\tA visit to Alba, home of the white truffle \n•\tCooking classes using the local truffles \n•\tA truffle hunting expedition \n•\tA visit to Bra, home to one of Italy’s most famous cheeses\n•\tVisits to the Slow-Food wine bank and Barolo, home of the infamous wine\n•\tTastes of Asti Spumante, the famous sparkling Italian wine\n•\tA visit to the amazing villages on the bank of Lago Maggiore  \n•\tAccommodation in a 5-star hotel right on the banks of the lake \n•\tA visit to the magic Orta San Giulio\n•\tLunch in a 2 start Michelin restaurant    \n"
     icon: /img/qa.png
     subtitle: ''
     title: Highlights
