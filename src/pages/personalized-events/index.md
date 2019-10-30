@@ -9,13 +9,17 @@ seoSection:
     culinary and cultural traditions of Italy
   seoKeywords: 'We do it all together, in any place you want'
   seoTitle: 'We do it all together, in any place you want'
-title: 'We do it all together, in any place you want'
+title: '                                                                                                                                                                                         We do it all together, in any place you want'
 hero:
   bgImage: /img/events_01.jpg
   ctaLink: /
   ctaText: ASK FOR FULL ITINERARY
   heroBgOverlay: true
   subtitle: >-
+
+
+
+
     An unforgettable gourmet journey among the most antique and precious
     culinary and cultural traditions of Italy
 descriptionTitle: 'Share your passion for Italy with people you love, directly at your place'
