@@ -23,32 +23,56 @@ hero:
   ctaText: ask me more
   heroBgOverlay: true
   image: /img/flavor_wheel.jpg
-  subtitle: >-
-    An unforgettable gourmet journey among the most antique and precious
-    culinary and cultural traditions of Italy
+  subtitle: 8 days in Italy’s charming land of Barolo and white truffles
 tourDescription:
-  body: >-
-    I graduated in Italian Literature and I attained a Master degree in Gourmet
-    and Quality Food at the renowned University of Florence, where I had the
-    chance to deepen my knowledge about the history of Italian gourmet culture
-    products. 
+  body: >
+    Piedmont - which translates roughly in English as ‘foot of the mountain’ -
+    is known in Italy as the land of mountains. Surrounded by the highest
+    Italian peaks and set within the Alps, Piedmont offers incredibly beautiful
+    landscapes to its visitors. Landscapes that form a backdrop of sweeping,
+    picturesque valleys and characterise this welcoming part of the “Bella
+    Italia”.
 
 
-    I collaborated with the Tourist Board of Oristano, where I live and I worked
-    as a senior quality consultant for 10 years. After many years working in the
-    field, I decided to put these experiences to use and I founded my first own
-    company, Sardinia Flavour, which aim was to make people all over the world
-    know and taste the most precious and traditional delicacies from Italy.
+    But nature is just one of the many attractions of Piedmont, a region rich in
+    typical DOP and IGP products (this is a brand awarded by UE for a high level
+    of quality, for strong connection to their original territory and for
+    traditional and unique production methods). Cheeses like Bra, Gorgonzola and
+    Grana Padano as well as the “Doja” salami  (which is covered with melted
+    lard and derives its name from the container in which it is prepared, a
+    terracotta basket called “doja”) are just some of the delicacies you will
+    taste during this tour.
+
+
+    The landscapes of Langhe and Monferrato are full of cultivated hills and
+    vineyards blessed with small towns and castles. Expanses of water and rice
+    paddies, long rows of poplar trees and old farmhouses are all parts of the
+    typical scenery of the Piedmont area. Thanks to the incredible variety and
+    beauty of the composition of its soil, Piedmont is perfectly suited for the
+    production of wines such as Barolo, Dolcetto, Barbera, Barbaresco, Moscato
+    and Pinot. These are only a few of the delicious wines which have this
+    extraordinary region as their origin, in fact there are more that 100 of
+    them! 
+
+
+    Together we will have some of the most remarkable wine experiences and of
+    course you will also have the chance to taste the “Asti spumante DOCG”, one
+    of the most famous Italian sparkling wines.
+
+    And do not forget truffles! Of course, we cannot leave Piedmont without
+    having participated in an exciting truffle hunt and without having tasted
+    them! It will be a feast of flavours, colours, scents and beautiful views. I
+    can guarantee you will fall in love with Piedmont!
   image: /img/flavor_wheel.jpg
-  title: Come with me. We dive into flavours and beauty.
+  title: Come with me. We'll dive into flavours and beauty
 tourShortDescription: >
   A memorable gourmet journey among the most antique and precious culinary and
   cultural traditions of Italy. Aura spreads light smoothly around a cozy space.
   Its smooth contoured edges create soft shadows that entice a relaxing
   environment. Smoothly around a cozy space.
 gallery:
-  textBody: Scopri le bellezze della Campania
-  textTitle: Grand Tour in Campania!
+  textBody: ''
+  textTitle: ''
 galleryUpper:
   - image: /img/4.jpg
   - image: /img/chemex.jpg
