@@ -13,8 +13,8 @@ title: Grand Culinary Tour in Tuscany
 highlights: >-
   Highlights wine tastings - relaxing environment - horse riding - private
   chaffeur - boutique hotels and high-level agriturismi
-region: Tuscany
-featured: true
+region: Umbria
+featured: false
 hero:
   ctaLink: /
   ctaText: ASK ME MORE
