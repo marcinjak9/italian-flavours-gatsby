@@ -52,22 +52,14 @@ galleryUpper:
   - image: /img/jumbotron.jpg
   - image: /img/4.jpg
 descriptionCards:
-  - body: >-
-      Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sunt asperiores,
-      vero molestias facilis fuga est recusandae totam. Neque, quae voluptatibus
-      reprehenderit tempora quia temporibus. Eum tenetur dolor temporibus
-      voluptate veniam.
+  - body: "•\tPersonal, English-speaking, Food & Wine Expert Guide \n•\tTransportation (from the collection point to the final tour destination)\n•\tMeals: gourmet breakfast, lunches and dinner, beverages included (with the best selection of local wines, including 1-2 glasses of wine per person per meal)\n•\tAccommodations for 6 nights\n•\tNumber of people suggested: solo travellers, couples or small groups up to 10 people\n•\tTour available from 1st April to 15th July and from 1st September to 15th November"
     icon: /img/qa.png
-    subtitle: Lorem ipsum dolor set
-    title: Lorem Ipsum
-  - body: >-
-      Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sunt asperiores,
-      vero molestias facilis fuga est recusandae totam. Neque, quae voluptatibus
-      reprehenderit tempora quia temporibus. Eum tenetur dolor temporibus
-      voluptate veniam.
+    subtitle: ''
+    title: 'At your service:'
+  - body: "•\tA day at a Tuscan farm, and lunch and tastings \n•\tCooking classes \n•\tA visit to Volterra, the capital of Alabaster \n•\tArtisanal beer tasting \n•\tTruffle hunting and a truffle masterclass\n•\tVisit to spectacular Siena, and a tour of all its highlights\n•\tTastes of fantastic local salamis, cheeses and local sweets\n•\tA visit to Asciano, one the most famous landscapes of Italy\n•\tA taste of the unmissable Fiorentina steak \n•\tSunset apritivos \n•\tA stay in a glorious rural agriturismo \n"
     icon: /img/qa.png
-    subtitle: Lorem ipsum dolor set
-    title: Lorem Ipsum
+    subtitle: ''
+    title: Highlights
   - body: >-
       Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sunt asperiores,
       vero molestias facilis fuga est recusandae totam. Neque, quae voluptatibus
