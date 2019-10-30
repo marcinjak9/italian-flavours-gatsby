@@ -23,10 +23,6 @@ menuItems:
     onlyMobile: false
     regionDropdown: false
     title: Tailor-made Tours
-  - href: 'https://blog.it.marcinjakubik.io'
-    onlyMobile: false
-    regionDropdown: false
-    title: Experiences Blog
   - href: personalized-events
     onlyMobile: false
     regionDropdown: false
