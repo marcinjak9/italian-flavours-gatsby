@@ -17,7 +17,7 @@ highlights: >+
 
 region: Piedmont
 subRegion: Piedmont
-featured: false
+featured: true
 hero:
   ctaLink: /
   ctaText: ask me more
