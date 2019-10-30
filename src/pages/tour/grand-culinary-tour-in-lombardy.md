@@ -54,7 +54,7 @@ gallery:
   textBody: |+
 
 
-  textTitle: Keywords and Highlights of Calabria
+  textTitle: Know more about our gourmet adventure together
 galleryUpper:
   - image: /img/candre-mandawe-770521-unsplash.jpg
   - image: /img/chemex.jpg
