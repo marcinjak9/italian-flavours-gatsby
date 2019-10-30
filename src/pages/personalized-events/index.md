@@ -49,9 +49,7 @@ descriptionCards:
     body: ''
     icon: /img/qa.png
 blogSectionTitle: Cari Amici from some personalised events
-blogPosts:
-  - slug: publishing-options
-  - slug: admin-settings
+blogPosts: []
 contactSectionTitle: Let's get in touch! I'd love to hear from you.
 instagramPhotos:
   - id: BnBX5s9lMc8
