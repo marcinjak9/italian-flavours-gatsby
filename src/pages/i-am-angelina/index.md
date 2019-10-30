@@ -22,7 +22,7 @@ hero:
   ctaText: Get Inspired! Talk to me
   heroBgOverlay: true
   subtitle: >+
-    I am a professional gourmet travel curator and founder of Italian Flavours,
+    I am a professional gourmet travel designer and founder of Italian Flavours,
     a boutique tour operator specialised in creating unique, cultural-culinary
     holidays in Italy. Of course I am Italian, 100%.
 
@@ -34,7 +34,7 @@ instagramPhotos:
   - id: BhFGiCxHRtB
   - id: BjR0vtXh03w
 ---
-Are you dreaming of an exclusive, tailor-made** food & wine journey **in the most charming and genuine parts of Italy? An unforgettable holiday made up of authentic and deeply **immersive experiences** that will give you insider-access to local life and the oldest traditions of _Bella Italia_?
+Are you dreaming of an exclusive, tailor-made** food & wine journey **in the most charming and genuine parts of Italy? An unforgettable holiday made up of authentic and **deeply immersive** experiences that will give you insider-access to local life and the oldest traditions of _Bella Italia_?
 
 You are definitely in the right place, and I couldn't be more happy!
 
