@@ -43,29 +43,29 @@ Every traveller is different, and so is every journey I create exclusively for m
 
 ![null](/img/home_02.jpg)
 
-When I start working on your tour, on the tailor-made itinerary for you, your family or friends, I work in order to **save you time**. I work closely with you to create a made-to-order travel experience, making sure you get the most out of every moment. This part of my work is very important for me, but for you too: when the time comes to book your next adventure in Italy, I know what your preferences and desires are and I am ready to provide a personal, one-on-one, dedicated service. 
+When I start working on **your tour**, on the tailor-made itinerary for you, your family or friends, I work in order to **save you time**. I work closely with you to create a made-to-order travel experience, making sure you get the most out of every moment. This part of my work is very important for me, but for you too: when the time comes to **book your next adventure in Italy**, I know what your preferences and desires are and I am ready to provide a personal, one-on-one, dedicated service. 
 
 ## What kind of experience in Italy are you dreaming of?
 
 **Culinary Slow-Tours for small groups          **   
 
-Find yourself in intimate group sizes of no more than 12 guests, relax in the finest hotels in Italy and experience unique insider access to divine sites. My expertise and profound knowledge of Italy will ensure you travel under the wing of a truly professional tour guide, who will bring your dream holiday to life with an unmatched local insight.
+Find yourself in **intimate group sizes** of no more than 12 guests, relax in the finest hotels in Italy and experience unique insider access to divine sites. My expertise and **profound knowledge of Italy** will ensure you travel under the wing of a truly professional tour guide, who will bring your dream holiday to life with an unmatched local insight.
 
 I have longstanding relationships in every destination and during my tours I like sharing  with my guests my precious patrimony of connections. **My on-the-ground presence **allows me to give you access to the most authentic and untouched places in Italy: together we will discover the real soul of _la_ _Bella Italia._
 
 And of course your safety and security are always my first priorities. You only have to sit back, relax and enjoy every minute of your journey!
 
-Thanks to my intimate knowledge of each destination, I personally design every journey, creating itineraries that feature the most iconic destinations in Italy. You enjoy the benefits of one-off experiences in your most desired locations, such as enjoying a sunset in Ostuni or a sunrise in front of the Arena di Verona.
+Thanks to my intimate knowledge of each destination, I personally design every journey, creating** itineraries that feature the most iconic destinations** in Italy. You enjoy the benefits of one-off experiences in your most desired locations, such as enjoying a sunset in **Ostuni **or a sunrise in front of the **Arena di Verona**.
 
-I will be sharing with you the best insights into Italian wine & food culture, art and traditions, unveiling mysteries and revealing secrets that only a true local could know. I will be supervising your entire journey and accompanying you every day, immersing you in the real spirit of a place and connecting you to locals in a way you’ll never forget. Of course I will also leave you the privacy you need, whenever you need it.
+I will be sharing with you the best insights into Italian **wine & food culture**, art and traditions, unveiling mysteries and revealing secrets that only a true local could know. I will be supervising your entire journey and accompanying you every day, immersing you in the real spirit of a place and connecting you to locals in a way you’ll never forget. Of course I will also leave you the privacy you need, whenever you need it.
 
 You can choose to travel with your family or friends or to join one of my already set **small group tours**, they are limited to no more than 12 guests, happy travellers who will bring their joy and their own perspectives to your journey. It will be a great chance to make new, valuable friendships, to know new cultures and receive inspiring stimuli.
 
 **Tailor-made Gourmet Journeys in Italy     **    
 
-Are you ready to see Italy exactly how you want to see it, on an itinerary fashioned specially for you?
+Are you ready to see Italy exactly how you want to see it, on an itinerary **fashioned specially for you**?
 
-Treat yourself for a special occasion, as a birthday, an anniversary or a retirement gift: celebrate your milestone with your family or with your friends with a luxury, tailor-made gourmet tour of Italy.
+Treat yourself for a special occasion, as a birthday, an anniversary or a **retirement gift**: celebrate your milestone with your family or with your friends with a luxury, **tailor-made gourmet tour **of Italy.
 
 ![null](/img/home_03.jpg)
 
