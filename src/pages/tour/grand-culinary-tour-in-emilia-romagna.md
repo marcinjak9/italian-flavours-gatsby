@@ -16,7 +16,7 @@ highlights: >+
   chaffeur - boutique hotels and high-level agriturismi
 
 region: Emilia-Romagna
-featured: true
+featured: false
 hero:
   ctaLink: /
   ctaText: ask me more
