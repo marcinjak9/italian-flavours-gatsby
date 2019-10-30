@@ -2,20 +2,20 @@
 templateKey: tour-page
 seoSection:
   ogImage: /img/candre-mandawe-770521-unsplash.jpg
-  ogTitle: Grand Culinary Tour in Liguria
+  ogTitle: Treasures Of Tuscany
   ogUrl: 'https://it.marcinjakubik.io'
   seoDescription: >+
     Highlights wine tastings - relaxing environment - horse riding - private
     chaffeur - boutique hotels and high-level agriturismi
 
   seoKeywords: 'tour, liguria'
-  seoTitle: Grand Culinary Tour in Liguria
-title: Grand Culinary Tour in Liguria
+  seoTitle: Treasures Of Tuscany
+title: Treasures Of Tuscany
 highlights: >+
   Highlights wine tastings - relaxing environment - horse riding - private
   chaffeur - boutique hotels and high-level agriturismi
 
-region: Liguria
+region: Tuscany
 featured: true
 hero:
   ctaLink: /
