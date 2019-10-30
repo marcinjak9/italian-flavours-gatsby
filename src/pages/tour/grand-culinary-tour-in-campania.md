@@ -20,7 +20,7 @@ subRegion: Piedmont
 featured: true
 hero:
   ctaLink: /
-  ctaText: ask me more
+  ctaText: Ask for full itinerary
   heroBgOverlay: true
   image: /img/flavor_wheel.jpg
   subtitle: 8 days in Italy’s charming land of Barolo and white truffles
