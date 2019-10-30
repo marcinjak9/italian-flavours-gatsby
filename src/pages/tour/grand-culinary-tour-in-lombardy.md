@@ -83,42 +83,51 @@ descriptionCards:
       • Visiting the village of Altomonte, one of the most beautiful villages of
       Italy. 
 
+
       • Accomodation in beautiful castle which dates back to the XVI century,
       surrounded by centuries-old olive trees and a perfumed garden. 
 
+
       • Visiting the unique artisan laboratories
 
+
       • Visits to farms and witnessing olive oil production
+
 
       • Tastings of “Zafarani Cruschi”, the well known local crunchy sweet
       peppers, which are famous all over Italy, and the infamous olive oil.
 
+
       • Visit to the small village of Civita, where we will discover the ancient
-      story of the Arbëreshë,the peculiar local Italian-Albanese community
+      story of the Arbëreshë, the peculiar local Italian-Albanese community
+
 
       • A tour of a beautiful organic farm and tastings of Calabrese DOP cured
       meats
 
-      • Cooking classes 
+
+      • Dedicated cooking classes 
+
 
       • Trekking in the heart of the Pollino National Park an a visit to
       Belvedere de Malvento (part of the UNESCO heritage)
 
+
       • Rafting excursion through the spectacular canyons of Lao river 
+
 
       • Delicious local seafood and wines
 
+
       • A visit to Tropea and a tasting of the super famous, delicious onion
 
-      • Visit to the gorgeous Sanctuary of Santa Maria dell’Isola
-
-      • A tour of Cosenza, where we will have a special tour of the historical
-      downtown
 
       • Tour of the Eolian Islands
 
+
       • Stunning tours of fishing villages including Scilla, and a visit to
       Ruffo Castle
+
 
       • Visit to the Bronzi di Riace, the misterious enourmous statues found
       underwater in front of the feet of Italy 
