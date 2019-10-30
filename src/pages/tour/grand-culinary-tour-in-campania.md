@@ -78,34 +78,26 @@ galleryUpper:
   - image: /img/chemex.jpg
   - image: /img/jumbotron.jpg
 descriptionCards:
-  - body: >-
-      Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sunt asperiores,
-      vero molestias facilis fuga est recusandae totam. Neque, quae voluptatibus
-      reprehenderit tempora quia temporibus. Eum tenetur dolor temporibus
-      voluptate veniam.
+  - body: "•\tPersonal, English-speaking, Food & Wine Expert Guide \n•\tTransportation (from the collection point to the final tour destination)\n•\tMeals: gourmet breakfast, lunches and dinner, beverages included (with the best selection of local wines, including 1-2 glasses of wine per person per meal)\n•\tAccommodations for 7 nights\n•\tNumber of people suggested: solo travellers, couples or small groups up to 10 people.\n•\tTour available from 1st April to 15th July and from 1st September to 15th November.\n"
     icon: /img/qa.png
-    subtitle: Lorem ipsum dolor set
-    title: Lorem Ipsum
-  - body: >-
-      Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sunt asperiores,
-      vero molestias facilis fuga est recusandae totam. Neque, quae voluptatibus
-      reprehenderit tempora quia temporibus. Eum tenetur dolor temporibus
-      voluptate veniam.
+    subtitle: ''
+    title: 'At your service:'
+  - body: "•\ttastings of the famous Agnolotti and Barolo wines \n•\tVenaria Reale, a beautiful city known for its several Savoy residences.\n•\tVisit to Le Langhe, home of some of Italy’s most famous wines \n•\tAccomodation in a fairytale mansion \n•\tA visit to Alba, home of the white truffle \n•\tCooking classes using the local truffles \n•\tA truffle hunting expedition \n•\tA visit to Bra, home to one of Italy’s most famous cheeses\n•\tVisits to the Slow-Food wine bank and Barolo, home of the infamous wine\n•\tTastes of Asti Spumante, the famous sparkling Italian wine\n•\tA visit to the amazing villages on the bank of Lago Maggiore  \n•\tAccommodation in a 5-star hotel right on the banks of the lake \n•\tA visit to the magic Orto San Giulio\n•\tLunch in a 2 start Michelin restaurant    \n"
     icon: /img/qa.png
-    subtitle: Lorem ipsum dolor set
-    title: Lorem Ipsum
-  - body: >-
-      Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sunt asperiores,
-      vero molestias facilis fuga est recusandae totam. Neque, quae voluptatibus
-      reprehenderit tempora quia temporibus. Eum tenetur dolor temporibus
-      voluptate veniam.
+    subtitle: ''
+    title: Highlights
+  - body: >
+      Small groups, couples and solo travellers.
+
+
+      Special offers: ask for ‘early-bird’ offers and advanced booking offers,
+      we would love to have you on one of our gourmet adventures in Italy, it
+      will be a life-changing experience!
     icon: /img/qa.png
-    subtitle: Lorem ipsum dolor set
-    title: Lorem Ipsum
-blogSectionTitle: Cari Amici on this tour with me
-blogPosts:
-  - slug: admin-settings
-  - slug: apps-integrations
+    subtitle: ''
+    title: 'Suitable for:'
+blogSectionTitle: <3
+blogPosts: []
 calendarTitle: Available dates for your amazing tour
 calendarBody: >
   Pick your more suitable period among the two blocks of 10 days on which I
