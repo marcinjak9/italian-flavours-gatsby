@@ -19,7 +19,7 @@ region: Sicily
 featured: true
 hero:
   ctaLink: /
-  ctaText: ask me more
+  ctaText: ask for full itinerary
   image: /img/chemex.jpg
   subtitle: The "Island magic" in a unique culinary adventure
 tourDescription:
