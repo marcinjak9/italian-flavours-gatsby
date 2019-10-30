@@ -101,23 +101,21 @@ galleryUpper:
   - image: /img/candre-mandawe-770521-unsplash.jpg
   - image: /img/4.jpg
 descriptionCards:
-  - body: >-
-      Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sunt asperiores,
-      vero molestias facilis fuga est recusandae totam. Neque, quae voluptatibus
-      reprehenderit tempora quia temporibus. Eum tenetur dolor temporibus
-      voluptate veniam.
+  - body: "•\tPersonal, English-speaking, Food & Wine Expert Guide \n\n•\tTransportation (from the collection point to the final tour destination)\n\n•\tMeals: gourmet breakfast, lunches and dinner, beverages included (with the best selection of local wines)\n\n•\tAccommodations for 9 nights\n\n•\tNumber of people suggested: solo travellers, couples or small groups up to 10 people\n\n•\tTour available from 1st April to 15th July and from 1st September to 15th November\n"
     icon: /img/qa.png
-    subtitle: Lorem ipsum dolor set
-    title: Lorem Ipsum
+    subtitle: ''
+    title: 'At your service:'
   - body: "Highlights\n\n•\tVisiting the gorgeous Baroque city of Ragusa \n\n•\tDelicious meals showcasing local produce, especially the fantastic seafood \n\n•\tTasting the delicious original “cannolo Siciliano” and a visit to one of the most famous dessert laboratories in Sicily\n \n•\tThe fantastic “Castello di Donnafugata”, an amazing Castle built in the XV Century\n\n•\tBeer tasting\n\n•\tA trip to Modica, the “chocolate paradise” \n\n•\tTypical street food (arancini)\n\n•\tVisit to the gorgeous “Valley of Temples” (Valle dei Templi), which is part of UNESCO heritage\n \n•\tA day with local shepherds\n\n•\tGourmet specialities such as bruschetta alla Siciliana & Nero d’Avola wine\n\n•\tA visit to elegant Taormina \n\n•\tClimbing the biggest active volcano of the Eurasiatic Teutonic Plate\n\n•\tStrolls along the seaside and around the beautiful cities, and plenty of aperitivos!\n\n"
     icon: /img/qa.png
     subtitle: ''
     title: Highlights
-  - body: >-
-      Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sunt asperiores,
-      vero molestias facilis fuga est recusandae totam. Neque, quae voluptatibus
-      reprehenderit tempora quia temporibus. Eum tenetur dolor temporibus
-      voluptate veniam.
+  - body: >
+      Small groups, couples and solo travellers
+
+
+      Special offers: ask for ‘early-bird’ offers and advanced booking offers,
+      we would love to have you on one of our gourmet adventures in Italy, it
+      will be a life-changing experience!
     icon: /img/qa.png
     subtitle: ''
     title: 'Suitable for:'
