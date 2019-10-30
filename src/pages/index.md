@@ -23,7 +23,7 @@ hero:
     for You.
   title: Your tasty holiday in Italys
 tourSectionTitle: Savour your next holiday
-blogNewsTitle: 'More than clients, but Cari Amici'
+blogNewsTitle: <3
 blogPosts:
   - slug: the-editor
   - slug: publishing-options
