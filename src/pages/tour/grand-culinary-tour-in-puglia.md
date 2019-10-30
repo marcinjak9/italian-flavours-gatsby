@@ -2,15 +2,16 @@
 templateKey: tour-page
 seoSection:
   ogImage: /img/flavor_wheel.jpg
-  ogTitle: Grand Culinary Tour in Puglia
+  ogTitle: Puglia&Basilicata Gourmet Tour
   ogUrl: /
-  seoDescription: de bellum- alicuius est aniqua - dolor sit amet
-  seoKeywords: de bellum- alicuius est aniqua - dolor sit amet
-  seoTitle: Grand Culinary Tour in Puglia
-title: Grand Culinary Tour in Puglia
-highlights: de bellum- alicuius est aniqua - dolor sit amet
+  seoDescription: |+
+
+  seoKeywords: 'Puglia, Culinary Tour, Matera, Basilicata'
+  seoTitle: Puglia&Basilicata Gourmet Tour
+title: Puglia&Basilicata Gourmet Tour
+highlights: Angelina
 region: Apulia
-featured: false
+featured: true
 hero:
   ctaLink: /
   ctaText: ask me more
@@ -53,50 +54,28 @@ descriptionCards:
       vero molestias facilis fuga est recusandae totam. Neque, quae voluptatibus
       reprehenderit tempora quia temporibus. Eum tenetur dolor temporibus
       voluptate veniam.
+    icon: /img/qa.png
     subtitle: Lorem ipsum dolor set
     title: Lorem Ipsum
-    icon: /img/qa.png
   - body: >-
       Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sunt asperiores,
       vero molestias facilis fuga est recusandae totam. Neque, quae voluptatibus
       reprehenderit tempora quia temporibus. Eum tenetur dolor temporibus
       voluptate veniam.
+    icon: /img/qa.png
     subtitle: Lorem ipsum dolor set
     title: Lorem Ipsum
-    icon: /img/qa.png
   - body: >-
       Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sunt asperiores,
       vero molestias facilis fuga est recusandae totam. Neque, quae voluptatibus
       reprehenderit tempora quia temporibus. Eum tenetur dolor temporibus
       voluptate veniam.
+    icon: /img/qa.png
     subtitle: Lorem ipsum dolor set
     title: Lorem Ipsum
-    icon: /img/qa.png
-  - body: >-
-      Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sunt asperiores,
-      vero molestias facilis fuga est recusandae totam. Neque, quae voluptatibus
-      reprehenderit tempora quia temporibus. Eum tenetur dolor temporibus
-      voluptate veniam.
-    subtitle: Lorem ipsum dolor set
-    title: Lorem Ipsum
-    icon: /img/qa.png
-  - body: >-
-      Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sunt asperiores,
-      vero molestias facilis fuga est recusandae totam. Neque, quae voluptatibus
-      reprehenderit tempora quia temporibus. Eum tenetur dolor temporibus
-      voluptate veniam.
-    subtitle: Lorem ipsum dolor set
-    title: Lorem Ipsum
-    icon: /img/qa.png
-  - body: >-
-      Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sunt asperiores,
-      vero molestias facilis fuga est recusandae totam. Neque, quae voluptatibus
-      reprehenderit tempora quia temporibus. Eum tenetur dolor temporibus
-      voluptate veniam.
-    subtitle: Lorem ipsum dolor set
-    title: Lorem Ipsum
-    icon: /img/qa.png
 blogSectionTitle: Cari Amici on this tour with me
+blogPosts:
+  - {}
 calendarTitle: Dai un'occhiata!
 calendarBody: Scopri le ultime date ancora disponibili
 calendarNotes: Enjoy
