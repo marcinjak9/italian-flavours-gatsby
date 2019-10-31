@@ -47,7 +47,7 @@ When I start working on **your tour**, on the tailor-made itinerary for you, you
 
 ## What kind of experience in Italy are you dreaming of?
 
-**Culinary Slow-Tours for small groups**   
+**Culinary Slow-Tours for small groups   **
 
 Find yourself in **intimate group sizes** of no more than 12 guests, relax in the finest hotels in Italy and experience unique insider access to divine sites. My expertise and **profound knowledge of Italy** will ensure you travel under the wing of a truly professional tour guide, who will bring your dream holiday to life with an unmatched local insight.
 
@@ -78,6 +78,8 @@ I will be your personal guide and I will join you at each step on your luxury ta
 Together we will browse local markets as Italians do, we will prepare delicious recipes with local chefs or we will dine with a **local families** in their home for a taste of authentic hospitality.
 
 You will be the main character of a life-changing travel experience, where Italian art, traditions, gourmet wine&food and Nature will be the main ingredients, but, above all **authenticity**. With me you will discover the real **soul of Italy**.
+
+
 
 ## These are only some examples of what I can do for you:
 
