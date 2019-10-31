@@ -67,21 +67,19 @@ Are you ready to see Italy exactly how you want to see it, on an itinerary **fas
 
 Treat yourself for a special occasion, as a birthday, an anniversary or a **retirement gift**: celebrate your milestone with your family or with your friends with a luxury, **tailor-made gourmet tour **of Italy.
 
+I will create a journey based on the themes that really matter for you, I will mix and match them or I will leave you free to make them up your own for a journey that’s just right for you.
+
 ![null](/img/home_03.jpg)
 
 **Solo Traveller**
 
-Setting the standard for luxury small-group travel worldwide, Abercrombie & Kent's Luxury Small Group Journeys deliver the best in comfort and service in the world's greatest destinations.
+I will be your personal guide and I will join you at each step on your luxury tailor made journey in Italy, bringing your destination to life through authentic, beyond-the-guidebook knowledge.
 
-Create a journey based on one of these themes, mix and match them or make up your own for a journey that’s just right for you.
+Together we will browse local markets as Italians do, we will prepare delicious recipes with local chefs or we will dine with a **local families** in their home for a taste of authentic hospitality.
 
-**WHAT IS THIS??** allows you to experience A&K’s hallmark blend of insider access and style in more than 100 countries around the world, on an itinerary created for you and your family or friends. From arrival to departure, every detail is anticipated and every effort made to ensure a seamless, unforgettable travel experience. With A&K, you walk right in where others wait in line, visit world-famous sites before they open to the public and experience authentic local interactions beyond the scope of any guidebook.
+You will be the main character of a life-changing travel experience, where Italian art, traditions, gourmet wine&food and Nature will be the main ingredients, but, above all **authenticity**. With me you will discover the real **soul of Italy**.
 
-Your hand-picked, English-speaking A&K local guides join you at each step on your luxury tailor made journey, bringing your destination to life through authentic, beyond-the-guidebook knowledge.
-
-Browse a market and prepare lunch with a local chef, or dine with a local family in their home for a taste of authentic hospitality.
-
-When it comes to art and architecture, some travellers can’t get enough. **Luxury Tailor Made Journeys** connect you with local artists for private visits to their studios, or with collectors who take you on a guided tour of their favourite galleries.
+## These are only some examples of what I can do for you:
 
 * **Tailor-made tours or travel solutions** for any region or city in Italy	
 * **Tailored tours for specific cultural and folkloric events in Italy **(as Terra Madre in Turin, Vinitaly in Verona, Taste in Florence, Cibus in Parma)	
