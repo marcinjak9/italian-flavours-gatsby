@@ -21,7 +21,7 @@ featured: true
 hero:
   ctaLink: /
   ctaText: Ask for full itinerary
-  image: /img/4.jpg
+  image: /img/san-gimmy.jpg
   subtitle: 7 days of Bucolic Bliss
 tourDescription:
   body: >
