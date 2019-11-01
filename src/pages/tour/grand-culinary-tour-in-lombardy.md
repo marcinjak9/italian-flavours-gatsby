@@ -14,7 +14,7 @@ featured: true
 hero:
   ctaLink: /
   ctaText: ask for full itinerary
-  image: /img/products-grid2.jpg
+  image: /img/testa_cal.jpg
   subtitle: >-
     An unforgettable gourmet journey among the most antique and precious
     culinary and cultural traditions of Italy
