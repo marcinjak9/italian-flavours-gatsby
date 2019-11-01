@@ -22,7 +22,7 @@ hero:
   ctaLink: /
   ctaText: Ask for full itinerary
   heroBgOverlay: true
-  image: /img/flavor_wheel.jpg
+  image: /img/piemonte2.jpg
   subtitle: 8 days in Italy’s charming land of Barolo and white truffles
 tourDescription:
   body: >
