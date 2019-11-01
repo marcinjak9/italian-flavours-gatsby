@@ -3,7 +3,7 @@ templateKey: tour-page
 seoSection:
   ogImage: /img/candre-mandawe-770521-unsplash.jpg
   ogTitle: Treasures Of Tuscany
-  ogUrl: 'https://it.marcinjakubik.io'
+  ogUrl: 'https://it.italianflavours.it'
   seoDescription: >+
     Highlights wine tastings - relaxing environment - horse riding - private
     chaffeur - boutique hotels and high-level agriturismi

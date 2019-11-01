@@ -5,7 +5,7 @@ generalSeoSection:
   ogTitle: >-
     Italian Flavours | Scopri con noi i sapori nascosti della tradizione
     italiana
-  ogUrl: 'https://it.marcinjakubik.io'
+  ogUrl: 'https://it.italianflavours.it'
   seoDescription: >-
     Vivi con noi il buono dell'Italia. Assaggerai prelibatezze, brinderemo alla
     vita con deliziosi vini portandoti alla scoperta della vera tradizione

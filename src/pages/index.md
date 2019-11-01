@@ -3,7 +3,7 @@ templateKey: home-page
 seoSection:
   ogImage: /img/candre-mandawe-770521-unsplash.jpg
   ogTitle: Your tasty holiday in Italy
-  ogUrl: 'https://it.marcinjakubik.io'
+  ogUrl: 'https://it.italianflavours.it'
   seoDescription: "I specialise in tailor-made gourmet holidays. I love creating travel solutions that perfectly suit my guests needs, and I am renowned for my attention to detail and my creativity in organising unforgettable experiences.\t\n"
   seoKeywords: Your tasty holiday in Italy
   seoTitle: Your tasty holiday in Italy
@@ -47,7 +47,7 @@ When I start working on **your tour**, on the tailor-made itinerary for you, you
 
 ## What kind of experience in Italy are you dreaming of?
 
-**Culinary Slow-Tours for small groups   **
+**Culinary Slow-Tours for small groups**
 
 Find yourself in **intimate group sizes** of no more than 12 guests, relax in the finest hotels in Italy and experience unique insider access to divine sites. My expertise and **profound knowledge of Italy** will ensure you travel under the wing of a truly professional tour guide, who will bring your dream holiday to life with an unmatched local insight.
 

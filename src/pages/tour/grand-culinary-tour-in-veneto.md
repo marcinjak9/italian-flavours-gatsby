@@ -1,7 +1,7 @@
 ---
 templateKey: tour-page
 seoSection:
-  ogUrl: 'https://it.marcinjakubik.io'
+  ogUrl: 'https://it.italianflavours.it'
 title: 'Veneto, Friuli and the romance of Como Lake'
 highlights: >
   wine tastings - relaxing environment - horse riding - private chaffeur -

@@ -12,7 +12,7 @@ class BlogSection extends Component {
     scriptjs = require('scriptjs') // eslint-disable-line
     const { posts } = this.props
     if (posts.length > 0) {
-      scriptjs('https://blog.it.marcinjakubik.io/public/ghost-sdk.min.js', (e) => {
+      scriptjs('https://blog.italianflavours.it/public/ghost-sdk.min.js', (e) => {
         this.setState({ scriptLoad: true })
       })
     }
