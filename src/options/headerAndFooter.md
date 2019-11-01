@@ -19,7 +19,7 @@ menuItems:
     onlyMobile: false
     regionDropdown: true
     title: Tours by region
-  - href: '/#contact'
+  - href: '#contact'
     onlyMobile: false
     regionDropdown: false
     title: Tailor-made Tours
