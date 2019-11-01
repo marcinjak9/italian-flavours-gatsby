@@ -15,7 +15,7 @@ featured: true
 hero:
   ctaLink: /
   ctaText: ask me more
-  image: /img/jumbotron.jpg
+  image: /img/lfzn6113.jpg
   subtitle: >-
     An unforgettable gourmet journey among the most antique and precious
     culinary and cultural traditions of Italy
