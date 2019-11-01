@@ -24,14 +24,15 @@ class BlogCard extends React.Component {
 
   fetchPosts = () => {
     const { slug } = this.props
-    if (!window.ghost) {
-      return null
-    }
-    window.ghost.init({
-      clientId: 'ghost-frontend',
-      clientSecret: 'ab4dac795465',
-    })
-    fetch(window.ghost.url.api(`posts/slug/${slug}`, { limit: 1 }))
+    // if (!window.ghost) {
+    //   return null
+    // }
+    // window.ghost.init({
+    //   clientId: 'ghost-frontend',
+    //   clientSecret: 'ab4dac795465',
+    // })
+    const key = '257a6ae333c6d7e01b8fa3b5d6';
+    fetch(`https://blog.italianflavours.it/ghost/api/v3/content/posts/slug/${slug}?key=${key}`)
       .then((response) => {
         if (response.status !== 200) {
           console.log(`Looks like there was a problem. Status Code: ${response.status}`);
@@ -49,7 +50,7 @@ class BlogCard extends React.Component {
             title,
             body: custom_excerpt,
             image: feature_image,
-            url: `https://blog.it.marcinjakubik.io/${slug}`,
+            url: `https://blog.italianflavours.it/${slug}`,
             date: moment(published_at).format('MMMM YYYY'),
           })
         });
