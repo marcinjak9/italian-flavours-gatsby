@@ -20,7 +20,7 @@ featured: true
 hero:
   ctaLink: /
   ctaText: ask for full itinerary
-  image: /img/chemex.jpg
+  image: /img/modica.jpg
   subtitle: The "Island magic" in a unique culinary adventure
 tourDescription:
   body: >
