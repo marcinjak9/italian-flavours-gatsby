@@ -22,7 +22,7 @@ featured: true
 hero:
   ctaLink: /
   ctaText: ask me more
-  image: /img/products-grid1.jpg
+  image: /img/donne-in-costume-sardo.jpg
   subtitle: >-
     An unforgettable gourmet journey among the most antique and precious
     culinary and cultural traditions of Italy
