@@ -95,12 +95,12 @@ const HomePageTemplate = (props) => {
       />
       )}
 
-      <BlogSection
+      {/* <BlogSection
         posts={posts}
         title={blogTitle}
         cta={() => <a href="https://blog.italianflavours.it" target="_blank" rel="noopener noreferrer" className="btn btn-outline-light btn-lg">see the blog</a>}
         home
-      />
+      /> */}
 
     </PageTransition>
   )

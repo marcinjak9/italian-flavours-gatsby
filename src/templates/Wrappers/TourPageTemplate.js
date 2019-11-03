@@ -111,12 +111,12 @@ const TourPageTemplate = ({
     </div>
 
 
-    <BlogSection
+    {/* <BlogSection
       posts={blogPosts ? blogPosts.map(post => post.slug) : []}
       title={blogSectionTitle}
       // cta={() => <Link to="/" className="btn btn-outline-light btn-lg">see the blog</Link>}
       tour
-    />
+    /> */}
 
     <div className="container-fluid cari-amici-section white-bg">
       <h1 className="text-center grey-text">{calendar.title}</h1>
@@ -128,7 +128,7 @@ const TourPageTemplate = ({
         </div>
         <div className="col-md-6 offset-md-3 d-flex justify-content-center">
           <div id="calendar" />
-          {calendar.dates && <CalendarComponent dates={calendar.dates} />}
+          {/* {calendar.dates && <CalendarComponent dates={calendar.dates} />} */}
         </div>
         <div className="col-md-4 offset-md-4">
           <br />

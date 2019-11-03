@@ -3,6 +3,8 @@ import { SvgLoader, SvgProxy } from 'react-svgmt'
 import PropTypes from 'prop-types'
 import map from '../img/Regions-new.svg'
 
+const REGIONS = ['Abruzzo', 'Apulia', 'Basilicata', 'Calabria', 'Campania', 'Emilia-Romagna', 'Friuli-Venezia-Giulia', 'Latium', 'Liguria', 'Lombardy', 'Marche', 'Molise', 'Piedmont', 'Sardinia', 'Sicily', 'Tuscany', 'Trentino', 'Umbria', 'Aosta_Valley', 'Veneto'];
+
 class MapFormContainer extends Component {
   constructor(props) {
     super(props)
@@ -111,7 +113,7 @@ class MapFormContainer extends Component {
                       onChange={e => this.selectRegionHandler(e.target.value)}
                     >
                       <option value="" disabled>Select the region you don’t want missy</option>
-                      {regions.map(region => <option key={region}>{region}</option>)}
+                      {REGIONS.map(region => <option key={region}>{region}</option>)}
                     </select>
                     {error.region && <p className="error-message">{error.region}</p>}
 
@@ -158,7 +160,7 @@ class MapFormContainer extends Component {
                 </form>
                 <div className="col-md-6 map-container">
                   <SvgLoader path={map}>
-                    {regions.map((region, i) => (
+                    {REGIONS.map((region, i) => (
                       <span key={region}>
                         <SvgProxy selector={`g#${region}`} onElementSelected={element => element.addEventListener('click', () => this.selectRegionHandler(region))} />
                         {onClient && document.querySelector(`g#${region} path[data-name="bg"]`)

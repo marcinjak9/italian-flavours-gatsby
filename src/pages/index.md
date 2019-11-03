@@ -51,21 +51,21 @@ When I start working on **your tour**, on the tailor-made itinerary for you, you
 
 Find yourself in **intimate group sizes** of no more than 12 guests, relax in the finest hotels in Italy and experience unique insider access to divine sites. My expertise and **profound knowledge of Italy** will ensure you travel under the wing of a truly professional tour guide, who will bring your dream holiday to life with an unmatched local insight.
 
-I have longstanding relationships in every destination and during my tours I like sharing  with my guests my precious patrimony of connections. **My on-the-ground presence **allows me to give you access to the most authentic and untouched places in Italy: together we will discover the real soul of _la_ _Bella Italia._
+I have longstanding relationships in every destination and during my tours I like sharing  with my guests my precious patrimony of connections. **My on-the-ground presence** allows me to give you access to the most authentic and untouched places in Italy: together we will discover the real soul of _la_ _Bella Italia._
 
 And of course your safety and security are always my first priorities. You only have to sit back, relax and enjoy every minute of your journey!
 
-Thanks to my intimate knowledge of each destination, I personally design every journey, creating** itineraries that feature the most iconic destinations** in Italy. You enjoy the benefits of one-off experiences in your most desired locations, such as enjoying a sunset in **Ostuni **or a sunrise in front of the **Arena di Verona**.
+Thanks to my intimate knowledge of each destination, I personally design every journey, creating **itineraries that feature the most iconic destinations** in Italy. You enjoy the benefits of one-off experiences in your most desired locations, such as enjoying a sunset in **Ostuni** or a sunrise in front of the **Arena di Verona**.
 
 I will be sharing with you the best insights into Italian **wine & food culture**, art and traditions, unveiling mysteries and revealing secrets that only a true local could know. I will be supervising your entire journey and accompanying you every day, immersing you in the real spirit of a place and connecting you to locals in a way you’ll never forget. Of course I will also leave you the privacy you need, whenever you need it.
 
 You can choose to travel with your family or friends or to join one of my already set **small group tours**, they are limited to no more than 12 guests, happy travellers who will bring their joy and their own perspectives to your journey. It will be a great chance to make new, valuable friendships, to know new cultures and receive inspiring stimuli.
 
-**Tailor-made Gourmet Journeys in Italy     **    
+**Tailor-made Gourmet Journeys in Italy**
 
 Are you ready to see Italy exactly how you want to see it, on an itinerary **fashioned specially for you**?
 
-Treat yourself for a special occasion, as a birthday, an anniversary or a **retirement gift**: celebrate your milestone with your family or with your friends with a luxury, **tailor-made gourmet tour **of Italy.
+Treat yourself for a special occasion, as a birthday, an anniversary or a **retirement gift**: celebrate your milestone with your family or with your friends with a luxury, **tailor-made gourmet tour** of Italy.
 
 I will create a journey based on the themes that really matter for you, I will mix and match them or I will leave you free to make them up your own for a journey that’s just right for you.
 
@@ -84,12 +84,12 @@ You will be the main character of a life-changing travel experience, where Itali
 ## These are only some examples of what I can do for you:
 
 * **Tailor-made tours or travel solutions** for any region or city in Italy	
-* **Tailored tours for specific cultural and folkloric events in Italy **(as Terra Madre in Turin, Vinitaly in Verona, Taste in Florence, Cibus in Parma)	
+* **Tailored tours for specific cultural and folkloric events in Italy** (as Terra Madre in Turin, Vinitaly in Verona, Taste in Florence, Cibus in Parma)	
 * **Customized wine tastings** and visits to the finest and most historical wineries in Italy	
 * Dedicated master classes at the Banca del Vino (the Slow food bank of wine) in Piedmont	
 * **Truffle hunting**	
 * Exclusive **extra-virgin olive oil tastings** based on your desires	
-* Mouth-watering **cheese tastings **and prosciutto tastings	
+* Mouth-watering **cheese tastings** and prosciutto tastings	
 * Funny **cooking classes and culinary courses** about the most traditional Italian recipes and dishes, as tortellini, gnocchi, ravioli, parmigiana, to mention some Exciting **gourmet mini-cruises** in catamaran in Sardinia, discovering water caves and pristine beaches with incredible crystal clear water	
 * Visits to the **finest Italian artisans**, master pasta makers, pastry chefs, to the oldest cafes and historical pizza restaurants in Italy	
 * The most romantic and original **setup for your marriage proposal** or for your anniversary, embellished with gourmet delicacies and precious wines, all exclusively Italian	
@@ -97,4 +97,4 @@ You will be the main character of a life-changing travel experience, where Itali
 * **Photo tours** for you to discover the most precious and unique cultural and folkloric traditions in Italy	
 * Exciting “**passeggiate**” to breath-taking locations aboard the mythical, iconic FIAT 500	
 * Delicious lunches in the c**ompany of shepherds and farmers**, who will cook mouthwatering local dishes for you	
-* And I can also let you experience the thrill of the **olive harvest **or the **grape harvest**, our vendemmia, following the Italian **oldest tradition**.
+* And I can also let you experience the thrill of the **olive harvest** or the **grape harvest**, our vendemmia, following the Italian **oldest tradition**.
