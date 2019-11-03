@@ -44,7 +44,7 @@ footerMenu:
     url: '#contact'
 footerContacts:
   emailAddress: info@italianflavours.it
-  phoneNumber: ''
+  phoneNumber: +39 331 2637697
 creditsText: '❤ Travel. As much as you can. As far as you can. As long as you can.❤ '
 copyrightText: >-
   © 2018 - Italian Flavours is a trademark of Sardinia Flavour srl - P.IVA:
