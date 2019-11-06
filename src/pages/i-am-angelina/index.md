@@ -52,6 +52,9 @@ I graduated in Italian Literature and I attained a **Masters degree in Gourmet a
 
 I collaborated with the Tourist Board of my city, Oristano, and I worked as a senior quality consultant for 10 years. After many years working in the field, I decided to put these experiences to use and I founded my first company, Sardinia Flavour, with the aim of making people all over the world know and taste the most precious and traditional delicacies of my beloved Italy.
 
+![](/img/angelina_02.jpg)
+
+\
 The inspirational experience with Sardinia Flavour allowed me to get in touch with the best Italian food artisans, who pass down the generations old and fascinating food traditions, as well as the leading Italian wineries and gourmet restaurants, allowing me to create **a network of precious jewels**. These same locations will be the ones you are going to visit during the exclusive travel experiences I create every year with **Italian Flavours**.
 
 My mission now is to give my little contribution to **preserve small artisan producers** and all those unique gourmet and cultural Italian specialities, offering travel adventures **off-the-beaten-track**, far from touristic places and restaurants. In this way I work to promote the knowledge of Italian authenticities, letting people directly experience, smell and taste the real perfumes, flavours and colours of Italian regional culture, and the most gorgeous, hidden secrets of Italian artistic heritage, all of this in outstanding "life-changing" **gourmet safaris**.
