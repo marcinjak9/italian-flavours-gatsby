@@ -12,7 +12,7 @@ seoSection:
   seoTitle: I am Angelina
 title: I am Angelina
 hero:
-  bgImage: ''
+  bgImage: /img/angelina_01.jpg
   bgImage1024: /img/about-desktop-1024.jpg
   bgImage1280: /img/abut-desktop-1280.jpg
   bgImage320: /img/about-mobile-360.jpg
