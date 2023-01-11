@@ -19,7 +19,7 @@
     "gatsby-remark-prismjs": "3.0.1",
     "gatsby-remark-relative-images": "0.1.2",
     "gatsby-source-filesystem": "2.0.1",
-    "gatsby-transformer-remark": "2.1.1",
+    "gatsby-transformer-remark": "5.25.1",
     "gatsby-transformer-sharp": "2.1.1",
     "gatsby-transformer-yaml": "2.1.3",
     "gatsby-v2-plugin-page-transitions": "^1.0.0",
